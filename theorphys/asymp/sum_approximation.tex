@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Приближение суммы интегралом}
+\author{Anikin Evgeny, 128}
+
+\begin{document}
+\maketitle
+\begin{multline}
+    \int_0^L f(x) dx = h\sum_{k=0}^{N-1} f(h(k+\frac12))
+                       +\frac{h^2}{24} (f'(L) - f'(0)) - \\
+                       -\frac{7h^4}{5760}(f'''(L) - f'''(0))
+                       + O(h^6)
+\end{multline}
+\end{document}

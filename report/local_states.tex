@@ -1,0 +1,97 @@
+\section{Локализованные состояния в подходе сильной связи}
+Рассмотрим очень простую ситуацию: пусть в решётке, описываемой
+гамильтонианом \eqref{hamiltonian}, есть единственная примесь. Её проще всего описать 
+возмущением следующего вида:
+\begin{equation}
+	\label{pert}
+	V = \Delta E a_0^{\dagger} a_0
+\end{equation}
+Оказывается, что около такой примеси возникнет локализованное состояние. 
+
+Наиболее удобно искать энергию этого состояния и волновую функцию, найдя 
+запаздывающую функцию Грина для этого гамильтониана. Энергия состояния, как хорошо 
+известно, будет определяться полюсом функции Грина (см. \cite{Abrikosov})
+
+
+Нетрудно также получить, что функция Грина даётся выражением
+\begin{equation}
+	\label{general}
+	G^R(\omega, m,n) = \sum_\lambda \psi_\lambda(m)\psi_\lambda^{*}(n) 
+			\frac{1}{\omega - E_\lambda + i\delta}
+\end{equation}
+(Здесь ведётся суммирование по всем состояниям). Отсюда можно легко найти волновую функцию
+локализованного состояния:
+\begin{equation}
+	\label{res}
+	\operatorname{\mathrm{res}} G^R(\omega, m,n) |_{\omega = E_\Lambda} = 
+		\psi_{\Lambda}(m)^{*}\psi_{\Lambda}(n)
+\end{equation}
+
+Чтобы найти функцию Грина для гамильтониана с возмущением, нужна, разумеется, 
+функция Грина однородной решётки. Она даётся формулой
+\begin{equation}
+	G_0^R(\omega,m,n) = 
+			\frac{1}{N}\sum_p \frac{e^{-ip(R_m - R_n)}}{\omega - E_p + i\delta}.
+\end{equation}
+
+Новая функция Грина может быть найдена из уравнения Дайсона.
+(Его можно получить в технике Келдыша \cite{Keldysh1964}, \cite{Arseev2015} сразу на запаздывающую функцию Грина, или
+перейти к запаздывающей от мацубаровской заменой $i\omega \to \omega + i\delta$.)
+\begin{equation}
+	G^R(\omega_n,m,n) = 
+		G^R_0(\omega_n, m,n) + 
+		\Delta E G^R_0(\omega_n, m,0)G^R(\omega_n, 0,n)
+\end{equation}
+Решение этого уравнения --- 
+\begin{equation}
+	\label{solution}
+	G^R(\omega, m,n) = G^R_0(\omega, m,n) + 
+		\frac{\Delta EG^R_0(\omega, m,0)G^R_0(\omega, 0, n)}{1 - \Delta E G^R_0(\omega,0,0)}
+\end{equation}
+Полюса функции Грина даются уравнением
+\begin{equation}
+	\Delta E G^R_0(\omega, 0,0) = 1,
+\end{equation}
+то есть 
+\begin{equation}
+	 \frac{\Delta E}{N}\int  \frac{\rho(\epsilon)\,d\epsilon}{\omega - \epsilon + i\delta}= 1
+\end{equation}
+Пользуясь формулой \eqref{res}, получим выражение для волновой функции связанного
+состояния.
+\begin{equation}
+	\label{wavefunction}
+	\psi_\Lambda(n) = \frac{G_0^R(E_\Lambda, n,0)}
+					{\sqrt{-\frac{\partial G_0^R}{\partial \omega}(E_\Lambda, 0,0)}}
+\end{equation}
+Приведём без вывода волновые функции в некоторых конкретных примерах. 
+
+Во--первых, в случае, когда $E_\Lambda$ очень близко к краю зоны (например, нижнему), 
+волновая функция связанного
+состояния даётся приближённой формулой
+\begin{equation}
+	\psi_\Lambda(n) = \sqrt{\frac{p_0}{2\pi \nu}} \frac{e^{-p_0 R_n}}{R_n}
+\end{equation}
+($\nu$ --- объём элементарной ячейки, $p_0^2 = -2mE_\Lambda$, $m$ --- эффективная масса.
+Энергия отсчитывается здесь от нижнего края зоны)
+Такая волновая функция сильно делокализована: она отлична от нуля не только на примесном
+атоме, но и на многих атомах вокруг примесного.
+
+Во-вторых, в случае, когда $p_0$ велико, точнее, $p_0\ll a^{-1}$, волновая функция ---
+$\psi_\Lambda(0) \approx 1$, а 
+$\psi_\Lambda(n) \approx \frac{t_n}{E_\Lambda}$, где $t_n$ --- коэффициенты из гамильтониана.
+Волновая функция оказывается сильно локализованной и отлична от нуля только на нескольких 
+атомах.
+
+Наконец, в случае одномерной цепочки, когда гамильтониан --- 
+\begin{equation}
+	\label{ham1d}
+	\hat{H} = \sum_n Ea_n^\dagger a_n + ta_{n+1}^\dagger a + ta_{n-1}^\dagger a,
+\end{equation}
+функция Грина может быть найдена точно. Ответ выглядит так:
+\begin{multline}
+	G_0^R(\omega, m,n) = 
+			\int_{-\pi}^{\pi} 
+				\frac{dk}{2\pi} \frac{e^{-ik(m-n)}}{\omega - E - 2t \cos{k} + i\delta}
+	= \frac{e^{-(m-n)\kappa}}{2t\sinh{\kappa}}, \\
+			\cosh \kappa = \frac{\omega  - E}{2t}
+\end{multline}

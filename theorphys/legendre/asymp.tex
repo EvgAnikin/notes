@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Leading--order asymptotic for Legendre polynomials}
+
+\begin{document}
+\maketitle
+The generating function for Legendre polynomials is, as it's well--known,
+\begin{equation}
+	\frac{1}{\sqrt{1 - 2t\cos{\theta}  + t^2}} =\sum_{n = 0}^{\infty} P_n(\cos \theta) t^n 
+\end{equation}
+That leads to the following expression for $P_n(\cos \theta)$:
+\begin{equation}
+	P_n(\cos \theta) = \int \frac{dt}{t^{n+1}{\sqrt{1 - 2t\cos{\theta} + t^2}}}
+\end{equation}
+
+\end{document}

@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Теория рассеяния}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+%\section{$S$--матрица}
+%Рассеяние на потенциале проще всего рассматривать следующим образом: пусть потенциал ---
+
+\section{Квазиклассическое приближение}
+\subsection{Функция Эйри}
+Функция Эйри --- решение уравнения
+\begin{equation}
+	u'' = xu
+\end{equation}
+Оно решается методом Лапласа, его решение ---
+\begin{equation}
+	u = \oint_\Gamma e^{ixz - \frac{iz^3}{3}}\,dz
+\end{equation}
+Контур $\Gamma$ должен начинаться и заканчиваться на бесконечности, так, чтобы 
+$e^{-\frac{iz^3}{3}} \to 0$. Выберем его так, чтобы он шёл из третьей координатной четверти
+к нулю и уходил на бесконечность вдоль $Ox$. Тогда 
+\begin{equation}
+	\Psi = \frac{\sqrt{\pi}}{|x|^{\frac14}}\left\{ \begin{matrix}
+			e^{\frac23 x^{\frac32}}, & \quad x \gg 0 \\
+			e^{\frac{2i}{3} |x|^{\frac32} + \frac{i\pi}{4}}, & \quad x \ll 0
+			\end{matrix} \right.
+\end{equation}
+Методом перевала можно вычислить и мнимую часть $\Psi$. 
+\begin{equation}
+	\operatorname{Im}\Psi = \frac{\sqrt{\pi}}{|x|^{\frac14}}\left\{ \begin{matrix}
+			\frac12 e^{-\frac23 x^{\frac32}}, & \quad x \gg 0 \\
+			\sin{\left(\frac{2}{3} |x|^{\frac32} + \frac{\pi}{4}\right)}, & \quad x \ll 0
+			\end{matrix} \right.
+\end{equation}
+\section{Квазиклассическая волновая функция}
+
+\section{Разложение плоской волны по сферическим}
+Для начала необходимо разложить плоскую волну по сферическим.
+\begin{equation}
+	e^{i\vec{k}\vec{r}} = e^{ikr\cos{\theta}} = \sum_l A_l(kr) P_l(\cos{\theta})
+\end{equation}
+Перепишем это разложение несколько в другом виде:
+\begin{equation}
+	e^{ixy} = \sum_l A_l(x) P_l(y)
+\end{equation}
+Отсюда
+\begin{equation}
+	A_l(x) = \frac{2l+1}{2} \int_{-1}^{1} P_l(y) e^{ixy} \, dy
+\end{equation}
+Вспоминаем формулу для полиномов Лежандра:
+\begin{equation}
+	P_l(y) = \frac{1}{2^l l!} \frac{d^l}{dy^l} (y^2 - 1)^l
+\end{equation}
+Тогда после подстановки и $n$--кратного интегрирования по частям получим 
+\begin{equation}
+	A_l(x) = \frac{(2l+1)(ix)^l}{2} \int_{-1}^{1} (1-y^2)^l e^{ixy} \, dy
+\end{equation}
+Здесь нас интересует случай больших $x$. Основной вклад в интеграл дают окрестности 
+$y = \pm 1$ (можно деформировать контур так, чтобы это стало совсем очевидно).
+{ \it Интересно, как точно вычислить этот интеграл? Ответ тут мне известен аж в двух
+смыслах: во--первых, интеграл сводится к вырожденной гипергеометрии, 
+во-вторых, должны получиться
+функции Бесселя полуцелого порядка. }
+
+После вычисления асимптотики получается следующий результат:
+\begin{equation}
+    e^{ixy} = \sum \frac{2l+1}{2ix} \left[ e^{ix} + (-1)^{l+1} e^{-ix} \right] P_l(y)
+\end{equation}
+
+\section{Задача рассеяния}
+Пусть $R_l(r)$ --- радиальные функции. Так как на больших расстояниях потенциала нет,
+они имеют асимптотический вид
+\begin{equation}
+    R_l(r) \approx \frac{1}{r}\left(e^{ikr} + (-1)^{l+1}e^{-ikr-i\alpha_l}\right)
+\end{equation}
+(Множитель $(-1)^{l+1}$ выбран для удобства в последующем.)    
+
+Любая функция с цилиндрической симметрией должна представляться в виде
+\begin{equation}
+    \label{expansion}
+    \Psi(r,\theta) = \sum_l R_l(r) P_l(\cos{\theta})
+\end{equation}
+Пусть плоская волна падает на рассеивающий центр. Тогда волновая функция имеет вид
+\begin{equation}
+    \Psi(r,\theta) = e^{ikr\cos{\theta}} + \frac{f(\theta)e^{ikr}}{r}
+\end{equation}
+Используя разложение плоской волны и \eqref{expansion}, можно найти $f(\theta)$. Ответ
+получается таким:
+\begin{equation}
+    f(\theta) = \sum_l \frac{2l+1}{2ik} (e^{i\alpha_l} - 1) P_l(\cos{\theta})
+\end{equation}
+
+\section{Рассеяние в квазиклассическом случае}
+
+\section{Рассеяние на непроницаемой сфере}
+Непроницаемая сфера, возможно, --- единственный случай, когда радиальные функции можно
+вычислить точно. Они являются линейными комбинациями функций Бесселя полуцелого порядка.
+
+\end{document}

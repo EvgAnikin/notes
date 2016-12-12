@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+\newcommand{\p}{\partial}
+
+\title{Кое-что о переходе БКТ}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+Рассмотрим гамильтониан
+\begin{equation}
+	H[\phi] = \int d^2x\, \frac{1}{2} \p_\mu \phi\, \p_\mu \phi - \alpha \cos{\beta \phi}
+\end{equation}
+Его статсумма:
+\begin{equation}
+	Z = \int D\phi \exp\{-H[\phi]\}
+\end{equation}
+Предполагая константу $\alpha$ малой, мы можем разложить статсумму в ряд.
+\begin{equation}
+	Z = \int D\phi\,\exp{\left[-\int d^2x\, \frac{1}{2} \p_\mu \phi\, \p_\mu \phi\right]}
+			\sum \frac{\alpha^N}{N!}	\left(\int d^2x \, \cos{\beta \phi}\right)^N
+\end{equation}
+Но для начала вычислим следующие корреляционные фунцкции:
+\begin{multline}
+	\bra \cos{\beta \phi(x_1)} \dots \cos{\beta \phi{x_N}} \ket \sim \\ 
+	\sim	\int D\phi \, \exp{\left[-\int d^2x\, \frac{1}{2} \p_\mu \phi\, \p_\mu \phi\right]}
+		\cos{\beta \phi(x_1)} \dots \cos{\beta \phi({x_N})}
+\end{multline}
+Дальше каждый косинус разбивается на экспоненты.
+\end{document}

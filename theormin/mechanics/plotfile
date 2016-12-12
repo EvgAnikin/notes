@@ -1,0 +1,10 @@
+set terminal jpeg
+set output "wheel.jpg"
+set xrange [0:1]
+epsilon = 0.05
+set xlabel "v^2/gR"
+set ylabel "k"
+set title "epsilon = 0.05"
+border = 2*epsilon/3
+plot x > border ? 0.333*epsilon*abs(2 - x)/sqrt(1 - (2*epsilon*x)**2) : 0 \
+	  w filledcu x1 title "Колесо проскальзывает"

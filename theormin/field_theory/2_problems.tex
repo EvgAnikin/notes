@@ -1,0 +1,125 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Задачи к теорминимуму}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+\section{Третья задача}
+\subsection{Условие задачи}
+Найти излучение системы зарядов с точностью до членов порядка $c^{-5}$.
+\subsection{Ответ}
+\begin{equation}
+	W = \frac{2\ddot{\mathbf{d}^2}}{3c^3} + 
+			\frac{\dddot{D^{kl}}\dddot{D^{kl}}}{180c^5} + \frac{2\ddot{M^2}}{3c^3} + 
+			\frac{4}{15c^4} \left( \dddot{T^{kaa}} \ddot{\mathbf{d}}^k -
+						\frac{1}{2} \dddot{T^{aak}}\ddot{\mathbf{d}}^k \right )
+\end{equation}
+\begin{equation}
+	T^{kij} = \int \frac{j^k}{c}y^iy^j \, d^3 y
+\end{equation}
+\subsection{Решение}
+Общая формула для запаздывающего потенциала:
+\begin{equation}
+	A_\omega^{\mu} = \int\frac{j^{\mu}}{c} \frac{e^{ik|x - y|}}{|x - y|}\, d^3 y
+\end{equation}
+Вычислим $A^k$, а $A^0$ и напряжённости полей определим из условия Лоренца.
+Разложим член $e^{ikr}/r$:
+\begin{equation}
+	\frac{e^{ik|x - y|}}{|x - y|} = \sum_m \frac{(-1)^m}{m!}
+			\frac{\partial}{\partial x^{i_1}\!\!\!\!\!}\,\, \dots 
+				\frac{\partial}{\partial x^{i_m}\!\!\!\!\!}\,\,
+				\frac{e^{ikr}}{r}
+					y^{i_1} \dots y^{i_m}
+\end{equation}
+
+Тогда для $A^{\mu}$ имеем
+\begin{equation}
+	A_{\omega}^{k} = \sum_m \frac{(-1)^m}{m!}
+			\frac{\partial}{\partial x^{i_1}\!\!\!\!\!}\,\, \dots 
+				\frac{\partial}{\partial x^{i_m}\!\!\!\!\!}\,\,
+				\frac{e^{ikr}}{r}
+					\int \frac{j^k}{c} y^{i_1} \dots y^{i_m} \, d^3 y
+\end{equation}
+Выпишем первые три члена:
+\begin{equation}
+	A_{\omega}^{k} = \frac{e^{ikr}}{r} \int \frac{j^k}{c} \, d^3 y - 
+					\frac{\partial}{\partial x^{i}\!\!\!}\,\frac{e^{ikr}}{r} 
+								\int \frac{j^k}{c}y^i \, d^3 y + 
+					\frac{1}{2}\frac{\partial}{\partial x^{i}\!\!\!}\,
+					\frac{\partial}{\partial x^{j}\!\!\!}\,
+						\frac{e^{ikr}}{r} 
+								\int \frac{j^k}{c}y^iy^j \, d^3 y  
+\end{equation}
+Пользуясь сохранением заряда и интегрируя по частям, можно написать следующие равенства:
+\begin{equation}
+	{\mathbf d}^k = \int  \frac{j_0}{c} y^k\, d^3 x = \frac{i}{kc} \int j^{k}\, d^3 y
+\end{equation}
+\begin{equation}
+	D^{kl} = \int  \frac{j_0}{c} (3y^ky^l - \delta^{kl}r^2)\, d^3 y =
+			\frac{i}{kc} \int (3j^k y^l + 3j^l y^k - 2\delta_{kl}j^ay^a) d^3y
+\end{equation}
+Для магнитного момента можно написать
+\begin{equation}
+	\epsilon^{klm}M^{m} = \frac{1}{2c} \int j^k y^l - j^l y^k\, d^3 y
+\end{equation}
+Теперь вычислим магнитное поле.
+На расстояниях много больше длины волны волна почти плоская, поэтому можно дифференцировать
+только экспоненту.
+Получается
+\begin{equation}
+	A_{\omega}^{k} = \frac{e^{ikr}}{r} \left(\int \frac{j^k}{c} \, d^3 y - 
+					ik n^i\int \frac{j^k}{c}y^i \, d^3 y -
+					\frac{1}{2}k^2 n^i n^j\int \frac{j^k}{c}y^iy^j \, d^3 y + \dots\right)
+\end{equation}
+К интегралу во втором слагаемом можно безбоязненно прибавить слагаемое, пропорциональное
+$\delta^{ka}$ (это следует из калибровочной инвариантности). Поэтому вектор-потенциал
+можно переписать в виде
+\begin{equation}
+	A_{\omega}^{k} = \frac{e^{ikr}}{r} \left(-ik\mathbf{d}^k - \frac16k^2n^iD^{ik} -
+			ik\epsilon^{klm}n^lM^k - k^2 n_i n_j T^{kij} +  \dots\right)
+\end{equation}
+\begin{equation}
+	T^{kij} = \int \frac{j^k}{c}y^iy^j \, d^3 y
+\end{equation}
+Перейдём от $A^{\mu}_{\omega}$ к $A^{\mu}$.
+Тогда легко получается, что
+\begin{equation}
+	A^{k} = \frac{1}{cr}\left(\dot{\mathbf{d}}^k + \frac{1}{6c}n^i \ddot{D^{ik}} 
+								+ \epsilon^{klm}n^l\dot{M}^m
+								+ \frac{1}{2c}n_i n_j \ddot{T}^{kij} 
+								\right)
+\end{equation}
+И далее, для плоской волны 
+\begin{equation}
+	\vec{B} = -\frac{1}{c} \vec{n} \times \frac{\partial \vec{A}}{\partial t}
+\end{equation}
+\begin{multline}
+	B^i = -\frac{1}{c^2r} \left(\epsilon^{ijk}n^j\ddot{\mathbf{d}^k} \right. +
+						\frac{1}{6c}\epsilon^{ijk}n^jn^l\dddot{D^{kl}} + \\
+						+\left. n^i n^j \ddot{M}^j - \ddot{M}^i + 
+						\frac{1}{2c}\epsilon^{ijk}n^jn^a n^b \dddot{T^{kab}} \right)	
+\end{multline}
+Вектор Пойнтинга везде параллелен $\vec{n}$, а его модуль ---
+\begin{multline}
+	|\vec{S}| = \frac{c}{4\pi} |\vec{B}|^2 = \frac{1}{4\pi c^3 r^2}
+				\left(\epsilon^{ijk}n^j\ddot{\mathbf{d}^k} \right. +
+					\frac{1}{6c}\epsilon^{ijk}n^jn^l\dddot{D^{kl}} + \\
+					+n^i n^j \ddot{M}^j - \ddot{M}^i + 
+					\left.\frac{1}{2c}\epsilon^{ijk}n^jn^a n^b\dddot{T^{kab}}\right)^2	
+\end{multline}
+Полный поток энергии --- это интеграл $|\vec{S}|$ по сфере, при этом будем учитывать только
+слагаемые порядка до $k^2$.
+Ответ получается таким:
+\begin{equation}
+	W = \frac{2\ddot{\mathbf{d}^2}}{3c^3} + 
+			\frac{\dddot{D^{kl}}\dddot{D^{kl}}}{180c^5} + \frac{2\ddot{M^2}}{3c^3} + 
+			\frac{4}{15c^4} \left( \dddot{T^{kaa}} \ddot{\mathbf{d}}^k -
+						\frac{1}{2} \dddot{T^{aak}}\ddot{\mathbf{d}}^k \right )
+\end{equation}
+\end{document}

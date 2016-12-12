@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Половина одномерной цепочки в подходе сильной связи}
+\author{Евгений Аникин}
+
+\begin{document}
+\maketitle
+\section{Функция Грина одномерной цепочки}
+Пусть в гамильтониане сильной связи есть только переходы между соседними атомами.
+Тогда энергия состояния с квазиимпульсом $p$ --- 
+\begin{equation}
+	\epsilon_p = E + 2C\cos{pa}
+\end{equation}
+Гамильтониан же выглядит так:
+\begin{equation}
+	\hat{H} = \sum_n Ew_n^\dagger w_n + Cw_{n+1}^\dagger w + Cw_{n-1}^\dagger w
+\end{equation}
+Для функции Грина в этом случае может быть получена явная формула.
+\begin{equation}
+	G_0^R(\omega, m,n) = 
+			\frac{1}{N}\sum_p  \frac{e^{-ip(R_m - R_n)}}{\omega - \epsilon_p + i\delta} = 
+			\int_{-\pi}^{\pi} 
+				\frac{dk}{2\pi} \frac{e^{-ik(m-n)}}{\omega - E - 2C \cos{k} + i\delta}
+\end{equation}
+Последний интеграл берётся с помощью вычетов, в конечном итоге получаем ответ:
+\begin{equation}
+	G_0^R(\omega, m,n) = \frac{e^{-(m-n)\kappa}}{2C\sinh{\kappa}}, \qquad
+			\cosh \kappa = \frac{\omega  - E}{C}
+\end{equation}
+\section{Примесь с бесконечной энергией}
+Добавим к гамильтониану возмущение
+\begin{equation}
+	V = \Delta E w_0^\dagger w_0
+\end{equation}
+Функция Грина в этом случае ---
+\begin{equation}
+	G^R(\omega, m,n) = G^R_0(\omega, m,n) + 
+		\frac{\Delta EG^R_0(\omega, m,0)G^R_0(\omega, 0, n)}{1 - \Delta E G^R_0(\omega,0,0)}
+\end{equation}
+Если $\Delta E$ очень велика, то получится
+\begin{multline}
+	G^R(\omega, m,n) = G^R_0(\omega, m,n) - 
+		\frac{G^R_0(\omega, m,0)G^R_0(\omega, 0, n)}{G^R_0(\omega,0,0)} = \\
+		= \frac{e^{-|m-n|\kappa} - e^{-|m|\kappa- |n|\kappa}}{2C\sinh \kappa}
+\end{multline}
+Видно, что $G^R$ отлична от нуля только в случае, если $m$ и $n$ одного знака. Это значит, 
+что левая и правая половины цепочки стали отделены друг от друга.
+\section{Разорванная связь}
+Пусть теперь возмущение
+\begin{equation}
+	V = -C(w_1^\dagger w_0 + w_0^\dagger w_1)
+\end{equation}
+Это приведёт к разрыву цепочки. Уравнение Дайсона для такого возмущения ---
+\begin{equation}
+	\mathcal{G}(\omega, m,n) = \mathcal{G}_0(\omega, m,n) - 
+			C\mathcal{G}_0(\omega, m, 0) \mathcal{G}(\omega, 1, n) -
+			C\mathcal{G}_0(\omega, m, 1) \mathcal{G}(\omega, 0, n)
+\end{equation}
+Такому же уравнению удовлетворяет и запаздывающая функция Грина. 
+\begin{multline}
+	G^R(\omega, m,n) = G^R_0(\omega, m,n) - 
+			CG^R_0(\omega, m, 0) G^R(\omega, 1, n) - \\
+			-CG^R_0(\omega, m, 1) G^R(\omega, 0, n)
+\end{multline}
+Так как левая и правая части цепочки теперь никак между собой не связаны, должно быть
+\begin{equation}
+	\label{condition}
+	G^R(\omega, 0, 1) = 0
+\end{equation}
+Пользуясь этим условием, легко решить уравнение Дайсона. В процессе решения последовательно
+получаются выражения
+\begin{equation}
+	G^R(\omega,0,0) =G^R(\omega,1,1) = \frac{e^{-\kappa}}{C}
+\end{equation}
+\begin{equation}
+	G^R(\omega, n,1) = \frac{e^{-\kappa|n-1|} - e^{-(|n|+1)\kappa}}{2C\sinh\kappa}
+\end{equation}
+\begin{equation}
+	G^R(\omega, n,0) = \frac{e^{-\kappa|n|} - e^{-(|n-1|+1)\kappa}}{2C\sinh\kappa}
+\end{equation}
+\begin{equation}
+		G^R(\omega,m,n)= \frac{e^{-|m-n|\kappa} - e^{-(m+n)\kappa}}{2C\sinh \kappa}
+			\quad \mbox{для} \quad m,n > 0
+\end{equation}
+\begin{equation}
+		G^R(\omega,m,n)= \frac{e^{-|m-n|\kappa} - e^{-(|m-1|+|n-1|)\kappa}}{2C\sinh \kappa}
+			\quad \mbox{для} \quad m,n < 0
+\end{equation}
+\begin{equation}
+		G^R(\omega,m,n)= 0
+			\quad \mbox{для } m,n \mbox{ по разные стороны от нуля}
+\end{equation}
+Функция Грина получается точно такая же, как в предыдущем параграфе. 
+\end{document}

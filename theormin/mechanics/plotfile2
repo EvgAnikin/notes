@@ -1,0 +1,25 @@
+set terminal jpeg
+set output "overv.jpg"
+
+epsilon = 0.1
+g = 1
+R = 1
+lambda = 0.5
+
+set xlabel "v^2/gR"
+set ylabel "k"
+
+numerator(v0) = pi*sqrt(v0**2 + epsilon*(g*R + v0**2)/(lambda + 1))
+argument(v0) = 2*epsilon*(g*R + v0**2)/((lambda + 1)*v0**2 + epsilon*(g*R + v0**2))
+denominator(v0) = 2*EllipticK(sqrt(argument(v0)))
+overv(v0) = numerator(v0)/denominator(v0)
+
+k(v0) = epsilon/3*abs(2*g*R - v0**2)/sqrt((g*R)**2 - (2*epsilon*v0**2)**2)
+
+set parametric
+set dummy t
+set trange[0:0.6]
+set xrange[0:0.3]
+set yrange[0.055:0.065]
+set title "epsilon = 0.1"
+plot overv(t)**2, k(t) title "Колесо проскальзывает"

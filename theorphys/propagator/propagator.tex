@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\p}{\partial}
+
+\title{Фейнмановские пропагаторы}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+\section{Скалярное поле}
+Оператор поля записывается через операторы рождения и уничтожения так:
+\begin{equation}
+\phi = \int\frac{d^3 p}{(2\pi)^3} \frac{1}{\sqrt{2E_p}}
+	(a_p e^{-ipx} + a^{\dagger}_p e^{ipx})
+\end{equation}
+Фейнмановский пропагатор по определению --- это следующее выражение:
+\begin{equation}
+	D(x - y) = \langle 0 | \mathrm{T} \phi(x)^{\dagger} \phi(y) | 0 \rangle
+\end{equation}
+Пусть сначала $x_0 > y_0$. Тогда 
+\begin{equation}
+	D(x - y) = \int\frac{d^3 p\, d^3 p'}{(2\pi)^6}\frac{e^{-ipx + ip'y}}{\sqrt{2E_p 2E_{p'}}}
+				\langle 0 | a_p a_{p'}^{\dagger} | 0 \rangle = 
+					\int\frac{d^3 p}{(2\pi)^3} \frac{e^{-iE_pt + i(\vec{p} \vec{x})}}{2E_p}
+\end{equation}
+В противном случае $x$ и $y$ меняются местами. Это приводит к тому, что меняется знак при 
+$iE_pt$.
+Теперь нужно найти импульсное представление пропагатора.
+После пространственного фурье-преобразования пропагатор выглядит так:
+\begin{equation}
+	D(t, \vec{p}) = \frac{e^{-iE_p|t|}}{2E_p}	
+\end{equation}
+Осталось сделать временное:
+\begin{multline}
+	D(p) = \int_{-\infty}^{+\infty} dt\, e^{ip_0t} \frac{e^{-iE_p|t|}}{2E_p} = \\
+	=	\int_{0}^{+\infty} dt\, \frac{e^{i(p_0 - E_p)t}}{2E_p} + 
+		\int_{0}^{+\infty} dt\, \frac{e^{-i(p_0 + E_p)t}}{2E_p} = \\
+		= \frac{1}{2E_p} \left[ \frac{1}{-i(p_0 - E_p)  + \delta} + 
+				\frac{1}{i(p_0 + E_p) + \delta}\right]
+\end{multline}
+Ура! Последнее --- это и есть нужное выражение для пропагатора. Окончательно:
+\begin{equation}
+	D(p) = \frac{i}{p_0^2 - E_p^2 + i\epsilon} = \frac{i}{p^2 - m^2 + i\epsilon}
+\end{equation}
+\section{Массивное векторное поле}
+Действие:
+\begin{equation}
+S = \int d^4x \left[  -\frac14 F_{\mu\nu} F^{\mu\nu}  \right.
+		\left.	+ \frac{m^2}{2} A_{\nu}A^{\nu} \right]
+\end{equation}
+Интегрируя по частям, получим
+\begin{equation}
+S = \frac12\int d^4 x\,  A^{\mu}
+	 (g_{\mu\nu}(\p_{\alpha}\p^{\alpha} + m^2) - \p_{\mu}\p_{\nu}) A^{\nu}
+\end{equation}
+Пропагатор --- это вот что:
+\begin{equation}
+D^{\mu\nu}(x - y) = \frac{\int \mathcal{D}A\, A^{\mu}(x)A^{\nu}(y)\exp{iS}}
+					{\int \mathcal{D}A\,\exp{iS}}
+\end{equation}
+Нужно найти матричный элемент оператора, обратного к оператору в скобках. Это и будет, с
+точностью до множителя, пропагатор.
+В импульсном представлении уравнение на пропагатор выглядит так:
+	\begin{equation}
+		i(g_{\mu\nu}(k^2 - m^2) - k_{\mu}k_{\nu})G^{\nu\rho} = \delta_{\mu}^{\rho}
+	\end{equation}
+Ответ:
+	\begin{equation}
+		G^{\nu\rho} = \frac{-ig^{\nu\rho}}{k^2 - m^2} + 
+						\frac{ik^{\nu} k^\rho}{m^2(k^2 - m^2)}
+	\end{equation}
+Нужно ещё вспомнить, как повёрнут контур интегрирования по времени, и соответственно дописать
+$i\epsilon$  в нужное место.
+
+\section{Функция Грина системы ферми--частиц}
+Теперь обратимся к твёрдому телу. Для многочастичных систем вводят операторы поля:
+	\begin{equation}
+		\Psi(t,x) = \frac{1}{\sqrt{V}}\sum_p e^{-iE_pt + ipx}a_p
+	\end{equation}
+Функция Грина определяется так:
+	\begin{equation}
+		G(t - t', x - x') = -i\langle \Omega |\mathrm{T} 
+					\Psi(t,x) \Psi^\dagger (t', x') | \Omega \rangle
+	\end{equation}
+Отличие от предыдущего определения (из Пескина--Шрёдера) только в множителе $-i$.
+$|\Omega\rangle$ --- основное состояние системы из $N$ частиц.
+Подставляя операторы поля в определение, получим
+	\begin{multline}
+		\mathrm{T}\Psi(t,x) \Psi^\dagger (t', x')=\\
+			 =\frac{1}{V}\sum_{p,p'} e^{-i E_p t + iE_{p'} t' + ipx - ip'x'} 
+				\left\{
+				\begin{array}{cl}
+					a_p a^{\dagger}_{p'}, & \mbox{если } t > t' \\
+					-a^{\dagger}_{p'} a_p, & \mbox{если } t < t' 
+				\end{array}
+				\right.
+	\end{multline}
+	\begin{equation}
+		G(t - t', x - x') = -i\frac{1}{V}\sum_p e^{-iE_p(t-t') + ip(x-x')}
+				\left\{
+				\begin{array}{cl}
+					1-n_p, & \mbox{если } t > t' \\
+					n_p,   & \mbox{если } t < t' 
+				\end{array}
+				\right.
+	\end{equation}
+	Тогда в представлении $p,t$ функция Грина выглядит так:
+	\begin{equation}
+		G(t,p) = e^{-iE_pt}
+				\left\{
+				\begin{array}{cl}
+					1-n_p, & \mbox{если } t > 0 \\
+					n_p,   & \mbox{если } t < 0 
+				\end{array}
+				\right.
+	\end{equation}
+	Чтобы найти функцию Грина в частотно--импульсном представлении, нужно сделать ещё
+	одно фурье--преобразование.
+	Ответ получается таким:
+	\begin{equation}
+		G(\omega, p) = \frac{1-n_p}{\omega - E_p + i\epsilon} + 
+						\frac{n_p}{\omega - E_p - i\epsilon}
+	\end{equation}	
+	\section{Вопрос про спектр возбуждений}
+	В Абрикосове--Горькове, в параграфе про аналитические свойства
+	функций Грина предполагается, что c точностью $1/N$ ($N$ --- число 
+	частиц) 
+\end{document}

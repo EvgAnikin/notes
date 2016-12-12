@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Локализованное состояние\\ в подходе сильной связи}
+\author{Евгений Аникин}
+
+\begin{document}
+\maketitle
+\section{Более аккуратное вычисление волновой функции связанного состояния}
+В прошлом листке были получены два выражения для функции Грина:
+\begin{equation}
+	\label{solution}
+	G^R(\omega, m,n) = G^R_0(\omega, m,n) + 
+		\frac{\Delta EG^R_0(\omega, m,0)G^R_0(\omega, 0, n)}{1 - \Delta E G^R_0(\omega,0,0)}
+\end{equation}
+\begin{equation}
+	\label{general}
+	G^R(\omega, m,n) = \sum_\lambda \psi_\lambda(m)\psi_\lambda^{*}(n) 
+			\frac{1}{\omega - E_\lambda + i\delta}
+\end{equation}
+Чтобы найти волновую функцию связанного состояния, нужно разложить (\ref{solution}) около
+$\omega = E_\Lambda$. Положим $\omega = E_\Lambda + \Delta \omega - i\delta$.
+Разложим знаменатель второго слагаемого в (\ref{solution}), пользуясь тем, что
+$\Delta E G_0^R(E_\Lambda, 0,0) = 1$. Получим:
+\begin{multline}
+	G^R(\omega, m,n) = -\frac{G^R_0(E_\Lambda, m,0)G^R_0(E_\Lambda, 0,n)}
+						{\frac{\partial G^R_0}{\partial \omega} (E_\Lambda,0,0)}
+							\frac{1}{\omega - E_\Lambda + i\delta} + \\
+						+ \mbox{нечто, регулярное при } \omega = E_\Lambda + i\delta
+\end{multline}
+Отсюда легко можно получить, что
+\begin{equation}
+	\label{wavefunction}
+	\psi_\Lambda(n) = \frac{G_0^R(E_\Lambda, n,0)}
+					{\sqrt{-\frac{\partial G_0^R}{\partial \omega}(E_\Lambda, 0,0)}}
+\end{equation}
+
+\subsection{Слабосвязанное состояние в трёхмерной решётке}
+Числитель (\ref{wavefunction}) был найден в предыдущем листке, ответ для числителя такой:
+\begin{equation}
+	G_0^R(E_\Lambda, n,0) = \frac{m e^{-pR_n}}{2\pi \nu R_n},
+		\text{ где } \nu = \frac{N}{V}
+\end{equation}
+Теперь нужно вычислить знаменатель.
+\begin{equation}
+	\frac{\partial G_0^R}{\partial \omega}(\omega, 0, 0) = -\frac{1}{\nu} 
+		\int \frac{d^3 p}{(2\pi)^3} \frac{1}{(\omega - \epsilon_p + i\delta)^2}
+\end{equation}
+Здесь интеграл тоже можно распространить до бесконечности и взять в полярных координатах.
+В результате имеем
+\begin{equation}
+	\frac{\partial G_0^R}{\partial \omega}(\omega, 0, 0) = -\frac{m^2}{2\pi\nu p_0}
+\end{equation}
+Волновая функция --- 
+\begin{equation}
+	\psi_\Lambda(n) = \sqrt{\frac{p_0}{2\pi \nu}} \frac{e^{-p_0 R_n}}{R_n}
+\end{equation}
+Видно, что она нормирована на единицу, как это и должно быть.
+\subsection{Сильносвязанное состояние}
+Пусть теперь $E_\Lambda$ лежит далеко от зоны, а $\epsilon_p \sim 0$. Тогда
+\begin{equation}
+	G_0^R(E_\Lambda, n, 0) = 
+	\frac{1}{\nu}
+		\int \frac{d^d p}{(2\pi)^d}\, \frac{e^{ipR_n}}{E_\Lambda - \epsilon_p}
+	\approx \frac{1}{\nu}\int \frac{d^d p}{(2\pi)^d}\, 
+			\frac{e^{ipR_n}}{E_\Lambda}\left(1 + \frac{\epsilon_p}{E_\Lambda}\right)
+\end{equation}
+При больших $\omega$ 
+\begin{equation}
+	G_0^R(\omega,0,0) \approx \frac{1}{\omega},
+\end{equation}
+поэтому
+\begin{equation}
+	\frac{\partial G_0^R}{\partial \omega}(E_\Lambda, 0, 0) = -\frac{1}{E_\Lambda^2}
+\end{equation}
+Пользуясь формулой \ref{wavefunction}, получим
+\begin{equation}
+	\psi_\Lambda(n) \approx 
+	\frac{1}{\nu}\int \frac{d^d p}{(2\pi)^d}\, 
+			\left(1 + \frac{\epsilon_p}{E_\Lambda}\right)e^{ipR_n}
+\end{equation}
+Тогда $\psi_\Lambda(0) \approx 1$, а 
+$\psi_\Lambda(n) \approx \frac{C_n}{E_\Lambda}$, где $C_n$ --- коэффициенты из гамильтониана 
+сильной связи.
+ \end{document}

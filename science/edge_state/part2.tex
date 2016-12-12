@@ -1,0 +1,121 @@
+\section{Цепочка с разными связями}
+\subsection{Бесконечная в обе стороны цепочка}
+Рассмотрим цепочку из атомов, где связи между атомами чередуются по величине.
+\begin{equation}
+	H = \sum_n t_1(a_n^\dagger b_n + a_n b_n^\dagger) + 
+		t_2 (a_{n+1}^\dagger b_n + a_{n+1} b_n^\dagger)
+\end{equation}
+После такого же преобразования Фурье, как и в предыдущем случае, гамильтониан примет вид
+\begin{equation}
+	H = \sum_p 
+			(t_1 e^{-\frac{ipa}{2}} + t_2 e^{\frac{ipa}{2}}) a_p^\dagger b_p + 
+			(t_1 e^{\frac{ipa}{2}} + t_2 e^{-\frac{ipa}{2}}) a_p b_p^\dagger
+\end{equation}
+Собственные значения гамильтониана ---
+\begin{equation}
+	E_p^{1,2} = \pm \epsilon_p = \pm|t_1 e^{\frac{ipa}{2}} + t_2 e^{-\frac{ipa}{2}}| = 
+		\pm\sqrt{t_1^2 + t_2^2 + 2t_1t_2 \cos{pa}}
+\end{equation}
+Введём обозначение 
+\begin{equation}
+	e^{i\phi} = \frac{t_1 e^{-\frac{ipa}{2}} + t_2 e^{\frac{ipa}{2}}}
+				{\sqrt{t_1^2 + t_2^2 + 2t_1t_2 \cos{pa}}}
+\end{equation}
+Тогда гамильтониан диагонализуется преобразованием
+\begin{equation}
+	\left(
+	\begin{matrix}
+		a_p \\
+		b_p
+	\end{matrix}
+	\right)
+	=
+	\frac12
+	\left(
+	\begin{matrix}
+		1 & -e^{i\phi}	\\
+		e^{-i\phi} & 1
+	\end{matrix}
+	\right)
+	\left(
+	\begin{matrix}
+		x_p \\
+		y_p
+	\end{matrix}
+	\right)
+\end{equation}
+Отсюда получаются выражения для функций Грина в импульсном представлении:
+\begin{equation}
+	\label{gaa}
+	G^R_0 (\omega, p, A, A) =  G^R_0 (\omega, p, B, B) = \frac{1}{2}\left(
+		\frac{1}{\omega - \epsilon_p + i\delta} + 
+					\frac{1}{\omega + \epsilon_p + i\delta}\right)
+\end{equation}
+\begin{equation}
+	G^R_0 (\omega, p, A, B) = \frac12 \left(\frac{e^{i\phi}}{\omega - \epsilon_p + i\delta} -
+						\frac{e^{i\phi}}{\omega + \epsilon_p + i\delta} \right)
+\end{equation}
+\begin{equation}
+	G^R_0 (\omega, p, B, A) = \frac12 \left(\frac{e^{-i\phi}}{\omega - \epsilon_p + i\delta} -
+						\frac{e^{-i\phi}}{\omega + \epsilon_p + i\delta} \right)
+\end{equation}
+Здесь аргументы $A$, $B$ соответствуют операторам $a_p$ и $b_p$. 
+\subsection{Полубесконечная цепочка}
+Как и в прошлый раз, введём возмущение $V = \Delta E a_0^\dagger a_0$, где $\Delta E$ очень велико.
+Это приведёт к совершенно такому же, как и раньше, уравнению Дайсона. Решение уравнения Дайсона ---
+\begin{multline}
+	G^R(\omega, m, s, n, s') = 
+		G^R_0(\omega, m,s,n,s') - 
+		\frac{G^R_0(\omega, m, s, 0, A)G^R_0(\omega, 0, A, n, s')}{G^R_0(\omega, 0, A, 0, A)},\\
+		s,s' = A,B
+\end{multline}
+Уровни энергии даются, как видно, нулями функции $G^R_0(\omega, 0,A,0,A)$, а волновая функция
+связанного состояния пропорциональна $G^R_0(\omega, m,s,0,A)$.
+
+В нашем случае, как нетрудно убедиться, этот уровень энергии --- $E = 0$. Действительно, подставим 
+$\omega = 0$ в (\ref{gaa}). Получается
+\begin{equation}
+	G^R_0 (\omega, p, A, A) = 
+		-\frac{1}{2\epsilon_p} + 
+					\frac{1}{2\epsilon_p} = 0
+\end{equation}
+Отсюда следует, что функции Грина в узельном представлении, 
+составленные из операторов $a$, обращаются в нуль для всех $m,n$, и, таким образом, волновая 
+функция связанного состояния равна нулю во всех узлах $a$ (на мой взгляд, это довольно
+удивительно).
+
+Чтоы найти волновую функцию в узлах $b$, вычислим функцию Грина $G_0^R(0,m,B,0,A)$.
+\begin{multline}
+	G_0^R(0,m,B,0,A) = -\int_{-\pi}^{\pi} \frac{dk}{2\pi} 
+			\frac{e^{-ik(m + \frac12)}e^{-i\phi}}{\epsilon_p} = \\
+			= -\int_{-\pi}^{\pi} \frac{dk}{2\pi} 
+			\frac{t_1e^{-ikm} + t_2e^{-ik(m+1)}}{t_1^2 + t_2^2 + 2t_1t_2 \cos{k}} 
+\end{multline}
+Сделаем сдвиг переменной интегрирования $k \to k + \pi$. Получится
+\begin{equation}
+	G_0^R(0,m,B,0,A) = (-1)^{m+1}\int_{-\pi}^{\pi} \frac{dk}{2\pi}
+		\frac{t_1e^{-ikm} - t_2e^{-ik(m+1)}}{t_1^2 + t_2^2 - 2t_1t_2 \cos{k}} 
+\end{equation}
+Последний интеграл берётся, как и в прошлом листке. Полюс определяется уравнением
+\begin{equation}
+	\cos{k} = \frac12 \left(\frac{t_1}{t_2} + \frac{t_2}{t_1}\right)
+\end{equation}
+Для определённости будем считать, что $t_1 > t_2$. Тогда 
+\begin{equation}
+	k = \pm i\log\frac{t_1}{t_2}
+\end{equation}
+После несложных преобразований получим
+\begin{equation}
+	G_0^R(0,m,B,0,A) =
+	\left\{
+	\begin{matrix}
+		(-1)^{m+1} \frac{t_2^m}{t_1^{m+1}} \quad \mbox{при} \quad m \ge 0 \\
+		0 \quad \mbox{при} \quad m < 0
+	\end{matrix}
+	\right.
+\end{equation}
+Получается, что при $t_1 > t_2$ краевое состояние есть только у правой половины цепочки.
+Его волновая функция ---
+\begin{equation}
+	\psi(n, B) = \sqrt{1 - \left(\frac{t_2}{t_1}\right)^2} \left(\frac{t_2}{t_1}\right)^n
+\end{equation}

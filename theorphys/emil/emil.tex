@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+\DeclareMathOperator{\ln}{ln}
+
+\title{Минимум свободной энергии}
+\author{Anikin Evgeny, 128}
+
+\begin{document}
+\maketitle
+По определению,
+$$
+	F = U - TS,
+$$
+$$
+	U = \sum p_n E_n,
+$$
+$$
+	S = -\sum p_n \ln{p_n},
+$$
+где суммирование ведётся по всем возможным состояниям системы (например, по энергетическим
+уровням). Внутренняя энергия, энтропия и свободная энергия определены для произвольного
+распределения $\{p_n\}$. 
+
+Поставим задачу минимизировать $F$ по всем возможным распределениям при фиксированном $T$.
+Дополнительное техническое условие заключается ещё в том, что $\sum p_n = 1$. Воспользуемся
+методом множителей Лагранжа:
+$$
+	\frac{\partial}{\partial p_n} \sum p_k (E_k + T \ln{p_k}) + \lambda \sum p_k = 0
+$$
+\end{document}

@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\p}{\partial}
+
+\title{Адиабатический инвариант}
+\author{Anikin Evgeny, 128}
+
+\begin{document}
+\maketitle
+Пусть гамильтонова система описывается одной координатой $q$. Докажем, что величина
+\begin{equation}
+	I = \frac{1}{2\pi} \oint p\,dq
+\end{equation}
+не меняется при медленном изменении гамильтониана во времени. 
+
+\begin{equation}
+	\frac{dI}{dt} = \frac{\partial I}{\partial E} \dot{E} + \frac{\partial I}{\partial t};
+\end{equation}
+\begin{equation}
+	\frac{dE}{dt} = \frac{\partial H}{\partial t},
+\end{equation}
+\begin{equation}
+	\frac{\partial I}{\partial E} = \oint \frac{\partial p}{\partial E} \,dq
+\end{equation}
+В последнем равенстве частная производная берётся при постояной координате.
+\end{document}

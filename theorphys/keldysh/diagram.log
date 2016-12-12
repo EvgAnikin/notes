@@ -1,0 +1,18 @@
+This is METAFONT, Version 2.718281 (TeX Live 2013/Debian) (base=mf 2015.10.3)  29 JAN 2016 12:25
+**\mode=laserjet; input diagram
+(diagram.mf (/usr/share/texmf/metafont/feynmf/feynmf.mf)
+:1:\fmfL(66.88348,-4.43307,lt){$t'-$}%
+:1:\fmfL(39.98944,-6,t){$t_1+$}%
+:1:\fmfL(13.09543,-4.43307,rt){$t-$}% [1] ) 
+Here is how much of METAFONT's memory you used:
+ 673 strings out of 5274
+ 7597 string characters out of 69995
+ 31141 words of memory out of 5000000
+ 1385 symbolic tokens out of 9500
+ 14i,67n,38r,28p,123b stack positions out of 300i,300n,1000r,150p,200000b
+ 
+(You used 2w,2h,1d,1i,0l,0k,0e,0p metric file positions
+  out of 256w,16h,16d,64i,15000l,2500k,256e,60p)
+
+Font metrics written on diagram.tfm.
+Output written on diagram.300gf (1 character, 1460 bytes).

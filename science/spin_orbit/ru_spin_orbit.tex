@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Модель сильной связи для электронов в $p$ зоне}
+\author{Anikin Evgeny, 128}
+
+\begin{document}
+\maketitle
+
+Ниже нам понадобятся коэффициенты Клебша--Гордана для случая $l = 1$, 
+$s = \frac{1}{2}$. Пусть $a_{j,m}$ --- операторы уничтожения состояний с полным моментом $j$
+и проекцией $m$ ($j \in \{3/2, 1/2$\}), а $b_{m, s}$ --- состояние с проекцией орбитального
+момента $m$ ($j = 1$) и проекцией спина $s$.
+\begin{equation}
+	\begin{split}
+		a_{\frac 32, \frac 32} &= b_{1,\frac 12}\\
+		a_{\frac 32, \frac 12} &= \sqrt{\frac 13}b_{1, -\frac 12} 
+		    + \sqrt{\frac 23} b_{0, \frac 12}\\
+		a_{\frac 32, -\frac 12} &= \sqrt{\frac 23} b_{0, -\frac 12} +
+		    	\sqrt{\frac 13}b_{-1, \frac 12} \\
+		a_{\frac 32, -\frac 32} &= b_{-1,-\frac 12}\\
+		a_{\frac 12, \frac 12} &= \sqrt{\frac 23} b_{1, -\frac 12} -
+		    	\sqrt{\frac 13}b_{0, \frac 12} \\
+		a_{\frac 12, -\frac 12} &= -\sqrt{\frac 13}b_{0, -\frac 12} 
+			+ \sqrt{\frac 23} b_{-1, \frac 12}\\
+	\end{split}
+\end{equation}
+Выражая $b$ operators using $p_x$, $p_y$ and $p_z$, we immediately obtain
+\begin{equation}
+	\label{transform1}
+	\begin{gathered}
+		a_{\frac{3}{2}, \frac{3}{2}} = 
+			\sqrt{\frac{1}{2}} \left(p_{x,\frac{1}{2}} - i p_{y,\frac{1}{2}}\right)\\
+		a_{\frac{3}{2}, \frac{1}{2}} = 
+			\sqrt{\frac{1}{6}} \left(p_{x,-\frac{1}{2}} - i p_{y,-\frac{1}{2}}\right) 
+				+ \sqrt{\frac{2}{3}} p_{z, \frac{1}{2}}\\
+		a_{\frac{3}{2}, -\frac{1}{2}} = 
+			\sqrt{\frac{2}{3}} p_{z, -\frac{1}{2}}+
+				\sqrt{\frac{1}{6}} \left(p_{x,\frac{1}{2}} + i p_{y,\frac{1}{2}}\right) \\
+		a_{\frac{3}{2}, -\frac{3}{2}} = 
+			\sqrt{\frac{1}{2}} \left(p_{x,-\frac{1}{2}} + i p_{y,-\frac{1}{2}}\right)\\
+	\end{gathered}
+\end{equation}
+\begin{equation}
+	\label{transform2}
+	\begin{gathered}
+		a_{\frac{1}{2}, \frac{1}{2}} = 
+			\sqrt{\frac{1}{3}}\left(p_{x, -\frac{1}{2}} - ip_{y,-\frac{1}{2}}\right) - 
+				\sqrt{\frac{1}{3}} p_{z,\frac{1}{2}}\\
+		a_{\frac{1}{2}, -\frac{1}{2}} = 
+			-\sqrt{\frac{1}{3}} p_{z,-\frac{1}{2}} + 
+				\sqrt{\frac{1}{3}}\left(p_{x, \frac{1}{2}} + ip_{y,\frac{1}{2}}\right)
+	\end{gathered}
+\end{equation}
+As \eqref{transform1}, \eqref{transform2} define a unitary transformation, $p$ can be easily
+expressed via $a$.
+
+The Hamiltonian is 
+\begin{multline}
+	H_{\mathrm{lattice}} = -\Delta E_{SO} 
+			a_{\frac{1}{2}, -\frac{1}{2}}^\dagger a_{\frac{1}{2}, -\frac{1}{2}}
+			+\\
+			+2 (t_{\parallel} \cos{p_x} + t_{\perp} \cos{p_y})
+				p_{x,\frac 12}^\dagger p_{x,\frac 12}+\\
+			+2(t_{\perp} \cos{p_x} + t_{\parallel} \cos{p_y})
+				p_{y,\frac 12}^\dagger p_{y,\frac 12} +\\
+			+2t_{\perp}( \cos{p_x} + \cos{p_y})
+				p_{z,-\frac 12}^\dagger p_{z,-\frac 12} 
+\end{multline}
+\end{document}

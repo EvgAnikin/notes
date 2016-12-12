@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+
+\newtheorem{theorem}{Теорема}
+
+\title{Длина свободного пробега}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+В этом листке я ищу длину свободного пробега частиц в одномерной цепочке с хаотически 
+расположенными примесями. Гамильтониан невозмущенной цепочки --- 
+\begin{equation}
+	\label{chain}
+	\hat{H} = \sum_n Ea_n^\dagger a_n + Ca_{n+1}^\dagger a + Ca_{n-1}^\dagger a
+\end{equation}
+\section{Полевой подход}
+Пусть к камильтониану (\ref{chain}) добавлен случайный потенциал 
+$\hat{U} = \sum_k U(k) a_k^\dagger a_k$, причём 
+$\langle U(k) U(l)\rangle = \epsilon^2\delta_{kl}$. Тогда несложно показать, что в самом
+низком порядке
+\section{''Общефизический`` подход}
+Рассмотрим сначала рассеяние плоской волны с квазиимпульсом $k$ на одиночной примеси,
+которой соответствует возмущение $\Delta E a_0^\dagger a_0$.
+Коэффициент отражения,
+как нетрудно показать, равен
+\begin{equation}
+	R(p) = \frac{\Delta E^2}{\Delta E^2 + 4t^2 \sin^2{k}}
+\end{equation}
+Пусть концентрация примесей --- $n$. Тогда длина свободного пробега ---  
+$\lambda^{-1} = R(p)n$. 
+Вместо концентрации примесей и величины $\Delta E$ удобно ввести средний квадрат 
+хаотического потенциала:
+\begin{equation}
+	\epsilon^2 = \langle \Delta E^2 \rangle \approx n\Delta E^2
+\end{equation}
+Групповая скорость электронов --- $v = -2t\sin k$. 
+Получается формула
+\begin{equation}
+	\lambda = \frac{\Delta E^2 + v^2}{\epsilon^2} \approx \left(\frac{v}{\epsilon}\right)^2
+\end{equation}
+\end{document}

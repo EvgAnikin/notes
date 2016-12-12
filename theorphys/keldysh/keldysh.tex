@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+\usepackage{feynmf}
+
+\newcommand{\p}{\partial}
+
+\title{Техника Келдыша}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+\section{Всякая всячина}
+Утверждение, которое вызвало у меня вопросы, следующее:
+\begin{equation}
+	\Sigma^{++} + \Sigma^{--} + \Sigma^{+-} + \Sigma^{-+} = 0
+\end{equation}
+Здесь $\Sigma$ --- это собственно--энергетическая часть. Для определённости
+будем считать, что рассматривается система из фермионов с парным 
+взаимодействием.
+
+Для функций Грина аналогичное утверждение имеет вид
+\begin{equation}
+	G^{++} + G^{--} = G^{+-} + G^{-+} 
+\end{equation}
+Доказательство следует из следующего факта:
+\begin{equation}
+	G^{--}(t,t') = G^{+-}(t,t') \quad \mbox{при } t > t'
+\end{equation}
+\begin{equation}
+	G^{++}(t,t') = G^{-+}(t,t') \quad \mbox{при } t < t'
+\end{equation}
+На самом деле такие же утверждения можно сделать и для каждой диаграммы,
+входящей в функцию Грина или собственно--энергетическую часть.
+
+Для определённости рассмотрим какую--нибудь диаграмму:
+
+\begin{figure}[h]	
+	\centering
+	\begin{fmffile}{diagram}
+		\begin{fmfgraph*}(80,50)
+			\fmfright{i,if}
+			\fmfleft{o,of}
+
+			\fmf{plain,tension=10}{i,a}
+			\fmf{electron,tension=4}{a,b}
+			\fmf{electron,tension=4}{b,c}
+			\fmf{plain,tension=10}{c,o}
+
+			\fmffreeze
+			\fmf{phantom,tension=1}{if,u}
+			\fmf{phantom,tension=0.4}{u,v,w}
+			\fmf{phantom,tension=1}{w,of}
+
+			\fmf{photon,tension=0.5}{a,u}
+			\fmf{photon,tension=0.5}{v,b}
+			\fmf{photon,tension=0.5}{c,w}
+			\fmffreeze
+			\fmf{electron,right=0.4}{u,w}
+			\fmf{electron,right=0.2}{w,v}
+			\fmf{electron,right=0.2}{v,u}
+
+			\fmflabel{$t'-$}{a}
+			\fmflabel{$t-$}{c}
+			\fmflabel{$t_1+$}{b}
+			
+		\end{fmfgraph*}
+	\end{fmffile}
+	\caption{Вклад в собственно--энергетическую часть}
+\end{figure}
+Рассмотрим выражение, соответствующее такой диаграмме, с фиксированными
+внутренними временами. Выберем максимальное из всех времён $t$, $t'$, $t_i$.
+\paragraph{Случай 1}
+Максимальное время --- $t_k$, то есть внутреннее время. Это значит, что 
+если мы изменим знак при этой вершине, то поменяет знак всё выражение.
+Так как по знакам производится суммирование, эти выражения сократят друг
+друга. Значит, обозначенная область интегрирования по временам не вносит
+вклада в собственно--энергетическую часть.
+\paragraph{Случай 2}
+Максимальное время --- $t$ или $t'$. Тогда при этом времени можно сменить
+знак. 
+
+В результате получается ровно то, что требовалось:
+\begin{equation}
+	\Sigma^{--}(t,t') = -\Sigma^{+-}(t,t') \quad \mbox{при } t > t'
+\end{equation}
+\begin{equation}
+	\Sigma^{++}(t,t') = -\Sigma^{-+}(t,t') \quad \mbox{при } t < t'
+\end{equation}
+
+\end{document}

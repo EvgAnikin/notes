@@ -1,0 +1,23 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage[english, russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A, T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[margin=2cm,top=2cm,bottom=2cm]{geometry}
+\bibliographystyle{unsrt}
+\begin{document}
+	\input{titlepage.tex}
+	\newpage
+	\tableofcontents
+	\input{intro.tex}
+	\input{tight_bind.tex}
+	\input{local_states.tex}
+	\input{edge_states.tex}
+	\input{spin_orbit.tex}
+	\input{kane_mele.tex}
+	\input{schluss.tex}
+	\newpage
+	\bibliography{literature}
+\end{document}

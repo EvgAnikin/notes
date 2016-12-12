@@ -1,0 +1,36 @@
+% diagram.mf -- do not edit, generated automatically by keldysh.tex
+input feynmf
+require_RCS_revision "1.30";
+beginchar(1, 80*1.0pt#, 50*1.0pt#, 0);
+"feynmf: 1";
+LaTeX_unitlength:=1.0pt;
+subgraph (0, 0, w, h);
+vinit;
+pickup pencircle scaled thin;
+vright (__i, __if);
+vleft (__o, __of);
+vconnect ("plain,tension=10", __i, __a);
+vconnect ("electron,tension=4", __a, __b);
+vconnect ("electron,tension=4", __b, __c);
+vconnect ("plain,tension=10", __c, __o);
+vfreeze;
+vconnect ("phantom,tension=1", __if, __u);
+vconnect ("phantom,tension=0.4", __u, __v, __w);
+vconnect ("phantom,tension=1", __w, __of);
+vconnect ("photon,tension=0.5", __a, __u);
+vconnect ("photon,tension=0.5", __v, __b);
+vconnect ("photon,tension=0.5", __c, __w);
+vfreeze;
+vconnect ("electron,right=0.4", __u, __w);
+vconnect ("electron,right=0.2", __w, __v);
+vconnect ("electron,right=0.2", __v, __u);
+vlabel ("$t'-$", __a);
+vlabel ("$t-$", __c);
+vlabel ("$t_1+$", __b);
+vfreeze;
+vdraw;
+endsubgraph;
+endchar;
+% the end.
+end.
+endinput;

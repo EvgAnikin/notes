@@ -1,0 +1,121 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Задачи к теорминимуму}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+\section{Вторая задача}
+\subsection{Условие задачи}
+В метрике
+\begin{equation}
+ds^2 = \left(1 - \frac{r_g}{r} + \frac{Z^2}{r^2}\right)dt^2
+	- \frac{dr^2}{1 - \cfrac{r_g}{r} + \cfrac{Z^2}{r^2}}
+	- r^2 d\phi^2
+\end{equation}
+найти малое отклонение луча света от прямолинейности.
+\subsection{Ответ}
+
+\subsection{Решение}
+Уравнение эйконала для луча света выгладит так:
+\begin{equation}
+\frac{1}{\left(1 - \cfrac{r_g}{r} + \cfrac{Z^2}{r^2}\right)}
+			\left(\frac{\partial S}{\partial t}\right)^2 -
+\left(1 - \frac{r_g}{r} + \frac{Z^2}{r^2}\right)
+			\left(\frac{\partial S}{\partial r}\right)^2
+- \frac{1}{r^2} 
+			\left(\frac{\partial S}{\partial \phi}\right)^2 = 0
+\end{equation}
+Ищем решение в виде 
+\begin{equation}
+	S = -Et + S_r(r) + M\phi
+\end{equation}
+Тогда для $S_r(r)$ получается выражение
+\begin{equation}
+S_r = \int \mathrm{d} r\sqrt{
+		\frac{E^2}{\left( 1 - \frac{r_g}{r} + \frac{Z^2}{r^2} \right)^2} - 
+		\frac{M^2}{r^2 \left( 1 - \frac{r_g}{r} + \frac{Z^2}{r^2}\right)}
+		}	
+\end{equation}
+Подкоренное выражение можно разложить по 
+\section{Первая задача}
+\subsection{Условие задачи}
+Для лагранжиана
+\begin{equation}
+	\label{lagr}
+	L = -a^2\sqrt{-\mathrm{det}\left(\eta + \frac{F}{a}\right)} + a^2 + A_\mu j^\mu
+\end{equation}
+найти поле точечного заряда.
+\subsection{Ответ}
+\begin{equation}
+	E = - \frac{q}{\sqrt{(4\pi r^2)^2 + (q/a)^2}}
+\end{equation}
+\subsection{Решение}
+Детерминант под корнем формулы \ref{lagr} можно преобразовать: прямое вычисление даёт 
+\begin{multline}
+\mathrm{det}\left(\eta + \frac{F}{a}\right) = 
+\frac{1}{a^4}\mathrm{det}\begin{pmatrix}
+a & E_1 & E_2 & E_3 \\ 
+-E_1 &-a & -B_3 & B_2 \\
+-E_2 & B_3 &-a    &-B_1 \\
+-E_3 & -B_2 & B_1 &-a \\
+\end{pmatrix} = \\
+= -1 + \frac{1}{a^2} (\vec{E}^2 - \vec{B}^2) + \frac{1}{a^4} (\vec{E}, \vec{B})^2
+\end{multline}
+Соответственно, лагранжиан принимает вид
+\begin{equation}
+	L = -a^2 \sqrt{1 - \frac{1}{a^2} 
+		(\vec{E}^2 - \vec{B}^2) - \frac{1}{a^4} (\vec{E}, \vec{B})^2} 
+			\,+ a^2 + A_\mu j^\mu
+\end{equation}
+В переменных $\vec{E}$, $\vec{B}$ уравнения Лагранжа примут вид
+\begin{equation}
+	\label{dive}
+	-\partial_k \frac{\partial L}{\partial E_k} = j^0
+\end{equation}
+\begin{equation}
+	\label{roth}
+	\partial_{0}\frac{\partial L}{\partial E_k} + 
+	\epsilon_{ijk}\partial_{i}\frac{\partial L}{\partial B_j} = j^k
+\end{equation}
+Частные производные:
+\begin{equation}
+	\frac{\partial L}{\partial E_k} = 
+		\frac{E_k + \frac{1}{a^2}(\vec{E}, \vec{B})B_k}
+		{\sqrt{
+		1 - 
+		\frac{1}{a^2}(\vec{E}^2 - \vec{B}^2) - 
+		\frac{1}{a^4} (\vec{E}, \vec{B})^2}
+		}
+\end{equation}
+
+\begin{equation}
+	\frac{\partial L}{\partial B_k} = 
+		\frac{-B_k + \frac{1}{a^2}(\vec{E}, \vec{B})E_k}
+		{\sqrt{
+		1 - 
+		\frac{1}{a^2}(\vec{E}^2 - \vec{B}^2) - 
+		\frac{1}{a^4} (\vec{E}, \vec{B})^2}
+		}
+\end{equation}
+
+Теперь найдём поле точечного заряда. Это будет сферически симметричное решение с $\vec{B} = 0$.
+В этом случае уравнение \ref{roth} выполняется автоматически, а уравнение \ref{dive} принимает 
+вид 
+\begin{equation}
+	\partial_k \frac{E_k}{\sqrt{1 - \frac{1}{a^2} \vec{E}^2}} = -q\delta^{3}(x)
+\end{equation}
+Теперь ясно, что
+\begin{equation}
+	\frac{E}{\sqrt{1 - \frac{1}{a^2} {E}^2}} = -\frac{q}{4\pi r^2}
+\end{equation}
+и, окончательно,
+\begin{equation}
+	E = - \frac{q}{\sqrt{(4\pi r^2)^2 + (q/a)^2}}
+\end{equation}
+\end{document}

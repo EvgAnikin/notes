@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Задачи к теорминимуму}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+\section{Уточнение задачи про эллипс}
+В старых обозначениях можно написать такие формулы:
+\begin{equation}
+	\xi = r(\alpha - \beta) \sin\beta
+\end{equation}
+\begin{equation}
+	y = r(\alpha - \beta) \cos\beta
+\end{equation}
+\begin{equation}
+	x = l(\alpha - \beta) + \xi
+\end{equation}
+\begin{equation}
+	\label{beta}
+	\tan \beta = -\frac1r \frac{dr}{d\theta} (\alpha - \beta)
+\end{equation}
+Ещё есть полезное соотношение
+\begin{equation}
+	\frac{dx}{d\alpha} = y
+\end{equation}
+Радиус от угла зависит так:
+\begin{equation}
+	r(\theta) = R\left( 
+		\frac{\cos^{2}{\theta}}{1 + {\displaystyle \frac{\epsilon}{2}}} 
+		+ \frac{\sin^{2}{\theta}}{1 - {\displaystyle \frac{\epsilon}{2}}} 
+		\right)^{-1}
+\end{equation}
+Разложение до второго порядка по $\epsilon$:
+\begin{equation}
+	r^2(\theta) = R^2\left(1 +\epsilon\cos{2\theta} - 
+		\frac{\epsilon^2}{4} + \frac{\epsilon^2}{2}\cos{4\theta}\right)
+\end{equation}
+\begin{equation}
+	r(\theta) = R\left ( 1 + \frac{\epsilon}2 \cos{2\theta}
+						- \frac{3}{16} \epsilon^2
+						+ \frac{3}{16} \epsilon^2 \cos{4\theta} \right )
+\end{equation} 
+Решая уравнение \ref{beta} во втором порядке, получим
+\begin{equation}
+	\beta = \epsilon \sin{2\alpha}
+\end{equation}
+Теперь, используя формулы, можно найти $x$, $y$ и $\xi$.
+\begin{equation}
+\end{equation}
+\begin{equation}
+\end{equation}
+\begin{equation}
+\end{equation}
+\end{document}

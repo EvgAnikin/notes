@@ -1,0 +1,114 @@
+\subsection{Цепочка с одинаковыми связями}
+\subsubsection{Бесконечная цепочка}
+Рассмотрим цепочку с чередующимися потенциалами атомов и одинаковыми связями.
+\begin{equation}
+	H = \sum_n \xi(a_n^\dagger a_n - b_n^\dagger b_n) + ta_n^\dagger(b_n + b_{n-1}) +
+			ta_n(b_n^\dagger + b_{n-1}^\dagger)
+\end{equation}
+Сделаем преобразование Фурье:
+\begin{equation}
+	a_n = \frac{1}{\sqrt{N}} \sum e^{-ipan} a_p
+\end{equation}
+\begin{equation}
+	b_n = \frac{1}{\sqrt{N}} \sum e^{-ipa(n+\frac{1}{2})} b_p
+\end{equation}
+После преобразования Фурье гамильтониан примет вид
+\begin{equation}
+	H = \sum_p \xi (a_p^\dagger a_p - b_p^\dagger b_p) + 2t\cos{\frac{pa}{2}} a_p^\dagger b_p
+			+ 2t\cos{\frac{pa}{2}}a_pb_p^\dagger
+\end{equation}
+Гамильтониан, таким образом, задаётся матрицей
+\begin{equation}
+	\left(\begin{matrix}
+		\xi & 2t\cos{\frac{pa}{2}} \\
+		2t\cos{\frac{pa}{2}} & -\xi
+	\end{matrix}\right)
+\end{equation}
+Собственные значения энергии ---
+\begin{equation}
+	E_p = \pm \epsilon_p = \pm \sqrt{\xi^2 + 4t^2 \cos^2{\frac{pa}{2}}}
+\end{equation}
+Введём обозначение $\cos\alpha = \xi/\epsilon_p$. Тогда матрица гамильтониана запишется 
+в виде
+\begin{equation}
+	\epsilon_p \left(
+		\begin{matrix}
+			\cos{\alpha} & \sin{\alpha} \\
+			\sin{\alpha} & -\cos{\alpha} 
+		\end{matrix}
+		\right)
+\end{equation}
+Это --- матрица отражения, и её собственные векторы очевидны: 
+$(\cos{\frac{\alpha}{2}}, \sin{\frac{\alpha}{2}})$ и 
+$(-\sin{\frac{\alpha}{2}}, \cos{\frac{\alpha}{2}})$.
+Гамильтониан можно теперь диагонализовать преобразованием
+\begin{equation}
+	\left(
+	\begin{matrix}
+		a_p \\
+		b_p
+	\end{matrix}
+	\right)
+	=
+	\frac12
+	\left(
+	\begin{matrix}
+		\cos{\frac{\alpha}{2}} & -\sin{\frac{\alpha}{2}} \\
+		\sin{\frac{\alpha}{2}} & \cos{\frac{\alpha}{2}}
+	\end{matrix}
+	\right)
+	\left(
+	\begin{matrix}
+		x_p \\
+		y_p
+	\end{matrix}
+	\right)
+\end{equation}
+Оператор $x_p$ рождает состояние с положительной энергией, а $y_p$ --- с отрицательной.
+После этого легко вычислить функции Грина операторов $a_p$, $b_p$, они получаются такими:
+\begin{equation}
+	\label{first}
+	G_0^R(\omega, p, A, A) = \frac{\cos^2{\frac{\alpha}{2}}}{\omega - \epsilon_p + i\delta}+
+				\frac{\sin^2{\frac{\alpha}{2}}}{\omega + \epsilon_p + i\delta}
+\end{equation}
+\begin{equation}
+	G_0^R(\omega, p, A, B) =  G_0^R(\omega, p, B, A)
+			= \frac{\sin{\frac{\alpha}{2}}\cos{\frac{\alpha}{2}}}
+					{\omega - \epsilon_p + i\delta}+
+				\frac{\sin{\frac{\alpha}{2}}\cos{\frac{\alpha}{2}}}
+					{\omega + \epsilon_p + i\delta}
+\end{equation}
+\begin{equation}
+	\label{last}
+	G_0^R(\omega, p, B, B) = \frac{\sin^2{\frac{\alpha}{2}}}{\omega - \epsilon_p + i\delta}+
+				\frac{\cos^2{\frac{\alpha}{2}}}{\omega + \epsilon_p + i\delta}
+\end{equation}
+Каждое из двух слагаемых в уравнениях выше происходит от функций Грина 
+$\langle \mathop{T_\tau} x_p(\tau) x_p^\dagger(\tau') \rangle$, 
+$\langle \mathop{T_\tau} y_p(\tau) y_p^\dagger(\tau') \rangle$.
+
+Функции Грина (\ref{first}) -- (\ref{last}) можно переписать в более удобном виде:
+\begin{equation}
+	G_0^R(\omega, p, A, A) = \frac{\omega + \xi}{\omega^2 - \epsilon_p^2 + i\delta}
+\end{equation}
+\begin{equation}
+	G_0^R(\omega, p, A, B) = \frac{2t\cos{pa}}{\omega^2 - \epsilon_p^2 + i\delta}
+\end{equation}
+\begin{equation}
+	G_0^R(\omega, p, B, B) = \frac{\omega - \xi}{\omega^2 - \epsilon_p^2 + i\delta}
+\end{equation}
+\subsubsection{Полубесконечная цепочка}
+Как и раньше, введём возмущение $V = \Delta E a_0^\dagger a_0$. Уровни энергии снова 
+будут определяться уравнением
+$G_0^R(\omega,0,A,0,A) = 0 $.
+Имеем 
+\begin{multline}
+	G_0^R(\omega,0,A,0,A) = \int_{-\pi}^{\pi} \frac{dk}{2\pi}
+			\frac{\omega + \xi}{\omega^2 - \epsilon_k^2 + i\delta} =  \\
+					=\int_{-\pi}^{\pi} \frac{dk}{2\pi} 
+			\frac{\omega + \xi}{\omega^2 - \xi^2 - 2t^2 - 2t^2\cos{pa} + i\delta} 
+\end{multline}
+Интеграл обращается в ноль при $\omega = -\xi$, на границе непрерывного спектра. Внутри
+запрещённой зоны, то есть в области $|\omega| < \xi$, интеграл строго отрицателен. Отсюда
+можно заключить, что в этом случае граничного состояния не существует: никаких новых
+полюсов у функции Грина не возникло.

@@ -1,0 +1,285 @@
+\documentclass{article} 
+%\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath}
+\usepackage[english, russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A, T1]{fontenc}
+
+
+\usepackage{gnuplottex}
+
+\title{Модель Изинга}
+\author{Евгений Аникин}
+
+\begin{document}
+	\maketitle
+	В данном реферате рассмотрены одномерная модель Изинга и модель, состоящая из двух
+	связанных цепочек спинов. Для одномерной модели Изинга найдена статистическая сумма 
+	и корреляционная функция. Для модели из двух цепочек найдена статистическая сумма и 
+	средняя энергия.
+
+	\section{Одномерная модель Изинга}
+		\subsection{Статсумма}
+		Одномерная модель Изинга задаётся гамильтонианом
+		\begin{equation}
+			\label{ising1d}
+			H = -J\sum s_k s_{k+1},
+		\end{equation}
+		где переменные $s_k$ (спины) принимаюют значения $\pm 1$. Статсумма для этой модели
+		записывается в виде
+		\begin{equation}
+			Z = \sum_{s_k = \pm 1} e^{\beta J\sum s_k s_{k+1}}
+		\end{equation}
+		Эту статсумму можно найти точно. Для этого введём так называемую трансфер--матрицу:
+		\begin{equation}
+			\label{transfermatrix}
+			T_{s_1s_2} = e^{\beta J\sum s_1 s_2}
+		\end{equation}
+		Будем для удобства считать, что имеются периодические граничные условия.
+		Легко видеть, что в этом случае
+		\begin{equation}
+			Z = \mathop{\mathrm{Tr}} T^N = \mathop{\mathrm{Tr}} 
+			\left (
+			\begin{matrix}
+				e^{\beta J} & e^{-\beta J} \\
+				e^{-\beta J} & e^{\beta J}
+			\end{matrix}
+			\right )^N
+		\end{equation}
+		Легко проверить, что собственные значения трансфер--матрицы --- $2\cosh{\beta J}$ и 
+		$2\sinh{\beta J}$. Таким образом, мы получим статсумму в виде
+		\begin{equation}
+			\label{partfunc}
+			Z = 2^N(\cosh^N{\beta J} + \sinh^N{\beta J})
+		\end{equation}
+		Разумеется, второе слагаемое "вымирает" в термодинамическом пределе, то есть при 
+		$N \to \infty$.
+		
+		\subsection{Корреляционная функция}
+		Двухточечная корреляционная функция --- это среднее от произведения спинов в разных 
+		узлах решётки:
+		\begin{equation}
+			\langle s_0 s_m \rangle =	
+				\frac{1}{Z}\sum_{s_k = \pm 1} s_0 s_m e^{-\beta H}
+		\end{equation}
+		Два выделенных спина разделяют цепочку на две части (цепочка замкнута
+		в кольцо) длины $m$ и $N - m$. Для каждой из этих частей можно посчитать статсумму при
+		"замороженных" спинах $s_0$ и $s_m$. После этого можно будет легко посчитать среднее.
+		
+		Проделаем это. Перепишем среднее в виде
+		\begin{multline}
+			\label{corr_aux}
+			\langle s_0 s_m \rangle = \frac{1}{Z} \sum_{s_0, s_m = \pm 1}
+				s_0 s_m \left \{\sum_{s_1,\dots s_{m-1}} 
+						T_{s_0 s_1} \dots T_{s_{m-1}s_m} \times \right.\\
+				\left. \times\sum_{s_{m+1}, \dots s_{N-1}} 
+						T_{s_m s_{m+1}} \dots T_{s_{N-1}s_m} \right\} = \\
+					= \frac{1}{Z} \sum_{s_0, s_m = \pm 1}
+				s_0 s_m (T^m)_{s_0 s_m} (T^{N-m})_{s_m s_0}
+		\end{multline}
+		В последнее выражение вошли степени от трансфер--матрицы. Легко доказать, например,
+		по индукции, что
+		\begin{equation}
+			T^k = 2^{k-1}
+			\left(
+			\begin{matrix}
+				\cosh^k{\beta J} + \sinh^k{\beta J} & \cosh^k{\beta J} - \sinh^k{\beta J} \\
+				\cosh^k{\beta J} - \sinh^k{\beta J} & \cosh^k{\beta J} + \sinh^k{\beta J} 
+			\end{matrix}
+			\right)
+		\end{equation}
+		Подстановка в уравнение (\ref{corr_aux}) матричных элементов и статсуммы 
+		(\ref{partfunc}),
+		простые алгебраические преобразования и взятие предела $N \to \infty$ дают ответ
+		\begin{equation}
+			\langle s_0 s_m \rangle = \tanh J^m = e^{-m\log \coth J}
+		\end{equation}
+		Таким образом, корреляционная длина --- $\lambda^{-1} = \log \coth J$.
+
+		При малых $J$ $\lambda^{-1} \approx \log\frac{1}{J}$, при больших $J$ 
+		$\coth{J} \approx 1 + 2e^{-2J}$, и $\lambda^{-1} \approx 2e^{-2J}$
+
+
+		\subsection{Ренормгруппа}
+		Зависимость корреляционной длины от расстояния 
+		можно найти с помощью метода ренормгруппы,
+		мощного метода квантовой теории поля. Конечно, 
+		в приложении к одномерной модели Изинга
+		это может иметь только иллюстративное значение 
+		(как, впрочем, и сама одномерная модель
+		Изинга).
+
+		Суть ренормгруппы состоит в следующем: 
+		в статсумме \ref{ising1d} выполним суммирование
+		не по всем, а лишь по нечётным спинам (будем считать, 
+		что в цепочке чётное число спинов
+		или она вовсе не замкнута). Полученную сумму будем интерпретировать 
+		как $e^{-H_{\mathrm{eff}}}$,
+		где $H_{\mathrm{eff}}$ --- эффективный гамильтониан. 
+		Таким образом, от исходной системы мы
+		переходим к системе, зависящей от в два раза меньшего числа спинов, с другим 
+		гамильтонианом. При этом статсумма новой системы, разумеется, 
+		будет совершенно такой же,
+		а все физические величины испытают масштабное 
+		преобразование. Например, корреляционная
+		длина уменьшится в два раза.
+
+		Посмотрим, какой именно получится эффективный гамильтониан. 
+		Для удобства будем считать,
+		что $\beta = 1$, и статсумма зависит только от константы связи $J$.
+	
+		Имеем
+		\begin{equation}
+			e^{-H_{eff}} = \sum_{s_{2k+1}} \prod_k T_{2k, 2k+1} T_{2k+1, 2k+2} = 
+					\prod_k \widetilde{T}_{s_2k s_{2k+2}} 
+		\end{equation}
+		где $T$ --- всё то же самая трансфер--матрица, 
+		а $\widetilde{T} = T^2$ --- эффективная
+		трансфер--матрица.
+		Легко проверить, что
+		\begin{equation}
+			T^2 =
+			\left (
+			\begin{matrix}
+				e^{\beta J} & e^{-\beta J} \\
+				e^{-\beta J} & e^{\beta J}
+			\end{matrix}
+			\right )^2 = 
+			C\left (
+			\begin{matrix}
+				e^{ \beta \widetilde{J}} & e^{-\beta \widetilde{J}} \\
+				e^{-\beta \widetilde{J}} & e^{ \beta \widetilde{J}}
+			\end{matrix}
+			\right )
+		\end{equation}
+		Здесь $C$ --- несущественная константа, а $\widetilde{J}$ --- эффективная константа
+		связи, равная
+		\begin{equation}
+			\label{Jchange}
+			\widetilde{J} = \frac{1}{2} \log \cosh{2J}
+		\end{equation}
+		Получается, что мы эффективно переходим к совершенно такой же трансфер--матрице (и
+		гамильтониану), только с другой константой связи. 
+		Это позволяет написать функциональное соотношение на корреляционную длину. Очевидно,
+		что под действием преобразования ренормгруппы корреляционная длина уменьшается в два 
+		раза. С другой стороны, мы показали, что константа связи меняется по 
+		закону \ref{Jchange}.
+		Значит,
+		\begin{equation}
+			\lambda\left(\frac{1}{2} \log \cosh{2J}\right) = \frac{1}{2} \lambda(J)
+		\end{equation}
+		Рассмотрим здесь пределы больших и маленьких $J$.
+		Для малых $J$ соотношение переходит в 
+		\begin{equation}
+			\lambda(J^2) \approx \frac{1}{2}\lambda(J)
+		\end{equation}
+		Решением такого уравнения является
+		\begin{equation}
+			\lambda  \approx \frac{C}{\log{\frac{1}{J}}}
+		\end{equation}
+		Для больших $J$ 
+		\begin{equation}
+			\lambda\left(J - \frac{\log2}{2}\right) \approx \frac12 \lambda(J)
+		\end{equation}
+		Решением будет $\lambda(J) = Ce^{-2J}$.
+		Эти результаты, как можно видеть, согласутся с результатами предыдущего параграфа.
+%		\subsection{Магнитное поле}
+%		Гамильтониан с учётом взаимодействия с магнитным полем может быть записан так:
+%		\begin{equation}
+%			\label{withfield}
+%			H = -J\sum s_k s_{k+1} - \frac{B}{2}\sum s_k + s_{k+1}
+%		\end{equation}
+	\section{Двухслойная модель Изинга}
+		Рассмотрим модель с гамильтонианом
+		\begin{equation}
+			H = -J\sum_k a_k a_{k+1} + b_k b_{k+1} + \frac{1}{2}(a_k b_k + a_{k+1} b_{k+1}),
+		\end{equation}
+		где $a_k, b_k = \pm 1$. Множитель $\frac{1}{2}$ нужен, потому что каждый член вида 
+		$a_k b_k$ встречается в гамильтониане два раза.
+		
+		Введём трансфер--матрицу:
+		\begin{equation}
+			T_{a,b;\,\tilde{a},\tilde{b}} \equiv
+				e^{\beta J(a\tilde{a}+ b\tilde{b} + 
+						\frac{1}{2}ab + \frac{1}{2}\tilde{a}\tilde{b})}
+		\end{equation}
+		Статсумма перепишется через неё как
+		\begin{equation}
+			Z = \mathop{\mathrm{Tr}} T^N
+		\end{equation}
+		Явный вид трансфер--матрицы таков:
+		\begin{equation}
+			T = \left( 
+				\begin{matrix}
+					e^{3\beta J}	& 1 			& 1			& e^{-\beta J}	\\
+					1			& e^{\beta J}	& e^{-3\beta J}& 1  		\\	
+					1 			& e^{-3\beta J}& e^{\beta J}	& 1			\\
+					e^{-\beta J}	& 1 			& 1			& e^{3\beta J}	
+				\end{matrix}
+				\right)
+		\end{equation}
+		Чтобы найти статсумму, нужно найти собственные значения трансфер--матрицы.
+		Два собственных вектора очевидны сразу: $\vec{v_1} = (1,0,0,-1)$ и 
+		$\vec{v_2} = (0,1,-1,0)$.
+		Легко проверить, что
+		\begin{equation}
+			T v_1 = (e^{3\beta J} -  e^{-\beta J}) v_1
+		\end{equation}
+		\begin{equation}
+			T v_2 = (e^{\beta J} -  e^{-3\beta J}) v_2
+		\end{equation}
+		Ещё два собственных вектора есть в подпространстве, натянутом на векторы
+		$v_3 = (1,0,0,1)$ и $v_4 = (0,1,1,0)$. В этом подпространстве в базисе $v_3, v_4$
+		трансфер--матрица имеет вид 
+		\begin{equation}
+			T_{\langle v_3, v_4 \rangle} =
+			\left(
+				\begin{matrix}
+					e^{3\beta J} + e^{-\beta J}	& 2 \\
+					2						& e^{\beta J} + e^{-3\beta J}
+				\end{matrix}
+			\right)
+		\end{equation}
+		Отсюда после не очень приятных вычислений имеем ещё два собственных значения:
+		\begin{equation}
+			\lambda_{3,4} = 2\left[ \cosh{\beta J} \cosh{2\beta J} \pm
+					\sqrt{(\cosh{\beta J} \cosh{2\beta J})^2 - \sinh^2{2\beta J}}\right]
+		\end{equation}
+		Можно показать, что максимальное собственное значение при всех $\beta$ --- 
+		\begin{equation}
+			\lambda_{\mathrm{max}} = 2\left[ \cosh{\beta J} \cosh{2\beta J} +
+					\sqrt{(\cosh{\beta J} \cosh{2\beta J})^2 - \sinh^2{2\beta J}}\right]
+		\end{equation}
+		В термодинамическом пределе 
+		\begin{equation}
+			Z = \lambda_{\mathrm{max}}^N 
+		\end{equation}
+		Среднюю энергию отсюда можно вычислить по формуле
+		\begin{equation}
+			\langle U \rangle = -\frac{\partial \log Z}{\partial \beta}
+		\end{equation}
+		Это выражение крайне громоздко, поэтому я его здесь не привожу.
+		Ниже приведён график средней энергии в зависимости от $\beta J$ в сравнении со
+		средней энергией простой одномерной модели Изинга, для 
+		котороый средняя энергия --- 
+		\begin{equation}
+			\langle U \rangle = -J \tanh{\beta J}
+		\end{equation}
+		\begin{figure}[h]
+			\begin{centering}
+				\begin{gnuplot}[terminal=epslatex, terminaloptions=color dashed]
+					set xrange [0:3]
+					set yrange [0:1.3]
+					set xlabel '$\beta J$'
+					set ylabel '$-\frac{U}{J}$'
+					plot	tanh(x) title "Одна цепочка",\
+					     1./3*(((4*sinh(2*x)*cosh(2*x)*cosh(x)**2) + \
+						2*sinh(x)*cosh(2*x)**2*cosh(x) - \
+						4*sinh(2*x)*cosh(2*x)) /  \
+						(2*sqrt(cosh(x)**2*cosh(2*x)**2 - sinh(2*x)**2)) \
+						+ sinh(x)*cosh(2*x)+2*sinh(2*x)*cosh(x))\
+						/(cosh(x)*cosh(2*x)+sqrt(cosh(x)**2*cosh(2*x)**2 - sinh(2*x)**2)) title "Две цепочки"
+				\end{gnuplot}
+			\end{centering}
+		\end{figure}
+\end{document}

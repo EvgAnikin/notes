@@ -1,0 +1,122 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Локализованное состояние\\ в подходе сильной связи}
+\author{Евгений Аникин}
+
+\begin{document}
+\maketitle
+\section{Гамильтониан в подходе сильной связи}
+Гамильтониан для электронов в решётке можно записать так:
+\begin{equation}
+	H = \sum_p \epsilon_p a_p^{\dagger} a_p,
+\end{equation}
+Здесь $a_p$ --- оператор уничтожения частицы в состоянии с квазиимпульсом $p$ и энергией
+$\epsilon_p$. В периодическом потенциале можно ввести новый базис из состояний, волновые
+функции которых называются функциями Ванье. Определим новые операторы уничтожения $w_n$:
+\begin{equation}
+	w_n = \frac{1}{\sqrt{N}} \sum_p e^{-ipR_n} a_p
+\end{equation}
+Выразив $a_p$ через $w_n$, можно получить гамильтониан в приближении сильной связи:
+\begin{equation}
+	\label{hamiltonian}
+	H = \sum_k E\,w_k^{\dagger}w_k + \sum_{k\ne l} C_{k-l}\, w_k^{\dagger} w_l
+\end{equation}
+Энергии частиц выражаются через новые коэффициенты $E$, $C_n$ таким образом:
+\begin{equation}
+	\epsilon_p = E + \sum_{n\ne 0} C_n e^{ipR_n}
+\end{equation}
+В дальнейшем нам потреуются функции Грина в узельном представлении, определённые через
+операторы $w_n(t)$. Например, мацубаровская функция Грина --- 
+\begin{equation}
+	\mathcal{G}_0(\omega_n,R_m - R_n) = 
+%		-i\langle \mathop{T} w_m(\tau) w_n^{\dagger}(\tau') \rangle = 
+			\frac{1}{N}\sum_p  \frac{e^{-ip(R_m - R_n)}}{i\omega_n - E_p}.
+\end{equation}
+Аналогично, запаздывающая функция Грина --- 
+\begin{equation}
+	G_0^R(\omega,R_m - R_n) = 
+			\frac{1}{N}\sum_p \frac{e^{-ip(R_m - R_n)}}{\omega - E_p + i\delta}.
+\end{equation}
+\section{Примесный атом}
+Добавим к исходному гамильтониану возмущение:
+\begin{equation}
+	V = \Delta E w_0^{\dagger} w_0
+\end{equation}
+Это соответствует примесному атому, находящемуся в начале координат.
+Чтобы найти новую функцию Грина, нужно решить уравнение Дайсона, которое в данном случае
+примет вид
+\begin{equation}
+	\mathcal{G}(\omega_n,m,n) = 
+		\mathcal{G}_0(\omega_n, m,n) + 
+		\Delta E \mathcal{G}_0(\omega_n, m,0)\mathcal{G}(\omega_n, 0,n)
+\end{equation}
+Решение этого уравнения --- 
+\begin{equation}
+	\mathcal{G}(\omega_n, m,n) = \mathcal{G}_0(\omega_n, m,n) + 
+		\frac{\Delta E\mathcal{G}_0(\omega_n, m,0)\mathcal{G}_0(\omega_n, 0, n)}{1 - \Delta E \mathcal{G}_0(\omega_n,0,0)}
+\end{equation}
+Заменяя здесь $i\omega$ на $\omega + i\delta$, найдём запаздывающую функцию Грина.
+\begin{equation}
+	\label{solution}
+	G^R(\omega, m,n) = G^R_0(\omega, m,n) + 
+		\frac{\Delta EG^R_0(\omega, m,0)G^R_0(\omega, 0, n)}{1 - \Delta E G^R_0(\omega,0,0)}
+\end{equation}
+Полюса запаздывающей функции Грина определяют энергетический спектр системы. Здесь полюса ---
+это решения уравнения
+\begin{equation}
+	\Delta E G^R_0(\omega, 0,0) = 1,
+\end{equation}
+то есть 
+\begin{equation}
+	 \frac{\Delta E}{N}\int  \frac{\rho(\epsilon)\,d\epsilon}{\omega - \epsilon + i\delta}= 1
+\end{equation}
+Кроме того, зная запаздывающую функцию Грина, можно найти волновую функцию связанного
+состояния. Предположим, что мы диагонализовали возмущённый гамильтониан и нашли
+набор собственных состояний $|\lambda\rangle$. Тогда функция Грина $G^R$ --- 
+\begin{equation}
+	\label{general}
+	G^R(\omega, m,n) = \sum_\lambda \psi_\lambda(m)\psi_\lambda^{*}(n) 
+			\frac{1}{\omega - E_\lambda + i\delta}
+\end{equation}
+Сравнивая (\ref{solution}) и (\ref{general}), получим, что
+\begin{equation}
+	\psi_\Lambda(n) \propto G_0^{R}(E_\Lambda, n,0)
+\end{equation}
+\subsection{Слабосвязанное состояние в трёхмерной решётке}
+Предположим, что $E_\Lambda$ близко к нижней границе зоны, а 
+$\epsilon_p = \frac{p^2}{2m} + o(p^2)$. Положим для удобства $p_0^2 = -2mE_\Lambda$.
+
+Тогда имеем:
+\begin{equation}
+	\psi_\Lambda(n) 
+	\propto \frac{V}{N}\int \frac{d^3 p}{(2\pi)^3}\, \frac{e^{ipR_n}}{p_0^2 + p^2 + o(p^2)}	
+\end{equation}
+Здесь интегрирование ведётся по зоне Бриллюэна. Однако, если $R_n \gg a$, $p_0^{-1} \gg a$, 
+то основной вклад в интеграл вносит область малых $p$. Поэтому можно считать, что
+\begin{equation}
+	\psi_\Lambda(n) 
+	\propto \frac{V}{N}\int \frac{d^3 p}{(2\pi)^3}\, \frac{e^{ipR_n}}{p_0^2 + p^2},
+\end{equation}
+где интеграл берётся по всем $p$. Такой интеграл можно взять, сначала перейдя в полярные координаты, а затем --- с помощью вычетов.
+Ответ получается такой:
+\begin{equation}
+	\psi_\Lambda(n) \propto \frac{e^{-p_0R_n}}{R_n}
+\end{equation}
+\subsection{Сильносвязанное состояние}
+Пусть теперь $E_\Lambda$ лежит далеко от зоны, а $\epsilon_p \sim 0$. Тогда
+\begin{equation}
+	\psi_\Lambda(n) 
+	\propto \frac{V}{N}\int \frac{d^d p}{(2\pi)^d}\, \frac{e^{ipR_n}}{E_\Lambda - \epsilon_p}
+	\approx \frac{V}{N}\int \frac{d^d p}{(2\pi)^d}\, 
+			\frac{e^{ipR_n}}{E_\Lambda}\left(1 + \frac{\epsilon_p}{E_\Lambda}\right)
+\end{equation}
+Тогда $\psi_\Lambda(0) \approx 1$, а 
+$\psi_\Lambda(n) \approx \frac{C_n}{E_\Lambda}$, где $C_n$ --- коэффициенты из
+(\ref{hamiltonian}). Таким образом, если $C_n$ отличны от нуля только для ближайших
+атомов, то волновая функция для всех остальных атомов обращается в нуль (в этом приближении).
+ \end{document}

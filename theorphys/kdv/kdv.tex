@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+
+\newtheorem{theorem}{Теорема}
+
+\title{Уравнение КдФ}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+	\noindent Уравнение КдФ имеет вид
+	\begin{equation}
+		u_t + 6uu_x + u_{xxx} = 0
+	\end{equation}
+	\begin{theorem}[Галилеевская инвариантность]
+		Пусть $u(t,x)$ --- решение КдФ. Тогда $u(t, x - vt) + \frac{v}{6}$ --- 
+		тоже решение КдФ.
+	\end{theorem}
+	Проверяется элементарной подстановкой.
+\end{document}

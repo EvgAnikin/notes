@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Парамагнетизм Паули \\и диамагнетизм Ландау}
+\author{Anikin Evgeny, 128}
+
+\begin{document}
+\maketitle
+Уровни энергии электрона в магнитном поле (будем считать его параллельным $Oz$) ---
+\begin{equation}
+    E_{n,p_z,\sigma} = 2\mu_B B \left(n + \frac{1}{2}\right) + 
+                       \frac{p_z^2}{2m} + \sigma \mu_B B
+\end{equation}
+Магнетон Бора ---
+\begin{equation}
+    \mu_B = \frac{e\hbar}{2mc},
+\end{equation}
+кратность вырождения уровня Ландау ---
+\begin{equation}
+    N = \frac{eBL_xL_y}{2\pi\hbar}
+\end{equation}
+Значит, $\Omega$--потенциал --- 
+\begin{equation}
+    \Omega = \sum_{n,\sigma} \frac{eBV}{2\pi\hbar c} 
+                \int_{-\infty}^{\infty} \frac{dp_z}{2\pi\hbar}
+                \log{\left\{1 + \exp{\left(\frac{\mu - E_{n,p_z,\sigma}}{T}\right)}\right\}}
+\end{equation}
+Сумму по $n$ можно преобразовать в интеграл с помощью формулы
+\begin{equation}
+    \int_0^L f(x) dx = h\sum_{k=0}^{N-1} f(h(k+{\textstyle \frac12}))
+                       +{\textstyle\frac{h^2}{24}} \left(f'(L) - f'(0)\right) + O(h^4)
+\end{equation}
+В результате получается
+\begin{multline}
+    \Omega = -T\sum_\sigma\frac{mV}{2\pi\hbar^2} \int_{-\infty}^{\infty} 
+                    \frac{dp_z}{2\pi\hbar}\int_0^\infty d\epsilon 
+                           \log{\left\{1 + \exp{\left(\frac{\mu - \epsilon - 
+                                \frac{p_z^2}{2m}-\sigma\mu_B B}{T} \right)} \right\}}
+\end{multline}
+\end{document}

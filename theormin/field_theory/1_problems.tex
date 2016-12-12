@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Задачи к теорминимуму}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+\section{Вторая задача}
+\subsection{Условие задачи}
+В метрике
+\begin{equation}
+ds^2 = \left(1 - \frac{r_g}{r} + \frac{Z^2}{r^2}\right)dt^2
+	- \frac{dr^2}{1 - \cfrac{r_g}{r} + \cfrac{Z^2}{r^2}}
+	- r^2 d\phi^2
+\end{equation}
+найти малое отклонение луча света от прямолинейности.
+\subsection{Ответ}
+
+\subsection{Решение}
+Уравнение эйконала для луча света выгладит так:
+\begin{equation}
+\frac{1}{\left(1 - \cfrac{r_g}{r} + \cfrac{Z^2}{r^2}\right)}
+			\left(\frac{\partial S}{\partial t}\right)^2 -
+\left(1 - \frac{r_g}{r} + \frac{Z^2}{r^2}\right)
+			\left(\frac{\partial S}{\partial r}\right)^2
+- \frac{1}{r^2} 
+			\left(\frac{\partial S}{\partial \phi}\right)^2 = 0
+\end{equation}
+Ищем решение в виде 
+\begin{equation}
+	S = -Et + S_r(R) + M\phi
+\end{equation}
+Тогда для $S_r(R)$ получается выражение
+\begin{equation}
+S_r(R) = \int_{r_0}^{R} {d} r\sqrt{
+		\frac{E^2}{\left( 1 - \frac{r_g}{r} + \frac{Z^2}{r^2} \right)^2} - 
+		\frac{M^2}{r^2 \left( 1 - \frac{r_g}{r} + \frac{Z^2}{r^2}\right)}
+		}	
+\end{equation}
+Здесь $r_0$, ближайшая к центру точка траектории луча, --- ноль подкоренного выражения.
+
+Подкоренное выражение можно разложить до членов второго порядка. Получается
+так:
+\begin{equation}
+S_r = \int {d} r\sqrt{
+		E^2\left(1 + \frac{2r_g}{r} + \frac{3r_{g}^{2} - 2Z^2}{r^2}\right)
+		-\frac{M^2}{r^2}\left(1 + \frac{r_g}{r} + \frac{r_g^2 - Z^2}{r^2}\right)
+	}
+\end{equation}
+Чтобы в дальнейшем можно было успешно раскладывать корень, нужно найти ноль подкоренного
+выражения. С точностью до членов второго порядка он равен
+\begin{equation}
+r_0 = \frac{M}{E} - \frac{r_g}{2} - \frac{E}{2M}\left(\frac{3}{4}r_g^2 - Z^2\right)
+\end{equation}
+Теперь сдвинем переменную интегрирования:
+\begin{equation}
+	r = \rho - \frac{r_g}{2} - \frac{E}{2M}\left(\frac{3}{4}r_g^2 - Z^2\right)
+\end{equation}
+После подстановки интеграл примет вид 
+\begin{equation}
+S_r = \int\limits_{M/E}^{R'}%
+		d\rho \sqrt{
+		\left(E^2 - \frac{M^2}{\rho^2}\right)
+			\left(1 + \frac{2r_g}{\rho} + \frac{4r_g^2 - 2Z^2}{\rho^2}\right)
+		-\frac{M}{\rho^3}\left( \frac{3}{4}r_g^2 - Z^2\right) \left(E - \frac{M}{\rho}\right)
+	}
+\end{equation}
+\begin{equation}
+	R' = R + \frac{r_g}{2} +\frac{E}{2M}\left(\frac{3}{4}r_g^2 - Z^2\right) 
+\end{equation}
+Теперь можно разложить корень. Получается так:
+
+\begin{multline}
+\label{integral}
+S_r = \int\limits_{M/E}^{R'}
+		d\rho \left\{ 
+		\sqrt{E^2-\frac{M^2}{\rho^2}} + \frac{r_g}{\rho} 
+						\sqrt{E^2-\frac{M^2}{\rho^2}}+\right. \\ 
+			\left. \frac{3r_g^2 - 2Z^2}{2\rho^2}	\sqrt{E^2-\frac{M^2}{\rho^2}} - 
+			\left( \frac{3}{8} r_g^2 - \frac{1}{2}Z^2\right) \frac{M}{\rho^3} 
+						\sqrt{\frac{\rho E - M}{\rho E + M}}
+		\right\} 
+\end{multline}
+Изменение полярного угла при движении от ближайшей точки до бесконечности даётся формулой
+\begin{equation}
+\phi = -\lim_{R \to \infty}\frac{\partial}{\partial M} S_r(R)
+\end{equation}
+В интеграле \ref{integral} первое и второе слагаемые расходятся, поэтому
+важно, что сначала берётся интеграл, а затем --- предел. Третье и четвёртое
+слагаемые сходятся. Кроме того, в первом слагаемом важно отличие $R$ 
+от $R'$.
+\paragraph{Первое слагаемое:}
+\paragraph{Второе слагаемое:}
+\paragraph{Третье слагаемое:}
+
+\paragraph{Четвёртое слагаемое:}
+\end{document}

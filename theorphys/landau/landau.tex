@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+
+\title{Теория Ландау}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+\section{}
+Для начала рассмотрим цилиндр в магнитном поле, направленном вдоль его оси.
+Тогда легко показать, что работа внешних сил (например, батарейки) равна
+	\begin{equation}
+		\delta A = -\frac{c}{4\pi} HdB
+	\end{equation}
+Тогда имеем неравенство:
+	\begin{equation}
+		TdS \le dU - \frac{c}{4\pi} HdB 
+	\end{equation}
+Отсюда следует, что
+	\begin{equation}
+		dF \le \frac{c}{4\pi} H dB - S dT
+	\end{equation}
+Термодинамическое равновесие отвечает минимуму свободной энергии при заданном магнитном поле
+$B$.
+Введём другой потенциал:
+	\begin{equation}
+		\Phi = F - \frac{c}{4\pi} BH + \frac{cH^2}{8\pi}
+	\end{equation}
+Тогда
+	\begin{equation}
+		d \Phi \le -\frac{c}{4\pi} MdH - SdT
+	\end{equation}
+Равновесие отвечает минимуму этого потенциала при заданном $H$. Это более физично, так как
+именно $H$ определяется внешними условиями, например, током катушки.
+
+\subsection{Пример}
+Догадаемся, какой потенциал $\Phi$ приведёт к закону Кюри--Вейсса. Это
+\begin{equation}
+	\Phi = aTM^2 - MH
+\end{equation}
+Его минимум достигается при $M = \frac{H}{2aT}$. Отсюда получится
+\begin{equation}
+	B = H + \frac{4\pi}{c}M = \left(1 + \frac{2\pi}{act}\right)H = \mu H
+\end{equation}
+А свободная энергия $F$ вообще получается
+\begin{equation}
+	F = \frac{c\mu H^2}{8\pi}
+\end{equation}
+(может быть, это что-то значит?)
+	
+Действительно! Свободная энергия --- это изотермическая работа. Если
+считать, что магнитная проницаемость зависит только от температуры, то так 
+и получается.
+\end{document}
