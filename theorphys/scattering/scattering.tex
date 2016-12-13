@@ -10,9 +10,42 @@
 
 \begin{document}
 \maketitle
-%\section{$S$--матрица}
-%Рассеяние на потенциале проще всего рассматривать следующим образом: пусть потенциал ---
+\section{$S$--матрица и амплитуда рассеяния}
+\begin{multline}
+    \Psi(x,t) = \int \frac{dk}{2\pi} \phi(k)\left(e^{ikz} + \frac{f(\theta)}{r}e^{ikr}\right)
+                e^{-\frac{i\hbar k^2t}{2m} + ikR} = \\
+               = \phi\left(\frac{m(r+R)}{\hbar t}\right) \frac{f(\theta)}{r}
+                e^{\frac{im(r+R)^2}{2\hbar t}} \sqrt{\frac{m}{2\pi i\hbar t}}
+\end{multline}
+Здесь и далее считаем, что $\Re{\sqrt{z}} > 0$.
 
+Далее сделаем преобразование Фурье:
+\begin{equation}
+   \Psi(\vec{k}) = \int d^3x\, e^{-i\vec{k}\vec{x}} \Psi(x,t) = 
+    \int d^3x\, e^{-i\vec{k}\vec{x}}\phi\left(\frac{m(r+R)}{\hbar t}\right) \frac{f(\theta)}{r}
+                e^{\frac{im(r+R)^2}{2\hbar t}} \sqrt{\frac{m}{2\pi i\hbar t}}
+\end{equation}
+Точка стационарной фазы ---
+\begin{equation}
+    \vec{k} = \frac{m(r+R)}{\hbar t} \vec{n},
+\end{equation}
+матрица вторых производных ---
+\begin{equation}
+    \partial_i \partial_j \frac{im(r+R)^2}{2\hbar t} = \frac{im}{\hbar t} 
+                \left(\left(1 + \frac{R}{r}\right)\delta_{ij} - \frac{R}{r} n_i n_j\right)
+\end{equation}
+С помощью метода стационарной фазы получаем
+\begin{equation}
+    \Psi(\vec{k}) =  \frac{2\pi i}{k} \phi(k)  f(\theta) e^{-\frac{i\hbar k^2t}{2m} + ikR}
+\end{equation}
+Теперь уже можно положить $\phi(k) = \delta(k - k_0)$. Тогда, пользуясь формулой 
+\begin{equation}
+    \delta(k - k_0) = \frac{\hbar^2 k_0}{m} \delta(\epsilon - \epsilon_0),
+\end{equation}
+получим окончательно
+\begin{equation}
+    \Psi(\vec{k}) = \frac{2\pi i \hbar^2}{m} f(\theta) \delta(\epsilon - \epsilon_0)
+\end{equation}
 \section{Квазиклассическое приближение}
 \subsection{Функция Эйри}
 Функция Эйри --- решение уравнения

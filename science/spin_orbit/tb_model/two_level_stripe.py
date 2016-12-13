@@ -14,8 +14,6 @@ def two_level_stripe_hamiltomian(py, N, xi, m, t):
 #       potential[i] = -voltage*(i - N/2.)/N
     xi_local = xi
     for i in xrange(N):
-       if i > N/2.:
-           xi_local = -xi
        H[i,:,i,:] = np.array([xi_local + 1./m*(2 - math.cos(py)) + potential[i], 
                               -2j*t*math.sin(py),
                               2j*t*math.sin(py), 
@@ -32,7 +30,7 @@ def two_level_stripe_hamiltomian(py, N, xi, m, t):
 if __name__ == '__main__':
     plim = (-math.pi,math.pi)
     pyrange, energies = stripe_energies(two_level_stripe_hamiltomian, 
-                                       (80, 0.1, 1, 0.5),
+                                       (150, -0.03, 1, 0.5),
                                        plim = plim,
                                        NX = 201)
     for level in energies:
