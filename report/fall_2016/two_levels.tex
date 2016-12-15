@@ -1,0 +1,27 @@
+\section{Случай двух зон}
+В случае двух зон $\mathrm{TKNN}$--инварианту можно придать особенно наглядную 
+форму. Любой гамильтониан для двух зон можно записать в виде
+\begin{equation}
+    H(k) = h_0(k) + \vec{h}(k)\vec{\sigma}
+\end{equation}
+Его можно явно диагонализовать. Собственные векторы равны
+\begin{equation}
+    \left(\begin{matrix}
+        \cos{\frac{\theta}{2}} \\
+        \sin{\frac{\theta}{2}}e^{i\phi}
+    \end{matrix}\right),
+    \left(\begin{matrix}
+        -\sin{\frac{\theta}{2}}e^{-i\phi}\\
+        \cos{\frac{\theta}{2}} 
+    \end{matrix}\right)
+\end{equation}
+и соответствуют энергиям 
+\begin{equation}
+    E(k) = h_0(k) \pm |\vec{h}|
+\end{equation}
+Непосредственная подстановка (например, первого) собственного вектора в формулу \eqref{TKNN}
+приводит к 
+\begin{equation}
+    N = \frac{1}{4\pi} \int \sin{\theta}\,d\theta d\phi
+\end{equation}
+Таким образом, $N$ равно количеству ``оборотов'' $\vec{h}$ вокруг единичной сферы.
