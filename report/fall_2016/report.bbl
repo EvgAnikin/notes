@@ -22,4 +22,15 @@ D.~J. Thouless, M.~Kohmoto, M.~P. Nightingale, and M.~den Nijs.
 \newblock Quantized hall conductance in a two-dimensional periodic potential.
 \newblock {\em Physical Review Letters}, 49(6):405–408, Aug 1982.
 
+\bibitem{Qi2006}
+Xiao-Liang Qi, Yong-Shi Wu, and Shou-Cheng Zhang.
+\newblock Topological quantization of the spin hall effect in two-dimensional
+  paramagnetic semiconductors.
+\newblock {\em Physical Review B}, 74(8), Aug 2006.
+
+\bibitem{Kane2005}
+C.~L. Kane and E.~J. Mele.
+\newblock Quantum spin hall effect in graphene.
+\newblock {\em Physical Review Letters}, 95(22), Nov 2005.
+
 \end{thebibliography}

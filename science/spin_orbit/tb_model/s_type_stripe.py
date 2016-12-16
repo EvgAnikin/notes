@@ -55,7 +55,7 @@ def s_type_stripe_hamiltonian(py,N,ts,tsp,Es,tlong, ttrans,t3,ESO):
 def plot(args):
     """ args = N,ts,tsp,Es,tlong, ttrans,t3,ESO,td"""
     PY, energies = stripe_energies(s_type_stripe_hamiltonian,args,\
-                                    plim = (-math.pi,math.pi),NX = 150)
+                                    plim = (-math.pi,math.pi),NX = 80)
 
     for level in energies:
         plt.plot(PY,level)

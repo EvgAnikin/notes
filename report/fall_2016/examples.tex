@@ -1,0 +1,40 @@
+\section{Простые примеры топологических изоляторов}
+Простейший гамильтониан с отличным от нуля $TKNN$--инвариантом 
+(он рассматривался в \cite{Qi2006}) ---
+\begin{equation}
+    H = \left(\begin{matrix}
+            \xi + \frac{1}{m}(2 - \cos{p_x} - \cos{p_y}) & 2t(\sin{p_x} - i\sin{p_y})   \\
+            2t(\sin{p_x} + i\sin{p_y}) & - \xi - \frac{1}{m}(2 - \cos{p_x} - \cos{p_y}) \\
+        \end{matrix}\right)
+\end{equation}
+Он возникает как эффективный гамильтониан, описывающий зону проводимости и зону
+тяжёлых дырок в более реалистичной модели полупроводника со спин--орбитальным
+взаимодействием (см. ниже).
+
+Другой пример --- модель Кейна--Меле \cite{Kane2005}, 
+описывающая спин--орбитальное взаимодействие в 
+графене. Она состоит из двух копий для противоположных проекций спина, причём у каждой
+из копий $\mathrm{TKNN}$--инвариант отличен от нуля. Гамильтониан --- 
+\begin{equation}
+		\hat{H} = 
+			\sum_{\langle ij \rangle \alpha} t c^\dagger_{i\alpha} c_{j\alpha} + 
+				\sum_{\langle\langle ij \rangle\rangle \alpha\beta} 
+					it_2 \nu_{ij} s^z_{\alpha \beta} c^\dagger_{i\alpha} c_{i\beta}
+\end{equation}
+Суммирование в первом слагаемом идёт по соседним ячейкам, а во втором --- по соседним
+ячейкам \emph{одной подрешётки}, при этом $\nu_{ij} = \pm 1$, и его знак зависит
+от ориентации кратчайшего пути, соединяющего две ячейки.
+
+В импульсном представлении для этой модели
+\begin{equation}
+    \begin{gathered}
+    	H = |h|\left(
+            \begin{matrix}
+                \cos{\theta} & \sin{\theta}e^{-i\phi} \\
+                \sin{\theta}e^{i\phi} & -\cos{\theta}
+            \end{matrix}
+    	\right),\\
+    	|h|\cos{\theta} = 2t_2 (\sin{px} - \sin{py} - \sin{p(x-y)}), \\
+    	|h|\sin{\theta}e^{i\phi} = t(1 + e^{-ipy} + e^{ip(x-y)}) 
+    \end{gathered}
+\end{equation}

@@ -12,14 +12,31 @@
   Number                   = {5806},
   Pages                    = {1757–1761},
   Volume                   = {314},
-
-  __markedentry            = {[ksenia:]},
   Doi                      = {10.1126/science.1133734},
   ISSN                     = {1095-9203},
   Owner                    = {ksenia},
   Publisher                = {American Association for the Advancement of Science (AAAS)},
   Timestamp                = {2016.12.14},
   Url                      = {http://dx.doi.org/10.1126/science.1133734}
+}
+
+@Article{Kane2005,
+  Title                    = {Quantum Spin Hall Effect in Graphene},
+  Author                   = {Kane, C. L. and Mele, E. J.},
+  Journal                  = {Physical Review Letters},
+  Year                     = {2005},
+
+  Month                    = {Nov},
+  Number                   = {22},
+  Volume                   = {95},
+
+  __markedentry            = {[ksenia:6]},
+  Doi                      = {10.1103/physrevlett.95.226801},
+  ISSN                     = {1079-7114},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2016.12.15},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevLett.95.226801}
 }
 
 @Article{Kohmoto1985,
@@ -32,8 +49,6 @@
   Number                   = {2},
   Pages                    = {343–354},
   Volume                   = {160},
-
-  __markedentry            = {[ksenia:6]},
   Doi                      = {10.1016/0003-4916(85)90148-4},
   ISSN                     = {0003-4916},
   Owner                    = {ksenia},
@@ -52,11 +67,32 @@
   Number                   = {5851},
   Pages                    = {766–770},
   Volume                   = {318},
+
   Doi                      = {10.1126/science.1148047},
   ISSN                     = {1095-9203},
   Owner                    = {ksenia},
   Publisher                = {American Association for the Advancement of Science (AAAS)},
   Timestamp                = {2016.12.14},
   Url                      = {http://dx.doi.org/10.1126/science.1148047}
+}
+
+@Article{Thouless1982,
+  Title                    = {Quantized Hall Conductance in a Two-Dimensional Periodic Potential},
+  Author                   = {Thouless, D. J. and Kohmoto, M. and Nightingale, M. P. and den Nijs, M.},
+  Journal                  = {Physical Review Letters},
+  Year                     = {1982},
+
+  Month                    = {Aug},
+  Number                   = {6},
+  Pages                    = {405–408},
+  Volume                   = {49},
+
+  __markedentry            = {[ksenia:]},
+  Doi                      = {10.1103/physrevlett.49.405},
+  ISSN                     = {0031-9007},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2016.12.15},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevLett.49.405}
 }
 
