@@ -30,9 +30,9 @@ def two_level_stripe_hamiltomian(py, N, xi, m, t):
 if __name__ == '__main__':
     plim = (-math.pi,math.pi)
     pyrange, energies = stripe_energies(two_level_stripe_hamiltomian, 
-                                       (150, -0.03, 1, 0.5),
+                                       (50, -0.1, 1, 0.5),
                                        plim = plim,
-                                       NX = 201)
+                                       NX = 101)
     for level in energies:
         plt.plot(pyrange,level)
     plt.xlim(*plim)

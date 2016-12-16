@@ -5,6 +5,21 @@ from numpy.linalg import eigh
 from mpl_toolkits.mplot3d import Axes3D
 
 
+def one_band_ham(NX, NY, t):
+    H = np.zeros((NX*NY)**2, dtype=complex).reshape(NX,NY,NX,NY)  
+    
+    for i in xrange(NX):
+        for j in xrange(NY):
+            H[i,j,(i+1)%NX,j] = -t
+            H[i,j,(i-1)%NX,j] = -t
+            H[i,j,i,(j+1)%NY] = -t
+            H[i,j,i,(j-1)%NY] = -t
+
+    H[0,0,0,0] = -5.
+
+    return H.reshape(NX*NY, NX*NY)
+
+
 def hamiltonian(NX, NY, xi,m,t):
     H = np.zeros((NX*NY*2)**2, dtype=complex).reshape(NX,NY,2,NX,NY,2)  
     
@@ -34,7 +49,6 @@ def hamiltonian(NX, NY, xi,m,t):
             H[i,j,B,i,(j+1)%NY,A] = -1
             H[i,j,B,i,(j-1)%NY,A] = 1
 
-
     return H.reshape(NX*NY*2, NX*NY*2)
 
 
@@ -46,14 +60,14 @@ def closest_value_to_zero(energies):
 
 def plot_state(number):
     state = vectors[:,number]
-    state_mod = state.reshape(NX,NY,2)
+    state_mod = state.reshape(2,NY,NX)
     
-    plt.plot(range(0,NX), map(abs, state_mod[:,0,0]))
+    plt.plot(range(0,NX), state_mod[0,0,:])#map(abs, state_mod[:,0,0]))
     plt.show()
 
 
-NX = NY = 14
-ham = hamiltonian(NX,NY,.5,1,0.2)
+NX = NY = 20
+ham = hamiltonian(NX,NY,0.1,1,0.5)
 energies,vectors = eigh(ham)
 
 cvz = closest_value_to_zero(energies)
