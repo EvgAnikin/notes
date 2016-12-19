@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.12)  1 OCT 2016 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  17 DEC 2016 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **spin_orbit.tex
 (./spin_orbit.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 10 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -528,12 +528,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [2 <./tb_model/levels.jpg>] [3 <./tb_model/diff_levels.jpg>] [4] [5]
 (./spin_orbit.aux) ) 
 Here is how much of TeX's memory you used:
- 2429 strings out of 493029
- 31119 string characters out of 6136234
- 102517 words of memory out of 5000000
- 5937 multiletter control sequences out of 15000+600000
+ 2429 strings out of 494440
+ 31119 string characters out of 6173197
+ 98505 words of memory out of 5000000
+ 5697 multiletter control sequences out of 15000+600000
  10086 words of font info for 37 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 430 hyphenation exceptions out of 8191
  37i,21n,23p,249b,229s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cme
@@ -549,7 +549,7 @@ ic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
 pfb>
-Output written on spin_orbit.pdf (5 pages, 393719 bytes).
+Output written on spin_orbit.pdf (5 pages, 393859 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream

@@ -60,16 +60,17 @@ def closest_value_to_zero(energies):
 
 def plot_state(number):
     state = vectors[:,number]
-    state_mod = state.reshape(2,NY,NX)
+    state_mod = state.reshape(NX,NY)
     
-    plt.plot(range(0,NX), state_mod[0,0,:])#map(abs, state_mod[:,0,0]))
+    plt.plot(range(0,NX), state_mod[:,0])#map(abs, state_mod[:,0,0]))
     plt.show()
 
 
-NX = NY = 20
-ham = hamiltonian(NX,NY,0.1,1,0.5)
+NX = 10
+NY = 15
+ham = one_band_ham(NX,NY,1)
 energies,vectors = eigh(ham)
 
-cvz = closest_value_to_zero(energies)
-print cvz
-plot_state(cvz)
+#cvz = closest_value_to_zero(energies)
+#print cvz
+plot_state(0)
