@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  15 DEC 2016 23:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  18 DEC 2016 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -815,44 +815,69 @@ e
 \tf@toc=\write3
 \openout3 = `report.toc'.
 
- (./intro.tex [1]) (./top_ins.tex
-Overfull \hbox (5.78705pt too wide) in paragraph at lines 40--1
-[]\T2A/cmr/m/n/12 Первая экс-пе-ри-мен-таль-ная ре-а-ли-за-ция то-по-ло-ги-че-с
-ких изо-ля-то-ров --- кван-то-вые ямы $[]$.
- []
+ (./intro.tex [1]) (./top_ins.tex [2]) (./two_levels.tex)
+(./examples.tex [3]) (./hgte.tex
 
-[2]) (./two_levels.tex) (./examples.tex [3]) (./exp_realisation.tex) [4]
-(./report.bbl) [5] (./report.aux) ) 
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 24.
+
+) (./well_model.tex [4]) (./bulk_edge.tex [5]
+<toy_ham_stripe.png, id=42, 474.8139pt x 615.7404pt>
+File: toy_ham_stripe.png Graphic file (type png)
+ <use toy_ham_stripe.png>
+Package pdftex.def Info: toy_ham_stripe.png used on input line 15.
+(pdftex.def)             Requested size: 200.19054pt x 259.60512pt.
+
+<eff_ham_stripe.png, id=44, 578.16pt x 433.62pt>
+File: eff_ham_stripe.png Graphic file (type png)
+ <use eff_ham_stripe.png>
+Package pdftex.def Info: eff_ham_stripe.png used on input line 18.
+(pdftex.def)             Requested size: 200.19054pt x 150.14162pt.
+)
+[6 <./toy_ham_stripe.png> <./eff_ham_stripe.png>] (./report.bbl
+
+! Package inputenc Error: Unicode char в€’ (U+2212)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...ck Band structure of semimagnetic hg 1 в€’
+                                                   y mn y te quantum wells.
+? 
+) [7] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 4127 strings out of 494440
- 51411 string characters out of 6173197
- 126508 words of memory out of 5000000
- 7320 multiletter control sequences out of 15000+600000
- 19221 words of font info for 41 fonts, out of 8000000 for 9000
+ 4159 strings out of 494440
+ 51864 string characters out of 6173197
+ 131548 words of memory out of 5000000
+ 7340 multiletter control sequences out of 15000+600000
+ 21965 words of font info for 47 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 38i,12n,32p,599b,172s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ksenia/.texmf-var/fonts/pk/ljfour/lh
-/lh-t2a/lati1200.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm
-1095.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1095.600pk> 
-</home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1200.600pk> </home/kseni
-a/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.600pk> </home/ksenia/.texmf-var
-/fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk> </home/ksenia/.texmf-var/fonts/pk/lj
-four/lh/lh-t2a/larm1200.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t
-2a/lati1728.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx2488.
-600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lacc1728.600pk> </hom
-e/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lacc1200.600pk> </home/ksenia/.te
-xmf-var/fonts/pk/ljfour/lh/lh-t2a/lacc2074.600pk></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b>
-Output written on report.pdf (6 pages, 189505 bytes).
+ 38i,18n,32p,669b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati1
+200.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1095.600pk> <
+/home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1095.600pk> </home/ksenia
+/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1200.600pk> </home/ksenia/.texmf-var/
+fonts/pk/ljfour/lh/lh-t2a/labx1728.600pk> </home/ksenia/.texmf-var/fonts/pk/ljf
+our/lh/lh-t2a/larm1440.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2
+a/larm1200.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati1728.6
+00pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx2488.600pk> </home
+/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lacc1728.600pk> </home/ksenia/.tex
+mf-var/fonts/pk/ljfour/lh/lh-t2a/lacc1200.600pk> </home/ksenia/.texmf-var/fonts
+/pk/ljfour/lh/lh-t2a/lacc2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on report.pdf (8 pages, 839868 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 481 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  15 DEC 2016 22:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  18 DEC 2016 20:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1880,18 +1880,18 @@ Overfull \hbox (1.37074pt too wide) has occurred while \output is active
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 36.
+line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1904,6 +1904,27 @@ Overfull \hbox (1.37074pt too wide) has occurred while \output is active
 [2
 
 ]
+Overfull \hbox (1.37074pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[3
+
+]
+Overfull \hbox (1.37074pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[4
+
+]
+Overfull \hbox (1.37074pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[5
+
+]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
 
@@ -1913,11 +1934,11 @@ Overfull \hbox (1.37074pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 37.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1925,31 +1946,35 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 18189 strings out of 494440
- 338607 string characters out of 6173197
- 414157 words of memory out of 5000000
- 21021 multiletter control sequences out of 15000+600000
- 16195 words of font info for 44 fonts, out of 8000000 for 9000
+ 18277 strings out of 494440
+ 340232 string characters out of 6173197
+ 414180 words of memory out of 5000000
+ 21090 multiletter control sequences out of 15000+600000
+ 27507 words of font info for 69 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  56i,16n,65p,412b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ksenia/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk> </home/
-ksenia/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600pk> </home/ksenia/.te
-xmf-var/fonts/pk/ljfour/lh/lh-t2a/lass0600.600pk> </home/ksenia/.texmf-var/font
-s/pk/ljfour/lh/lh-t2a/lass0800.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/
-lh/lh-t2a/lass1095.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/la
-ss1440.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on presentation.pdf (2 pages, 76381 bytes).
+ </home/ksenia/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/
+ksenia/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk> </home/ksenia/.te
+xmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600pk> </home/ksenia/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/ksenia/.texmf-var/fonts/pk/ljf
+our/lh/lh-t2a/lass0600.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2
+a/lass0800.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass1095.6
+00pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass1440.600pk></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/symbols/msbm10.pfb>
+Output written on presentation.pdf (5 pages, 108038 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
- 6 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 373 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
+ 13 named destinations out of 1000 (max. 500000)
+ 79 words of extra memory for PDF output out of 10000 (max. 10000000)
 

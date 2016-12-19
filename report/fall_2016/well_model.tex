@@ -1,0 +1,83 @@
+\section{Модель квантовой ямы в приближении сильной связи}
+Для описания квантовой ямы была написана модель сильной связи, описывающая
+валентную $p$--зону и $s$--зону проводимости. Мы рассмотрели плоскую
+квадратную решётку из атомов, на каждом из которых ``сидят'' состояния
+с $p_x$--, $p_y$--, $p_z$-- и $s$--орбиталями и двумя 
+возможными проекцими спина. В модели учитывались перекрытия
+орбиталей соседних атомов, а также спин--орбитальное взаимодействие. 
+Гамильтониан имеет вид
+\begin{multline}
+   \label{well_model_ham}
+   H  = \sum_{m,n} (E_s + 4t_s) s_{mn}^{\dagger} s_{mn} - t_s s_{mn}^{\dagger}
+                          (s_{m+1,n} + s_{m-1,n} + s_{m,n+1} + s_{m,n-1}) \\
+          + t_{sp} s_{mn}^{\dagger} (-p_{m+1,n}^x + p_{m-1,n}^x - p^y_{m,n+1} + p^y_{m,n-1})
+                                                                + \mathrm{h.c.}  \\
+          + (p_{mn}^x)^{\dagger}(t_{\parallel}(p_{m+1,n}^x + p_{m-1,n}^x) +
+                                 t_{\perp} (p^x_{m,n+1} + p^x_{m,n-1})) \\
+          + (p_{mn}^x)^{\dagger}(t_{\perp}(p_{m+1,n}^y + p_{m-1,n}^y) +
+                                 t_{\parallel} (p^y_{m,n+1} + p^y_{m,n-1})) \\
+          + (p_{mn}^z)^{\dagger} t_3 (p_{m+1,n}^z + p_{m-1,n}^z +
+                                p^z_{m,n+1} + p^z_{m,n-1}) \\
+          -\frac{E_{SO}}{3}
+                \begin{matrix}
+                    \left(\begin{matrix}
+                        p_x^\dagger & p_y^\dagger & p_z^\dagger
+                    \end{matrix}\right) \\
+                    \\
+                    \\
+                \end{matrix}
+        		\left(\begin{matrix}
+        			1 & i & -1 \\
+        			-i & 1 & i \\
+        			-1 & -i & 1
+        		\end{matrix} \right)
+                \left(\begin{matrix}
+                    p_x \\ 
+                    p_y \\
+                    p_z
+                \end{matrix}\right) + \\
+        + \text{всё то же самое с переворотом проекции спина}
+\end{multline}
+Поясним происхождение члена, отвечающего за спин--орбитальное взаимодействие.
+Как хорошо известно, в атоме гамильтониан спин--орбитального взаимодейстия имеет вид
+\begin{equation}
+    H_{\mathrm{SO}} =  A(\vec{S}, \vec{L}) = \frac{A}{2}(J^2 - L^2 - S^2)
+\end{equation}
+Если орбитальный момент фиксирован, то энергия определяется полным моментом. Таким образом,
+спин--орбитальное взаимодействие приводит к расщеплению состояний с моментами $\frac32$ и
+$\frac12$. С помощью правил сложения моментов эти состояния можно выразить через 
+$p$--орбитали: 
+
+\begin{equation}
+	\label{transform1}
+	\begin{gathered}
+		a_{\frac{3}{2}, \frac{3}{2}} = 
+			\sqrt{\frac{1}{2}} \left(p_{x,\frac{1}{2}} - i p_{y,\frac{1}{2}}\right)\\
+		a_{\frac{3}{2}, \frac{1}{2}} = 
+			\sqrt{\frac{1}{6}} \left(p_{x,-\frac{1}{2}} - i p_{y,-\frac{1}{2}}\right) 
+				+ \sqrt{\frac{2}{3}} p_{z, \frac{1}{2}}\\
+		a_{\frac{3}{2}, -\frac{1}{2}} = 
+			\sqrt{\frac{2}{3}} p_{z, -\frac{1}{2}}+
+				\sqrt{\frac{1}{6}} \left(p_{x,\frac{1}{2}} + i p_{y,\frac{1}{2}}\right) \\
+		a_{\frac{3}{2}, -\frac{3}{2}} = 
+			\sqrt{\frac{1}{2}} \left(p_{x,-\frac{1}{2}} + i p_{y,-\frac{1}{2}}\right)\\
+	\end{gathered}
+\end{equation}
+\begin{equation}
+	\label{transform2}
+	\begin{gathered}
+		a_{\frac{1}{2}, \frac{1}{2}} = 
+			\sqrt{\frac{1}{3}}\left(p_{x, -\frac{1}{2}} - ip_{y,-\frac{1}{2}}\right) - 
+				\sqrt{\frac{1}{3}} p_{z,\frac{1}{2}}\\
+		a_{\frac{1}{2}, -\frac{1}{2}} = 
+			-\sqrt{\frac{1}{3}} p_{z,-\frac{1}{2}} + 
+				\sqrt{\frac{1}{3}}\left(p_{x, \frac{1}{2}} + ip_{y,\frac{1}{2}}\right)
+	\end{gathered}
+\end{equation}
+Тогда спин--орбитальный гамильтониан запишется так:
+\begin{equation}
+	H_{\mathrm{full}} = -\Delta E_{SO} 
+			(a_{\frac{1}{2}, \frac{1}{2}}^\dagger a_{\frac{1}{2}, \frac{1}{2}} +
+			a_{\frac{1}{2}, -\frac{1}{2}}^\dagger a_{\frac{1}{2}, -\frac{1}{2}})
+\end{equation}
+После простого преобразования получается последнее слагаемое в \eqref{well_model_ham}.

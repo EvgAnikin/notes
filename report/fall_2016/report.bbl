@@ -1,17 +1,5 @@
 \begin{thebibliography}{1}
 
-\bibitem{Bernevig2006}
-B.~A. Bernevig, T.~L. Hughes, and S.-C. Zhang.
-\newblock Quantum spin hall effect and topological phase transition in hgte
-  quantum wells.
-\newblock {\em Science}, 314(5806):1757–1761, Dec 2006.
-
-\bibitem{Konig2007}
-M.~Konig, S.~Wiedmann, C.~Brune, A.~Roth, H.~Buhmann, L.~W. Molenkamp, X.-L.
-  Qi, and S.-C. Zhang.
-\newblock Quantum spin hall insulator state in hgte quantum wells.
-\newblock {\em Science}, 318(5851):766–770, Nov 2007.
-
 \bibitem{Kohmoto1985}
 Mahito Kohmoto.
 \newblock Topological invariant and the quantization of the hall conductance.
@@ -28,9 +16,27 @@ Xiao-Liang Qi, Yong-Shi Wu, and Shou-Cheng Zhang.
   paramagnetic semiconductors.
 \newblock {\em Physical Review B}, 74(8), Aug 2006.
 
+\bibitem{Bernevig2006}
+B.~A. Bernevig, T.~L. Hughes, and S.-C. Zhang.
+\newblock Quantum spin hall effect and topological phase transition in hgte
+  quantum wells.
+\newblock {\em Science}, 314(5806):1757–1761, Dec 2006.
+
 \bibitem{Kane2005}
 C.~L. Kane and E.~J. Mele.
 \newblock Quantum spin hall effect in graphene.
 \newblock {\em Physical Review Letters}, 95(22), Nov 2005.
+
+\bibitem{Konig2007}
+M.~Konig, S.~Wiedmann, C.~Brune, A.~Roth, H.~Buhmann, L.~W. Molenkamp, X.-L.
+  Qi, and S.-C. Zhang.
+\newblock Quantum spin hall insulator state in hgte quantum wells.
+\newblock {\em Science}, 318(5851):766–770, Nov 2007.
+
+\bibitem{Novik2005}
+E.~G. Novik, A.~Pfeuffer-Jeschke, T.~Jungwirth, V.~Latussek, C.~R. Becker,
+  G.~Landwehr, H.~Buhmann, and L.~W. Molenkamp.
+\newblock Band structure of semimagnetic hg 1 − y mn y te quantum wells.
+\newblock {\em Physical Review B}, 72(3), Jul 2005.
 
 \end{thebibliography}

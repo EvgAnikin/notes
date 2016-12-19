@@ -27,11 +27,59 @@
 
 \begin{frame}
     \frametitle{Двумерные топологические изоляторы}
-    \begin{equation}
-        \label{TKNN}
-        N = \frac{1}{2\pi i} 
-            \int d^2 k\, \left(\partial_i \langle u | \partial_j u \rangle -
-            \partial_j \langle u | \partial_i u \rangle \right)
-    \end{equation}
+    \begin{itemize}
+        \item Отличен от нуля $\mathrm{TKNN}$--инвариант:
+            \begin{equation}
+                \label{TKNN}
+                N = \frac{1}{2\pi i} 
+                    \int d^2 k\, \left(\partial_x \langle u | \partial_y u \rangle -
+                    \partial_y \langle u | \partial_x u \rangle \right)
+            \end{equation}
+        \item Невозможно задать функцию Блоха во всей зоне Бриллюэна
+        \item Есть киральные краевые состояния
+    \end{itemize}
 \end{frame}
+
+\begin{frame}
+    \frametitle{Смысл $\mathrm{TKNN}$--инварианта}
+    \begin{itemize}
+        \item Холловская проводимость выражается через $N$:
+            \begin{equation}
+                \sigma_{xy} = \frac{e^2}{2\pi \hbar} N
+            \end{equation}
+        \item $N$ --- набег фазы функции Блоха на границе двух карт, покрывающих зону
+            Бриллюэна:
+            \begin{equation}
+                N = \frac{1}{2\pi}\int_\gamma d\phi
+            \end{equation}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Соответствие объём--граница}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Квантовые ямы HgTe}
+    \begin{itemize}
+        \item Первая экспериментальная реализация двумерных топологических изоляторов
+    
+        \item Эффективный гамильтониан для E1, H1 подуровней:
+        \begin{equation}
+           \label{eff_so_ham}
+            \scalebox{0.8}{%
+            $
+            H = \left(\begin{matrix}
+                    \xi + \frac{1}{m}(2 - \cos{p_x} - \cos{p_y}) & 
+                            2t(\sin{p_x} - i\sin{p_y})   \\
+                    2t(\sin{p_x} + i\sin{p_y}) & 
+                           - \xi - \frac{1}{m}(2 - \cos{p_x} - \cos{p_y}) \\
+                \end{matrix}\right)
+            $
+            }
+        \end{equation}
+        Описывает топологический изолятор при $\xi < 0$
+    \end{itemize}
+\end{frame}
+
 \end{document}
