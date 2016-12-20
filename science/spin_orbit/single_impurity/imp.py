@@ -72,7 +72,7 @@ def det_green_function(omega, xi, m, t, dE):
                 
 if __name__ == '__main__':
     epsilon = 1e-5
-    xi, m, t = -0.03, 0.1, 0.5
+    xi, m, t = 0.03, 0.1, 0.5
     p_max = 0.05
     max_omega = (1 - epsilon)*math.sqrt(energy_square(0, 0, xi, m, t))*(1 - epsilon)
 

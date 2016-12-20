@@ -1,4 +1,10 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Gusev2011}
+G.~M. Gusev, Z.~D. Kvon, O.~A. Shegai, N.~N. Mikhailov, S.~A. Dvoretsky, and
+  J.~C. Portal.
+\newblock Transport in disordered two-dimensional topological insulators.
+\newblock {\em Physical Review B}, 84(12), Sep 2011.
 
 \bibitem{Kohmoto1985}
 Mahito Kohmoto.
@@ -7,7 +13,7 @@ Mahito Kohmoto.
 
 \bibitem{Thouless1982}
 D.~J. Thouless, M.~Kohmoto, M.~P. Nightingale, and M.~den Nijs.
-\newblock Quantized hall conductance in a two-dimensional periodic potential.
+\newblock Quantized hall conductance in a two--dimensional periodic potential.
 \newblock {\em Physical Review Letters}, 49(6):405–408, Aug 1982.
 
 \bibitem{Qi2006}
@@ -33,10 +39,22 @@ M.~Konig, S.~Wiedmann, C.~Brune, A.~Roth, H.~Buhmann, L.~W. Molenkamp, X.-L.
 \newblock Quantum spin hall insulator state in hgte quantum wells.
 \newblock {\em Science}, 318(5851):766–770, Nov 2007.
 
+\bibitem{Luttinger1956}
+J.~M. Luttinger.
+\newblock Quantum theory of cyclotron resonance in semiconductors: General
+  theory.
+\newblock {\em Physical Review}, 102(4):1030–1041, May 1956.
+
+\bibitem{Kane1957}
+Evan~O. Kane.
+\newblock Band structure of indium antimonide.
+\newblock {\em Journal of Physics and Chemistry of Solids}, 1(4):249–261, Jan
+  1957.
+
 \bibitem{Novik2005}
 E.~G. Novik, A.~Pfeuffer-Jeschke, T.~Jungwirth, V.~Latussek, C.~R. Becker,
   G.~Landwehr, H.~Buhmann, and L.~W. Molenkamp.
-\newblock Band structure of semimagnetic hg 1 − y mn y te quantum wells.
+\newblock Band structure of semimagnetic hg 1 --- y mn y te quantum wells.
 \newblock {\em Physical Review B}, 72(3), Jul 2005.
 
 \end{thebibliography}
