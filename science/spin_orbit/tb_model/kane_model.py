@@ -45,7 +45,7 @@ def kane_ham(kx, ky, kz, args):
     return H
 
 
-ham_x = lambda pz: kane_ham(0, 0, pz, (1.606-0.57, -0.57, -0.09, 0.845, 1.47, -0.28))
+ham_x = lambda px: kane_ham(px, 0, 0, (1.606-0.57, -0.57, -0.09, 0.845, 1.47, -0.28))
 
 pyrange, energies = stripe_energies(ham_x, (), NX = 101, plim = (-1,1))
 
