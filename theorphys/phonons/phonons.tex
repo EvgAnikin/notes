@@ -1,0 +1,111 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Взаимодействие электронов и фононов}
+\author{Евгений Аникин, 128}
+
+\begin{document}
+\maketitle
+\section{Звук в упругой среде}
+Деформацию однородной и изотропной среды можно задать вектором смещений $\xi$, зависящим от 
+координаты $x$. Энергия деформации зависит от производных $\xi$ и квадратична по ним, поэтому
+задаётся тензором:
+\begin{equation}
+    dW = \frac{1}{2} T_{ijkl}\frac{\partial\xi_i}{\partial x_j}
+                    \frac{\partial\xi_k}{\partial x_l}\, d^3x
+\end{equation}
+Общий вид изотропного тензора $T_{ijkl}$ ---
+\begin{equation}
+    T_{ijkl} = A\delta_{ij}\delta_{kl} + B\delta_{ik}\delta_{jl} + C\delta_{il}\delta_{jk}
+\end{equation}
+Связь коэффициентов $A$, $B$, $C$ даётся условием, что энергия деформации равна нулю, когда
+$\frac{\partial\xi_i}{\partial\xi_j}$ --- матрица бесконечно малого поворота, то есть 
+антисимметрична. Отсюда получается, что $B = C$. Таким образом, потенциальная энергия
+поля деформаций ---
+\begin{equation}
+    W = \frac{1}{2}\int A\left(\frac{\partial\xi_i}{\partial x_i}\right)^2 + 
+                               B\left(\frac{\partial\xi_i}{\partial x_j}
+                                 \frac{\partial\xi_i}{\partial x_j} + 
+                                 \frac{\partial\xi_i}{\partial x_j}
+                                 \frac{\partial\xi_j}{\partial x_i}\right)\, d^3 x
+\end{equation}
+Кинетическая энергия записывается обычным образом:
+\begin{equation}
+    T = \int \frac{\rho}{2}\left( \frac{\partial \xi}{\partial t}\right)^2 \,d^3x
+\end{equation}
+Уравнения движения получаются такими:
+\begin{equation}
+    \rho\frac{\partial^2 \xi_i}{\partial t^2} = 
+        \frac{\partial}{\partial x_j}\left( A\frac{\partial\xi_k}{\partial x_k}\delta_{ij} + 
+                                            B\left(\frac{\partial\xi_i}{\partial x_j} + 
+                                                   \frac{\partial\xi_j}{\partial x_i}\right)
+                                                   \right)
+\end{equation}
+В импульсном представлении
+\begin{equation}
+    [(\omega^2\rho - Bk^2)\delta_{ij} - (A + B)k_i k_j]\xi_j = 0
+\end{equation}
+Это уравнение определяет две поперечные и одну продольную моду.  
+\section{Квантование фононного поля}
+Гамильтониан фононов ---
+\begin{equation}
+    H = \int d^3x\,\left[\frac{\pi_i^2}{2\rho} + 
+    \frac{A}{2}\left(\frac{\partial\xi_i}{\partial x_i}\right)^2 + 
+                               \frac{B}{2}\left(\frac{\partial\xi_i}{\partial x_j}
+                                 \frac{\partial\xi_i}{\partial x_j} + 
+                                 \frac{\partial\xi_i}{\partial x_j}
+                                 \frac{\partial\xi_j}{\partial x_i}\right)\right]
+\end{equation}
+Процедура квантования сводится к замене координат и импульсов операторами с 
+коммутационными соотношениями
+\begin{equation}
+    [\xi_i(x), \pi_j(x')] = (2\pi)^3\hbar\delta(x - x')\delta_{ij}
+\end{equation}
+Переход к операторам рождения и уничтожения фононов удобно делать в несколько шагов.
+Вначале перейдём к импульсному представлению:
+\begin{equation}
+    \begin{split}
+        \xi_i(x) = &  \int \frac{d^3 k}{(2\pi)^3}\, \xi_i(k) e^{ikx} \\
+        \pi_i(x) = &  \int \frac{d^3 k}{(2\pi)^3}\, \pi_i(k) e^{-ikx} \\
+    \end{split}
+\end{equation}
+Вещественность $\xi$, $\pi$ даёт
+\begin{equation}
+    \begin{split}
+        \xi(k) = & \xi(-k)^\dagger,\\
+        \pi(k) = & \pi(-k)^\dagger
+    \end{split}
+\end{equation}
+Гамильтониан принимает вид
+\begin{equation}
+    H = \int \frac{d^3 k}{(2\pi)^3} \left[ \frac{\pi_i^\dagger \pi_i}{2\rho} + 
+                         \frac{1}{2}((A + B)k_i k_j + Bk^2\delta_{ij})\xi_i^\dagger\xi_j
+                                        \right]
+\end{equation}
+Далее сделаем замену 
+\begin{equation}
+    \begin{split}
+        \xi_i = & e_{i\alpha} \xi_\alpha\\
+        \pi_i = & e_{i\alpha}^* \pi_\alpha
+    \end{split}
+\end{equation}
+Теперь
+\begin{equation}
+    H = \int \frac{d^3 k}{(2\pi)^3} \left[ \frac{\pi_\alpha^\dagger \pi_\alpha}{2\rho} + 
+                         \frac{\rho \omega_\alpha^2}{2} \xi_\alpha^\dagger \xi_\alpha
+                                        \right]
+\end{equation}
+Наконец, можно ввести операторы рождения и уничтожения.
+\begin{equation}
+    \begin{split}
+        a_{\alpha} = & \sqrt{\frac{\rho \omega_\alpha}{2\hbar}}\xi_\alpha + 
+                        i\sqrt{\frac{1}{2\rho\omega_\alpha \hbar}}\pi_\alpha^\dagger\\
+        a_{\alpha}^\dagger = & \sqrt{\frac{\rho \omega_\alpha}{2\hbar}}\xi_\alpha^\dagger - 
+                        i\sqrt{\frac{1}{2\rho\omega_\alpha \hbar}}\pi_\alpha\\
+    \end{split}
+\end{equation}
+\end{document}
