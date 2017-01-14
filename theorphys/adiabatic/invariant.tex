@@ -7,25 +7,44 @@
 
 \newcommand{\p}{\partial}
 
-\title{Адиабатический инвариант}
+\title{Адиабатический инвариант и переменные действие--угол}
 \author{Anikin Evgeny, 128}
 
 \begin{document}
 \maketitle
+\section{Адиабатический инвариант}
 Пусть гамильтонова система описывается одной координатой $q$. Докажем, что величина
 \begin{equation}
 	I = \frac{1}{2\pi} \oint p\,dq
 \end{equation}
-не меняется при медленном изменении гамильтониана во времени. 
+не меняется при медленном изменении гамильтониана во времени. Пусть гамильтониан 
+зависит от параметра $\lambda$, который, в свою очередь, зависит от $t$. 
 
 \begin{equation}
-	\frac{dI}{dt} = \frac{\partial I}{\partial E} \dot{E} + \frac{\partial I}{\partial t};
+	\frac{dI}{dt} = \frac{\partial I}{\partial E} \dot{E} + 
+        \frac{\partial I}{\partial \lambda} \dot{\lambda}
 \end{equation}
 \begin{equation}
 	\frac{dE}{dt} = \frac{\partial H}{\partial t},
 \end{equation}
 \begin{equation}
-	\frac{\partial I}{\partial E} = \oint \frac{\partial p}{\partial E} \,dq
+	\frac{\partial I}{\partial E} = \oint \frac{\partial p}{\partial E} \,dq = 
+        \oint \frac{dq}{\frac{\partial H}{\partial p}} = T,
 \end{equation}
-В последнем равенстве частная производная берётся при постояной координате.
+\begin{equation}
+	\frac{\partial I}{\partial \lambda} = \oint \frac{\partial p}{\partial \lambda} \,dq = 
+        -\oint \frac{\frac{\partial{H}}{\partial{\lambda}}}{\frac{\partial H}{\partial p}}\,dq
+\end{equation}
+Таким образом,
+\begin{equation}
+    \label{dIdt}
+	\frac{dI}{dt} = T\frac{\partial H}{\partial \lambda} \dot{\lambda} 
+        -\dot{\lambda}
+        \oint \frac{\frac{\partial{H}}{\partial{\lambda}}}{\frac{\partial H}{\partial p}}\,dq
+\end{equation}
+Усредним теперь $\frac{dI}{dt}$ по периоду. Тогда первое слагаемое в \eqref{dIdt} сократится
+со вторым, что доказывает, что $I$ -- адиабаический инвариант.
+\section{Переменные действие--угол}
+Сделаем каноническое преобразование так, чтобы $I$ стало координатой. 
+
 \end{document}
