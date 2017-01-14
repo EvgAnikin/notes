@@ -58,7 +58,7 @@ tperp = E0*(gamma1 - 2*gamma2)
 ts = E0
 P = math.sqrt(Ep*E0)
 
-ham_x = lambda pz: kane_tb_ham(0, 0, pz, (tpar, tperp, ts, P, Ec, Ev))
+ham_x = lambda pz: kane_tb_ham(0.3, 0., pz, (tpar, tperp, ts, P, Ec, Ev))
 
 pyrange, energies = stripe_energies(ham_x, (), NX = 101, plim = (-math.pi,math.pi))
 
