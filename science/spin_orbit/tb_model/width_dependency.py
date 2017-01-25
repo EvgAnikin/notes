@@ -90,17 +90,13 @@ if __name__ == '__main__':
                         Ep=18.8,
                         Ec=-0.303,
                         Ev=0)
-    n_cdte = 20
-    n_hgte = 12
+    n_cdte = 40
 
-    ham = lambda px: well_hamiltonian(px, 0, cdte_data, hgte_data, n_cdte, n_hgte)
+    for width in xrange(1,15):
+        ham = lambda px: well_hamiltonian(px, 0, cdte_data, hgte_data, 
+                                          n_cdte=n_cdte, n_hgte=width)
+        energies = linalg.eigvalsh(ham(0))
+        plt.scatter(width*np.ones(len(energies)), energies, marker = '.')
 
-    p_lim = (-math.pi/5, math.pi/5)
-    pxrange, energies = stripe_energies(ham, (), NX = 81, plim = p_lim)
-
-    for level in energies:
-        plt.plot(pxrange, level)
-    plt.xlim(*p_lim)
-#    plt.ylim(-1.5,1.5)
-
+    plt.ylim(-1,1)
     plt.show()

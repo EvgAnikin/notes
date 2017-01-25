@@ -17,17 +17,17 @@ def valence_ham(px, py, pz, tpar, tperp, Ev):
     return ham
 
 def kane_tb_ham(px, py, pz, args):
-    ts, tperp, tpar, P, Ec, Ev = args
+    ts, tpar, tperp, P, Ec, Ev = args
     ham = np.zeros(6*6, dtype=complex).reshape(6,6)
     ham[2:,2:] = valence_ham(px, py, pz, tpar, tperp, Ev)
 
-    Ax = 1./2*np.array([[-math.sqrt(3),0,1,0],
-                         [0,-1,0,math.sqrt(3)]],dtype=complex)
-    Ay = -1.j/2*np.array([[math.sqrt(3),0,1,0],
-                         [0,1,0,math.sqrt(3)]],dtype=complex)
-    Az = np.array([[0,1,0,0],
-                   [0,0,1,0]], dtype=complex)
-    ham[0:2,2:] = math.sqrt(2/3)*P*(math.sin(px)*Ax + math.sin(py)*Ay + math.sin(pz)*Az)
+    Ax = np.array([[-1/math.sqrt(2), 0, 1/math.sqrt(6), 0],
+                   [0, -1/math.sqrt(6), 0, 1/math.sqrt(2)]])
+    Ay = np.array([[-1j/math.sqrt(2), 0, -1j/math.sqrt(6), 0],
+                   [0, -1j/math.sqrt(6), 0, -1j/math.sqrt(2)]])
+    Az = np.array([[0, math.sqrt(2/3), 0, 0],
+                   [0, 0, math.sqrt(2/3), 0]])
+    ham[0:2,2:] = P*(math.sin(px)*Ax + math.sin(py)*Ay + math.sin(pz)*Az)
     ham[2:,0:2] = ham[0:2,2:].T
 
     ham[0:2,0:2] = np.identity(2)*(Ec + 2*ts*(3 - math.cos(px) - math.cos(py) - math.cos(pz)))
@@ -58,13 +58,13 @@ tperp = E0*(gamma1 - 2*gamma2)
 ts = E0
 P = math.sqrt(Ep*E0)
 
-ham_x = lambda pz: kane_tb_ham(0.3, 0., pz, (tpar, tperp, ts, P, Ec, Ev))
+ham_x = lambda px: kane_tb_ham(px, 0., 0, (ts, tpar, tperp, P, Ec, Ev))
 
 pyrange, energies = stripe_energies(ham_x, (), NX = 101, plim = (-math.pi,math.pi))
 
 for band in energies:
-    plt.plot(pyrange/0.646, band)
+    plt.plot(pyrange, band)
 
-#plt.xlim(-1,1)
-#plt.ylim(-1.5,1.5)
+plt.xlim(-math.pi, math.pi)
+plt.ylim(-1.5,1.5)
 plt.show()
