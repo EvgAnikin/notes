@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Излучение движущихся зарядов}
+\author{Евгений Аникин, 128}
+
+\begin{document}
+\maketitle
+\section{Функция Грина волнового уравнения}
+Функция Грина $G(x,t)$ по определению равна запаздывающему решению уравнения
+\begin{equation}
+    \partial_\mu \partial^\mu \phi = \delta(x,t)
+\end{equation}
+Преобразованием Фурье получим
+\begin{equation}
+    G(x,t) = \int \frac{d\omega}{(2\pi)^2} \frac{d^3k}{(2\pi)^3} 
+            \frac{e^{-i\omega t + ikx}}{\omega^2 - k^2}
+\end{equation}
+Обход полюсов при интегрировании по $\omega$ нужно производить сверху, чтобы получить
+запаздывающую функцию.
+В результате получается
+\begin{equation}
+    G(x,t) = -\frac{1}{2\pi} \delta(t^2 - x^2) \theta(t)
+\end{equation}
+\end{document}
