@@ -125,8 +125,40 @@ $K_0(x)$ --- решение уравнения Бесселя, получим
         K_0 \left(\sqrt{\frac{\xi^2 - \omega^2}{4t^2 + \frac{\xi}{m}}}R \right)\\
         G_{21} & = \frac{it}{\pi} \sqrt{\frac{\xi^2 - \omega^2}
                                      {(4t^2 + \frac{\xi}{m})^{3}}}
-        K_0' \left(\sqrt{\frac{\xi^2 - \omega^2}{4t^2 + \frac{\xi}{m}}}R \right)e^{-i\theta}
+        K_0' \left(\sqrt{\frac{\xi^2 - \omega^2}{4t^2 + \frac{\xi}{m}}}R \right)e^{i\theta}
     \end{split}
+\end{equation}
+Найдём момент импульса найденных состояний. Оператор полного момента имеет вид
+\begin{equation}
+    J_z = x p_y - y p_x + \frac{1}{2}\sigma_z
+\end{equation}
+Несложно понять, что у двух найденных состояний полный момент равен $\pm \frac{1}{2}$.
+
+Интересно также найти магнитный момент. Оператор магнитного момента ---
+\begin{equation}
+    m_z = \frac{e}{2c}(x v_y - y v_x) + \frac{e}{2m_0c} \sigma_z
+\end{equation}
+Операторы скорости в низшем порядке по импульсам ---
+\begin{equation}
+    \begin{split}
+        v_x & = \begin{pmatrix} 
+                -\frac{i}{m} \partial_ x & 2t \\
+                2t & \frac{i}{m}\partial_x
+              \end{pmatrix} \\
+        v_y & = \begin{pmatrix} 
+                -\frac{i}{m} \partial_y & -2it \\
+                2it & \frac{i}{m}\partial_y
+              \end{pmatrix} \\
+    \end{split}
+\end{equation}
+Таким образом,
+\begin{equation}
+    m_z = \frac{e}{2mc}
+            \begin{pmatrix}
+               l_z & -2imt\cdot re^{-i\theta} \\
+               2imt\cdot r e^{i\theta} & -l_z
+            \end{pmatrix} + 
+          \frac{e}{2m_0c} \sigma_z
 \end{equation}
 
 %Попробуем вычислить её в том же приближении (в кругу радиуса $p_{\mathrm{max}}$). 

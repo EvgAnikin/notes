@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  14 JAN 2017 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  14 JAN 2017 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -731,28 +731,28 @@ e
 ))
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./invariant.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./invariant.aux) ) 
 Here is how much of TeX's memory you used:
  3534 strings out of 494440
  42919 string characters out of 6173197
- 107412 words of memory out of 5000000
+ 108412 words of memory out of 5000000
  6776 multiletter control sequences out of 15000+600000
  12295 words of font info for 34 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 38i,6n,23p,404b,191s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home
-/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/ksenia/.tex
-mf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </home/ksenia/.texmf-var/fonts
-/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/l
-h/lh-t2a/larm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on invariant.pdf (1 page, 77498 bytes).
+ 38i,7n,23p,404b,191s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </
+home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/ksenia/
+.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </home/ksenia/.texmf-var/f
+onts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfo
+ur/lh/lh-t2a/larm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on invariant.pdf (2 pages, 85667 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 171 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

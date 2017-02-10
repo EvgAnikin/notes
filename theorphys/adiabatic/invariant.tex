@@ -38,13 +38,33 @@
 Таким образом,
 \begin{equation}
     \label{dIdt}
-	\frac{dI}{dt} = T\frac{\partial H}{\partial \lambda} \dot{\lambda} 
+	\frac{dI}{dt} = \dot{\lambda}T\frac{\partial H}{\partial \lambda}  
         -\dot{\lambda}
         \oint \frac{\frac{\partial{H}}{\partial{\lambda}}}{\frac{\partial H}{\partial p}}\,dq
 \end{equation}
 Усредним теперь $\frac{dI}{dt}$ по периоду. Тогда первое слагаемое в \eqref{dIdt} сократится
 со вторым, что доказывает, что $I$ -- адиабаический инвариант.
 \section{Переменные действие--угол}
-Сделаем каноническое преобразование так, чтобы $I$ стало координатой. 
-
+Сделаем каноническое преобразование так, чтобы $I$ стало координатой. Канонические 
+преобразования сохраняют ''форму действия`` с точностью до полного дифференциала, то 
+есть при переходе от $q,p$ к $I,w$ должно быть
+\begin{equation}
+    p\,dq - H\,dt = w\,dI - \tilde{H}\,dt + dF,
+\end{equation}
+где $F = F(q,I,t)$ называется производящей функцией. Очевидно, что
+\begin{equation}
+    F = \int p\,dq
+\end{equation}
+Тогда 
+\begin{equation}
+    w = -\frac{\partial}{\partial I} \int p\,dq = -\frac{2\pi}{T} \int \frac{dq}{v}
+\end{equation}
+Очевидно, что гамильтониан в новых переменных зависит только от $I$. Уравнения Гамильтона 
+примут вид
+\begin{equation}
+    \begin{gathered}
+        \dot{I} = 0 \\
+        \dot{w} = -\frac{2\pi}{T}
+    \end{gathered}
+\end{equation}
 \end{document}
