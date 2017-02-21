@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+\newcommand{\p}{\partial}
+
+\title{Дельта--функция}
+\author{Anikin Evgeny}
+
+\begin{document}
+\maketitle
+\section{Дельта--функция}
+Дельта--функция Дирака --- это ''функция``, удовлетворяющая следующим формальным 
+свойствам:
+\begin{equation}
+    \delta(x) = 0 \quad \text{при} \quad x \ne 0
+\end{equation}
+\begin{equation}
+    \int_{-a}^{a} \delta(x) \,dx = 1, \quad a > 0
+\end{equation}
+Конечно, она является не обычной функцией, а обобщённой. Определение и свойства обобщённых
+функций можно посмотреть в ''Уравнениях математической физики`` Владимирова: это полезно,
+но необязательно.
+
+Дельта--функцию можно представлять как предел узкого и высокого ''горба`` с центром 
+в начале координат. В некотором смысле можно записать
+\begin{equation}
+    \delta(x) = \lim_{a \to 0} \frac{1}{\pi} \frac{a}{x^2 + a^2}
+\end{equation}
+\begin{equation}
+    \delta(x) = \lim_{a \to 0} \frac{1}{\sqrt{\pi}a} e^{-\frac{x^2}{a^2}}
+\end{equation}
+
+Важнейшее свойство $\delta$--функции выражается равенством
+\begin{equation}
+    \label{delta_int}
+    \int f(x) \delta(x - x_0) \, dx = f(x_0)
+\end{equation}
+Оно очевидно из следующих соображений: в точках, отличных от $x_0$, дельта--функция равна
+нулю. В точке $x_0$ же у дельта--функции наблюдается крайне резкий и высокий 
+максимум. В этом случае можно в окрестности $x_0$ приближённо заменить $f(x)$ на константу,
+что и приводит к \eqref{delta_int}
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+\newcommand{\p}{\partial}
+
+\title{Функции Грина --- продолжение}
+\author{Anikin Evgeny}
+
+\begin{document}
+\maketitle
+\section{Функция Грина как обратный оператор}
+Начнём с того, что любая функция $g(x,y)$ 
+двух переменных задаёт линейный оператор $\hat{L}_g$, действующий 
+на пространстве функций следующим образом:
+\begin{equation}
+    \hat{L}_g\phi(x) = \int  g(x,y) \phi(y) dy
+\end{equation}
+Несложно заметить здесь сходство с правилами перемножения матриц.
+
+Функция $g(x,y)$ может быть (и часто является) не обычной, а обобщённой функцией. Например,
+единичный оператор задаётся дельта--функцией:
+\begin{equation}
+    \int \delta(x-y) \phi(y) dy = \phi(x)
+\end{equation}
+Дифференциальные операторы задаются производными от дельта--функции. Например,
+\begin{equation}
+    \frac{d}{dx} \phi(x) = \int \delta'(x-y) \phi(y) dy
+\end{equation}
+
+Вооружившись этим знанием, нетрудно заметить, что уравнение на функцию Грина
+\begin{equation}
+    \hat{L}G(x,y) = \delta(x-y)
+\end{equation}
+есть в точности уравнение на оператор, обратный $\hat{L}$. В операторном виде
+\begin{equation}
+    \hat{L} \hat{G} = \mathbbm{1},
+\end{equation}
+или даже 
+\begin{equation}
+    \hat{G} = \hat{L}^{-1}
+\end{equation}
+
+\section{Некоторые замечания}
+В предыдущем листке подразумевалось, что речь идёт о задаче эволюции во времени. 
+Возможна также ситуация, когда в задаче поставлены граничные условия. А именно, будем решать
+уравнение 
+\begin{equation}
+    \hat{L}\phi = f(x),
+\end{equation}
+где $x$ --- координата в $n$--мерном пространстве, функция $f$ задана в области
+$M$, и есть какие--нибудь граничные условия на $\partial M$ 
+(например, $\phi(x) = 0$ при $x \in \partial M$). 
+\end{document}
