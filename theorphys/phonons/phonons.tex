@@ -112,4 +112,23 @@ $\frac{\partial\xi_i}{\partial\xi_j}$ --- матрица бесконечно м
                         i\sqrt{\frac{1}{2\rho\omega_\alpha \hbar}}\pi_\alpha\\
     \end{split}
 \end{equation}
+Отсюда можно выразить $\xi_\alpha$, $\pi_\alpha$, а затем $\xi_i$, $\pi_i$:
+\begin{equation}
+    \begin{split}
+        \xi_i & = \sum_\alpha\sqrt{\frac{\hbar}{2\rho \omega_\alpha}}
+                            (e_{i\alpha} a_\alpha + e_{i\alpha} b^\dagger_\alpha)\\
+        \pi_i & = -i\sum_\alpha \sqrt{\frac{\rho \omega_\alpha \hbar}{2}}
+                            (e_{i\alpha}b_\alpha - e_{i\alpha} a_\alpha^\dagger)
+    \end{split}
+\end{equation}
+Кроме того, нужно ещё учесть, что операторы $\xi_i$, $\pi_i$ вещественны, и есть
+соотношение между операторами
+\begin{equation}
+    e_{i\alpha}(k) \xi_\alpha(k) = e_{i\alpha}^*(-k) \xi_{\alpha}^\dagger(-k)
+\end{equation}
+Окончательно получаем
+%\begin{equation}
+%    \xi_i(x) = \int \frac{d^3 k}{(2\pi)^3} 
+%                (e_{i\alpha}(k) a_\alpha (k)
+%\end{equation}
 \end{document}
