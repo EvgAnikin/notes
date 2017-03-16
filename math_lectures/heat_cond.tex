@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+\newcommand{\p}{\partial}
+
+\title{Уравнения диффузии и Шрёдингера}
+\author{Anikin Evgeny}
+
+\begin{document}
+\maketitle
+\section{Уравнение диффузии}
+\subsection{Точное решение}
+Уравнение диффузии в $d$--мерном пространстве ---
+\begin{equation}
+   \frac{\partial u}{\partial t} = D\nabla^2 u
+\end{equation}
+Мы будем решать для него задачу Коши. Для этого найдём решение с начальным условием
+$u(x,t)|_{t=0} = \delta(x)$. Это легко сделать в фурье--представлении.
+
+Пусть
+\begin{equation}
+   u(x,t) = \int \frac{d^d k}{(2\pi)^d} e^{ikx} u(k,t)
+\end{equation}
+Тогда 
+\begin{equation}
+    \frac{\partial u(k,t)}{\partial t} = -Dk^2 u(k,t)
+\end{equation}
+Следовательно,
+\begin{equation}
+    u(k,t) = u(k) e^{-Dk^2 t}
+\end{equation}
+Начальное условие даёт $u(k) = 1$. Значит, 
+\begin{equation}
+   u(x,t) = \int \frac{d^d k}{(2\pi)^d} e^{-Dk^2t + ikx} = 
+                \frac{1}{(4\pi Dt)^{\frac{d}{2}}} e^{-\frac{|x|^2}{4Dt}}
+\end{equation}
+Теперь легко решить задачу Коши для произвольного начального условия $\phi_0(x)$. Если 
+представить $\phi_0(x)$ как линейную комбинацию дельта--функций,
+\begin{equation}
+    \phi_0(x) = \int d^dx'\, \phi_0(x') \delta(x - x'),
+\end{equation}
+то решение уравнения диффузии запишется в виде
+\begin{equation}
+    \phi(x,t) = \int d^dx'\, \phi_0(x') 
+            \frac{1}{(4\pi Dt)^{\frac{d}{2}}} e^{-\frac{|x - x'|^2}{4Dt}}
+\end{equation}
+\subsection{Асимптотика на больших временах}
+
+\end{document}
