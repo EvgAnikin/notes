@@ -9,7 +9,7 @@
 \newcommand{\ket}{\rangle}
 \newcommand{\p}{\partial}
 
-\title{Уравнения диффузии и Шрёдингера}
+\title{Гамма--функция}
 \author{Anikin Evgeny}
 
 \begin{document}
@@ -47,29 +47,9 @@ $u(x,t)|_{t=0} = \delta(x)$. Это легко сделать в фурье--п�
 \end{equation}
 то решение уравнения диффузии запишется в виде
 \begin{equation}
-    \label{exact_solution}
     \phi(x,t) = \int d^dx'\, \phi_0(x') 
             \frac{1}{(4\pi Dt)^{\frac{d}{2}}} e^{-\frac{|x - x'|^2}{4Dt}}
 \end{equation}
 \subsection{Асимптотика на больших временах}
-Пусть $\phi_0(x)$ локализована около $x_0 = 0$, и нас интересует решение уравнения диффузии
-на больших расстояниях и временах. Тогда в интеграле \eqref{exact_solution} можно разложить
-экспоненту в ряд:
-\begin{equation}
-    e^{-\frac{|x - x'|^2}{4Dt}} = \sum_{n=0}^{\infty} \frac{(-1)^n}{n!} 
-                        {x}_{i_1}'\dots {x}_{i_n}'
-                        \partial_{i_1}\dots \partial_{i_n} e^{-\frac{|x|^2}{4Dt}} 
-\end{equation}
-Тогда решение уравнения диффузии ---
-\begin{equation}
-    \phi(x,t) = \sum_{n=0}^{\infty} \frac{(-1)^n}{n!} 
-                        \frac{1}{(4\pi Dt)^{\frac{d}{2}}}
-                        \partial_{i_1}\dots \partial_{i_n}
-                         e^{-\frac{|x|^2}{4Dt}} 
-                        \int d^dx' \phi_0(x'){x}_{i_1}'\dots {x}_{i_n}'
-\end{equation}
-Первые члены этого разложения:
-%\begin{equation}
-%    \phi(x,t) = 
-%\end{equation}
+
 \end{document}
