@@ -8,6 +8,8 @@
 \usepackage[T1, T2A]{fontenc}
 \usepackage[english,russian]{babel}
 
+\bibliographystyle{unsrt}
+
 \DeclareMathOperator{\diag}{diag}
 \DeclareMathOperator{\Arg}{Arg}
 
@@ -15,7 +17,10 @@
 \author{Anikin Evgeny, 128}
 
 \begin{document}
-\maketitle
-\input{impurity.tex}
-\input{spin_orbit.tex}
+    \maketitle
+    \input{impurity.tex}
+    \input{spin_orbit.tex}
+    \input{edge_rec.tex}
+    \newpage
+    \bibliography{literature}
 \end{document}

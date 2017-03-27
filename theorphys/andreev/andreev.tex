@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+
+\title{Интегралы по траекториям}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+\section{Интеграл по траекториям $x(t), p(t)$}
+Для начала рассмотрим амплитуду 
+\begin{equation}
+U(x_n, x_0, t) = \bra x_n | e^{-i\hat{H}t} | x_0 \ket
+\end{equation}
+Её можно разбить на малые части:
+\begin{equation}
+\label{first}
+U(x_n, x_0, t) = \int \prod_{k = 1}^{ n-1} dx_k\,
+			\bra x_n | e^{-i\hat{H}\delta t} | x_{n-1} \ket
+			\dots
+			\bra x_1 | e^{-i\hat{H}\delta t} | x_{0} \ket
+\end{equation}
+Пусть $\hat{H}$ --- гамильтониан одномерной нерелятивистской частицы. 
+Проделаем
+кое-какие преобразования:
+\begin{equation}
+\bra x_k | e^{-i\hat{H}\delta t} | x_{k-1} \ket \approx
+	\bra x_k | 1 - i\delta t\left(\frac{\hat{p}^2}{2m}
+		+ \hat{V} \right) | x_{k-1} \ket
+\end{equation}
+Можно получить, что
+\begin{equation}
+\bra x_k | \frac{\hat{p}^2}{2m} + \hat{V} | x_{k-1} \ket = 
+	\int \frac{d^3p}{(2\pi)^3}\left[ \frac{p^2}{2m} 
+				+ V\left(\frac{x+y}{2}\right) \right]
+				e^{ip(x-y)}
+\end{equation} 
+Тогда для оператора эволюции (\ref{first}) получим интеграл по траекториям
+в пространстве координат и импульсов:
+
+\begin{equation}
+U(x_n, x_0, t) = \int \frac{\mathcal{D}x \mathcal{D}p}{(2\pi)^3}
+				\mathrm{exp}\left\{
+						i\int dt\, (p\dot{x} - H(p,x))
+						\right\}
+\end{equation}
+\section{Пропагатор}
+Я понял, почему контур поворачивается именно так:
+$\t \arrow (1 - i\epsilon)\tau$.  Я понял, что пропагатор --- это матричный
+элемент матрицы, обратной к действию.
+\end{document}
