@@ -31,7 +31,7 @@
   Number                   = {12},
   Volume                   = {84},
 
-  __markedentry            = {[ksenia:6]},
+  __markedentry            = {[ksenia:]},
   Doi                      = {10.1103/physrevb.84.121302},
   ISSN                     = {1550-235X},
   Owner                    = {ksenia},
@@ -68,8 +68,6 @@
   Number                   = {4},
   Pages                    = {249–261},
   Volume                   = {1},
-
-  __markedentry            = {[ksenia:]},
   Doi                      = {10.1016/0022-3697(57)90013-6},
   ISSN                     = {0022-3697},
   Owner                    = {ksenia},
@@ -188,5 +186,24 @@
   Publisher                = {American Physical Society (APS)},
   Timestamp                = {2016.12.15},
   Url                      = {http://dx.doi.org/10.1103/PhysRevLett.49.405}
+}
+
+@Article{Wang2017,
+  Title                    = {Spontaneous Breakdown of Topological Protection in Two Dimensions},
+  Author                   = {Wang, Jianhui and Meir, Yigal and Gefen, Yuval},
+  Journal                  = {Physical Review Letters},
+  Year                     = {2017},
+
+  Month                    = {Jan},
+  Number                   = {4},
+  Volume                   = {118},
+
+  __markedentry            = {[ksenia:6]},
+  Doi                      = {10.1103/physrevlett.118.046801},
+  ISSN                     = {1079-7114},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2017.03.27},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevLett.118.046801}
 }
 

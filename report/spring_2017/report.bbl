@@ -1,14 +1,26 @@
 \begin{thebibliography}{1}
 
-\bibitem{Wang2017}
-Jianhui Wang, Yigal Meir, and Yuval Gefen.
-\newblock Spontaneous breakdown of topological protection in two dimensions.
-\newblock {\em Physical Review Letters}, 118(4), Jan 2017.
-
 \bibitem{Bernevig2006}
 B.~A. Bernevig, T.~L. Hughes, and S.-C. Zhang.
 \newblock Quantum spin hall effect and topological phase transition in hgte
   quantum wells.
 \newblock {\em Science}, 314(5806):1757–1761, Dec 2006.
+
+\bibitem{Luttinger1956}
+J.~M. Luttinger.
+\newblock Quantum theory of cyclotron resonance in semiconductors: General
+  theory.
+\newblock {\em Physical Review}, 102(4):1030–1041, May 1956.
+
+\bibitem{Novik2005}
+E.~G. Novik, A.~Pfeuffer-Jeschke, T.~Jungwirth, V.~Latussek, C.~R. Becker,
+  G.~Landwehr, H.~Buhmann, and L.~W. Molenkamp.
+\newblock Band structure of semimagnetic hg 1 --- y mn y te quantum wells.
+\newblock {\em Physical Review B}, 72(3), Jul 2005.
+
+\bibitem{Wang2017}
+Jianhui Wang, Yigal Meir, and Yuval Gefen.
+\newblock Spontaneous breakdown of topological protection in two dimensions.
+\newblock {\em Physical Review Letters}, 118(4), Jan 2017.
 
 \end{thebibliography}
