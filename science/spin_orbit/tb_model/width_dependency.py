@@ -93,10 +93,10 @@ if __name__ == '__main__':
     n_cdte = 40
 
     for width in xrange(1,15):
-        ham = lambda px: well_hamiltonian(px, 0, cdte_data, hgte_data, 
+        ham = well_hamiltonian(0, 0, cdte_data, hgte_data, 
                                           n_cdte=n_cdte, n_hgte=width)
-        energies = linalg.eigvalsh(ham(0))
-        plt.scatter(width*np.ones(len(energies)), energies, marker = '.')
+        energies = linalg.eigvalsh(ham)
+        plt.scatter(0.646*width*np.ones(len(energies)), energies, marker = '.')
 
     plt.ylim(-1,1)
     plt.show()

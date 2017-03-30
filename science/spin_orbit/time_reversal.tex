@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{afterpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bbm}
+\usepackage[legalpaper,margin=2cm,top=2cm,bottom=2cm]{geometry}
+%\usepackage[legalpaper]{geometry}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle} 
+
+\title{Симметрия относительно обращения времени}
+\author{Anikin Evgeny, 128}
+
+\begin{document}
+\maketitle
+Нетрудно проверить, что для частицы со спином $\frac{1}{2}$
+\begin{equation}
+    \bra \chi | T\psi \ket = -\bra \psi | T\chi\ket
+\end{equation}
+Тогда $\bra \psi | \hat{A}  | T\psi \ket = 0$ для любого 
+$|\psi \ket$, если
+$\hat{A}$ удовлетворяет условию $-T\hat{A}^\dagger T = \hat{A}$.
+Действительно,
+\begin{equation}
+    \bra \psi | \hat{A}  | T\psi \ket = \bra \hat{A}^\dagger \psi | T\psi \ket = 
+       -\bra \psi | T \hat{A}^\dagger| \psi \ket = -\bra \psi | (-T\hat{A}^\dagger T) | T\psi \ket
+\end{equation}
+Оператор эволюции $T$--инвариантной системы удовлетворяет именно такому условию:
+\begin{equation}
+    -T\hat{U}T = U^{-1} = U^\dagger
+\end{equation}
+Поэтому рассеяние $|\psi\ket$ и $|T\psi\ket$ друг в друга запрещено.
+
+\end{document}

@@ -88,7 +88,7 @@ def update_densities(density_up, density_down, args, nx, ny, g, ex_pot, n_partic
                         g*density_up + ex_pot) 
         
     d_up_new, d_down_new, fermi_energy = get_densities(ham_up, ham_down, nx, ny, n_particles)
-    sm_f = 0.6
+    sm_f = 0.7
     return sm_f*density_up + (1 - sm_f)*d_up_new, \
            sm_f*density_down + (1 - sm_f)*d_down_new, fermi_energy
 
@@ -116,11 +116,11 @@ def plot_energy_bands():
 
 
 if __name__ == '__main__':
-    xi, m, t = -0.2, 1, 0.5 
+    xi, m, t = -0.1, 1, 0.5 
     potential_length = 8
     potential_strength = 2
     nx, ny = 15 + 2*potential_length, 20
-    n_iter = 10
+    n_iter = 20
     epsilon = 0.1
     g = 5
     n_part = int(round(2*nx*ny*0.97))
@@ -130,13 +130,20 @@ if __name__ == '__main__':
     ex_pot = get_external_potential(nx, potential_length, potential_strength)
 
     for i in xrange(n_iter):
-        print '{}th iteration...'.format(i)
         d_up, d_down, fermi_energy = update_densities(d_up, d_down, (xi, m, t), 
                                                       nx, ny, g, ex_pot, n_part)
+        print '{}th iteration...'.format(i)
 
     density_figure = plt.figure(1)
-    plt.plot(range(0,nx), d_up)
-    plt.plot(range(0,nx), d_down)
+    plt.plot(range(0,nx), d_up, color='blue')
+    plt.plot(range(0,nx), d_down, color='green')
+
+#    d_up_check, d_down_check, fermi_energy_check = update_densities(d_up, d_down, (xi, m, t), 
+#                                                      nx, ny, g, ex_pot, n_part)
+#    plt.plot(range(0,nx), d_up_check, color='red')
+#    plt.plot(range(0,nx), d_down_check, color='yellow')
+
+
     plt.xlim(0,nx-1)
 #    plt.ylim(0.9,1.2)
     density_figure.show()

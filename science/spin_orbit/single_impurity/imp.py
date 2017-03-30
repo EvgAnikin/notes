@@ -72,21 +72,30 @@ def det_green_function(omega, xi, m, t, dE):
                 
 if __name__ == '__main__':
     epsilon = 1e-5
-    xi, m, t = 0.03, 0.1, 0.5
+    xi, m, t = -0.03, 0.1, 0.5
     p_max = 0.05
     max_omega = (1 - epsilon)*math.sqrt(energy_square(0, 0, xi, m, t))*(1 - epsilon)
 
-    N = 40
-    omegas = np.linspace(-max_omega, max_omega, N)
+    N = 10
+#    omegas = np.linspace(-max_omega, max_omega, N)
+    omegas = 2*max_omega*np.power(10, np.linspace(-5,0,N)) - max_omega
 #    gf = [gf_divergent_p_approx(xi + domega, xi, m, t, p_max) + gf_regular 
 #             for domega in domegas]
-    gf = np.array([green_function_11(omega, xi, m, t) for omega in omegas])
+
+    gf = []
+    counter = 0
+    for omega in omegas:
+        counter += 1
+        print '{}th value'.format(counter)
+        gf.append(green_function_11(omega, xi, m, t))
+    
+    gf = np.array(gf)
 
     output = open('gf_array', 'w')
     np.savez(output, omegas=omegas, gf=gf)
 
     plt.plot(omegas, gf)
-    plt.plot(omegas, -gf[::-1])
+    plt.plot(omegas[::-1], -gf[::-1])
     plt.show()
 
 #    dets = [det_green_function(omega, xi, m, t, dE) for omega in omegas]
