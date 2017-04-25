@@ -1,6 +1,7 @@
 import math
 from matplotlib import pyplot as plt
 import numpy as np
+from scipy.linalg import eigh
 from tblib import *
 
 
@@ -27,15 +28,32 @@ def two_level_stripe_hamiltomian(py, N, xi, m, t):
     return H.reshape(2*N,2*N)
 
 
-if __name__ == '__main__':
+def plot_edge_state(py, number, N, xi, m, t):
+    state_figure = plt.figure(1)
+    ham = two_level_stripe_hamiltomian(py=py, N=N, xi=xi, m=m, t=t)
+    energies, states_raw = eigh(ham)
+    states = states_raw.reshape(N,2,2*N).transpose(2,0,1)
+    densities = np.sum(abs(states)**2, axis=2)
+    plt.plot(densities[number])
+    state_figure.show()
+
+
+def plot_bands(N, xi, m, t):
     plim = (-math.pi,math.pi)
     pyrange, energies = stripe_energies(two_level_stripe_hamiltomian, 
-                                       (50, -0.5, 1, 0.5),
+                                       (N, xi, m, t),
                                        plim = plim,
-                                       NX = 101)
+                                       NX = 51)
+    band_figure = plt.figure(0)
     for level in energies:
         plt.plot(pyrange,level)
     plt.xlim(*plim)
-#    plt.ylim(-1,1)
-    plt.show()
+    band_figure.show()
+
+
+if __name__ == '__main__':
+    N = 100
+    xi, m, t = -0.03, 1, 0.1
     
+    plot_bands(N, xi, m, t)
+    plot_edge_state(0.0, N, N, xi, m, t)
