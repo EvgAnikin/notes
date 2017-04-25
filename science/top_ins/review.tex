@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{afterpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bbm}
+\usepackage[legalpaper,margin=2cm,top=2cm,bottom=2cm]{geometry}
+%\usepackage[legalpaper]{geometry}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+\usepackage{pdflscape}
+
+\bibliographystyle{unsrt}
+
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\Arg}{Arg}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle} 
+
+\title{Литература по топологическим изоляторам}
+\author{Anikin Evgeny, 128}
+
+\begin{document}
+    \maketitle
+    \section{Основания}
+    Теоретическое предсказание топологичности CdTe--HgTe--CdTe было сделано в 
+    \cite{Bernevig2006}, а первое экспериментальное подтверждение --- \cite{Konig2007}.
+
+    \section{Эксперименты}
+    \cite{Konig2007} --- пионерская работа.
+    \cite{Gusev2011} --- эксперимент Квона и др.
+    \section{Edge reconstruction}
+    \cite{Wang2017} --- спонтанная намагниченность у края TI с плавным потенциалом.
+    
+    \section{Квантовые точки}
+    В \cite{Li2014} обсуждаются квантовые точки на базе CdTe--HgTe--CdTe с 
+    учётом кулоновского взаимодействия. Квантовая точка окружена стенкой.
+
+    В \cite{Xin2015} --- эффект Кондо в квантовых точках на основе Bi2Se3.
+
+    В \cite{Herath2014} --- квантовая точка на основе Bi2Se3, изучается оптический 
+    спектр, взаимодействие не учитывается. Точка представляет из себя утолщение 
+    на поверхности.
+
+    \section{Эффекты беспорядка}
+    \cite{Li2009} --- топологический изолятор Андерсона.
+    \cite{Girschik2015} --- что--то ещё про топологический андерсоновский изолятор. 
+
+    \cite{Entin2015} --- локализация из--за перепрыгивания с края на край (ЖЭТФ).
+    \subsection{Магнитные примеси}
+    \cite{Altshuler2013} --- локализация краевых мод в присутствии массива примесей Кондо. 
+    \cite{Yevtushenko2015} --- эффекты взаимодействия в предыдущей статье.
+    
+    \newpage
+    \bibliography{literature}
+\end{document}
