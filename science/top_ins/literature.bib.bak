@@ -1,0 +1,280 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Article{Altshuler2013,
+  Title                    = {Localization at the Edge of a {2D} Topological Insulator by Kondo Impurities with Random Anisotropies},
+  Author                   = {Altshuler, B. L. and Aleiner, I. L. and Yudson, V. I.},
+  Journal                  = {Physical Review Letters},
+  Year                     = {2013},
+
+  Month                    = {Aug},
+  Number                   = {8},
+  Volume                   = {111},
+
+  __markedentry            = {[ksenia:6]},
+  Doi                      = {10.1103/physrevlett.111.086401},
+  ISSN                     = {1079-7114},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2017.04.20},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevLett.111.086401}
+}
+
+@Article{Bernevig2006,
+  Title                    = {Quantum Spin Hall Effect and Topological Phase Transition in HgTe Quantum Wells},
+  Author                   = {Bernevig, B. A. and Hughes, T. L. and Zhang, S.--C.},
+  Journal                  = {Science},
+  Year                     = {2006},
+
+  Month                    = {Dec},
+  Number                   = {5806},
+  Pages                    = {1757–1761},
+  Volume                   = {314},
+
+  Doi                      = {10.1126/science.1133734},
+  ISSN                     = {1095-9203},
+  Owner                    = {ksenia},
+  Publisher                = {American Association for the Advancement of Science (AAAS)},
+  Timestamp                = {2016.12.14},
+  Url                      = {http://dx.doi.org/10.1126/science.1133734}
+}
+
+@Article{Girschik2015,
+  Title                    = {Percolating states in the topological Anderson insulator},
+  Author                   = {Girschik, Adrian and Libisch, Florian and Rotter, Stefan},
+  Journal                  = {Physical Review B},
+  Year                     = {2015},
+
+  Month                    = {Jun},
+  Number                   = {21},
+  Volume                   = {91},
+
+  Doi                      = {10.1103/physrevb.91.214204},
+  ISSN                     = {1550-235X},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2017.04.17},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevB.91.214204}
+}
+
+@Article{Gusev2011,
+  Title                    = {Transport in disordered two-dimensional topological insulators},
+  Author                   = {Gusev, G. M. and Kvon, Z. D. and Shegai, O. A. and Mikhailov, N. N. and Dvoretsky, S. A. and Portal, J. C.},
+  Journal                  = {Physical Review B},
+  Year                     = {2011},
+
+  Month                    = {Sep},
+  Number                   = {12},
+  Volume                   = {84},
+
+  Doi                      = {10.1103/physrevb.84.121302},
+  ISSN                     = {1550-235X},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2016.12.20},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevB.84.121302}
+}
+
+@Article{Herath2014,
+  Title                    = {A quantum dot in topological insulator nanofilm},
+  Author                   = {Herath, Thakshila M and Hewageegana, Prabath and Apalkov, Vadym},
+  Journal                  = {Journal of Physics: Condensed Matter},
+  Year                     = {2014},
+
+  Month                    = {Mar},
+  Number                   = {11},
+  Pages                    = {115302},
+  Volume                   = {26},
+  Doi                      = {10.1088/0953-8984/26/11/115302},
+  ISSN                     = {1361-648X},
+  Owner                    = {ksenia},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2017.04.17},
+  Url                      = {http://dx.doi.org/10.1088/0953-8984/26/11/115302}
+}
+
+@Article{Kane2005,
+  Title                    = {Quantum Spin Hall Effect in Graphene},
+  Author                   = {Kane, C. L. and Mele, E. J.},
+  Journal                  = {Physical Review Letters},
+  Year                     = {2005},
+
+  Month                    = {Nov},
+  Number                   = {22},
+  Volume                   = {95},
+
+  Doi                      = {10.1103/physrevlett.95.226801},
+  ISSN                     = {1079-7114},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2016.12.15},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevLett.95.226801}
+}
+
+@Article{Kohmoto1985,
+  Title                    = {Topological invariant and the quantization of the Hall conductance},
+  Author                   = {Kohmoto, Mahito},
+  Journal                  = {Annals of Physics},
+  Year                     = {1985},
+
+  Month                    = {Apr},
+  Number                   = {2},
+  Pages                    = {343–354},
+  Volume                   = {160},
+
+  Doi                      = {10.1016/0003-4916(85)90148-4},
+  ISSN                     = {0003-4916},
+  Owner                    = {ksenia},
+  Publisher                = {Elsevier BV},
+  Timestamp                = {2016.12.14},
+  Url                      = {http://dx.doi.org/10.1016/0003-4916(85)90148-4}
+}
+
+@Article{Konig2007,
+  Title                    = {Quantum Spin Hall Insulator State in HgTe Quantum Wells},
+  Author                   = {Konig, M. and Wiedmann, S. and Brune, C. and Roth, A. and Buhmann, H. and Molenkamp, L. W. and Qi, X.--L. and Zhang, S.--C.},
+  Journal                  = {Science},
+  Year                     = {2007},
+
+  Month                    = {Nov},
+  Number                   = {5851},
+  Pages                    = {766–770},
+  Volume                   = {318},
+
+  Doi                      = {10.1126/science.1148047},
+  ISSN                     = {1095-9203},
+  Owner                    = {ksenia},
+  Publisher                = {American Association for the Advancement of Science (AAAS)},
+  Timestamp                = {2016.12.14},
+  Url                      = {http://dx.doi.org/10.1126/science.1148047}
+}
+
+@Article{Li2014,
+  Title                    = {Single- and few-electron states in topological-insulator quantum dots},
+  Author                   = {Li, Jian and Lou, Wen-Kai and Zhang, Dong and Li, Xiao-Jing and Yang, Wen and Chang, Kai},
+  Journal                  = {Physical Review B},
+  Year                     = {2014},
+
+  Month                    = {Sep},
+  Number                   = {11},
+  Volume                   = {90},
+
+  Doi                      = {10.1103/physrevb.90.115303},
+  ISSN                     = {1550-235X},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2017.04.17},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevB.90.115303}
+}
+
+@Article{Novik2005,
+  Title                    = { Band structure of semimagnetic Hg 1 --- y Mn y Te quantum wells },
+  Author                   = {Novik, E. G. and Pfeuffer--Jeschke, A. and Jungwirth, T. and Latussek, V. and Becker, C. R. and Landwehr, G. and Buhmann, H. and Molenkamp, L. W.},
+  Journal                  = {Physical Review B},
+  Year                     = {2005},
+
+  Month                    = {Jul},
+  Number                   = {3},
+  Volume                   = {72},
+
+  Doi                      = {10.1103/physrevb.72.035321},
+  ISSN                     = {1550-235X},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2016.12.18},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevB.72.035321}
+}
+
+@Article{Qi2006,
+  Title                    = {Topological quantization of the spin Hall effect in two-dimensional paramagnetic semiconductors},
+  Author                   = {Qi, Xiao--Liang and Wu, Yong--Shi and Zhang, Shou-Cheng},
+  Journal                  = {Physical Review B},
+  Year                     = {2006},
+
+  Month                    = {Aug},
+  Number                   = {8},
+  Volume                   = {74},
+
+  Doi                      = {10.1103/physrevb.74.085308},
+  ISSN                     = {1550-235X},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2016.12.15},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevB.74.085308}
+}
+
+@Article{Thouless1982,
+  Title                    = {Quantized Hall Conductance in a Two--Dimensional Periodic Potential},
+  Author                   = {Thouless, D. J. and Kohmoto, M. and Nightingale, M. P. and den Nijs, M.},
+  Journal                  = {Physical Review Letters},
+  Year                     = {1982},
+
+  Month                    = {Aug},
+  Number                   = {6},
+  Pages                    = {405–408},
+  Volume                   = {49},
+
+  Doi                      = {10.1103/physrevlett.49.405},
+  ISSN                     = {0031-9007},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2016.12.15},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevLett.49.405}
+}
+
+@Article{Wang2017,
+  Title                    = {Spontaneous Breakdown of Topological Protection in Two Dimensions},
+  Author                   = {Wang, Jianhui and Meir, Yigal and Gefen, Yuval},
+  Journal                  = {Physical Review Letters},
+  Year                     = {2017},
+
+  Month                    = {Jan},
+  Number                   = {4},
+  Volume                   = {118},
+
+  Doi                      = {10.1103/physrevlett.118.046801},
+  ISSN                     = {1079-7114},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2017.03.27},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevLett.118.046801}
+}
+
+@Article{Xin2015,
+  Title                    = {Kondo effect in a topological insulator quantum dot},
+  Author                   = {Xin, Xianhao and Zhou, Di},
+  Journal                  = {Physical Review B},
+  Year                     = {2015},
+
+  Month                    = {Apr},
+  Number                   = {16},
+  Volume                   = {91},
+  Doi                      = {10.1103/physrevb.91.165120},
+  ISSN                     = {1550-235X},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2017.04.17},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevB.91.165120}
+}
+
+@Article{Yevtushenko2015,
+  Title                    = {Transport in helical Luttinger liquid with Kondo impurities},
+  Author                   = {Yevtushenko, Oleg M. and Wugalter, Ari and Yudson, Vladimir I. and Altshuler, Boris L.},
+  Journal                  = {EPL (Europhysics Letters)},
+  Year                     = {2015},
+
+  Month                    = {Dec},
+  Number                   = {5},
+  Pages                    = {57003},
+  Volume                   = {112},
+
+  __markedentry            = {[ksenia:]},
+  Doi                      = {10.1209/0295-5075/112/57003},
+  ISSN                     = {1286-4854},
+  Owner                    = {ksenia},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2017.04.20},
+  Url                      = {http://dx.doi.org/10.1209/0295-5075/112/57003}
+}
+
