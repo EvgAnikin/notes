@@ -86,8 +86,8 @@ def draw_state(vector, filename=None, show=False, magnitude_factor=5):
 
 
 if __name__ == '__main__':
-    NX = 15
-    NY = 15
+    NX = 10
+    NY = 10
     ham = hamiltonian(NX, NY, -0.4, 0.5, 1)
     energies,states = eigh(ham)
     
