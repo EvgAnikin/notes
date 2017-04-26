@@ -41,11 +41,7 @@ def plot_edge_state(py, number, N, xi, m, t):
 def plot_bands(N, xi, m, t):
     plim = (-math.pi,math.pi)
     pyrange, energies = stripe_energies(two_level_stripe_hamiltomian, 
-<<<<<<< HEAD
-                                       (50, -1.0, 1, 0.5),
-=======
                                        (N, xi, m, t),
->>>>>>> 119c93916db71b017c90f2ab85eb4076fd9691c0
                                        plim = plim,
                                        NX = 51)
     band_figure = plt.figure(0)
