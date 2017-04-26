@@ -70,10 +70,10 @@ class TwoLevelStripeHam:
                     -xi[i] - 1./self.m*(2 - math.cos(py)) 
                     + potential[i]]).reshape(2,2)
            if i > 0:
-                H[i-1,:,i,:] = np.array([0.5/self.m, -1j*self.t*s,
-                                         -1j*self.t*s, -0.5/self.m]).reshape(2,2)
-                H[i,:,i-1,:] = np.array([0.5/self.m, 1j*self.t*s,
-                                         1j*self.t*s, -0.5/self.m]).reshape(2,2)
+                H[i-1,:,i,:] = np.array([0.5/self.m, -1j*self.t,
+                                         -1j*self.t, -0.5/self.m]).reshape(2,2)
+                H[i,:,i-1,:] = np.array([0.5/self.m, 1j*self.t,
+                                         1j*self.t, -0.5/self.m]).reshape(2,2)
         return H.reshape(2*self.nx,2*self.nx)
 
 
@@ -162,8 +162,8 @@ class TwoLevelStripeHam:
 
 if __name__ == '__main__':
     ham = TwoLevelStripeHam(m=1, t=0.5, xi_0 = -0.1, 
-                            nx=40, ny=60, g_pot=5, g_xi=0, filling_factor=0.96)
-    ham.ext_potential = get_external_potential(ham.nx, length=3, strength=1)
+                            nx=40, ny=60, g_pot=5, g_xi=0, filling_factor=0.996)
+    ham.ext_potential = get_external_potential(ham.nx, length=7, strength=1)
 #    ham.ext_xi = get_external_xi(ham.nx, 0.01, 1)
 
     ham.hartree_fock_iterate(sm_f=0., n_iter=5)

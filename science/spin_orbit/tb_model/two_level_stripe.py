@@ -53,7 +53,7 @@ def plot_bands(N, xi, m, t):
 
 if __name__ == '__main__':
     N = 100
-    xi, m, t = -0.03, 1, 0.1
+    xi, m, t = -0.3, 1, 0.4
     
     plot_bands(N, xi, m, t)
     plot_edge_state(0.0, N, N, xi, m, t)
