@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  14 APR 2017 23:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  28 APR 2017 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -120,10 +120,47 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
+(/usr/share/texlive/texmf-dist/tex/latex/ntheorem/ntheorem.sty
+Style `ntheorem', Version 1.33 <2011/08/15>
+Package: ntheorem 2011/08/15 1.33
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\theorem@style=\toks20
+\theorem@@style=\toks21
+\theorembodyfont=\toks22
+\theoremnumbering=\toks23
+\theorempreskipamount=\skip46
+\theorempostskipamount=\skip47
+\theoremframepreskipamount=\skip48
+\theoremframepostskipamount=\skip49
+\theoreminframepreskipamount=\skip50
+\theoreminframepostskipamount=\skip51
+\theorem@preskip=\toks24
+\theorem@postskip=\toks25
+\theorem@framepreskip=\toks26
+\theorem@framepostskip=\toks27
+\theorem@inframepreskip=\toks28
+\theorem@inframepostskip=\toks29
+\theoremindent=\dimen114
+\theorem@indent=\dimen115
+\theoremrightindent=\dimen116
+\theorem@rightindent=\dimen117
+\theoremheaderfont=\toks30
+\theoremseparator=\toks31
+\theoremprework=\toks32
+\theorempostwork=\toks33
+\theoremsymbol=\toks34
+\qedsymbol=\toks35
+\theoremkeyword=\toks36
+\qedsymbol=\toks37
+\thm@topsep=\skip52
+\thm@topsepadd=\skip53
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks20
-\inpenc@posthook=\toks21
+\inpenc@prehook=\toks38
+\inpenc@posthook=\toks39
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
@@ -646,7 +683,7 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count100
-\U@D=\dimen114
+\U@D=\dimen118
 )
 \l@british = a dialect from \language\l@english 
 \l@UKenglish = a dialect from \language\l@english 
@@ -660,36 +697,36 @@ Package babel Info: Making " an active character on input line 111.
 ))
 \c@problem=\count101
 
-No file problems2.aux.
+(./problems2.aux)
 \openout1 = `problems2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count102
-\scratchdimen=\dimen115
+\scratchdimen=\dimen119
 \scratchbox=\box28
 \nofMPsegments=\count103
 \nofMParguments=\count104
-\everyMPshowfont=\toks22
+\everyMPshowfont=\toks40
 \MPscratchCnt=\count105
-\MPscratchDim=\dimen116
+\MPscratchDim=\dimen120
 \MPnumerator=\count106
 \makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks23
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -740,29 +777,50 @@ e
 ))
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./problems2.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (0.20276pt too wide) in paragraph at lines 94--99
+[]\T2A/cmr/m/n/10 Доказать, что про-из-воль-ное урав-не-ние с тре-мя ре-гу-ляр-
+ны-ми осо-
+ []
+
+
+Overfull \hbox (6.17241pt too wide) in paragraph at lines 106--108
+[]\T2A/cmr/m/n/10 Выразить по-ли-но-мы Ле-жанд-ра че-рез ги-пер-гео-мет-ри-че-с
+кую функ-
+ []
+
+\tf@thm=\write3
+\openout3 = `problems2.thm'.
+
+[2] (./problems2.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3559 strings out of 494440
- 43272 string characters out of 6173197
- 104608 words of memory out of 5000000
- 6799 multiletter control sequences out of 15000+600000
- 12362 words of font info for 34 fonts, out of 8000000 for 9000
+ 3848 strings out of 494440
+ 47363 string characters out of 6173197
+ 114304 words of memory out of 5000000
+ 7074 multiletter control sequences out of 15000+600000
+ 15597 words of font info for 38 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 38i,6n,23p,248b,191s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home
-/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/ksenia/.tex
-mf-var/fonts/pk/ljfour/lh/lh-t2a/lati1000.600pk> </home/ksenia/.texmf-var/fonts
-/pk/ljfour/lh/lh-t2a/labx1000.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/l
-h/lh-t2a/larm1200.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lar
-m1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on problems2.pdf (1 page, 64306 bytes).
+ 38i,7n,23p,517b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati1000.600pk> </home/ks
+enia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/ksenia/.texmf-
+var/fonts/pk/ljfour/lh/lh-t2a/labx1000.600pk> </home/ksenia/.texmf-var/fonts/pk
+/ljfour/lh/lh-t2a/labx1440.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/l
+h-t2a/larm1200.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm17
+28.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on problems2.pdf (2 pages, 109745 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 216 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
