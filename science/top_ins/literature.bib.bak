@@ -11,8 +11,6 @@
   Month                    = {Aug},
   Number                   = {8},
   Volume                   = {111},
-
-  __markedentry            = {[ksenia:6]},
   Doi                      = {10.1103/physrevlett.111.086401},
   ISSN                     = {1079-7114},
   Owner                    = {ksenia},
@@ -38,6 +36,26 @@
   Publisher                = {American Association for the Advancement of Science (AAAS)},
   Timestamp                = {2016.12.14},
   Url                      = {http://dx.doi.org/10.1126/science.1133734}
+}
+
+@Article{Entin2015,
+  Title                    = {Localization of edge electrons in a {2D} topological insulator strip},
+  Author                   = {Entin, M. V. and Magarill, L. I.},
+  Journal                  = {JETP Letters},
+  Year                     = {2015},
+
+  Month                    = {Jan},
+  Number                   = {9},
+  Pages                    = {566–569},
+  Volume                   = {100},
+
+  __markedentry            = {[ksenia:6]},
+  Doi                      = {10.1134/s002136401421005x},
+  ISSN                     = {1090-6487},
+  Owner                    = {ksenia},
+  Publisher                = {Pleiades Publishing Ltd},
+  Timestamp                = {2017.04.20},
+  Url                      = {http://dx.doi.org/10.1134/S002136401421005X}
 }
 
 @Article{Girschik2015,
@@ -168,6 +186,40 @@
   Url                      = {http://dx.doi.org/10.1103/PhysRevB.90.115303}
 }
 
+@Article{Liao2015,
+  Title                    = {Observation of Anderson Localization in Ultrathin Films of Three-Dimensional Topological Insulators},
+  Author                   = {Liao, Jian and Ou, Yunbo and Feng, Xiao and Yang, Shuo and Lin, Chaojing and Yang, Wenmin and Wu, Kehui and He, Ke and Ma, Xucun and Xue, Qi-Kun and et al.},
+  Journal                  = {Physical Review Letters},
+  Year                     = {2015},
+
+  Month                    = {May},
+  Number                   = {21},
+  Volume                   = {114},
+  Doi                      = {10.1103/physrevlett.114.216601},
+  ISSN                     = {1079-7114},
+  Owner                    = {ksenia},
+  Publisher                = {American Physical Society (APS)},
+  Timestamp                = {2017.04.20},
+  Url                      = {http://dx.doi.org/10.1103/PhysRevLett.114.216601}
+}
+
+@Article{Lu2014,
+  Title                    = {Weak localization and weak anti-localization in topological insulators},
+  Author                   = {Lu, Hai-Zhou and Shen, Shun-Qing},
+  Journal                  = {Spintronics VII},
+  Year                     = {2014},
+
+  Month                    = {Aug},
+
+  __markedentry            = {[ksenia:]},
+  Doi                      = {10.1117/12.2063426},
+  Editor                   = {Drouhin, Henri-Jean and Wegrowe, Jean-Eric and Razeghi, ManijehEditors},
+  Owner                    = {ksenia},
+  Publisher                = {SPIE},
+  Timestamp                = {2017.04.20},
+  Url                      = {http://dx.doi.org/10.1117/12.2063426}
+}
+
 @Article{Novik2005,
   Title                    = { Band structure of semimagnetic Hg 1 --- y Mn y Te quantum wells },
   Author                   = {Novik, E. G. and Pfeuffer--Jeschke, A. and Jungwirth, T. and Latussek, V. and Becker, C. R. and Landwehr, G. and Buhmann, H. and Molenkamp, L. W.},
@@ -268,8 +320,6 @@
   Number                   = {5},
   Pages                    = {57003},
   Volume                   = {112},
-
-  __markedentry            = {[ksenia:]},
   Doi                      = {10.1209/0295-5075/112/57003},
   ISSN                     = {1286-4854},
   Owner                    = {ksenia},
