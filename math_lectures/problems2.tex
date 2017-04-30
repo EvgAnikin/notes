@@ -2,6 +2,7 @@
 \usepackage{amsmath}
 \usepackage{bbm}
 \usepackage{graphicx}
+\usepackage{ntheorem}
 \usepackage[utf8]{inputenc}
 \usepackage[T1, T2A]{fontenc}
 \usepackage[english,russian]{babel}
@@ -10,6 +11,7 @@
 \newcommand{\ket}{\rangle}
 \newcommand{\p}{\partial}
 
+\theorembodyfont{\normalfont}
 \newtheorem{problem}{Задача}
 
 \title{Второе задание по допглавам}
@@ -17,12 +19,142 @@
 
 \begin{document}
 \maketitle
+\section{Метод Лапласа}
 \begin{problem}
-    Свести радиальное уравнение Шрёдингера для атома водорода к вырожденной 
-    гипергеометрической функции и найти уровни энергии.
+    Решить уравнение 
+    \begin{equation}
+        \sum_k (a_k + b_k x) \frac{d^k u}{d x^k} = 0
+    \end{equation}
+    с помощью подстановки 
+    \begin{equation}
+        u = \oint_\gamma v(z) e^{xz} \,dz,
+    \end{equation}
+    где $\gamma$ --- некоторый контур. Какие условия должны выполняться на концах 
+    контура?
+\end{problem}
+\begin{problem}
+    Решить уравнение Эйри
+    \begin{equation}
+        u'' - zu = 0
+    \end{equation}
+    Получить два решения, экспоненциально растущее и убывающее при $z \to \infty$,
+    в виде интегралов по контуру и методом
+    перевала найти их 
+    асимптотики при вещественных $z$, $z \to \pm \infty$.
+\end{problem}
+\begin{problem}
+    С помощью метода Лапласа решить уравнение на полиномы Эрмита и найти производящую
+    функцию полиномов Эрмита.
+\end{problem}
+\begin{problem}
+    Методом Лапласа решить уравнение Бесселя с произвольным, не обязательно целым 
+    аргументом:
+    \begin{equation}
+        u'' + \frac{1}{z}u' + \left(1 - \frac{\nu^2}{z^2}\right) = 0
+    \end{equation}
+    Используя полученную интегральную 
+    формулу, найти выражение для $J_{n+\frac{1}{2}}(z)$ через элементарные функции.
+    \emph{Указание:} сделать в уравнении замену $u = z^{-\nu} v$.
+\end{problem}
+
+\section{Полиномы Лежандра}
+\begin{problem}
+    Вывести рекуррентные соотношения для полиномов Лежандра, используя производящую
+    функцию:
+    \begin{equation}
+        \frac{1}{\sqrt{1 - 2xy + y^2}} = \sum_{n = 0}^\infty P_n(x) y^n
+    \end{equation}
+    \emph{Указание}: одно из соотношений получается, если продифференцировать равенство
+    по $y$.
+\end{problem}
+    
+\section{Гипергеометрическая функция}
+\begin{problem}
+    Пусть $z_0$ --- особая точка коэффициентов $p(z)$ и $q(z)$ уравнения
+    \begin{equation}
+        \label{second_order_eq}
+        u'' + p(z)u' + q(z)u = 0
+    \end{equation}
+    Доказать, что уравнение имеет решение в виде степенного ряда 
+    \begin{equation}
+        u(z) = z^{\nu}\sum_{k=0}^{\infty} c_k (z - z_0)^k 
+    \end{equation}
+    тогда и только тогда, когда 
+    \begin{equation}
+        \label{regularity_conditions}
+        \begin{gathered}
+            p(z) = \frac{p'(z)}{z - z_0},\\
+            q(z) = \frac{q'(z)}{(z - z_0)^2},
+        \end{gathered}
+    \end{equation}
+    где $p'(z)$, $q'(z)$ --- регулярные в $z_0$ функции. Как найти $\nu$?
+
+    Особые точки дифференциальных уравнений, в которых выполняются условия 
+    \eqref{regularity_conditions}, называются
+    \emph{регулярными}.
+\end{problem}   
+\begin{problem}
+    Доказать, что уравнение \eqref{second_order_eq} имеет решение вида
+    \begin{equation}
+        u(z) = z^{\nu}\sum_{k=0}^{\infty} c_k z^{-k}
+    \end{equation}
+    в окрестности $z = \infty$ тогда и только тогда, когда
+    \begin{equation}
+        \label{regularity_conditions_on_inf}
+        \begin{gathered}
+            p(z) = \frac{1}{z}\sum_{k=0}^{\infty} p_k z^{-k}\\
+            q(z) = \frac{1}{z^2}\sum_{k=0}^{\infty} q_k z^{-k}
+        \end{gathered}
+    \end{equation}
+    Эти условия представляют собой очевидное обобщение $\eqref{regularity_conditions}$ на
+    случай $z = \infty$. В этом случае говорят, что $z = \infty$ --- регулярная особая точка.
+\end{problem}
+\begin{problem}
+    Найти общий вид уравнения второго порядка с
+    \begin{enumerate}
+        \item двумя регулярными особыми точками;
+        \item тремя регулярными особыми точками.
+    \end{enumerate}
+    Имеется в виду, что никаких других особых точек нет.
+\end{problem}
+\begin{problem}
+    Найти решение гипергеометрического уравнения
+    \begin{equation}
+        \label{hypergeom}
+        z(z-1)u'' + (-\gamma + (\alpha + \beta + 1)z)u' + \alpha \beta u = 0
+    \end{equation}
+    в виде ряда по $z$: $\sum_{k=0}^{\infty} c_k z^k$, причём $c_0 = 1$.
+\end{problem}
+\begin{problem}
+    Доказать, что произвольное уравнение с тремя регулярными особыми точками
+    сводится к гипергеометрическому, если перевести особые точки
+    дробно--линейным преобразованием в $0,1, \infty$ и сделать после этого замену 
+    $u = z^\mu (z-1)^\nu v$. \emph{Указание:} $\mu$ и $\nu$ следует выбрать таким образом,
+    чтобы существовали регулярные решения в окрестности $0$ и $1$.
+\end{problem}    
+\begin{problem}
+    Получить вырожденную гипергеометрическую функцию в виде ряда 
+    и уравнение на неё, сделав в    
+    \eqref{hypergeom} замену $z = z'/\beta$ и перейдя к пределу $\beta \to \infty$.
+\end{problem}
+\begin{problem}
+    Выразить полиномы Лежандра через гипергеометрическую функцию. \emph{Указание}: использовать
+    уравнение на полиномы Лежандра.
+\end{problem}
+\begin{problem}
+    Решить уравнение на вырожденную гипергеометрическую функцию методом Лапласа.
+\end{problem}
+\section{Квантовая механика}
+\begin{problem}
+    Свести радиальное уравнение Шрёдингера для атома водорода к уравнению на 
+    вырожденную гипергеометрическую функцию
+    и найти уровни энергии.
     \begin{equation}
         -\frac{\hbar^2}{2m}\frac{\partial^2 \psi}{\partial x^2} + 
             \left(-\frac{Ze^2}{r} + \frac{\hbar^2l(l+1)}{2mr^2}\right)\psi = E\psi
     \end{equation}
+\end{problem}
+\begin{problem}
+    
 \end{problem}
 \end{document}
