@@ -2,6 +2,7 @@ import cmath
 import math
 import matplotlib.pyplot as plt
 import numpy as np
+import time
 from scipy.linalg import eigh
 from mpl_toolkits.mplot3d import Axes3D
 from PIL import Image, ImageDraw
@@ -121,17 +122,16 @@ def draw_state(vector, filename=None, show=True, magnitude_factor=5):
         im.show()
 
 
-<<<<<<< HEAD
 if __name__ == '__main__':
     NX = 10
     NY = 10
     ham = hamiltonian(NX, NY, -0.4, 0.5, 1)
-=======
+
+
 def compute_without_spin():
     NX = 10
     NY = 10
     ham = hamiltonian(NX, NY, -0.3, 0.4, 1)
->>>>>>> d07ae59250903a55249ee855c71de89d751ba3bc
     energies,states = eigh(ham)
     
     states = np.transpose(states.reshape(NX,NY,2,NX*NY*2), (3,0,1,2))
@@ -145,15 +145,21 @@ def compute_without_spin():
 
 
 if __name__ == '__main__':
-    NX = 60
+    NX = 120
     NY = 8
     ham = ham_with_spin(NX, NY, -0.3, 1, 0.4, imp_rate=0.25)
-    energies,states = eigh(ham)
     
-    states = np.transpose(states.reshape(NX,NY,2,2,NX*NY*2*2), (4,0,1,2,3))
+    n_of_states = 10
+    lo, hi = NX*NY*2 - n_of_states/2, NX*NY*2 + n_of_states/2
+    t0 = time.clock()
+    energies,states = eigh(ham, eigvals=(lo, hi))
+    print 'time: {}'.format(time.clock() - t0)
+    
+    states = np.transpose(states.reshape(NX,NY,2,2,lo - hi), (4,0,1,2,3))
     densities = np.sum(abs(states)**2, axis=(3,4))
     
-    print 'Number of states: {}'.format(NX*NY*2*2)
-    draw_state(densities[2*NX*NY])
+    print 'ready'
+#    print 'Number of states: {}'.format(NX*NY*2*2)
+#    draw_state(densities[2*NX*NY])
 #    outfile = open('new_dens.npz', 'w')
 #    np.savez(outfile, densities=densities)
