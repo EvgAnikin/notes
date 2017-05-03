@@ -27,7 +27,7 @@ if __name__ == '__main__':
             break
         else:
             try:
-                plt.plot(wfs[:,int(c)])
+                plt.plot(abs(wfs[:,int(c)]))
                 plt.show()
             except IndexError:
                 print 'Index out of range'

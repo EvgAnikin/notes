@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  30 MAR 2017 22:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.12)  2 MAY 2017 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **report.tex
 (./report.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 10 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -691,8 +691,6 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count103
 \U@D=\dimen122
 )
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -875,38 +873,38 @@ File: reconstruction_spectrum_down.png Graphic file (type png)
 Package pdftex.def Info: reconstruction_spectrum_down.png used on input line 67
 .
 (pdftex.def)             Requested size: 400.38872pt x 300.28984pt.
-) [6 <./reconstruction_potential.png>]
-[7 <./reconstruction_spectrum_up.png> <./reconstruction_spectrum_down.png>]
-(./report.bbl) [8] (./report.aux) ) 
+) (./localization.tex [6 <./reconstruction_potential.png>] [7 <./reconstruction
+_spectrum_up.png> <./reconstruction_spectrum_down.png>]) [8] (./report.bbl) [9]
+ (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 4459 strings out of 494440
- 56171 string characters out of 6173197
- 134533 words of memory out of 5000000
- 7629 multiletter control sequences out of 15000+600000
+ 4460 strings out of 493029
+ 56197 string characters out of 6136234
+ 138545 words of memory out of 5000000
+ 7867 multiletter control sequences out of 15000+600000
  16863 words of font info for 51 fonts, out of 8000000 for 9000
- 430 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  38i,18n,32p,3720b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ksenia/.texmf-var/fonts/pk/ljfour/lh
-/lh-t2a/lati1000.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/public/bbm/bbm
-10.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1200.600pk> </
-home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/ksenia/
-.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </home/ksenia/.texmf-var/f
-onts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfo
-ur/lh/lh-t2a/larm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb>
-Output written on report.pdf (8 pages, 658324 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} <
+/home/evgeny/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+frm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfti1000.pfb>
+Output written on report.pdf (9 pages, 705019 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
