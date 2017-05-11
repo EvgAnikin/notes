@@ -2,6 +2,7 @@ import cmath
 import math
 import matplotlib.pyplot as plt
 import numpy as np
+import time
 from scipy.linalg import eigh
 from mpl_toolkits.mplot3d import Axes3D
 from PIL import Image, ImageDraw
@@ -77,7 +78,17 @@ def add_random_magnetic_impurities(H, magnitude):
             H[i, j, :, :, i, j, :, :] += magnitude*get_random_magnetic_impurity()
 
 
-def ham_with_spin(NX, NY, xi, m, t, imp_rate=0):
+def add_potential_disorder(H, magnitude):
+    NX = H.shape[0]
+    NY = H.shape[1]
+
+    for i in xrange(NX):
+        for j in xrange(NY):
+            potential = magnitude*(-1 + 2*np.random.rand())
+            H[i, j, :, :, i, j, :, :] += potential*np.diag(np.ones(4)).reshape(2,2,2,2)
+
+
+def ham_with_spin(NX, NY, xi, m, t, pot_imp_rate=0, mag_imp_rate=0):
     H = np.zeros((NX*NY*2*2)**2, dtype=complex).reshape(NX,NY,2,2,NX,NY,2,2)  
     spin_up = 0
     spin_down = 1
@@ -87,7 +98,8 @@ def ham_with_spin(NX, NY, xi, m, t, imp_rate=0):
     H[:, :, :, spin_down, :, :, :, spin_down] = hamiltonian(NX, NY, xi, m, t,
                                                          spin=-1, reshape=False)
 
-    add_random_magnetic_impurities(H, imp_rate)
+    add_potential_disorder(H, pot_imp_rate)
+    add_random_magnetic_impurities(H, mag_imp_rate)
     return H.reshape(NX*NY*2*2, NX*NY*2*2)
 
 
@@ -121,6 +133,12 @@ def draw_state(vector, filename=None, show=True, magnitude_factor=5):
         im.show()
 
 
+if __name__ == '__main__':
+    NX = 10
+    NY = 10
+    ham = hamiltonian(NX, NY, -0.4, 0.5, 1)
+
+
 def compute_without_spin():
     NX = 10
     NY = 10
@@ -133,20 +151,27 @@ def compute_without_spin():
     draw_state(densities[NX*NY], show=True)
 
 
-#def compute_with_spin():
-#    pass
-
+def plot_histogram(energies, bins):
+    values, base = np.histogram(energies, bins=bins)
+    plt.plot((base[:-1] + base[1:])/2, values)
+    plt.show()
 
 if __name__ == '__main__':
-    NX = 60
-    NY = 8
-    ham = ham_with_spin(NX, NY, -0.3, 1, 0.4, imp_rate=0.25)
-    energies,states = eigh(ham)
+    NX = 120
+    NY = 14
+    ham = ham_with_spin(NX, NY, -0.3, 1, 0.4, pot_imp_rate=0.0, mag_imp_rate=0.25)
     
-    states = np.transpose(states.reshape(NX,NY,2,2,NX*NY*2*2), (4,0,1,2,3))
+    n_of_states = NX*NY*2*2
+    lo, hi = NX*NY*2 - n_of_states/2, NX*NY*2 + n_of_states/2 - 1
+    t0 = time.clock()
+    energies,states = eigh(ham, eigvals=(lo, hi))
+    print 'time: {}'.format(time.clock() - t0)
+    plot_histogram(energies, bins=10)
+    
+    states = np.transpose(states.reshape(NX,NY,2,2,lo - hi), (4,0,1,2,3))
     densities = np.sum(abs(states)**2, axis=(3,4))
     
-    print 'Number of states: {}'.format(NX*NY*2*2)
-    draw_state(densities[2*NX*NY])
+#    print 'Number of states: {}'.format(NX*NY*2*2)
+#    draw_state(densities[2*NX*NY])
 #    outfile = open('new_dens.npz', 'w')
 #    np.savez(outfile, densities=densities)

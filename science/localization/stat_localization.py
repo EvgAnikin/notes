@@ -41,6 +41,7 @@ if __name__ == '__main__':
     plt.plot(energies, dispersions)
     plt.show()
     
+<<<<<<< HEAD
 #    while True:
 #        print 'Enter the number of wavefunction'
 #        c = raw_input()
@@ -54,3 +55,18 @@ if __name__ == '__main__':
 #                print 'Index out of range'
 #            except ValueError:
 #                print 'Can\'t read the number'
+=======
+    while True:
+        print 'Enter the number of wavefunction'
+        c = raw_input()
+        if c == 'stop':
+            break
+        else:
+            try:
+                plt.plot(abs(wfs[:,int(c)]))
+                plt.show()
+            except IndexError:
+                print 'Index out of range'
+            except ValueError:
+                print 'Can\'t read the number'
+>>>>>>> 3d4448b3e276ff1b891a38c21badedc55c202bfd
