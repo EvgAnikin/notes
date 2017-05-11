@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+
+\title{Вихрь Абрикосова}
+\author{Anikin Evgeny, 128}
+
+\begin{document}
+\maketitle
+Свободная энергия сверхпроводника в магнитном поле ---
+\begin{multline}
+    F = \int d^3x\,\left[\left|\left(\nabla  - \frac{ie}{c} \vec{A}\right)\Psi\right|^2 - 
+                \alpha (T_c - T) |\Psi|^2 + \beta |\Psi|^4  +
+                \frac{(H - H_{\mathrm{ext}})^2}{8\pi}\right]
+\end{multline}
+Будем искать одиночный вихрь --- решение уравнений Гинзбурга--Ландау, имеющее вид
+\begin{equation}
+    \begin{gathered}
+        \Psi = \Psi(r)e^{i\theta}\\
+        A_\theta = \frac{c}{er} \Phi(r)\\
+        A_r = 0
+    \end{gathered}
+\end{equation}
+Для справки: ротор в криволинейных координатах ---
+\begin{equation}
+    (\nabla \times \vec{A})_3 = \frac{1}{H_1 H_2}
+         \left (\frac{\partial}{\partial x_1} H_2 A_2 - 
+                \frac{\partial}{\partial x_2} H_1 A_1 \right)
+\end{equation}
+Электрический ток получается равен
+\begin{equation}
+    j_\theta = \frac{2e}{r} |\Psi|^2 (1 - \Phi)
+\end{equation}
+Магнитное поле --- 
+\begin{equation}
+    B = \frac{c}{er} \Phi'
+\end{equation}
+Уравнения получаются такими:
+\begin{equation}
+    \begin{gathered}
+        \chi'' + \frac{\chi'}{r} - \frac{(1 - \Phi)^2}{r^2} \chi + 
+            \frac{1}{\xi^2} (\chi - \chi^3) = 0\\
+        \Phi'' - \frac{\Phi'}{r} + \frac{\chi^2}{\lambda^2}(1 - \Phi) = 0
+    \end{gathered}
+\end{equation}
+\end{document}

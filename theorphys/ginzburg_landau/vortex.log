@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  6 MAY 2017 10:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  11 MAY 2017 11:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**problems2.tex
-(./problems2.tex
+**vortex.tex
+(./vortex.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 10 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -81,13 +81,6 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/bbm.sty
-Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
-LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
-(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
-LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
-(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -120,47 +113,10 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/usr/share/texlive/texmf-dist/tex/latex/ntheorem/ntheorem.sty
-Style `ntheorem', Version 1.33 <2011/08/15>
-Package: ntheorem 2011/08/15 1.33
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\theorem@style=\toks20
-\theorem@@style=\toks21
-\theorembodyfont=\toks22
-\theoremnumbering=\toks23
-\theorempreskipamount=\skip46
-\theorempostskipamount=\skip47
-\theoremframepreskipamount=\skip48
-\theoremframepostskipamount=\skip49
-\theoreminframepreskipamount=\skip50
-\theoreminframepostskipamount=\skip51
-\theorem@preskip=\toks24
-\theorem@postskip=\toks25
-\theorem@framepreskip=\toks26
-\theorem@framepostskip=\toks27
-\theorem@inframepreskip=\toks28
-\theorem@inframepostskip=\toks29
-\theoremindent=\dimen114
-\theorem@indent=\dimen115
-\theoremrightindent=\dimen116
-\theorem@rightindent=\dimen117
-\theoremheaderfont=\toks30
-\theoremseparator=\toks31
-\theoremprework=\toks32
-\theorempostwork=\toks33
-\theoremsymbol=\toks34
-\qedsymbol=\toks35
-\theoremkeyword=\toks36
-\qedsymbol=\toks37
-\thm@topsep=\skip52
-\thm@topsepadd=\skip53
-)
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks38
-\inpenc@posthook=\toks39
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
@@ -683,7 +639,7 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count100
-\U@D=\dimen118
+\U@D=\dimen114
 )
 \l@british = a dialect from \language\l@english 
 \l@UKenglish = a dialect from \language\l@english 
@@ -695,38 +651,36 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 Language: russianb 2016/02/18 1.3h Russian support for the Babel system
 Package babel Info: Making " an active character on input line 111.
 ))
-\c@problem=\count101
+(./vortex.aux)
+\openout1 = `vortex.aux'.
 
-(./problems2.aux)
-\openout1 = `problems2.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
-\scratchdimen=\dimen119
+\scratchcounter=\count101
+\scratchdimen=\dimen115
 \scratchbox=\box28
-\nofMPsegments=\count103
-\nofMParguments=\count104
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count105
-\MPscratchDim=\dimen120
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks41
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen116
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -775,56 +729,36 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Overfull \hbox (10.7213pt too wide) in paragraph at lines 54--58
-\T2A/cmr/m/n/10 »спользу€ по-лу-чен-ную ин-те-граль-ную фор-му-лу, най-ти вы-ра
--же-ние дл€ $\OML/cmm/m/it/10 J[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/m/
-n/10 )$
+Overfull \hbox (2.65572pt too wide) detected at line 21
+ []$[]  \OML/cmm/m/it/10 F \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 d[]x  []$ []  
+
  []
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (11.921pt too wide) in paragraph at lines 176--178
-[]\T2A/cmr/m/n/10 ¬ыразить по-ли-но-мы Ће-жанд-ра че-рез ги-пер-гео-мет-ри-че-с
-кую функ-
- []
-
-
-Overfull \hbox (5.81139pt too wide) in paragraph at lines 180--181
-[]\T2A/cmr/m/n/10 –ешить урав-не-ние на вы-рож-ден-ную ги-пер-гео-мет-ри-че-ску
-ю функ-
- []
-
-[3]
-\tf@thm=\write3
-\openout3 = `problems2.thm'.
-
- [4] (./problems2.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./vortex.aux) ) 
 Here is how much of TeX's memory you used:
- 3849 strings out of 494440
- 47377 string characters out of 6173197
- 114362 words of memory out of 5000000
- 7075 multiletter control sequences out of 15000+600000
- 15597 words of font info for 38 fonts, out of 8000000 for 9000
+ 3531 strings out of 494440
+ 42843 string characters out of 6173197
+ 107340 words of memory out of 5000000
+ 6775 multiletter control sequences out of 15000+600000
+ 10671 words of font info for 32 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 38i,7n,23p,441b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lat
-i1000.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk>
- </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1000.600pk> </home/ksen
-ia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </home/ksenia/.texmf-va
-r/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/ksenia/.texmf-var/fonts/pk/l
-jfour/lh/lh-t2a/larm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on problems2.pdf (4 pages, 137721 bytes).
+ 38i,11n,23p,245b,191s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/ks
+enia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/ksenia/.texmf-
+var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/ksenia/.texmf-var/fonts/pk
+/ljfour/lh/lh-t2a/larm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on vortex.pdf (1 page, 87637 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 128 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
