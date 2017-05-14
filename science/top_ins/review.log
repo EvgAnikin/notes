@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  20 APR 2017 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  11 MAY 2017 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -831,22 +831,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./review.bbl) [2] (./revi
 ew.aux) ) 
 Here is how much of TeX's memory you used:
- 4383 strings out of 494440
- 54441 string characters out of 6173197
- 122418 words of memory out of 5000000
- 7579 multiletter control sequences out of 15000+600000
+ 4385 strings out of 494440
+ 54457 string characters out of 6173197
+ 123428 words of memory out of 5000000
+ 7581 multiletter control sequences out of 15000+600000
  14769 words of font info for 40 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 38i,6n,32p,324b,203s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,6n,32p,338b,203s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati1000.600pk> </
 home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1200.600pk> </home/ksenia/
 .texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/ksenia/.texmf-var/f
 onts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfo
 ur/lh/lh-t2a/larm1200.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a
 /larm1728.600pk>
-Output written on review.pdf (2 pages, 73826 bytes).
+Output written on review.pdf (2 pages, 76354 bytes).
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
+ 273 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)

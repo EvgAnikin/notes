@@ -39,6 +39,11 @@ Thakshila~M Herath, Prabath Hewageegana, and Vadym Apalkov.
 \newblock A quantum dot in topological insulator nanofilm.
 \newblock {\em Journal of Physics: Condensed Matter}, 26(11):115302, Mar 2014.
 
+\bibitem{Li2009}
+Jian Li, Rui-Lin Chu, J.~K. Jain, and Shun-Qing Shen.
+\newblock Topological anderson insulator.
+\newblock {\em Physical Review Letters}, 102(13), Apr 2009.
+
 \bibitem{Girschik2015}
 Adrian Girschik, Florian Libisch, and Stefan Rotter.
 \newblock Percolating states in the topological anderson insulator.
@@ -48,6 +53,12 @@ Adrian Girschik, Florian Libisch, and Stefan Rotter.
 M.~V. Entin and L.~I. Magarill.
 \newblock Localization of edge electrons in a {2D} topological insulator strip.
 \newblock {\em JETP Letters}, 100(9):566–569, Jan 2015.
+
+\bibitem{Lu2011}
+Jie Lu, Wen-Yu Shan, Hai-Zhou Lu, and Shun-Qing Shen.
+\newblock Non-magnetic impurities and in-gap bound states in topological
+  insulators.
+\newblock {\em New Journal of Physics}, 13(10):103016, Oct 2011.
 
 \bibitem{Altshuler2013}
 B.~L. Altshuler, I.~L. Aleiner, and V.~I. Yudson.

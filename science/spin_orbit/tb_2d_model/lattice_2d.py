@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 from scipy.linalg import eigh
+from scipy.sparse.linalg import eigsh
+from scipy.sparse import csc_matrix
 from mpl_toolkits.mplot3d import Axes3D
 from PIL import Image, ImageDraw
 
@@ -55,6 +57,29 @@ def hamiltonian(NX, NY, xi, m, t, spin=1, reshape=True):
                 H[i,j+1,B,i,j,A] = 1*t
     
     return H.reshape(NX*NY*2, NX*NY*2) if reshape else H
+
+
+def ham_with_obstacle_1(NX, NY, xi, m, t, spin=1, reshape=True):
+    H = hamiltonian(NX, NY, xi, m, t, reshape=False)
+    
+    length = 1
+    A, B = 0, 1
+    for i in xrange(1, length+1):
+        H[NX/2, i, A, NX/2, i, A] = H[NX/2, i, B, NX/2, i, B] = 100/m
+    return H.reshape(NX*NY*2, NX*NY*2)
+
+
+def ham_with_obstacle_2(NX, NY, xi, m, t, spin=1, reshape=True):
+    H = hamiltonian(NX, NY, xi, m, t, reshape=False)
+    
+    length = 2
+    A, B = 0, 1
+    for i in xrange(0, length):
+        x = NX/2 - length/2 + i
+        y = 0
+        H[x, y, A, x, y, A] = H[x, y, B, x, y, B] = 100/m
+    return H.reshape(NX*NY*2, NX*NY*2)
+    
 
 
 def get_random_magnetic_impurity():
@@ -109,7 +134,7 @@ def closest_value_to_zero(energies):
            return i
 
 
-def draw_state(vector, filename=None, show=True, magnitude_factor=5):
+def draw_state(vector, filename=None, show=True, magnitude_factor=3):
     rect_size = 10
     im_size = (rect_size*vector.shape[0], rect_size*vector.shape[1])
     im = Image.new('RGBA', im_size, (0,0,0,0))
@@ -124,7 +149,7 @@ def draw_state(vector, filename=None, show=True, magnitude_factor=5):
             y = j*rect_size
         
 #            brightness = max(0, 1 + math.log(abs(vector[i,j]/max_val), 10)/magnitude_factor)
-            brightness = abs(vector[i,j]/max_val)
+            brightness = min(1, abs(vector[i,j]/max_val))
             color = (int(brightness*255), 0, 0)
             draw.rectangle([x, y, x + rect_size, y + rect_size], fill=color)
     
@@ -154,22 +179,50 @@ def compute_without_spin():
 def plot_histogram(energies, bins):
     values, base = np.histogram(energies, bins=bins)
     plt.plot((base[:-1] + base[1:])/2, values)
+    plt.ylim = (-2,2)
     plt.show()
 
-if __name__ == '__main__':
-    NX = 120
-    NY = 14
-    ham = ham_with_spin(NX, NY, -0.3, 1, 0.4, pot_imp_rate=0.0, mag_imp_rate=0.25)
+
+def diag_with_obstacle():
+    NX = 16
+    NY = 16
+    ham = ham_with_obstacle_1(NX, NY, -0.2, 1, 0.4)
+    
+    n_of_states = NX*NY*2
+    lo, hi = NX*NY - n_of_states/2, NX*NY + n_of_states/2 - 1
+    t0 = time.clock()
+    energies,states = eigh(ham, eigvals=(lo, hi))
+    print 'time: {}'.format(time.clock() - t0)
+    print 'NX: {} NY: {}'.format(NX, NY)
+#    plot_histogram(energies, bins=20)
+    
+    states = np.transpose(states.reshape(NX,NY,2,n_of_states), (3,0,1,2))
+    densities = np.sum(abs(states)**2, axis=3)
+    return densities
+
+
+def diagonalize_w_spin_and_imp():
+    NX = 10
+    NY = 20
+    ham = ham_with_spin(NX, NY, -0.2, 1, 0.4, pot_imp_rate=0.0, mag_imp_rate=0.25)
     
     n_of_states = NX*NY*2*2
     lo, hi = NX*NY*2 - n_of_states/2, NX*NY*2 + n_of_states/2 - 1
     t0 = time.clock()
     energies,states = eigh(ham, eigvals=(lo, hi))
     print 'time: {}'.format(time.clock() - t0)
-    plot_histogram(energies, bins=10)
+    plot_histogram(energies, bins=20)
     
-    states = np.transpose(states.reshape(NX,NY,2,2,lo - hi), (4,0,1,2,3))
+    states = np.transpose(states.reshape(NX,NY,2,2,hi-lo), (4,0,1,2,3))
     densities = np.sum(abs(states)**2, axis=(3,4))
+    return densities
+
+
+if __name__ == '__main__':
+    densities = diag_with_obstacle()
+
+#def diag_with_obstacle():
+    
     
 #    print 'Number of states: {}'.format(NX*NY*2*2)
 #    draw_state(densities[2*NX*NY])
