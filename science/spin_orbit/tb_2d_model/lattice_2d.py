@@ -59,42 +59,48 @@ def hamiltonian(NX, NY, xi, m, t, spin=1, reshape=True):
     return H.reshape(NX*NY*2, NX*NY*2) if reshape else H
 
 
-def ham_with_obstacle_1(NX, NY, xi, m, t, spin=1, reshape=True):
-    H = hamiltonian(NX, NY, xi, m, t, reshape=False)
+def add_obstacle_1(H):
+    NX, NY = H.shape[0], H.shape[1]
     
-    length = 6
+    length = 5
     shift = 0
     A, B = 0, 1
     for i in xrange(shift, length+shift):
-        H[NX/2, i, A, NX/2, i, A] = H[NX/2, i, B, NX/2, i, B] = 100/m
-    return H.reshape(NX*NY*2, NX*NY*2)
+        H[NX/2, i, A, NX/2, i, A] = H[NX/2, i, B, NX/2, i, B] = 100
 
 
-def ham_with_obstacle_2(NX, NY, xi, m, t, spin=1, reshape=True):
-    H = hamiltonian(NX, NY, xi, m, t, reshape=False)
-    
-    length = 2
+def add_obstacle_2(H):
+    NX, NY = H.shape[0], H.shape[1]
+
+    length = 5
     A, B = 0, 1
     for i in xrange(0, length):
         x = NX/2 - length/2 + i
-        y = 0
-        H[x, y, A, x, y, A] = H[x, y, B, x, y, B] = 100/m
+        y = 3
+        H[x, y, A, x, y, A] = H[x, y, B, x, y, B] = 100
     return H.reshape(NX*NY*2, NX*NY*2)
     
 
-def ham_with_obstacle_3(NX, NY, xi, m, t, spin=1, reshape=True):
-    H = hamiltonian(NX, NY, xi, m, t, reshape=False)
-
+def add_obstacle_3(H):
+    NX, NY = H.shape[0], H.shape[1]
     A, B = 0, 1
     x = NX/2
     y = 0
 
-    H[x, y, A, x, y, A] = H[x, y, B, x, y, B] = 100/m
-    H[x+1, y, A, x+1, y, A] = H[x+1, y, B, x+1, y, B] = 100/m
-    H[x-1, y, A, x-1, y, A] = H[x-1, y, B, x-1, y, B] = 100/m
-    H[x, y+1, A, x, y+1, A] = H[x, y+1, B, x, y+1, B] = 100/m
+    H[x, y, A, x, y, A] = H[x, y, B, x, y, B] = 100
+    H[x+1, y, A, x+1, y, A] = H[x+1, y, B, x+1, y, B] = 100
+    H[x-1, y, A, x-1, y, A] = H[x-1, y, B, x-1, y, B] = 100
+    H[x, y+1, A, x, y+1, A] = H[x, y+1, B, x, y+1, B] = 100
 
-    return H.reshape(NX*NY*2, NX*NY*2)
+
+def add_random_edge_imps(H, probability):
+    NX, NY = H.shape[0], H.shape[1]
+
+    depth = 3
+    for i in xrange(NX):
+        for j in xrange(depth):
+            if np.random.rand() < probability:
+                H[i,j,:,i,j,:] += 100*np.diag(np.ones(2))
 
 
 def get_random_magnetic_impurity():
@@ -170,7 +176,8 @@ def draw_state(vector, filename=None, show=True, magnitude_factor=3):
         
 #            brightness = max(0, 1 + math.log(abs(vector[i,j]/max_val), 10)/magnitude_factor)
             brightness = min(1, abs(vector[i,j]/max_val))
-            color = (int(brightness*255), 0, 0)
+#            color = (int(brightness*255), 0, 0)
+            color = (255, 255 - int(brightness*255), 255 - int(brightness*255))
             draw.rectangle([x, y, x + rect_size, y + rect_size], fill=color)
     
     im.save('new_fig.png' if not filename else filename)
@@ -204,10 +211,12 @@ def plot_histogram(energies, bins):
 
 
 def diag_without_spin():
-    NX = 40 
+    NX = 30 
     NY = 20 
-    ham = hamiltonian(NX, NY, 0.2, 1, 0.4, reshape=False)
-    add_potential_disorder(ham, magnitude=2)
+    ham = hamiltonian(NX, NY, -0.2, 1, 0.4, reshape=False)
+#    add_random_edge_imps(ham, 0.3)
+#    add_obstacle_2(ham)
+    add_potential_disorder(ham, magnitude=0.5)
     ham = ham.reshape(NX*NY*2, NX*NY*2)
     
     t0 = time.clock()
@@ -223,13 +232,14 @@ def diag_without_spin():
 
 
 def histogram_without_spin():
-    NX = 40 
+    NX = 25 
     NY = 20 
 
     energies = []
     for i in xrange(10):
         ham = hamiltonian(NX, NY, -0.2, 1, 0.4, reshape=False)
-        add_potential_disorder(ham, magnitude=2)
+#        add_obstacle_1(ham)
+        add_potential_disorder(ham, magnitude=0.3)
         ham = ham.reshape(NX*NY*2, NX*NY*2)
         energies.extend(list(eigh(ham)[0]))
 
@@ -237,24 +247,24 @@ def histogram_without_spin():
 
 
 def diagonalize_w_spin_and_imp():
-    NX = 10
-    NY = 20
-    ham = ham_with_spin(NX, NY, -0.2, 1, 0.4, pot_imp_rate=0.0, mag_imp_rate=0.25)
+    NX = 80
+    NY = 15
+    ham = ham_with_spin(NX, NY, -0.2, 1, 0.4, pot_imp_rate=0.0, mag_imp_rate=0.5)
     
     n_of_states = NX*NY*2*2
-    lo, hi = NX*NY*2 - n_of_states/2, NX*NY*2 + n_of_states/2 - 1
+#    lo, hi = NX*NY*2 - n_of_states/2, NX*NY*2 + n_of_states/2 - 1
     t0 = time.clock()
-    energies,states = eigh(ham, eigvals=(lo, hi))
+    energies,states = eigh(ham)
     print 'time: {}'.format(time.clock() - t0)
     plot_histogram(energies, bins=20)
     
-    states = np.transpose(states.reshape(NX,NY,2,2,hi-lo), (4,0,1,2,3))
+    states = np.transpose(states.reshape(NX,NY,2,2,n_of_states), (4,0,1,2,3))
     densities = np.sum(abs(states)**2, axis=(3,4))
     return densities
 
 
 if __name__ == '__main__':
-    d = diag_without_spin()
+    d = diagonalize_w_spin_and_imp()
     drst = draw_state
 
 #def diag_with_obstacle():
