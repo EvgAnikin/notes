@@ -247,8 +247,8 @@ def histogram_without_spin():
 
 
 def diagonalize_w_spin_and_imp():
-    NX = 80
-    NY = 15
+    NX = 20
+    NY = 20
     ham = ham_with_spin(NX, NY, -0.2, 1, 0.4, pot_imp_rate=0.0, mag_imp_rate=0.5)
     
     n_of_states = NX*NY*2*2

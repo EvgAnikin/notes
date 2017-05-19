@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  17 MAY 2017 12:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  17 MAY 2017 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -867,30 +867,64 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 66--69
 [][] 
  []
 
+<mgn_edge_st_1.png, id=6, 803.0pt x 150.5625pt>
+File: mgn_edge_st_1.png Graphic file (type png)
+ <use mgn_edge_st_1.png>
+Package pdftex.def Info: mgn_edge_st_1.png used on input line 81.
+(pdftex.def)             Requested size: 450.43253pt x 84.45915pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 81--82
+[][] 
+ []
+
+<mgn_edge_st_2.png, id=7, 803.0pt x 150.5625pt>
+File: mgn_edge_st_2.png Graphic file (type png)
+ <use mgn_edge_st_2.png>
+Package pdftex.def Info: mgn_edge_st_2.png used on input line 84.
+(pdftex.def)             Requested size: 450.43253pt x 84.45915pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 84--85
+[][] 
+ []
+
+<mgn_edge_st_3.png, id=8, 803.0pt x 150.5625pt>
+File: mgn_edge_st_3.png Graphic file (type png)
+ <use mgn_edge_st_3.png>
+Package pdftex.def Info: mgn_edge_st_3.png used on input line 87.
+(pdftex.def)             Requested size: 450.43253pt x 84.45915pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 87--88
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./obstacle_1.png> <./obsta
-cle_2.png> <./dis_edge_state_1.png> <./dis_bulk_state.png>] (./numeric.aux) ) 
+cle_2.png> <./dis_edge_state_1.png> <./dis_bulk_state.png>] [2 <./mgn_edge_st_1
+.png> <./mgn_edge_st_2.png> <./mgn_edge_st_3.png>] (./numeric.aux) ) 
 Here is how much of TeX's memory you used:
- 4396 strings out of 494440
- 54762 string characters out of 6173197
- 123447 words of memory out of 5000000
- 7590 multiletter control sequences out of 15000+600000
+ 4411 strings out of 494440
+ 55074 string characters out of 6173197
+ 124447 words of memory out of 5000000
+ 7602 multiletter control sequences out of 15000+600000
  14775 words of font info for 46 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  38i,9n,32p,1978b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
- <
-/home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </home/ksenia
-/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/ksenia/.texmf-var/
-fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/ksenia/.texmf-var/fonts/pk/ljf
-our/lh/lh-t2a/larm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb>
-Output written on numeric.pdf (1 page, 73572 bytes).
+ </home/kse
+nia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </home/ksenia/.texmf-v
+ar/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/ksenia/.texmf-var/fonts/pk/
+ljfour/lh/lh-t2a/larm1200.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh
+-t2a/larm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+>
+Output written on numeric.pdf (2 pages, 82205 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 182 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
