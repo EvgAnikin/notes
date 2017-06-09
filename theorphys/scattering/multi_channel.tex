@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\title{Многоканальное рассеяние и формула Ландауэра}
+\author{Anikin Evgeny, 128}
+
+\begin{document}
+\maketitle
+Пусть имеется волновод постоянного сечения вдоль координаты $z$, $z < 0$. Пусть 
+около $z \sim 0$ находится стенка, отражающая электроны. Вдали от стенки
+волновые функции можно выбрать в виде
+\begin{equation}
+    \Psi_m = \frac{e^{ik_mz}}{\sqrt{v_m}}\psi_m + 
+             \sum_n r_{mn} \frac{e^{-ik_nz}}{\sqrt{v_n}} \psi_n
+\end{equation}
+Здесь $m,n$ --- номера каналов, $\psi_m(x,y)$ --- волновые функции поперечного сечения,
+$r_{mn}$ --- матрица рассеяния,  Получим условие унитарности
+для этой матрицы. 
+
+Пусть изначально на стенку падает цуг длины $L$ в канале $m$. 
+Тогда после рассеяния в $n$-ом канале
+мы получим цуг длины $\frac{v_n}{v_m}L$. Таким образом,
+\begin{equation}
+    u_m(z)\psi_m\frac{e^{ik_mz}}{\sqrt{v_m}} \to 
+             \sum_n r_{mn} u_n(z) \psi_n \frac{e^{-ik_nz}}{\sqrt{v_n}} 
+\end{equation}
+Очень важно, что плавные огибающие здесь имеют вид $u_k(z)/\sqrt{v_k}$ и одинаково 
+нормированы. Отсюда и и унитарности оператора эволюции сразу получается
+унитарность матрицы $\hat{r}$.
+\end{document}

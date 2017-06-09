@@ -1,0 +1,58 @@
+\newpage
+\section{Уровни размерного квантования\\ в квантовой яме HgTe}
+\label{app:dim_quant}
+Гамильтониан Кейна имеет вид
+\begin{equation}
+    \label{kane_ham}
+    H = \begin{pmatrix}
+                E_c + \frac{\hbar^2 k^2}{2m_s}E_{2\times 2} & T \\
+                T^\dagger & E_v + H_{L}
+        \end{pmatrix}
+\end{equation}
+\begin{equation*}
+    H_L = -\frac{\hbar^2}{2m_0}\left[
+            \left(\gamma_1 + \frac{5}{2}\gamma_2\right)k^2 -
+            2\gamma_2(\vec{k} \cdot \vec{J})^2 - \right. 
+            - \left.2(\gamma_3 - \gamma_2)(\{J_x J_y\} + \{J_x J_z\} + \{J_y J_z\})
+            \vphantom{\frac{1}{2}}\right]
+\end{equation*}
+\begin{equation*}
+    T = P\begin{pmatrix}
+           -\frac{1}{\sqrt{2}}k_{+} & \sqrt{\frac{2}{3}}k_z  
+                    & \frac{1}{\sqrt{6}} k_{-} & 0 \\
+            0 & -\frac{1}{\sqrt{6}} k_{+} 
+                    & \sqrt{\frac{2}{3}}k_z & \frac{1}{\sqrt{2}} k_{-} 
+         \end{pmatrix}
+\end{equation*}
+Так как
+коэффициенты в гамильтониане Кейна зависят явным образом от $z$, нужно сделать замену
+$k_z \to i\partial_z$. При этом, чтобы гамильтониан остался эрмитовым,
+$\frac{k_z^2}{2m} \to -\partial_z \frac{1}{2m} \partial_z$ (и аналогично --- для других
+членов). Все величины, зависящие от $z$, равны значениям для HgTe при $-d/2 < z < d/2$,
+для CdTe --- в противном случае.
+
+Уровни размерного квантования можно относительно просто найти для $k_x, k_y = 0$. В этом 
+случае гамильтониан значитально упрощается. Уровни тяжёлых дырок оказываются полностью
+отщеплёнными для каждой проекции спина и описываются эффективным гамильтонианом
+\begin{equation}
+    H_{\mathrm{HH}} = E_v(z) + \frac{1}{2m}
+                        \frac{\partial}{\partial z} 
+                        (\gamma_1(z) - 2\gamma_2(z)) 
+                        \frac{\partial}{\partial z} 
+\end{equation}
+Также отщепляются $s$--зона вместе с зоной лёгких дырок. Они описываются эффективным
+гамильтонианом 
+\begin{equation}
+    H_{\mathrm{s,LH}} = \begin{pmatrix}
+                            E_c - \frac{\hbar^2}{2m}
+                                 \frac{\partial}{\partial z}(1 + 2F) 
+                                 \frac{\partial}{\partial z} &
+                                 \sqrt{\frac{2}{3}}P k_z \\
+                                 \sqrt{\frac{2}{3}}P k_z &
+                                 E_v +  \frac{\hbar^2}{2m}
+                                 \frac{\partial}{\partial z}(\gamma_1 + 2\gamma_2)
+                                 \frac{\partial}{\partial z} 
+                        \end{pmatrix}
+\end{equation}
+Для обоих гамильтонианов можно получить алгебраические уравнения на уровни энергии. Эти
+уравнения решаются численно.

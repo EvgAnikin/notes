@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.12)  2 MAY 2017 17:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  22 MAY 2017 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **report.tex
 (./report.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 10 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -691,6 +691,8 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count103
 \U@D=\dimen122
 )
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -709,20 +711,20 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -815,96 +817,227 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+(./titlepage.tex [1
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+(./report.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./tight_binding.tex) (./impurity.tex
-LaTeX Font Info:    Try loading font information for U+bbm on input line 9.
- (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+))
+\tf@toc=\write3
+\openout3 = `report.toc'.
+
+ (./intro.tex
+[1]) (./hgte.tex
+
+LaTeX Warning: Citation `Kane2005' on page 2 undefined on input line 3.
+
+<images/quantum_well.png, id=18, 734.745pt x 766.865pt>
+File: images/quantum_well.png Graphic file (type png)
+
+<use images/quantum_well.png>
+Package pdftex.def Info: images/quantum_well.png used on input line 29.
+(pdftex.def)             Requested size: 202.69325pt x 211.54965pt.
+ <images/levels.png, id=20, 578.16pt x 433.62pt>
+File: images/levels.png Graphic file (type png)
+
+<use images/levels.png>
+Package pdftex.def Info: images/levels.png used on input line 35.
+(pdftex.def)             Requested size: 202.69325pt x 152.01408pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./tight_binding.tex [2]) (./edge_states.tex
+<images/edge_states.png, id=33, 578.16pt x 433.62pt>
+File: images/edge_states.png Graphic file (type png)
+
+<use images/edge_states.png>
+Package pdftex.def Info: images/edge_states.png used on input line 13.
+(pdftex.def)             Requested size: 300.29344pt x 225.21904pt.
+) (./impurity.tex [3 <./images/quantum_well.png> <./images/levels.png> <./image
+s/edge_states.png>]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-[1
+<images/impurity_levels.png, id=41, 578.16pt x 433.62pt>
+File: images/impurity_levels.png Graphic file (type png)
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<impurity_levels.png, id=19, 578.16pt x 433.62pt>
-File: impurity_levels.png Graphic file (type png)
- <use impurity_levels.png>
-Package pdftex.def Info: impurity_levels.png used on input line 70.
+<use images/impurity_levels.png>
+Package pdftex.def Info: images/impurity_levels.png used on input line 86.
+(pdftex.def)             Requested size: 180.17369pt x 135.12877pt.
+
+<images/gf_03-1-04.png, id=42, 578.16pt x 433.62pt>
+File: images/gf_03-1-04.png Graphic file (type png)
+
+<use images/gf_03-1-04.png>
+Package pdftex.def Info: images/gf_03-1-04.png used on input line 90.
+(pdftex.def)             Requested size: 180.17369pt x 135.12877pt.
+) (./numeric.tex
+<images/obstacle_1.png, id=43, 200.75pt x 200.75pt>
+File: images/obstacle_1.png Graphic file (type png)
+
+<use images/obstacle_1.png>
+Package pdftex.def Info: images/obstacle_1.png used on input line 10.
+(pdftex.def)             Requested size: 180.17026pt x 180.1832pt.
+
+<images/obstacle_2.png, id=44, 200.75pt x 200.75pt>
+File: images/obstacle_2.png Graphic file (type png)
+
+<use images/obstacle_2.png>
+Package pdftex.def Info: images/obstacle_2.png used on input line 14.
+(pdftex.def)             Requested size: 180.17026pt x 180.1832pt.
+ [4 <./images/impurity_levels.png> <./images/gf_03-1-04.png>] <images/dis_edge_
+state_1.png, id=53, 301.125pt x 200.75pt>
+File: images/dis_edge_state_1.png Graphic file (type png)
+
+<use images/dis_edge_state_1.png>
+Package pdftex.def Info: images/dis_edge_state_1.png used on input line 35.
+(pdftex.def)             Requested size: 200.19054pt x 133.46643pt.
+
+<images/dis_bulk_state.png, id=54, 301.125pt x 200.75pt>
+File: images/dis_bulk_state.png Graphic file (type png)
+
+<use images/dis_bulk_state.png>
+Package pdftex.def Info: images/dis_bulk_state.png used on input line 43.
+(pdftex.def)             Requested size: 200.19054pt x 133.46643pt.
+
+<images/mgn_edge_st_1.png, id=55, 803.0pt x 150.5625pt>
+File: images/mgn_edge_st_1.png Graphic file (type png)
+
+<use images/mgn_edge_st_1.png>
+Package pdftex.def Info: images/mgn_edge_st_1.png used on input line 63.
+(pdftex.def)             Requested size: 315.30139pt x 59.11887pt.
+
+<images/mgn_edge_st_2.png, id=56, 803.0pt x 150.5625pt>
+File: images/mgn_edge_st_2.png Graphic file (type png)
+
+<use images/mgn_edge_st_2.png>
+Package pdftex.def Info: images/mgn_edge_st_2.png used on input line 68.
+(pdftex.def)             Requested size: 315.30139pt x 59.11887pt.
+
+<images/mgn_edge_st_3.png, id=57, 803.0pt x 150.5625pt>
+File: images/mgn_edge_st_3.png Graphic file (type png)
+
+<use images/mgn_edge_st_3.png>
+Package pdftex.def Info: images/mgn_edge_st_3.png used on input line 73.
+(pdftex.def)             Requested size: 315.30139pt x 59.11887pt.
+ <images/fig2.png, id=58, 602.25pt x 200.75pt>
+File: images/fig2.png Graphic file (type png)
+
+<use images/fig2.png>
+Package pdftex.def Info: images/fig2.png used on input line 90.
+(pdftex.def)             Requested size: 315.30139pt x 105.10431pt.
+ <images/fig3.png, id=59, 602.25pt x 200.75pt>
+File: images/fig3.png Graphic file (type png)
+
+<use images/fig3.png>
+Package pdftex.def Info: images/fig3.png used on input line 95.
+(pdftex.def)             Requested size: 315.30139pt x 105.10431pt.
+ <images/fig5.png, id=60, 602.25pt x 200.75pt>
+File: images/fig5.png Graphic file (type png)
+
+<use images/fig5.png>
+Package pdftex.def Info: images/fig5.png used on input line 100.
+(pdftex.def)             Requested size: 315.30139pt x 105.10431pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./spin_orbit.tex [5 <./images/obstacle_1.png> <./images/obstacle_2.png> <./i
+mages/dis_edge_state_1.png> <./images/dis_bulk_state.png> <./images/mgn_edge_st
+_1.png> <./images/mgn_edge_st_2.png> <./images/mgn_edge_st_3.png>] [6 <./images
+/fig2.png> <./images/fig3.png> <./images/fig5.png>]
+<images/dim_quant_levels.png, id=78, 578.16pt x 433.62pt>
+File: images/dim_quant_levels.png Graphic file (type png)
+
+<use images/dim_quant_levels.png>
+Package pdftex.def Info: images/dim_quant_levels.png used on input line 80.
+(pdftex.def)             Requested size: 400.38872pt x 300.28984pt.
+) (./edge_rec.tex [7 <./images/dim_quant_levels.png>] <images/reconstruction_po
+tential.png, id=83, 578.16pt x 433.62pt>
+File: images/reconstruction_potential.png Graphic file (type png)
+
+<use images/reconstruction_potential.png>
+Package pdftex.def Info: images/reconstruction_potential.png used on input line
+ 49.
 (pdftex.def)             Requested size: 400.38872pt x 300.28984pt.
 
-[2 <./impurity_levels.png>]) (./spin_orbit.tex [3] [4
+<images/reconstruction_spectrum_up.png, id=84, 578.16pt x 433.62pt>
+File: images/reconstruction_spectrum_up.png Graphic file (type png)
 
-
-]
-<dim_quant_levels.png, id=35, 578.16pt x 433.62pt>
-File: dim_quant_levels.png Graphic file (type png)
- <use dim_quant_levels.png>
-Package pdftex.def Info: dim_quant_levels.png used on input line 146.
-(pdftex.def)             Requested size: 400.38872pt x 300.28984pt.
-)
-(./edge_rec.tex [5
-
-
- <./dim_quant_levels.png>]
-<reconstruction_potential.png, id=40, 578.16pt x 433.62pt>
-File: reconstruction_potential.png Graphic file (type png)
-
-<use reconstruction_potential.png>
-Package pdftex.def Info: reconstruction_potential.png used on input line 49.
+<use images/reconstruction_spectrum_up.png>
+Package pdftex.def Info: images/reconstruction_spectrum_up.png used on input li
+ne 58.
 (pdftex.def)             Requested size: 400.38872pt x 300.28984pt.
 
-<reconstruction_spectrum_up.png, id=41, 578.16pt x 433.62pt>
-File: reconstruction_spectrum_up.png Graphic file (type png)
+<images/reconstruction_spectrum_down.png, id=85, 578.16pt x 433.62pt>
+File: images/reconstruction_spectrum_down.png Graphic file (type png)
 
-<use reconstruction_spectrum_up.png>
-Package pdftex.def Info: reconstruction_spectrum_up.png used on input line 58.
+<use images/reconstruction_spectrum_down.png>
+Package pdftex.def Info: images/reconstruction_spectrum_down.png used on input 
+line 67.
 (pdftex.def)             Requested size: 400.38872pt x 300.28984pt.
+) (./conclusion.tex) [8 <./images/reconstruction_potential.png>] [9 <./images/r
+econstruction_spectrum_up.png> <./images/reconstruction_spectrum_down.png>] (./
+appendix_kp_well.tex)
+(./appendix_time_reversal.tex) (./appendix_imp.tex [10]) (./appendix_tb.tex)
+[11] [12
 
-<reconstruction_spectrum_down.png, id=42, 578.16pt x 433.62pt>
-File: reconstruction_spectrum_down.png Graphic file (type png)
 
-<use reconstruction_spectrum_down.png>
-Package pdftex.def Info: reconstruction_spectrum_down.png used on input line 67
-.
-(pdftex.def)             Requested size: 400.38872pt x 300.28984pt.
-) (./localization.tex [6 <./reconstruction_potential.png>] [7 <./reconstruction
-_spectrum_up.png> <./reconstruction_spectrum_down.png>]) [8] (./report.bbl) [9]
- (./report.aux) ) 
+] (./report.bbl) [13
+
+
+] (./report.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4460 strings out of 493029
- 56197 string characters out of 6136234
- 138545 words of memory out of 5000000
- 7867 multiletter control sequences out of 15000+600000
- 16863 words of font info for 51 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 38i,18n,32p,3720b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} <
-/home/evgeny/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-frm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfti1000.pfb>
-Output written on report.pdf (9 pages, 705019 bytes).
+ 4569 strings out of 494440
+ 58559 string characters out of 6173197
+ 134615 words of memory out of 5000000
+ 7694 multiletter control sequences out of 15000+600000
+ 18690 words of font info for 41 fonts, out of 8000000 for 9000
+ 430 hyphenation exceptions out of 8191
+ 38i,18n,32p,3963b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati1000.600pk> </home/ks
+enia/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk> </home/ksenia/.texmf-va
+r/fonts/pk/ljfour/lh/lh-t2a/labx1200.600pk> </home/ksenia/.texmf-var/fonts/pk/l
+jfour/lh/lh-t2a/labx1000.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-
+t2a/labx1440.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200
+.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </ho
+me/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati1440.600pk> </home/ksenia/.t
+exmf-var/fonts/pk/ljfour/lh/lh-t2a/labx2074.600pk> </home/ksenia/.texmf-var/fon
+ts/pk/ljfour/lh/lh-t2a/lacc1440.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour
+/lh/lh-t2a/lacc1000.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/l
+acc1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msbm7.pfb>
+Output written on report.pdf (14 pages, 1294230 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+ 597 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

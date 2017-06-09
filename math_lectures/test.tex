@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage{graphicx}
+\usepackage{ntheorem}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+\newcommand{\p}{\partial}
+
+\theorembodyfont{\normalfont}
+\newtheorem{problem}{Задача}
+
+\title{Контрольная}
+\author{Anikin Evgeny}
+
+\begin{document}
+    \begin{problem}
+        Методом Лапласа решить уравнение модифицированное уравнение Бесселя 
+        нулевого порядка:
+        \begin{equation}
+            u'' + \frac{1}{x}u' - u = 0
+        \end{equation}
+        Найти решение, конечное при $x = 0$. Найти асимптотику этого решения 
+        при $x \to \infty$ (не методом перевала).
+    \end{problem}
+    \begin{problem}
+        Получить уравнение на присоединённые функции Лежандра $P_{lm}(\cos{\theta})$.
+        (Собственные функции оператора квадрата момента импульса имеют вид 
+        $P_{lm}(\cos{\theta})e^{im\phi}$.)
+        Свести его к гипергеометрическому уравнению и найти решение, регулярное при
+        $\cos{\theta} = 1$.
+    \end{problem}
+    \begin{problem}
+        Методом перевала найти асимптотику полиномов Эрмита, считая, что 
+        $x^2, n \to \infty$, а $x^2/n$ остаётся конечным. Интегральная формула
+        для полиномов Эрмита ---
+        \begin{equation}
+            H_n(x) = \frac{n!}{2\pi i} \oint \frac{dz}{z^{n+1}} e^{2xz - z^2}
+        \end{equation}
+        Рассмотреть два случая расположения перевальных точек. Какие из них 
+        дают вклад?
+        Вычислить асимптотику в том случае, когда обе точки важны.
+    \end{problem}
+\end{document}

@@ -62,11 +62,11 @@ def hamiltonian(NX, NY, xi, m, t, spin=1, reshape=True):
 def add_obstacle_1(H):
     NX, NY = H.shape[0], H.shape[1]
     
-    length = 5
-    shift = 0
+    length = 1
+    shift = 2
     A, B = 0, 1
     for i in xrange(shift, length+shift):
-        H[NX/2, i, A, NX/2, i, A] = H[NX/2, i, B, NX/2, i, B] = 100
+        H[NX/2, i, A, NX/2, i, A] = H[NX/2, i, B, NX/2, i, B] = 2.5
 
 
 def add_obstacle_2(H):
@@ -93,14 +93,31 @@ def add_obstacle_3(H):
     H[x, y+1, A, x, y+1, A] = H[x, y+1, B, x, y+1, B] = 100
 
 
-def add_random_edge_imps(H, probability):
+def add_obstacle_4(H):
+    NX, NY = H.shape[0], H.shape[1]
+    
+    A, B = 0, 1
+    for i in xrange(0, NY, 4):
+        H[NX/2, i, A, NX/2, i, A] = H[NX/2, i, B, NX/2, i, B] = 2.5
+
+
+def add_random_imps(H, probability):
     NX, NY = H.shape[0], H.shape[1]
 
-    depth = 3
     for i in xrange(NX):
-        for j in xrange(depth):
+        for j in xrange(NY):
             if np.random.rand() < probability:
-                H[i,j,:,i,j,:] += 100*np.diag(np.ones(2))
+                magnitude = 2.5 + 2*(2*np.random.rand() - 1)
+                H[i,j,:,i,j,:] += magnitude*np.diag(np.ones(2))
+
+
+def add_random_chain(H, probability):
+    NX, NY = H.shape[0], H.shape[1]
+
+    for j in xrange(NY):
+        if np.random.rand() < probability:
+            magnitude = 2.5 + 2*(np.random.rand() - 0.5)
+            H[NX/2,j,:,NX/2,j,:] += magnitude*np.diag(np.ones(2))
 
 
 def get_random_magnetic_impurity():
@@ -211,12 +228,13 @@ def plot_histogram(energies, bins):
 
 
 def diag_without_spin():
-    NX = 30 
-    NY = 20 
-    ham = hamiltonian(NX, NY, -0.2, 1, 0.4, reshape=False)
-#    add_random_edge_imps(ham, 0.3)
-#    add_obstacle_2(ham)
-    add_potential_disorder(ham, magnitude=0.5)
+    NX = 60 
+    NY = 20
+    ham = hamiltonian(NX, NY, -0.3, 1, 0.4, reshape=False)
+    add_random_imps(ham, 0.05)
+#    add_random_chain(ham, 0.16)
+#    add_obstacle_4(ham)
+#    add_potential_disorder(ham, magnitude=0.5)
     ham = ham.reshape(NX*NY*2, NX*NY*2)
     
     t0 = time.clock()
@@ -264,7 +282,7 @@ def diagonalize_w_spin_and_imp():
 
 
 if __name__ == '__main__':
-    d = diagonalize_w_spin_and_imp()
+    d = diag_without_spin()
     drst = draw_state
 
 #def diag_with_obstacle():

@@ -1,8 +1,7 @@
 \section{Квантовая яма CdTe--HgTe--CdTe в модели сильной связи}
-В этом разделе будет рассмотрена модель сильной связи для квантовой ямы. В рамках модели
-найдены уровни размерного квантования. Результаты более--менее согласуются с расчётом в 
-$k\cdot p$--приближении \cite{Bernevig2006}.
-
+В этом разделе будет построена модель сильной связи, эквивалентная $k\cdot p$ гамильтониану
+\eqref{kane_ham}. Численно диагонализуя её, можно независимо получить уровни размерного 
+квантования.
 \subsection{Модель однородного полупроводника}
 Модель представляет из себя 
 кубическую решётку из атомов, на каждом из которых ``сидят'' состояния
@@ -12,28 +11,7 @@ $k\cdot p$--приближении \cite{Bernevig2006}.
 Для написания
 спин--орбитального гамильтониана $p$--зоны необходимо перейти к состояниям с определённым
 полным моментом. Эти состояния выражаются через $p_x$, $p_y$, $p_z$ орбитали через
-коэффициенты Клебша--Гордана:
-\begin{equation}
-	\label{transform1}
-	\begin{gathered}
-        \Psi_{\frac{3}{2},\frac{3}{2}} = \frac{X + iY}{\sqrt{2}}\alpha\\
-        \Psi_{\frac{3}{2}, \frac{1}{2}} = \sqrt{\frac{1}{3}}\frac{X + iY}{\sqrt{2}}\beta -
-                                         \sqrt{\frac{2}{3}} Z\alpha\\
-        \Psi_{\frac{3}{2}, -\frac{1}{2}} = -\sqrt{\frac{1}{3}}\frac{X - iY}{\sqrt{2}}\alpha -
-                                         \sqrt{\frac{2}{3}} Z\beta\\
-        \Psi_{\frac{3}{2},-\frac{3}{2}} = -\frac{X - iY}{\sqrt{2}}\beta
-	\end{gathered}
-\end{equation}
-\begin{equation}
-	\label{transform2}
-	\begin{gathered}
-        \Psi_{\frac{1}{2}, \frac{1}{2}} = \sqrt{\frac{2}{3}}\frac{X + iY}{\sqrt{2}}\beta +
-                                         \sqrt{\frac{1}{3}} Z\alpha\\
-        \Psi_{\frac{1}{2}, -\frac{1}{2}} = -\sqrt{\frac{2}{3}}\frac{X - iY}{\sqrt{2}}\alpha-
-                                         \sqrt{\frac{1}{3}} Z\beta\\
-	\end{gathered}
-\end{equation}
-Здесь $X,Y,Z$ --- атомные орбитали, $\alpha,\beta$ --- состояния со спином вверх и вниз.
+коэффициенты Клебша--Гордана (см. приложение~\ref{app:tb}).
 
 Спин--орбитальное взаимодействие приводит к расщеплению состояний с моментами $\frac32$ и
 $\frac12$.
@@ -58,56 +36,14 @@ $s$ и $p$--орбитали и $-\frac{1}{2m_s}$ --- для $s$--орбитал
 \end{equation}
 Матрицы $H_c$, $T$, $H_v$ определены формулами \eqref{H_conduction}--\eqref{H_valence}, см.
 стр.~\pageref{H_conduction}.
-
-\afterpage{%
-    \clearpage% Flush earlier floats (otherwise order might not be correct)
-%    \thispagestyle{empty}% empty page style (?)
-    \begin{landscape}% Landscape page
-        \centering % Center table
-        \vspace*{\fill}
-        \begin{equation}
-            \label{H_conduction}
-            H_c = (E_s + \frac{1}{m_s}(3 - \cos{p_x} - \cos{p_y} - \cos{p_z}))I_{2\times2}
-        \end{equation}
-        \begin{equation}
-            \label{T_matrix}
-            T = P\begin{pmatrix}
-                    -\frac{1}{\sqrt{2}}(\sin{p_x} + i\sin{p_y}) & \sqrt{\frac{2}{3}}\sin{p_z} &
-                     \frac{1}{\sqrt{6}}(\sin{p_x} - i\sin{p_y}) & 0 \\  
-                    0 & -\frac{1}{\sqrt{6}}(\sin{p_x} + i\sin{p_y}) & 
-                    \sqrt{\frac{2}{3}}\sin{p_z} & \frac{1}{\sqrt{2}}(\sin{p_x} - i\sin{p_y}),
-                 \end{pmatrix},
-        \end{equation}
-        \begin{equation}
-            \label{H_valence}
-            H_v = 
-            \begin{pmatrix}
-                (t_\parallel + t_\perp)(\cos{p_x} + \cos{p_y}) + 2t_\perp \cos{p_z} & 0 &
-                -\frac{1}{\sqrt{3}}(t_\parallel - t_\perp)(\cos{p_x} - \cos_{p_y}) & 0 \\
-                0 & \left(\frac{t_\parallel}{3} + \frac{5t_\perp}{3}\right)(\cos{p_x}+\cos{p_y})+ 
-                              \left(\frac{2t_\perp}{3} + \frac{4t_\parallel}{3}\right)\cos{p_z} &
-                0 & -\frac{1}{\sqrt{3}}(t_\parallel - t_\perp)(\cos{p_x} - \cos_{p_y})\\
-                -\frac{1}{\sqrt{3}}(t_\parallel - t_\perp)(\cos{p_x} - \cos_{p_y}) & 0 &
-               \left(\frac{t_\parallel}{3} + \frac{5t_\perp}{3}\right)(\cos{p_x} + \cos{p_y}) + 
-                       \left(\frac{2t_\perp}{3} + \frac{4t_\parallel}{3}\right)\cos{p_z} & 0 \\
-                0 & -\frac{1}{\sqrt{3}}(t_\parallel - t_\perp)(\cos{p_x} - \cos_{p_y}) &
-                0 & (t_\parallel + t_\perp)(\cos{p_x} + \cos{p_y}) + 2t_\perp \cos{p_z}
-            \end{pmatrix}
-        \end{equation}
-    \vspace*{\fill}
-    \end{landscape}
-    \clearpage% Flush page
-}
-
-Можно разложить гамильтониан по малым $p$.
-При разложении $H_v$ получится
-гамильтониан Латтинжера:
+Этот гамильтониан можноразложить по малым $p$,
+в результате чего получится гамильтониан Латтинжера:
 \begin{equation}
     H_v = \frac{\hbar^2}{2ma^2}\left\{-\left(\gamma_1 + \frac{5}{2}\gamma_2\right) k^2 + 
         2\gamma_2(k_x^2J_x^2 + k_y^2J_y^2 + k_z^2J_z^2) + 
         4\gamma_3(k_x k_y J_x J_y + k_x k_z J_x J_z + k_y k_z J_y J_z) \right\}
 \end{equation}
-где $J_i$ --- операторы момента для спина $\frac{3}{2}$, $a$ --- постоянная решётки,
+Здесь $J_i$ --- операторы момента для спина $\frac{3}{2}$, $a$ --- постоянная решётки,
 $m$ --- масса электрона,
 \begin{equation}
     \begin{gathered}
@@ -122,8 +58,6 @@ $m$ --- масса электрона,
 Коэффициенты перескока в сильной связи можно зафиксировать требованием, чтобы при малых $p$ 
 воспроизводился $k\cdot p$ гамильтониан с значениями параметров, известных из эксперимента
 \cite{Novik2005}. 
-%Спектр такой модели сильной связи с параметрами реальных CdTe, HgTe изображён
-%на рисунке. 
 
 \subsection{Модель квантовой ямы}
 Квантовая яма представляет из себя последовательно расположенные слои CdTe, HgTe и CdTe.

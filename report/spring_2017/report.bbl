@@ -1,16 +1,44 @@
 \begin{thebibliography}{1}
 
+\bibitem{Kohmoto1985}
+Mahito Kohmoto.
+\newblock Topological invariant and the quantization of the hall conductance.
+\newblock {\em Annals of Physics}, 160(2):343–354, Apr 1985.
+
+\bibitem{Hasan2010}
+M.~Z. Hasan and C.~L. Kane.
+\newblock Topological insulators.
+\newblock {\em Rev.Mod.Phys.}, February 2010.
+
+\bibitem{Konig2007}
+M.~Konig, S.~Wiedmann, C.~Brune, A.~Roth, H.~Buhmann, L.~W. Molenkamp, X.-L.
+  Qi, and S.-C. Zhang.
+\newblock Quantum spin hall insulator state in hgte quantum wells.
+\newblock {\em Science}, 318(5851):766–770, Nov 2007.
+
+\bibitem{Gusev2011}
+G.~M. Gusev, Z.~D. Kvon, O.~A. Shegai, N.~N. Mikhailov, S.~A. Dvoretsky, and
+  J.~C. Portal.
+\newblock Transport in disordered two-dimensional topological insulators.
+\newblock {\em Physical Review B}, 84(12), Sep 2011.
+
+\bibitem{Lu2011}
+Jie Lu, Wen-Yu Shan, Hai-Zhou Lu, and Shun-Qing Shen.
+\newblock Non-magnetic impurities and in-gap bound states in topological
+  insulators.
+\newblock {\em New Journal of Physics}, 13(10):103016, Oct 2011.
+
+\bibitem{Kane1957}
+Evan~O. Kane.
+\newblock Band structure of indium antimonide.
+\newblock {\em Journal of Physics and Chemistry of Solids}, 1(4):249–261, Jan
+  1957.
+
 \bibitem{Bernevig2006}
 B.~A. Bernevig, T.~L. Hughes, and S.-C. Zhang.
 \newblock Quantum spin hall effect and topological phase transition in hgte
   quantum wells.
 \newblock {\em Science}, 314(5806):1757–1761, Dec 2006.
-
-\bibitem{Luttinger1956}
-J.~M. Luttinger.
-\newblock Quantum theory of cyclotron resonance in semiconductors: General
-  theory.
-\newblock {\em Physical Review}, 102(4):1030–1041, May 1956.
 
 \bibitem{Novik2005}
 E.~G. Novik, A.~Pfeuffer-Jeschke, T.~Jungwirth, V.~Latussek, C.~R. Becker,

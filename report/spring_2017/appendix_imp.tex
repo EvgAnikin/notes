@@ -1,0 +1,63 @@
+\section{Вычисления для точечной примеси}
+\subsection{Энергия связанного состояния}
+\label{app:impurity}
+Уравнения \eqref{imp_equation} принимают вид
+\begin{align}
+        &G(\omega,0,0)_{11} = \int \frac{d^2 p}{(2\pi)^2} 
+            \frac{\omega + \xi + \frac{1}{m}(2 - \cos{p_x} - \cos{p_y})}
+                 {\omega^2 - E_p^2} =\frac{1}{\Delta E}, \label{local_state_eq:1}\\
+        &G(\omega,0,0)_{22} = \int \frac{d^2 p}{(2\pi)^2} 
+            \frac{-\omega + \xi + \frac{1}{m}(2 - \cos{p_x} - \cos{p_y})}
+                 {\omega^2 - E_p^2} =-\frac{1}{\Delta E}, \label{local_state_eq:2}
+\end{align}
+Интегралы можно взять приближённо в круге радиуса $p_{\mathrm{max}}$,
+если учесть, что при малых $p$ спектр близок к 
+коническому. Можно считать, что $p_{\mathrm{max}} \sim 1$. После интегрирования получается
+выражение \eqref{approx_green_func}. Используя его, мы получили \eqref{impurity_energy}.
+
+
+Покажем, что для большого $\Delta E$ и $\xi > 0$ связанного состояния в щели нет. 
+В этом случае $\delta \omega < 0$ и логарифм в формуле \eqref{approx_green_func} ---
+большое положитальное число. При этом в правой части \eqref{local_state_eq:1} стоит
+$\frac{1}{\Delta E} \to 0$. Это значит, что равенство не может быть выполнено.
+
+
+\subsection{Волновая функция связанного состояния}
+Волновые функции даются компонентами свободной функции Грина \eqref{green_function}.
+Их можно вычислить с помощью формального трюка. Определим новую функцию
+$F(x,y)$:
+\begin{equation}
+    F(x,y) = \equiv \int \frac{d^2 p}{(2\pi)^2} 
+            \frac{e^{ip_x x + ip_y y}}{\omega^2 - E_p^2} 
+\end{equation}
+Несложно понять, что компоненты функций Грина выражаются (точными соотношениями)
+ через $F(x,y)$. А именно,
+\begin{equation}
+    \label{differences}
+    \begin{split}
+        G_{11} & = (\omega + \xi) F(x,y) - 
+            \frac{1}{m}(F(x+1,y) + F(x-1,y) + F(x,y+1) + F(x, y-1) - 4F(x,y))\\
+        G_{21} & = -it(F(x+1,y) - F(x-1,y)) + t(F(x,y+1) - F(x,y-1))
+    \end{split}
+\end{equation}
+С другой стороны, $F(x,y)$ может быть вычислена приближённо. Если разложить 
+выражение в знаменателе около $p = 0$ и распространить интегрирование до $\infty$, то получится
+сходящийся и берущийся интеграл.
+\begin{equation}
+    F(x,y) \approx -\int \frac{p\,dp\,d\cos{\theta}}{(2\pi)^2} 
+        \frac{e^{ipr\cos{\theta}}}{\xi^2 - \omega^2 - (4t^2 + \frac{\xi}{m})p^2} = 
+        -\frac{1}{2\pi} \frac{1}{4t^2 + \frac{\xi}{m}}
+        K_0 \left(\sqrt{\frac{\xi^2 - \omega^2}{4t^2 + \frac{\xi}{m}}}R \right)
+\end{equation}
+Разности \eqref{differences} можно аппроксимировать производными. Пользуясь тем, что
+$K_0(x)$ --- решение модифицированного уравнения Бесселя, получим 
+\begin{equation}
+    \begin{split}
+        G_{11} & = -\frac{1}{2\pi} \frac{1}{4t^2 + \frac{\xi}{m}}
+        \left( \omega + \xi - \frac{1}{m} \frac{\xi^2 - \omega^2}{4t^2 + \frac{\xi}{m}} \right)
+        K_0 \left(\sqrt{\frac{\xi^2 - \omega^2}{4t^2 + \frac{\xi}{m}}}R \right)\\
+        G_{21} & = \frac{it}{\pi} \sqrt{\frac{\xi^2 - \omega^2}
+                                     {(4t^2 + \frac{\xi}{m})^{3}}}
+        K_0' \left(\sqrt{\frac{\xi^2 - \omega^2}{4t^2 + \frac{\xi}{m}}}R \right)e^{i\theta}
+    \end{split}
+\end{equation}

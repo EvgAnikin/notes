@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\average}[1]{\langle #1 \rangle}
+\DeclareMathOperator{\sign}{sign}
+
+\title{Current--current correlator and Landau susceptibility}
+
+\begin{document}
+\maketitle
+It is possible to calculate the diamagnetic susceptibility of electron gas using 
+the linear responce of electric current. 
+
+The perturbation caused by magnetic field:
+\begin{equation}
+    V = -A_\alpha j_\alpha(-k) e^{-i\omega t}
+\end{equation}
+
+The bare current operator:
+\begin{equation}
+    j(k) = \frac{e}{m} \int \frac{d^3 k'}{(2\pi)^3} 
+                            \Psi^\dagger_{k'-\frac{k}{2}}
+                            \Psi_{k'+\frac{k}{2}} k'
+\end{equation}
+The response of current to the perturbation:
+\begin{equation}
+    \frac{\average{J_\alpha}}{V} = -\frac{ne^2}{mc} A_\alpha e^{-i\omega t} +
+        \frac{ie^{-i\omega t}}{cV} \int_0^{\infty} d\tau  e^{i\omega \tau}
+            \average{[j_\alpha (k, \tau) j_\beta (-k,0)]} A_\beta
+\end{equation}
+We need to calculate the current--current Green's function:
+\begin{multline}
+    iG^F_{\alpha \beta} \equiv \frac{1}{V}\int_{-\infty}^{\infty} d\tau  e^{i\omega \tau}
+            \average{\mathrm{T}j_\alpha (k, \tau) j_\beta (-k,0)} = \\
+    = \frac{e^2}{m^2} \int \frac{d \omega'}{2\pi} 
+        \int \frac{d^3 k'}{(2\pi)^3} 
+            \frac{k_\alpha' k_\beta'}{(\omega + \omega' - 
+                                       \xi_{k'+\frac{k}{2}} + i0\sign{\xi_{k'+\frac{k}{2}}})
+                                      (\omega' - 
+                                       \xi_{k'-\frac{k}{2}} + i0\sign{\xi_{k'-\frac{k}{2}}})}
+\end{multline}
+After integration by $\omega$ we get
+\begin{equation}
+    iG^F_{\alpha \beta} = \frac{-ie^2}{m^2} \left[
+        \int_{(1)} \frac{d^3 k'}{(2\pi)^3} \frac{k_\alpha' k_\beta'}
+                                {\xi_{k'+\frac{k}{2}} - \xi_{k'-\frac{k}{2}} - \omega - i0} +
+        \int_{(2)} \frac{d^3 k'}{(2\pi)^3} \frac{k_\alpha' k_\beta'}
+                                {\omega + \xi_{k'-\frac{k}{2}} - \xi_{k'+\frac{k}{2}} - i0} 
+                                \right]
+\end{equation}
+Subscripts $(1)$ and $(2)$ denote the areas 
+$\xi_{k'+\frac{k}{2}} > 0 > \xi_{k'-\frac{k}{2}}$ and
+$\xi_{k'+\frac{k}{2}} < 0 < \xi_{k'-\frac{k}{2}}$ respectively.
+As we are interested in diamagnetic susceptibility, we need to consider the limit
+$\omega \to 0$. In such case, the integrals may be simplified so that $k$ expansion 
+becomes easy.
+
+Let us take $k$ in the form $(0,0,k)$.  The interesting term is the response of $J_x$ to 
+$A_x$, which after some calculus reads
+\begin{equation}
+   \frac{J_x}{V} = A_x \frac{ne^2}{mc}\left(-1 + \frac{3}{2} \int_0^1 
+        dx\,(1-x^2)\sqrt{1 - \frac{k^2}{k_f^2}(1-x^2)} 
+            \left(1 - \frac{k^2}{4k_f^2} + \frac{k^2x^2}{2k_f^2}\right)\right)
+\end{equation}
+By $k^2$ expansion, it's easy to recover Landau susceptibility.
+\end{document}

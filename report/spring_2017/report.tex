@@ -19,16 +19,26 @@
 \newcommand{\bra}{\langle}
 \newcommand{\ket}{\rangle} 
 
-\title{Некоторые сюжеты о топологических изоляторах}
-\author{Anikin Evgeny, 128}
+\graphicspath{ {images/} }
 
 \begin{document}
-    \maketitle
+    \input{titlepage.tex}
+    \tableofcontents
+    \input{intro.tex}
+    \input{hgte.tex}
     \input{tight_binding.tex}
+    \input{edge_states.tex}
     \input{impurity.tex}
+    \input{numeric.tex}
     \input{spin_orbit.tex}
     \input{edge_rec.tex}
-    \input{localization.tex}
+    \input{conclusion.tex}
     \newpage
-    \bibliography{literature}
+    \appendix
+    \input{appendix_kp_well.tex}
+    \input{appendix_time_reversal.tex}
+    \input{appendix_imp.tex}
+    \input{appendix_tb.tex}
+    \newpage
+    \bibliography{/home/ksenia/notes/science/top_ins/literature}
 \end{document}
