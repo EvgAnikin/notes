@@ -69,6 +69,19 @@ def top_ins_twisted_bc(NX, NY, xi, m, t, p, spin=1, reshape=True):
     return H.reshape(NX*NY*2, NX*NY*2) if reshape else H
 
 
+def add_even_potential_disorder(H, magnitude):
+    NX = H.shape[0]
+    NY = H.shape[1]
+
+    with_spin = (len(H.shape) == 8)
+
+    for i in xrange(NX):
+        for j in xrange(NY):
+            potential = magnitude*(-1 + 2*np.random.rand())
+            H[i, j, :, i, j, :] += potential*np.diag(np.ones(2))
+            H[NX-i-1, NY-j-1, :, NX-i-1, NY-j-1, :] += potential*np.diag(np.ones(2))
+
+
 def parity_top_ins(state):
     state_mod = np.copy(state)[::-1, ::-1, :]
     state_mod[:,:,1] *= -1
@@ -80,24 +93,28 @@ def parity_top_ins(state):
         return -1
     else:
         return None
-    
 
 
 def get_topological_invariant():
-    NX, NY, xi, m, t = 1, 1, 0.3, 1, 0.35
+    NX, NY, xi, m, t = 2, 2, 0.3, 1, 0.4
 
     time_reversal_invariant_points = [(0,0), (0,math.pi), (math.pi,0), (math.pi, math.pi)]
     invariant = 1
     for px, py in time_reversal_invariant_points:
-        ham = top_ins_twisted_bc(NX, NY, xi, m, t, (px, py))
+        ham = top_ins_twisted_bc(NX, NY, xi, m, t, (px, py), reshape=False)
+#        add_even_potential_disorder(ham, 0.1)
+        ham = ham.reshape(NX*NY*2, NX*NY*2)
 #        print ham
         energies, states = eigh(ham)
         states = states.T.reshape(NX*NY*2, NX, NY, 2)
-        for s in states[:NX*NY]:
+        for e, s in zip(energies[:NX*NY], states[:NX*NY]):
             p = parity_top_ins(s)
+            print e, p
+            print s
             if not p:
-                return None
-            invariant *= p
+                pass
+            else:
+                invariant *= p
     return invariant
 
 
