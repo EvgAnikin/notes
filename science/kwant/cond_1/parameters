@@ -1,0 +1,3 @@
+xi, m, t = -0.2, 1, 0.4
+E_lead, m_lead = -0.4, 1
+bar = build_bar(15, 15, xi, m, t, E_lead, m_lead)

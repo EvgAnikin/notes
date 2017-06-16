@@ -11,6 +11,6 @@ gf = np_file['gf']
 plt.plot(gf, omegas)
 plt.plot(-gf[::-1], -omegas[::-1])
 omega_range = np.array([min(omegas), max(omegas)])
-plt.plot(omega_range*2, np.ones(2)*0.05)
+#plt.plot(omega_range*2, np.ones(2)*0.05)
 plt.ylim(tuple(omega_range*1.01))
 plt.show()

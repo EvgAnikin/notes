@@ -1,0 +1,9 @@
+    disorders = np.linspace(0,1,6)
+    conductances = []
+    for disorder in disorders:
+        smatrix = kwant.smatrix(bar, 0, args = [disorder, disorder])
+        conductances.append(smatrix.transmission(1, 0))
+
+    plt.plot(energies, conductances)
+    plt.show()
+

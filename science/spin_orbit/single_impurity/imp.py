@@ -76,7 +76,7 @@ if __name__ == '__main__':
     p_max = 0.05
     max_omega = math.sqrt(energy_square(0, 0, xi, m, t))*(1 - epsilon)
 
-    N = 10
+    N = 20
 #    omegas = np.linspace(-max_omega, max_omega, N)
     omegas = 2*max_omega*np.power(10, np.linspace(-5,0,N)) - max_omega
 #    gf = [gf_divergent_p_approx(xi + domega, xi, m, t, p_max) + gf_regular 
