@@ -13,32 +13,26 @@ def check_percolation(array):
     percolation_map[:,0] = array[:,0]
     percolation_exists = True
 
-    for line in xrange(1,ny):
-        for col in xrange(nx):
-            if percolation_map[col,line-1] == 1 and array[col,line] == 1:
-                percolation_map[col,line] = 1 
+    stop = False
+    counter = 0
+#    print array
+#    print percolation_map
+    while not stop:# and counter < 2:
+        stop = True 
+#        counter += 1
+        for i in xrange(nx):
+            for j in xrange(ny):
+                is_neighbor = ((i > 0    and percolation_map[i-1,j] == 1) or
+                               (i < nx-1 and percolation_map[i+1,j] == 1) or
+                               (j > 0    and percolation_map[i,j-1] == 1) or
+                               (j < ny-1 and percolation_map[i,j+1] == 1))
+#                print (i,j), is_neighbor
+                if is_neighbor and array[i,j] == 1 and percolation_map[i,j] == 0: 
+                    stop = False
+                    percolation_map[i,j] = 1
+#        print array
+#        print percolation_map
 
-        if not 1 in percolation_map[:,line]:
-            percolation_exists = False
-            break
-            
-
-        col = 0 
-        while True:
-            while col < nx and array[col, line] == 0:
-                col += 1
-            if col == nx: 
-                break
-            cluster_start = col
-            cluster_percolates= False
-            while col < nx and array[col, line] == 1:
-                if percolation_map[col, line] == 1:
-                    cluster_percolates = True
-                col += 1
-            cluster_end = col
-            if cluster_percolates:
-                percolation_map[cluster_start:cluster_end,line] = \
-                                np.ones(cluster_end - cluster_start)
     return percolation_exists, percolation_map 
 
 
@@ -54,8 +48,6 @@ def plot_percolation(array, pmap):
 
     nx, ny = array.shape
 
-    blue = '#4444FF'
-    red = '#FF5544'
     for i in xrange(nx):
         for j in xrange(ny):
             x,y = i*rect_size, j*rect_size
@@ -66,7 +58,7 @@ def plot_percolation(array, pmap):
             else:
                 color = 'black'
             add_rectangle(draw, x, y, rect_size, rect_size, color)
-    im.save('new_fig.png')
+    im.save('new_fig_1.png')
     
 
 
@@ -83,10 +75,11 @@ if __name__ == '__main__':
 #    L = int(math.pow(1/abs(delta_p), 1/math.log(4*(pcrit - pcrit**3), 2)))
 #    L = 10
 #    nx = ny = L
-    nx = 300
-    ny = 300
+    nx = 100
+    ny = 100
 
 #    print 'length: {}'.format(L)
-    array = np.random.binomial(1, pcrit + delta_p, size=nx*ny).reshape(nx,ny)
+    p = 0.5 #pcrit + delta_p
+    array = np.random.binomial(1, pcrit + delta_p,size=nx*ny).reshape(nx,ny)
     percolation, pmap = check_percolation(array)
     plot_percolation(array, pmap)
