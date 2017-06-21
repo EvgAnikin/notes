@@ -1,0 +1,11 @@
+seed: 0.9470486557631157
+
+U = 3
+disorder_strength = 0.7
+
+xi, m, t = -0.1, 1, 0.4
+E_lead, m_lead = -0.8, 0.5
+bar = build_bar(30, 20, xi, m, t, E_lead, m_lead, cylinder=False)
+
+energy = -0.05
+probability = 0.02
