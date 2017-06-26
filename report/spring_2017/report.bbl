@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Kohmoto1985}
 Mahito Kohmoto.
@@ -8,7 +8,7 @@ Mahito Kohmoto.
 \bibitem{Hasan2010}
 M.~Z. Hasan and C.~L. Kane.
 \newblock Topological insulators.
-\newblock {\em Rev.Mod.Phys.}, February 2010.
+\newblock {\em Rev.Mod.Phys.}, 82:3045,2010, February 2010.
 
 \bibitem{Konig2007}
 M.~Konig, S.~Wiedmann, C.~Brune, A.~Roth, H.~Buhmann, L.~W. Molenkamp, X.-L.
@@ -27,6 +27,11 @@ Jie Lu, Wen-Yu Shan, Hai-Zhou Lu, and Shun-Qing Shen.
 \newblock Non-magnetic impurities and in-gap bound states in topological
   insulators.
 \newblock {\em New Journal of Physics}, 13(10):103016, Oct 2011.
+
+\bibitem{Kane2005}
+C.~L. Kane and E.~J. Mele.
+\newblock Quantum spin hall effect in graphene.
+\newblock {\em Physical Review Letters}, 95(22), Nov 2005.
 
 \bibitem{Kane1957}
 Evan~O. Kane.
@@ -50,5 +55,10 @@ E.~G. Novik, A.~Pfeuffer-Jeschke, T.~Jungwirth, V.~Latussek, C.~R. Becker,
 Jianhui Wang, Yigal Meir, and Yuval Gefen.
 \newblock Spontaneous breakdown of topological protection in two dimensions.
 \newblock {\em Physical Review Letters}, 118(4), Jan 2017.
+
+\bibitem{Groth2014}
+C.~W. {Groth}, M.~{Wimmer}, A.~R. {Akhmerov}, and X.~{Waintal}.
+\newblock {Kwant: a software package for quantum transport}.
+\newblock {\em New Journal of Physics}, 16(6):063065, June 2014.
 
 \end{thebibliography}

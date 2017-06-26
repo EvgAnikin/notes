@@ -45,8 +45,7 @@ def check_percolation(array):
 def add_rectangle(draw, x, y, width, heigth, color):
     draw.rectangle([x, y, x + width, y + heigth], fill=color)
 
-def plot_percolation(array, pmap):
-    rect_size = 10
+def plot_percolation(array, pmap, rect_size=10):
     im_size = rect_size*array.shape[0], rect_size*array.shape[1] 
     
     im = Image.new('RGBA', im_size, (0,0,0,0))
@@ -60,11 +59,11 @@ def plot_percolation(array, pmap):
         for j in xrange(ny):
             x,y = i*rect_size, j*rect_size
             if pmap[i,j] == 1:
-                color = 'blue'
-            elif array[i,j] == 1:
-                color = 'white'
-            else:
                 color = 'black'
+            elif array[i,j] == 1:
+                color = blue
+            else:
+                color = red
             add_rectangle(draw, x, y, rect_size, rect_size, color)
     im.save('new_fig.png')
     
@@ -78,15 +77,15 @@ if __name__ == '__main__':
 #                      [0,1,1,1,1]])
 
     pcrit = (math.sqrt(5)-1)/2
-    delta_p = -0.02
+    delta_p = 0.001
 
 #    L = int(math.pow(1/abs(delta_p), 1/math.log(4*(pcrit - pcrit**3), 2)))
 #    L = 10
 #    nx = ny = L
-    nx = 300
-    ny = 300
+    nx = 700
+    ny = 700
 
 #    print 'length: {}'.format(L)
     array = np.random.binomial(1, pcrit + delta_p, size=nx*ny).reshape(nx,ny)
     percolation, pmap = check_percolation(array)
-    plot_percolation(array, pmap)
+    plot_percolation(array, pmap, rect_size=5)

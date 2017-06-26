@@ -48,15 +48,18 @@ def plot_percolation(array, pmap):
 
     nx, ny = array.shape
 
+
+    blue = '#4444FF'
+    red = '#FF5544'
     for i in xrange(nx):
         for j in xrange(ny):
             x,y = i*rect_size, j*rect_size
             if pmap[i,j] == 1:
-                color = 'blue'
-            elif array[i,j] == 1:
-                color = 'white'
-            else:
                 color = 'black'
+            elif array[i,j] == 1:
+                color = blue
+            else:
+                color = red
             add_rectangle(draw, x, y, rect_size, rect_size, color)
     im.save('new_fig_1.png')
     
@@ -70,16 +73,16 @@ if __name__ == '__main__':
 #                      [0,1,1,1,1]])
 
     pcrit = (math.sqrt(5)-1)/2
-    delta_p = -0.02
+#    delta_p = -0.02
 
 #    L = int(math.pow(1/abs(delta_p), 1/math.log(4*(pcrit - pcrit**3), 2)))
 #    L = 10
 #    nx = ny = L
-    nx = 100
-    ny = 100
+    nx = 200
+    ny = 200
 
 #    print 'length: {}'.format(L)
-    p = 0.5 #pcrit + delta_p
-    array = np.random.binomial(1, pcrit + delta_p,size=nx*ny).reshape(nx,ny)
+    p = 0.57 #pcrit + delta_p
+    array = np.random.binomial(1, p, size=nx*ny).reshape(nx,ny)
     percolation, pmap = check_percolation(array)
     plot_percolation(array, pmap)

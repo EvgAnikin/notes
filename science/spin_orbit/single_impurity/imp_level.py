@@ -1,3 +1,4 @@
+from __future__ import print_function
 import math
 import matplotlib.pyplot as plt
 import numpy as np
@@ -76,7 +77,7 @@ if __name__ == '__main__':
     p_max = 0.05
     max_omega = math.sqrt(energy_square(0, 0, xi, m, t))*(1 - epsilon)
 
-    N = 20
+    N = 40
 #    omegas = np.linspace(-max_omega, max_omega, N)
     omegas = 2*max_omega*np.power(10, np.linspace(-5,0,N)) - max_omega
 #    gf = [gf_divergent_p_approx(xi + domega, xi, m, t, p_max) + gf_regular 
@@ -86,12 +87,12 @@ if __name__ == '__main__':
     counter = 0
     for omega in omegas:
         counter += 1
-        print '{}th value'.format(counter)
+        print('{}th value'.format(counter))
         gf.append(green_function_11(omega, xi, m, t))
     
     gf = np.array(gf)
 
-    output = open('gf_array', 'w')
+    output = open('gf_array', 'wb')
     np.savez(output, omegas=omegas, gf=gf)
 
     log_domegas = np.log(omegas + abs(xi))

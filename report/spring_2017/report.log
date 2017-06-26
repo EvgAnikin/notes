@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  22 MAY 2017 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.7)  19 JUN 2017 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -708,23 +708,27 @@ Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
-) (./report.aux)
+) (./report.aux
+
+LaTeX Warning: Label `fig:magnetic_disorder' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -834,11 +838,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `report.toc'.
 
  (./intro.tex
-[1]) (./hgte.tex
-
-LaTeX Warning: Citation `Kane2005' on page 2 undefined on input line 3.
-
-<images/quantum_well.png, id=18, 734.745pt x 766.865pt>
+[1]) (./hgte.tex <images/quantum_well.png, id=18, 734.745pt x 766.865pt>
 File: images/quantum_well.png Graphic file (type png)
 
 <use images/quantum_well.png>
@@ -990,25 +990,22 @@ line 67.
 econstruction_spectrum_up.png> <./images/reconstruction_spectrum_down.png>] (./
 appendix_kp_well.tex)
 (./appendix_time_reversal.tex) (./appendix_imp.tex [10]) (./appendix_tb.tex)
-[11] [12
+(./appendix_kwant.tex [11] [12
 
 
-] (./report.bbl) [13
+]) [13
 
 
-] (./report.aux)
+] (./report.bbl) [14] (./report.aux)
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4569 strings out of 494440
- 58559 string characters out of 6173197
- 134615 words of memory out of 5000000
- 7694 multiletter control sequences out of 15000+600000
+ 4574 strings out of 494440
+ 58629 string characters out of 6173199
+ 135677 words of memory out of 5000000
+ 7696 multiletter control sequences out of 15000+600000
  18690 words of font info for 41 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  38i,18n,32p,3963b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1034,10 +1031,10 @@ s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 c/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msbm7.pfb>
-Output written on report.pdf (14 pages, 1294230 bytes).
+Output written on report.pdf (15 pages, 1300315 bytes).
 PDF statistics:
- 597 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 604 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
