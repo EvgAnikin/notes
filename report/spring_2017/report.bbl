@@ -22,12 +22,6 @@ G.~M. Gusev, Z.~D. Kvon, O.~A. Shegai, N.~N. Mikhailov, S.~A. Dvoretsky, and
 \newblock Transport in disordered two-dimensional topological insulators.
 \newblock {\em Physical Review B}, 84(12), Sep 2011.
 
-\bibitem{Lu2011}
-Jie Lu, Wen-Yu Shan, Hai-Zhou Lu, and Shun-Qing Shen.
-\newblock Non-magnetic impurities and in-gap bound states in topological
-  insulators.
-\newblock {\em New Journal of Physics}, 13(10):103016, Oct 2011.
-
 \bibitem{Kane2005}
 C.~L. Kane and E.~J. Mele.
 \newblock Quantum spin hall effect in graphene.
@@ -45,6 +39,16 @@ B.~A. Bernevig, T.~L. Hughes, and S.-C. Zhang.
   quantum wells.
 \newblock {\em Science}, 314(5806):1757–1761, Dec 2006.
 
+\bibitem{Li2009}
+Jian Li, Rui-Lin Chu, J.~K. Jain, and Shun-Qing Shen.
+\newblock Topological anderson insulator.
+\newblock {\em Physical Review Letters}, 102(13), Apr 2009.
+
+\bibitem{Groth2014}
+C.~W. {Groth}, M.~{Wimmer}, A.~R. {Akhmerov}, and X.~{Waintal}.
+\newblock {Kwant: a software package for quantum transport}.
+\newblock {\em New Journal of Physics}, 16(6):063065, June 2014.
+
 \bibitem{Novik2005}
 E.~G. Novik, A.~Pfeuffer-Jeschke, T.~Jungwirth, V.~Latussek, C.~R. Becker,
   G.~Landwehr, H.~Buhmann, and L.~W. Molenkamp.
@@ -55,10 +59,5 @@ E.~G. Novik, A.~Pfeuffer-Jeschke, T.~Jungwirth, V.~Latussek, C.~R. Becker,
 Jianhui Wang, Yigal Meir, and Yuval Gefen.
 \newblock Spontaneous breakdown of topological protection in two dimensions.
 \newblock {\em Physical Review Letters}, 118(4), Jan 2017.
-
-\bibitem{Groth2014}
-C.~W. {Groth}, M.~{Wimmer}, A.~R. {Akhmerov}, and X.~{Waintal}.
-\newblock {Kwant: a software package for quantum transport}.
-\newblock {\em New Journal of Physics}, 16(6):063065, June 2014.
 
 \end{thebibliography}

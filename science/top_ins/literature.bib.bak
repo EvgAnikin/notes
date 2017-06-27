@@ -120,12 +120,37 @@
   Month                    = aug,
   Pages                    = {196805},
   Volume                   = {103,},
+
   Abstract                 = {We present an effective medium theory that explains the disorder-induced transition into a phase of quantized conductance, discovered in computer simulations of HgTe quantum wells. It is the combination of a random potential and quadratic corrections proportional to p^2 sigma_z to the Dirac Hamiltonian that can drive an ordinary band insulator into a topological insulator (having an inverted band gap). We calculate the location of the phase boundary at weak disorder and show that it corresponds to the crossing of a band edge rather than a mobility edge. Our mechanism for the formation of a topological Anderson insulator is generic, and would apply as well to three-dimensional semiconductors with strong spin-orbit coupling.},
   Comments                 = {4 pages, 3 figures (updated figures, calculated DOS)},
   Eprint                   = {0908.0881},
   Oai2identifier           = {0908.0881},
   Owner                    = {evgeny},
   Timestamp                = {2017.05.14}
+}
+
+@Article{Groth2014,
+  Title                    = {{Kwant: a software package for quantum transport}},
+  Author                   = {{Groth}, C.~W. and {Wimmer}, M. and {Akhmerov}, A.~R. and {Waintal}, X. },
+  Journal                  = {New Journal of Physics},
+  Year                     = {2014},
+
+  Month                    = jun,
+  Number                   = {6},
+  Pages                    = {063065},
+  Volume                   = {16},
+
+  __markedentry            = {[ksenia:6]},
+  Abstract                 = {Kwant is a Python package for numerical quantum transport calculations. It aims to be a user-friendly, universal, and high-performance toolbox for the simulation of physical systems of any dimensionality and geometry that can be described by a tight-binding model. Kwant has been designed such that the natural concepts of the theory of quantum transport (lattices, symmetries, electrodes, orbital/spin/electron-hole degrees of freedom) are exposed in a simple and transparent way. Defining a new simulation setup is very similar to describing the corresponding mathematical model. Kwant offers direct support for calculations of transport properties (conductance, noise, scattering matrix), dispersion relations, modes, wave functions, various Green's functions, and out-of-equilibrium local quantities. Other computations involving tight-binding Hamiltonians can be implemented easily thanks to its extensible and modular nature. Kwant is free software available at http://kwant-project.org/.},
+  Adsnote                  = {Provided by the SAO/NASA Astrophysics Data System},
+  Adsurl                   = {http://adsabs.harvard.edu/abs/2014NJPh...16f3065G},
+  Archiveprefix            = {arXiv},
+  Doi                      = {10.1088/1367-2630/16/6/063065},
+  Eid                      = {063065},
+  Eprint                   = {1309.2926},
+  Owner                    = {ksenia},
+  Primaryclass             = {cond-mat.mes-hall},
+  Timestamp                = {2017.06.19}
 }
 
 @Article{Gusev2011,
@@ -153,10 +178,9 @@
   Year                     = {2010},
 
   Month                    = feb,
-  Pages                    = ,
   Volume                   = {82:3045,2010},
 
-  __markedentry            = {[ksenia:6]},
+  __markedentry            = {[ksenia:]},
   Abstract                 = {Topological insulators are electronic materials that have a bulk band gap like an ordinary insulator, but have protected conducting states on their edge or surface. The 2D topological insulator is a quantum spin Hall insulator, which is a close cousin of the integer quantum Hall state. A 3D topological insulator supports novel spin polarized 2D Dirac fermions on its surface. In this Colloquium article we will review the theoretical foundation for these electronic states and describe recent experiments in which their signatures have been observed. We will describe transport experiments on HgCdTe quantum wells that demonstrate the existence of the edge states predicted for the quantum spin Hall insulator. We will then discuss experiments on Bi_{1-x}Sb_x, Bi_2 Se_3, Bi_2 Te_3 and Sb_2 Te_3 that establish these materials as 3D topological insulators and directly probe the topology of their surface states. We will then describe exotic states that can occur at the surface of a 3D topological insulator due to an induced energy gap. A magnetic gap leads to a novel quantum Hall state that gives rise to a topological magnetoelectric effect. A superconducting energy gap leads to a state that supports Majorana fermions, and may provide a new venue for realizing proposals for topological quantum computation. We will close by discussing prospects for observing these exotic states, a well as other potential device applications of topological insulators.},
   Comments                 = {23 pages, 20 figures, Published version},
   Eprint                   = {1002.3895},
@@ -264,8 +288,6 @@
   Number                   = {4},
   Pages                    = {249–261},
   Volume                   = {1},
-
-  __markedentry            = {[ksenia:]},
   Doi                      = {10.1016/0022-3697(57)90013-6},
   ISSN                     = {0022-3697},
   Owner                    = {ksenia},

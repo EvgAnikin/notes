@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.7)  19 JUN 2017 23:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.12)  27 JUN 2017 23:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **report.tex
 (./report.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 10 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -691,8 +691,6 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count103
 \U@D=\dimen122
 )
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -715,20 +713,20 @@ LaTeX Warning: Label `fig:magnetic_disorder' multiply defined.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -850,19 +848,15 @@ File: images/levels.png Graphic file (type png)
 <use images/levels.png>
 Package pdftex.def Info: images/levels.png used on input line 35.
 (pdftex.def)             Requested size: 202.69325pt x 152.01408pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./tight_binding.tex [2]) (./edge_states.tex
-<images/edge_states.png, id=33, 578.16pt x 433.62pt>
+ [2 <./images/quantum_well.png> <./images/levels.png>])
+(./tight_binding.tex) (./edge_states.tex
+<images/edge_states.png, id=34, 578.16pt x 433.62pt>
 File: images/edge_states.png Graphic file (type png)
 
 <use images/edge_states.png>
 Package pdftex.def Info: images/edge_states.png used on input line 13.
 (pdftex.def)             Requested size: 300.29344pt x 225.21904pt.
-) (./impurity.tex [3 <./images/quantum_well.png> <./images/levels.png> <./image
-s/edge_states.png>]
+) (./impurity.tex [3 <./images/edge_states.png>]
 LaTeX Font Info:    Try loading font information for U+bbm on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
@@ -881,22 +875,23 @@ File: images/gf_03-1-04.png Graphic file (type png)
 <use images/gf_03-1-04.png>
 Package pdftex.def Info: images/gf_03-1-04.png used on input line 90.
 (pdftex.def)             Requested size: 180.17369pt x 135.12877pt.
-) (./numeric.tex
-<images/obstacle_1.png, id=43, 200.75pt x 200.75pt>
+) (./scattering.tex [4 <./images/impurity_levels.png> <./images/gf_03-1-04.png>
+]) (./numeric.tex
+<images/obstacle_1.png, id=51, 200.75pt x 200.75pt>
 File: images/obstacle_1.png Graphic file (type png)
 
 <use images/obstacle_1.png>
 Package pdftex.def Info: images/obstacle_1.png used on input line 10.
 (pdftex.def)             Requested size: 180.17026pt x 180.1832pt.
 
-<images/obstacle_2.png, id=44, 200.75pt x 200.75pt>
+<images/obstacle_2.png, id=52, 200.75pt x 200.75pt>
 File: images/obstacle_2.png Graphic file (type png)
 
 <use images/obstacle_2.png>
 Package pdftex.def Info: images/obstacle_2.png used on input line 14.
 (pdftex.def)             Requested size: 180.17026pt x 180.1832pt.
- [4 <./images/impurity_levels.png> <./images/gf_03-1-04.png>] <images/dis_edge_
-state_1.png, id=53, 301.125pt x 200.75pt>
+
+<images/dis_edge_state_1.png, id=53, 301.125pt x 200.75pt>
 File: images/dis_edge_state_1.png Graphic file (type png)
 
 <use images/dis_edge_state_1.png>
@@ -909,53 +904,49 @@ File: images/dis_bulk_state.png Graphic file (type png)
 <use images/dis_bulk_state.png>
 Package pdftex.def Info: images/dis_bulk_state.png used on input line 43.
 (pdftex.def)             Requested size: 200.19054pt x 133.46643pt.
-
-<images/mgn_edge_st_1.png, id=55, 803.0pt x 150.5625pt>
+ [5 <./images/obstacle_1.png> <./images/obstacle_2.png> <./images/dis_edge_stat
+e_1.png> <./images/dis_bulk_state.png>]
+<images/mgn_edge_st_1.png, id=62, 803.0pt x 150.5625pt>
 File: images/mgn_edge_st_1.png Graphic file (type png)
 
 <use images/mgn_edge_st_1.png>
 Package pdftex.def Info: images/mgn_edge_st_1.png used on input line 63.
 (pdftex.def)             Requested size: 315.30139pt x 59.11887pt.
 
-<images/mgn_edge_st_2.png, id=56, 803.0pt x 150.5625pt>
+<images/mgn_edge_st_2.png, id=63, 803.0pt x 150.5625pt>
 File: images/mgn_edge_st_2.png Graphic file (type png)
 
 <use images/mgn_edge_st_2.png>
 Package pdftex.def Info: images/mgn_edge_st_2.png used on input line 68.
 (pdftex.def)             Requested size: 315.30139pt x 59.11887pt.
 
-<images/mgn_edge_st_3.png, id=57, 803.0pt x 150.5625pt>
+<images/mgn_edge_st_3.png, id=64, 803.0pt x 150.5625pt>
 File: images/mgn_edge_st_3.png Graphic file (type png)
 
 <use images/mgn_edge_st_3.png>
 Package pdftex.def Info: images/mgn_edge_st_3.png used on input line 73.
 (pdftex.def)             Requested size: 315.30139pt x 59.11887pt.
- <images/fig2.png, id=58, 602.25pt x 200.75pt>
+ <images/fig2.png, id=65, 602.25pt x 200.75pt>
 File: images/fig2.png Graphic file (type png)
 
 <use images/fig2.png>
 Package pdftex.def Info: images/fig2.png used on input line 90.
 (pdftex.def)             Requested size: 315.30139pt x 105.10431pt.
- <images/fig3.png, id=59, 602.25pt x 200.75pt>
+ <images/fig3.png, id=66, 602.25pt x 200.75pt>
 File: images/fig3.png Graphic file (type png)
 
 <use images/fig3.png>
 Package pdftex.def Info: images/fig3.png used on input line 95.
 (pdftex.def)             Requested size: 315.30139pt x 105.10431pt.
- <images/fig5.png, id=60, 602.25pt x 200.75pt>
+ <images/fig5.png, id=67, 602.25pt x 200.75pt>
 File: images/fig5.png Graphic file (type png)
 
 <use images/fig5.png>
 Package pdftex.def Info: images/fig5.png used on input line 100.
 (pdftex.def)             Requested size: 315.30139pt x 105.10431pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./spin_orbit.tex [5 <./images/obstacle_1.png> <./images/obstacle_2.png> <./i
-mages/dis_edge_state_1.png> <./images/dis_bulk_state.png> <./images/mgn_edge_st
-_1.png> <./images/mgn_edge_st_2.png> <./images/mgn_edge_st_3.png>] [6 <./images
-/fig2.png> <./images/fig3.png> <./images/fig5.png>]
+) (./spin_orbit.tex [6 <./images/mgn_edge_st_1.png> <./images/mgn_edge_st_2.png
+> <./images/mgn_edge_st_3.png> <./images/fig2.png> <./images/fig3.png> <./image
+s/fig5.png>]
 <images/dim_quant_levels.png, id=78, 578.16pt x 433.62pt>
 File: images/dim_quant_levels.png Graphic file (type png)
 
@@ -1002,39 +993,38 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4574 strings out of 494440
- 58629 string characters out of 6173199
- 135677 words of memory out of 5000000
- 7696 multiletter control sequences out of 15000+600000
+ 4578 strings out of 493029
+ 58665 string characters out of 6136234
+ 139711 words of memory out of 5000000
+ 7937 multiletter control sequences out of 15000+600000
  18690 words of font info for 41 fonts, out of 8000000 for 9000
- 430 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  38i,18n,32p,3963b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati1000.600pk> </home/ks
-enia/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk> </home/ksenia/.texmf-va
-r/fonts/pk/ljfour/lh/lh-t2a/labx1200.600pk> </home/ksenia/.texmf-var/fonts/pk/l
-jfour/lh/lh-t2a/labx1000.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-
-t2a/labx1440.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200
-.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </ho
-me/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati1440.600pk> </home/ksenia/.t
-exmf-var/fonts/pk/ljfour/lh/lh-t2a/labx2074.600pk> </home/ksenia/.texmf-var/fon
-ts/pk/ljfour/lh/lh-t2a/lacc1440.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour
-/lh/lh-t2a/lacc1000.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/l
-acc1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cme
-x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/symbols/msbm7.pfb>
-Output written on report.pdf (15 pages, 1300315 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/evgeny/.t
+exmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb>
+Output written on report.pdf (15 pages, 1386601 bytes).
 PDF statistics:
- 604 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
+ 191 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
