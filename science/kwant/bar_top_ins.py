@@ -130,8 +130,8 @@ def plot_levels(levels, color='blue', ymin=0, ymax=0.5):
 
 
 def plot_conductance_vs_energy(fig, bar, disorder, probability, seed):
-    emin, emax = -80, 80
-    energies = np.linspace(emin, emax, 80)
+    emin, emax = -40, 40
+    energies = np.linspace(emin, emax, 10)
     conductances = []
     counter = 0
     for en in energies:
@@ -216,10 +216,10 @@ def create_figure_for_thesis(bar, bar_without_leads, probability):
                                                         str(np.random.rand())])
     energies = eigvalsh(ham)
     plot_histogram(fig, energies, bins=100)
-    plt.savefig('cond_and_density_2/prob_1000_' + 
-                '{:1.3f}'.format(probability).replace('.', '-') + 
-                '.png')
-#    plt.show()
+#    plt.savefig('cond_and_density_2/prob_1000_' + 
+#                '{:1.3f}'.format(probability).replace('.', '-') + 
+#                '.png')
+    plt.show()
 
 
 if __name__ == '__main__':
@@ -235,18 +235,18 @@ if __name__ == '__main__':
 
     E_lead, m_lead = -300, 0.4*m1
 
-    nx, ny = 70, 50
+    nx, ny = 120, 120
     bar = build_bar(nx, ny, xi, m1, m2, t, E_lead, m_lead, 
                     dis_gen=DisorderGenerator(U=0, nx=nx, ny=ny))
     nx1, ny1 = 17, 23
     bar_without_leads = build_bar(nx1, ny1, xi, m1, m2, t, E_lead, m_lead, 
                    dis_gen=DisorderGenerator(U=0, nx=nx1, ny=ny1), with_leads=False)
  
-    for p in [0.01, 0.02, 0.03, 0.05, 0.1, 0.2]:
+    for p in [0.05]:
         create_figure_for_thesis(bar, bar_without_leads, p)
 
     
-#    plot_local_dos(bar, 0, 0, 0, seed='')
+#    plot_local_dos(bar, 0, disorder, probability, seed='')
 #    plot_conductance_vs_disorder(bar, energy=0)
 
 #    imp_energies = np.array(dis_gen.get_impurities_array(probability, seed))
