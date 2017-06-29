@@ -1,0 +1,42 @@
+\subsection{Почему BHZ--модель описывает топологический изолятор}
+Покажем, что модель \eqref{BHZ} действительно описывает топологический изолятор, то есть для
+неё отличен от нуля TKNN--инвариант. 
+
+Для определённости рассмотрим зону с $E>0$. Для волновой функции в этом случае существуют две
+калибровки, $u(p)$ и $v(p)$:
+\begin{multline}
+    u(p) = \frac{1}{\sqrt{(E_p + \xi + \frac{2}{m}(2 - \cos{p_x} - \cos{p_y}))^2 + 
+                        4t^2(\sin^2{p_x} + \sin^2{p_y})}} \times \\
+                \begin{pmatrix}
+                    \xi + \frac{2}{m}(2 - \cos{p_x} - \cos{p_y}) \\
+                    2t(\sin{p_x} + i\sin{p_y})
+                \end{pmatrix}
+\end{multline}
+\begin{multline}
+   v(p) = \frac{1}{\sqrt{(E_p - \xi - \frac{2}{m}(2 - \cos{p_x} - \cos{p_y}))^2 + 
+                        4t^2(\sin^2{p_x} + \sin^2{p_y})}} \times \\
+                \begin{pmatrix}
+                    -2t(\sin{p_x} + i\sin{p_y}) \\
+                    \xi + \frac{2}{m}(2 - \cos{p_x} - \cos{p_y})
+                \end{pmatrix}
+\end{multline}
+Легко видеть, что если $xi > 0$, то $u(p)$ определена для всеё зоны Бриллюэна, и,
+следовательно, TKNN--инвариант обращается в ноль. Напротив, если $\xi < 0$, то
+$u(p)$ не определена при $p = (0, 0)$, а $v(p)$ --- при $p = (\pi, \pi)$. При близких 
+к нулю $p$ $u(p)$ приближённо равна
+\begin{equation}
+    u(p) \approx \begin{pmatrix}
+                    0 \\
+                    \frac{p_x + ip_y}{\sqrt{p_x^2 + p_y^2}}
+                 \end{pmatrix}
+\end{equation}
+а $v(p)$ ---    
+\begin{equation}
+    u(p) \approx \begin{pmatrix}
+                    0 \\
+                    1
+                 \end{pmatrix}
+\end{equation}
+Таким образом, $u(p) = v(p) e^{i\phi}$. В соответствии с определением 
+\eqref{chern_number_definition}, следовательно, топологический инвариант равен $1$ (набег фазы
+равен $2\pi$).

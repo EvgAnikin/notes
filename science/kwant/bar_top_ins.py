@@ -1,6 +1,8 @@
+#encoding:utf-8
 from functools import partial
 import kwant
 import matplotlib.pyplot as plt
+from matplotlib import rc
 import math
 import numpy as np
 from scipy.interpolate import interp1d
@@ -12,7 +14,7 @@ import tinyarray
 def build_lead(ny, m, E, direction, lat, cylinder=False):
     lead = kwant.Builder(kwant.TranslationalSymmetry([direction, 0]))
     lead_shape = lambda pos: abs(pos[0]) < nx
-    lead[(lat(0,i) for i in range(-ny+1,ny))] = 2/m + E
+    lead[(lat(0,i) for i in range(-ny+1,ny))] = 2./m + E
     lead[lat.neighbors()] = -0.5/m
     if cylinder:
         lead[lat(0,ny-1), lat(0,-ny+1)] = -0.5/m
@@ -93,11 +95,10 @@ def build_bar(nx, ny, xi, m1, m2, t, E_lead, t_lead,
         bar.attach_lead(left_lead, add_cells=1)
         bar[((a(-nx, i), b(-nx+1,i)) for i in range(-ny+1,ny))] = -t_lead
     
-        right_lead = build_lead(ny, t_lead, E_lead, 1, a)
+        right_lead = build_lead(ny, t_lead, E_lead, 1, a, cylinder)
         bar.attach_lead(right_lead, add_cells=1)
         bar[((a(nx, i), b(nx-1,i)) for i in range(-ny+1,ny))] = -t_lead
     else:
-        pass
         for i in range(-nx+1, nx):
             bar[a(i, ny-1), a(i,-ny+1)] = -0.5/m1
             bar[a(i, ny-1), b(i,-ny+1)] = -t
@@ -123,14 +124,14 @@ def get_level_of_impurity_function():
     return interp1d(1/gf, omegas, kind='cubic'), (np.amin(1/gf), np.amax(1/gf))
 
 
-def plot_levels(levels, color, ymin=0, ymax=0.5):
+def plot_levels(levels, color='blue', ymin=0, ymax=0.5):
     for e in levels:
         plt.plot([e,e], [ymin, ymax], color=color)
 
 
-def plot_conductance_vs_energy(bar, disorder, probability, seed):
-    emin, emax = -50, 50
-    energies = np.linspace(emin, emax, 30)
+def plot_conductance_vs_energy(fig, bar, disorder, probability, seed):
+    emin, emax = -80, 80
+    energies = np.linspace(emin, emax, 80)
     conductances = []
     counter = 0
     for en in energies:
@@ -138,10 +139,15 @@ def plot_conductance_vs_energy(bar, disorder, probability, seed):
         counter += 1
         conductances.append(kwant.smatrix(bar, en, 
                             args=[disorder, probability, seed]).transmission(1, 0))
+    print()
                                                          
-    plt.plot(energies, conductances)
-    plt.xlim(emin, emax)
-    plt.show()
+    ax = fig.add_subplot(121)
+    ax.plot(energies, conductances, label='Conductance')
+    ax.legend()
+    ax.set_xlim(xmin=emin, xmax=emax)
+    ax.set_ylim(ymin=0, ymax=3)
+    ax.set_xlabel('$E_F$')
+    ax.set_ylabel(r'$\frac{e^2}{2\pi\hbar$')
 
 
 def plot_conductance_vs_disorder(bar, energy):
@@ -151,7 +157,7 @@ def plot_conductance_vs_disorder(bar, energy):
     errors = []
     
     for counter, prob in enumerate(probabilities):
-        print(counter)
+        print(counter),
         cond = []
         n_sim = 100
         for i in range(n_sim):
@@ -182,38 +188,71 @@ def plot_local_dos(bar, energy, disorder, probability, seed):
                hop_color='white', cmap='afmhot')
 
 
+def plot_histogram(fig, energies, bins):
+    hist, bin_edges = np.histogram(energies, bins)
+    delta_E = bin_edges[1] - bin_edges[0]
+    bins = 0.5*(bin_edges[1:] + bin_edges[:-1])
+    ax = fig.add_subplot(122)
+    ax.plot(bins, 2*hist/(delta_E*energies.size), color='red', label='Density of states')
+    ax.legend(loc=2)
+    ax.set_xlabel('meV')
+    ax.set_xlim(xmin=-500, xmax=500)
+
+
+def enable_latex():
+    rc('font', **{'family' : 'serif'})
+    rc('text', usetex=True)
+
+
+def create_figure_for_thesis(bar, bar_without_leads, probability):
+    disorder = 1000
+
+    fig = plt.figure(figsize=(18,8))
+    plot_conductance_vs_energy(fig, bar, disorder, probability, seed=str(np.random.rand()))
+
+    energies = []
+    ham = bar_without_leads.hamiltonian_submatrix(args=[disorder, 
+                                                        probability, 
+                                                        str(np.random.rand())])
+    energies = eigvalsh(ham)
+    plot_histogram(fig, energies, bins=100)
+    plt.savefig('cond_and_density_2/prob_1000_' + 
+                '{:1.3f}'.format(probability).replace('.', '-') + 
+                '.png')
+#    plt.show()
+
+
 if __name__ == '__main__':
-    nx, ny = 50, 100 
+    enable_latex()
+
     a = 5
-    A, B, D, M = 364.5, -686, 0, -10
+    A, B, D, M = 364.5, -686, 0, -30
     
     xi = M
     t = A/a
     m1 = -0.25*a**2/(B + D)
     m2 = -0.25*a**2/(B - D)
 
-    E_lead, m_lead = -150, 0.2*m1
-#    xi, m1, m2, t = -0.02, 1, 1, 0.4
+    E_lead, m_lead = -300, 0.4*m1
 
-    dis_gen = DisorderGenerator(U=50, nx=nx, ny=ny)
-    bar = build_bar(nx, nx, xi, m1, m2, t, E_lead, m_lead, 
-                   dis_gen=dis_gen)
-    bar_without_leads = build_bar(nx, nx, xi, m1, m2, t, E_lead, m_lead, 
-                   dis_gen=dis_gen, with_leads=False)
+    nx, ny = 70, 50
+    bar = build_bar(nx, ny, xi, m1, m2, t, E_lead, m_lead, 
+                    dis_gen=DisorderGenerator(U=0, nx=nx, ny=ny))
+    nx1, ny1 = 17, 23
+    bar_without_leads = build_bar(nx1, ny1, xi, m1, m2, t, E_lead, m_lead, 
+                   dis_gen=DisorderGenerator(U=0, nx=nx1, ny=ny1), with_leads=False)
+ 
+    for p in [0.01, 0.02, 0.03, 0.05, 0.1, 0.2]:
+        create_figure_for_thesis(bar, bar_without_leads, p)
 
-    probability = 0.05
-    disorder = 200
-
-#    plot_local_dos(bar, 0, 0, 0, seed)
-    plot_conductance_vs_energy(bar, disorder, probability, seed='')
+    
+#    plot_local_dos(bar, 0, 0, 0, seed='')
 #    plot_conductance_vs_disorder(bar, energy=0)
 
 #    imp_energies = np.array(dis_gen.get_impurities_array(probability, seed))
 #    get_imp_level, (low, high) = get_level_of_impurity_function()
 #    imp_levels = get_imp_level(np.array([e for e in imp_energies if e > low and e < high]))
 
-#    ham = bar_without_leads.hamiltonian_submatrix(args=[probability, seed])
-#    energies = eigvalsh(ham)
 
 #    plot_levels(imp_levels, color='green')
 #    plot_levels(energies, color='blue')

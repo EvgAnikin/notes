@@ -39,6 +39,17 @@ B.~A. Bernevig, T.~L. Hughes, and S.-C. Zhang.
   quantum wells.
 \newblock {\em Science}, 314(5806):1757–1761, Dec 2006.
 
+\bibitem{Novik2005}
+E.~G. Novik, A.~Pfeuffer-Jeschke, T.~Jungwirth, V.~Latussek, C.~R. Becker,
+  G.~Landwehr, H.~Buhmann, and L.~W. Molenkamp.
+\newblock Band structure of semimagnetic hg 1 --- y mn y te quantum wells.
+\newblock {\em Physical Review B}, 72(3), Jul 2005.
+
+\bibitem{Thouless1982}
+D.~J. Thouless, M.~Kohmoto, M.~P. Nightingale, and M.~den Nijs.
+\newblock Quantized hall conductance in a two--dimensional periodic potential.
+\newblock {\em Physical Review Letters}, 49(6):405–408, Aug 1982.
+
 \bibitem{Li2009}
 Jian Li, Rui-Lin Chu, J.~K. Jain, and Shun-Qing Shen.
 \newblock Topological anderson insulator.
@@ -48,16 +59,5 @@ Jian Li, Rui-Lin Chu, J.~K. Jain, and Shun-Qing Shen.
 C.~W. {Groth}, M.~{Wimmer}, A.~R. {Akhmerov}, and X.~{Waintal}.
 \newblock {Kwant: a software package for quantum transport}.
 \newblock {\em New Journal of Physics}, 16(6):063065, June 2014.
-
-\bibitem{Novik2005}
-E.~G. Novik, A.~Pfeuffer-Jeschke, T.~Jungwirth, V.~Latussek, C.~R. Becker,
-  G.~Landwehr, H.~Buhmann, and L.~W. Molenkamp.
-\newblock Band structure of semimagnetic hg 1 --- y mn y te quantum wells.
-\newblock {\em Physical Review B}, 72(3), Jul 2005.
-
-\bibitem{Wang2017}
-Jianhui Wang, Yigal Meir, and Yuval Gefen.
-\newblock Spontaneous breakdown of topological protection in two dimensions.
-\newblock {\em Physical Review Letters}, 118(4), Jan 2017.
 
 \end{thebibliography}

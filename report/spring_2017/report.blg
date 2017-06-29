@@ -5,24 +5,24 @@ The style file: unsrt.bst
 Database file #1: /home/evgeny/notes/science/top_ins/literature.bib.bib
 You've used 11 entries,
             1791 wiz_defined-function locations,
-            537 strings with 5395 characters,
-and the built_in function-call counts, 2441 in all, are:
-= -- 185
-> -- 146
+            539 strings with 5441 characters,
+and the built_in function-call counts, 2543 in all, are:
+= -- 194
+> -- 149
 < -- 0
-+ -- 53
-- -- 42
-* -- 221
-:= -- 428
++ -- 54
+- -- 43
+* -- 234
+:= -- 441
 add.period$ -- 33
 call.type$ -- 11
 change.case$ -- 11
 chr.to.int$ -- 0
 cite$ -- 11
-duplicate$ -- 93
-empty$ -- 219
-format.name$ -- 42
-if$ -- 508
+duplicate$ -- 94
+empty$ -- 230
+format.name$ -- 43
+if$ -- 530
 int.to.chr$ -- 0
 int.to.str$ -- 11
 missing$ -- 11
@@ -32,15 +32,15 @@ pop$ -- 11
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 40
+skip$ -- 39
 stack$ -- 0
-substring$ -- 132
+substring$ -- 159
 swap$ -- 11
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 16
+while$ -- 17
 width$ -- 13
 write$ -- 123

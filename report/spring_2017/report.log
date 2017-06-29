@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.12)  27 JUN 2017 23:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.12)  29 JUN 2017 15:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,10 +6,19 @@ entering extended mode
 (./report.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/extarticle.cls
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/size14.clo
+File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2014/09/29 v2.1h Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen102
 )
 \c@part=\count79
 \c@section=\count80
@@ -21,7 +30,7 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
-\bibindent=\dimen102
+\bibindent=\dimen103
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
@@ -40,11 +49,11 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
-\ex@=\dimen103
+\ex@=\dimen104
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen104
+\pmbraise@=\dimen105
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -61,7 +70,7 @@ LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
-\big@size=\dimen105
+\big@size=\dimen106
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \macc@depth=\count92
@@ -74,12 +83,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \column@=\count97
 \maxfields@=\count98
 \andhelp@=\toks17
-\eqnshift@=\dimen106
-\alignsep@=\dimen107
-\tagshift@=\dimen108
-\tagwidth@=\dimen109
-\totwidth@=\dimen110
-\lineht@=\dimen111
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
 \@envbody=\toks18
 \multlinegap=\skip44
 \multlinetaggap=\skip45
@@ -125,14 +134,14 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count99
 \Gm@cntv=\count100
 \c@Gm@tempcnt=\count101
-\Gm@bindingoffset=\dimen112
-\Gm@wd@mp=\dimen113
-\Gm@odd@mp=\dimen114
-\Gm@even@mp=\dimen115
-\Gm@layoutwidth=\dimen116
-\Gm@layoutheight=\dimen117
-\Gm@layouthoffset=\dimen118
-\Gm@layoutvoffset=\dimen119
+\Gm@bindingoffset=\dimen113
+\Gm@wd@mp=\dimen114
+\Gm@odd@mp=\dimen115
+\Gm@even@mp=\dimen116
+\Gm@layoutwidth=\dimen117
+\Gm@layoutheight=\dimen118
+\Gm@layouthoffset=\dimen119
+\Gm@layoutvoffset=\dimen120
 \Gm@dimlist=\toks21
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -160,8 +169,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count102
 ))
-\Gin@req@height=\dimen120
-\Gin@req@width=\dimen121
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
@@ -689,7 +698,7 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count103
-\U@D=\dimen122
+\U@D=\dimen123
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -706,27 +715,23 @@ Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
-) (./report.aux
-
-LaTeX Warning: Label `fig:magnetic_disorder' multiply defined.
-
-)
+) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -736,23 +741,23 @@ LaTeX Font Info:    ... okay on input line 26.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
+* h-part:(L,W,R)=(85.35826pt, 486.25761pt, 42.67912pt)
 * v-part:(T,H,B)=(56.9055pt, 897.969pt, 56.9055pt)
 * \paperwidth=614.295pt
 * \paperheight=1011.78pt
-* \textwidth=500.484pt
+* \textwidth=486.25761pt
 * \textheight=897.969pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-52.36449pt
-* \headheight=12.0pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-54.36449pt
+* \headheight=14.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=14.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=24.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -765,13 +770,13 @@ LaTeX Font Info:    ... okay on input line 26.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
-\scratchdimen=\dimen123
+\scratchdimen=\dimen124
 \scratchbox=\box30
 \nofMPsegments=\count105
 \nofMParguments=\count106
 \everyMPshowfont=\toks24
 \MPscratchCnt=\count107
-\MPscratchDim=\dimen124
+\MPscratchDim=\dimen125
 \MPnumerator=\count108
 \makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks25
@@ -836,195 +841,211 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `report.toc'.
 
  (./intro.tex
-[1]) (./hgte.tex <images/quantum_well.png, id=18, 734.745pt x 766.865pt>
+[1] [2]) (./hgte.tex <images/quantum_well.png, id=30, 734.745pt x 766.865pt>
 File: images/quantum_well.png Graphic file (type png)
 
 <use images/quantum_well.png>
 Package pdftex.def Info: images/quantum_well.png used on input line 29.
-(pdftex.def)             Requested size: 202.69325pt x 211.54965pt.
- <images/levels.png, id=20, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 196.93166pt x 205.53514pt.
+ <images/levels.png, id=32, 578.16pt x 433.62pt>
 File: images/levels.png Graphic file (type png)
 
 <use images/levels.png>
 Package pdftex.def Info: images/levels.png used on input line 35.
-(pdftex.def)             Requested size: 202.69325pt x 152.01408pt.
- [2 <./images/quantum_well.png> <./images/levels.png>])
-(./tight_binding.tex) (./edge_states.tex
-<images/edge_states.png, id=34, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 196.93166pt x 147.69351pt.
+ [3 <./images/quantum_well.png> <./images/levels.png>])
+(./well_tight_binding.tex
+Overfull \hbox (26.25163pt too wide) in paragraph at lines 25--29
+[]\T2A/cmr/m/n/14.4 Определим мат-рич-ные эле-мен-ты $\OML/cmm/m/it/14.4 t[]$ \
+T2A/cmr/m/n/14.4 и $\OML/cmm/m/it/14.4 t[]$ \T2A/cmr/m/n/14.4 для пе-ре-кры-тия
+ со-сед-них $\OML/cmm/m/it/14.4 p$\T2A/cmr/m/n/14.4 --орбиталей,
+ []
+
+
+Overfull \hbox (122.69034pt too wide) detected at line 45
+\OML/cmm/m/it/14.4 H[] \OT1/cmr/m/n/14.4 = [] []
+ []
+
+[4] (./tb_large_ham.tex)
+<images/dim_quant_levels.png, id=44, 578.16pt x 433.62pt>
+File: images/dim_quant_levels.png Graphic file (type png)
+
+<use images/dim_quant_levels.png>
+Package pdftex.def Info: images/dim_quant_levels.png used on input line 81.
+(pdftex.def)             Requested size: 389.00757pt x 291.75456pt.
+) (./chern_number.tex [5 <./images/dim_quant_levels.png>]
+Overfull \hbox (208.4783pt too wide) detected at line 12
+\OML/cmm/m/it/14.4 H[] \OT1/cmr/m/n/14.4 = []
+ []
+
+[6
+
+
+]
+Overfull \hbox (30.23727pt too wide) in paragraph at lines 36--39
+\T2A/cmr/m/n/14.4 В по-след-нем ин-те-гра-ле по-ды-ын-те-граль-ное вы-ра-же-ние
+ калибровочно--инвариантно,
+ []
+
+) (./tight_binding.tex
+Overfull \hbox (0.54706pt too wide) in paragraph at lines 22--23
+[]\T2A/cmr/m/n/14.4 В ко-ор-ди-нат-ном (ре-шј-точ-ном) пред-став-ле-нии га-миль
+-то-ни-ан вы-гля-дит так: 
+ []
+
+
+Overfull \hbox (4.243pt too wide) detected at line 32
+ []$[]  \OML/cmm/m/it/14.4 H[] \OT1/cmr/m/n/14.4 = [] []$ 
+ []
+
+) (./top_ins_chern_number.tex [7
+
+
+]
+Overfull \hbox (1.96564pt too wide) in paragraph at lines 1--1
+[]\T2A/cmr/bx/n/17.28 Почему BHZ--модель опи-сы-ва-ет то-по-ло-ги-че-ский изо-
+ []
+
+) (./edge_states.tex <images/edge_states.png, id=57, 578.16pt x 433.62pt>
 File: images/edge_states.png Graphic file (type png)
 
 <use images/edge_states.png>
 Package pdftex.def Info: images/edge_states.png used on input line 13.
-(pdftex.def)             Requested size: 300.29344pt x 225.21904pt.
-) (./impurity.tex [3 <./images/edge_states.png>]
+(pdftex.def)             Requested size: 291.75752pt x 218.81427pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./impurity.tex [8]
 LaTeX Font Info:    Try loading font information for U+bbm on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
-<images/impurity_levels.png, id=41, 578.16pt x 433.62pt>
+) [9 <./images/edge_states.png>] <images/impurity_levels.png, id=66, 578.16pt x
+ 433.62pt>
 File: images/impurity_levels.png Graphic file (type png)
 
 <use images/impurity_levels.png>
-Package pdftex.def Info: images/impurity_levels.png used on input line 86.
-(pdftex.def)             Requested size: 180.17369pt x 135.12877pt.
+Package pdftex.def Info: images/impurity_levels.png used on input line 87.
+(pdftex.def)             Requested size: 175.05222pt x 131.28459pt.
 
-<images/gf_03-1-04.png, id=42, 578.16pt x 433.62pt>
+<images/gf_03-1-04.png, id=67, 578.16pt x 433.62pt>
 File: images/gf_03-1-04.png Graphic file (type png)
 
 <use images/gf_03-1-04.png>
-Package pdftex.def Info: images/gf_03-1-04.png used on input line 90.
-(pdftex.def)             Requested size: 180.17369pt x 135.12877pt.
-) (./scattering.tex [4 <./images/impurity_levels.png> <./images/gf_03-1-04.png>
-]) (./numeric.tex
-<images/obstacle_1.png, id=51, 200.75pt x 200.75pt>
-File: images/obstacle_1.png Graphic file (type png)
+Package pdftex.def Info: images/gf_03-1-04.png used on input line 91.
+(pdftex.def)             Requested size: 175.05222pt x 131.28459pt.
+) (./scattering.tex
+Overfull \hbox (3.01665pt too wide) in paragraph at lines 3--8
+\T2A/cmr/m/n/14.4 Проводимость по-ло-сы мож-но вы-чис-лять в фор-ма-лиз-ме Ланд
+ауэра--Буттикера,
+ []
 
-<use images/obstacle_1.png>
-Package pdftex.def Info: images/obstacle_1.png used on input line 10.
-(pdftex.def)             Requested size: 180.17026pt x 180.1832pt.
+[10 <./images/impurity_levels.png> <./images/gf_03-1-04.png>]
+<images/cond_50x100_li2009.png, id=74, 578.16pt x 433.62pt>
+File: images/cond_50x100_li2009.png Graphic file (type png)
 
-<images/obstacle_2.png, id=52, 200.75pt x 200.75pt>
-File: images/obstacle_2.png Graphic file (type png)
+<use images/cond_50x100_li2009.png>
+Package pdftex.def Info: images/cond_50x100_li2009.png used on input line 39.
+(pdftex.def)             Requested size: 243.1288pt x 182.34412pt.
+ [11 <./images/cond_50x100_li2009.png>]
+<images/cond_and_density/dis_000.png, id=79, 1300.86pt x 578.16pt>
+File: images/cond_and_density/dis_000.png Graphic file (type png)
 
-<use images/obstacle_2.png>
-Package pdftex.def Info: images/obstacle_2.png used on input line 14.
-(pdftex.def)             Requested size: 180.17026pt x 180.1832pt.
+<use images/cond_and_density/dis_000.png>
+Package pdftex.def Info: images/cond_and_density/dis_000.png used on input line
+ 65.
+(pdftex.def)             Requested size: 437.62888pt x 194.49863pt.
 
-<images/dis_edge_state_1.png, id=53, 301.125pt x 200.75pt>
-File: images/dis_edge_state_1.png Graphic file (type png)
+<images/cond_and_density/dis_240.png, id=80, 1300.86pt x 578.16pt>
+File: images/cond_and_density/dis_240.png Graphic file (type png)
 
-<use images/dis_edge_state_1.png>
-Package pdftex.def Info: images/dis_edge_state_1.png used on input line 35.
-(pdftex.def)             Requested size: 200.19054pt x 133.46643pt.
+<use images/cond_and_density/dis_240.png>
+Package pdftex.def Info: images/cond_and_density/dis_240.png used on input line
+ 74.
+(pdftex.def)             Requested size: 437.62888pt x 194.49863pt.
 
-<images/dis_bulk_state.png, id=54, 301.125pt x 200.75pt>
-File: images/dis_bulk_state.png Graphic file (type png)
+<images/cond_and_density/dis_320.png, id=81, 1300.86pt x 578.16pt>
+File: images/cond_and_density/dis_320.png Graphic file (type png)
 
-<use images/dis_bulk_state.png>
-Package pdftex.def Info: images/dis_bulk_state.png used on input line 43.
-(pdftex.def)             Requested size: 200.19054pt x 133.46643pt.
- [5 <./images/obstacle_1.png> <./images/obstacle_2.png> <./images/dis_edge_stat
-e_1.png> <./images/dis_bulk_state.png>]
-<images/mgn_edge_st_1.png, id=62, 803.0pt x 150.5625pt>
-File: images/mgn_edge_st_1.png Graphic file (type png)
-
-<use images/mgn_edge_st_1.png>
-Package pdftex.def Info: images/mgn_edge_st_1.png used on input line 63.
-(pdftex.def)             Requested size: 315.30139pt x 59.11887pt.
-
-<images/mgn_edge_st_2.png, id=63, 803.0pt x 150.5625pt>
-File: images/mgn_edge_st_2.png Graphic file (type png)
-
-<use images/mgn_edge_st_2.png>
-Package pdftex.def Info: images/mgn_edge_st_2.png used on input line 68.
-(pdftex.def)             Requested size: 315.30139pt x 59.11887pt.
-
-<images/mgn_edge_st_3.png, id=64, 803.0pt x 150.5625pt>
-File: images/mgn_edge_st_3.png Graphic file (type png)
-
-<use images/mgn_edge_st_3.png>
-Package pdftex.def Info: images/mgn_edge_st_3.png used on input line 73.
-(pdftex.def)             Requested size: 315.30139pt x 59.11887pt.
- <images/fig2.png, id=65, 602.25pt x 200.75pt>
-File: images/fig2.png Graphic file (type png)
-
-<use images/fig2.png>
-Package pdftex.def Info: images/fig2.png used on input line 90.
-(pdftex.def)             Requested size: 315.30139pt x 105.10431pt.
- <images/fig3.png, id=66, 602.25pt x 200.75pt>
-File: images/fig3.png Graphic file (type png)
-
-<use images/fig3.png>
-Package pdftex.def Info: images/fig3.png used on input line 95.
-(pdftex.def)             Requested size: 315.30139pt x 105.10431pt.
- <images/fig5.png, id=67, 602.25pt x 200.75pt>
-File: images/fig5.png Graphic file (type png)
-
-<use images/fig5.png>
-Package pdftex.def Info: images/fig5.png used on input line 100.
-(pdftex.def)             Requested size: 315.30139pt x 105.10431pt.
-) (./spin_orbit.tex [6 <./images/mgn_edge_st_1.png> <./images/mgn_edge_st_2.png
-> <./images/mgn_edge_st_3.png> <./images/fig2.png> <./images/fig3.png> <./image
-s/fig5.png>]
-<images/dim_quant_levels.png, id=78, 578.16pt x 433.62pt>
-File: images/dim_quant_levels.png Graphic file (type png)
-
-<use images/dim_quant_levels.png>
-Package pdftex.def Info: images/dim_quant_levels.png used on input line 80.
-(pdftex.def)             Requested size: 400.38872pt x 300.28984pt.
-) (./edge_rec.tex [7 <./images/dim_quant_levels.png>] <images/reconstruction_po
-tential.png, id=83, 578.16pt x 433.62pt>
-File: images/reconstruction_potential.png Graphic file (type png)
-
-<use images/reconstruction_potential.png>
-Package pdftex.def Info: images/reconstruction_potential.png used on input line
- 49.
-(pdftex.def)             Requested size: 400.38872pt x 300.28984pt.
-
-<images/reconstruction_spectrum_up.png, id=84, 578.16pt x 433.62pt>
-File: images/reconstruction_spectrum_up.png Graphic file (type png)
-
-<use images/reconstruction_spectrum_up.png>
-Package pdftex.def Info: images/reconstruction_spectrum_up.png used on input li
-ne 58.
-(pdftex.def)             Requested size: 400.38872pt x 300.28984pt.
-
-<images/reconstruction_spectrum_down.png, id=85, 578.16pt x 433.62pt>
-File: images/reconstruction_spectrum_down.png Graphic file (type png)
-
-<use images/reconstruction_spectrum_down.png>
-Package pdftex.def Info: images/reconstruction_spectrum_down.png used on input 
-line 67.
-(pdftex.def)             Requested size: 400.38872pt x 300.28984pt.
-) (./conclusion.tex) [8 <./images/reconstruction_potential.png>] [9 <./images/r
-econstruction_spectrum_up.png> <./images/reconstruction_spectrum_down.png>] (./
-appendix_kp_well.tex)
-(./appendix_time_reversal.tex) (./appendix_imp.tex [10]) (./appendix_tb.tex)
-(./appendix_kwant.tex [11] [12
+<use images/cond_and_density/dis_320.png>
+Package pdftex.def Info: images/cond_and_density/dis_320.png used on input line
+ 81.
+(pdftex.def)             Requested size: 437.62888pt x 194.49863pt.
 
 
-]) [13
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./images/cond_and_density/dis_000.png> <./images/cond_and_density/dis_240.
+png>] [13 <./images/cond_and_density/dis_320.png>]) (./conclusion.tex) [14
+
+]
+(./appendix_kp_well.tex
+Overfull \hbox (35.25035pt too wide) detected at line 18
+\OML/cmm/m/it/14.4 H[] \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@[] [] ^^@ []
+ []
+
+) (./appendix_time_reversal.tex
+Overfull \hbox (18.93414pt too wide) in paragraph at lines 1--1
+[]\T2A/cmr/bx/n/20.74 Отсутствие рас-се-я-ния для кра-мер-сов-ско-го дуб-
+ []
+
+) (./appendix_imp.tex [15]
+Overfull \hbox (79.63249pt too wide) in paragraph at lines 42--42
+[] 
+ []
 
 
-] (./report.bbl) [14] (./report.aux)
+Overfull \hbox (21.49763pt too wide) detected at line 51
+\OML/cmm/m/it/14.4 F\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x; y\OT1/cmr/m/n/14.4
+ ) \OMS/cmsy/m/n/14.4 ^^Y ^^@ [] [][] \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^
+@[][]\OML/cmm/m/it/14.4 K[] []
+ []
 
-LaTeX Warning: There were multiply-defined labels.
+) (./appendix_kwant.tex
+Overfull \hbox (1.27998pt too wide) in paragraph at lines 3--9
+\T2A/cmr/m/n/14.4 Задача рас-се-я-ния ста-вит-ся та-ким об-ра-зом: к си-сте-ме,
+ опи-сы-ва-е-мой га-мильтни-
+ []
+
+[16]) [17] (./report.bbl) [18] (./report.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4578 strings out of 493029
- 58665 string characters out of 6136234
- 139711 words of memory out of 5000000
- 7937 multiletter control sequences out of 15000+600000
- 18690 words of font info for 41 fonts, out of 8000000 for 9000
+ 4582 strings out of 493029
+ 60259 string characters out of 6136234
+ 134913 words of memory out of 5000000
+ 7940 multiletter control sequences out of 15000+600000
+ 24597 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,18n,32p,3963b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,18n,26p,3964b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/evgeny/.t
-exmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/share/texlive/texmf-dist/
+exmf-var/fonts/pk/ljfour/public/bbm/bbm12.720pk></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf/fonts/
-type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on report.pdf (15 pages, 1386601 bytes).
+public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx172
+8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfbx2986.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc2074
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc2488.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texm
+f/fonts/type1/public/cm-super/sfti2074.pfb>
+Output written on report.pdf (19 pages, 1138934 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+ 186 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

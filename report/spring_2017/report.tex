@@ -1,10 +1,9 @@
-\documentclass{article}
+\documentclass[14pt]{extarticle}
 \usepackage{afterpage}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{bbm}
-\usepackage[legalpaper,margin=2cm,top=2cm,bottom=2cm]{geometry}
-%\usepackage[legalpaper]{geometry}
+\usepackage[legalpaper,left=3cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage[T1, T2A]{fontenc}
@@ -13,7 +12,6 @@
 
 \bibliographystyle{unsrt}
 
-%#\DeclareMathOperator{\det}{det}
 \DeclareMathOperator{\diag}{diag}
 \DeclareMathOperator{\Arg}{Arg}
 \DeclareMathOperator{\Tr}{Tr}
@@ -21,27 +19,27 @@
 \newcommand{\bra}{\langle}
 \newcommand{\ket}{\rangle} 
 
-\graphicspath{ {images/} }
+\graphicspath{ {images/} {images/cond_and_density/} }
 
 \begin{document}
     \input{titlepage.tex}
     \tableofcontents
     \input{intro.tex}
     \input{hgte.tex}
+    \input{well_tight_binding.tex}
+    \input{chern_number.tex}
     \input{tight_binding.tex}
+    \input{top_ins_chern_number.tex}
     \input{edge_states.tex}
     \input{impurity.tex}
+%    \input{numeric.tex}
     \input{scattering.tex}
-    \input{numeric.tex}
-    \input{spin_orbit.tex}
-    \input{edge_rec.tex}
     \input{conclusion.tex}
     \newpage
     \appendix
     \input{appendix_kp_well.tex}
     \input{appendix_time_reversal.tex}
     \input{appendix_imp.tex}
-    \input{appendix_tb.tex}
     \input{appendix_kwant.tex}
     \newpage
     \bibliography{/home/evgeny/notes/science/top_ins/literature.bib}
