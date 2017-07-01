@@ -5,6 +5,11 @@ Mahito Kohmoto.
 \newblock Topological invariant and the quantization of the hall conductance.
 \newblock {\em Annals of Physics}, 160(2):343–354, Apr 1985.
 
+\bibitem{Thouless1982}
+D.~J. Thouless, M.~Kohmoto, M.~P. Nightingale, and M.~den Nijs.
+\newblock Quantized hall conductance in a two--dimensional periodic potential.
+\newblock {\em Physical Review Letters}, 49(6):405–408, Aug 1982.
+
 \bibitem{Hasan2010}
 M.~Z. Hasan and C.~L. Kane.
 \newblock Topological insulators.
@@ -21,6 +26,11 @@ G.~M. Gusev, Z.~D. Kvon, O.~A. Shegai, N.~N. Mikhailov, S.~A. Dvoretsky, and
   J.~C. Portal.
 \newblock Transport in disordered two-dimensional topological insulators.
 \newblock {\em Physical Review B}, 84(12), Sep 2011.
+
+\bibitem{Groth2014}
+C.~W. {Groth}, M.~{Wimmer}, A.~R. {Akhmerov}, and X.~{Waintal}.
+\newblock {Kwant: a software package for quantum transport}.
+\newblock {\em New Journal of Physics}, 16(6):063065, June 2014.
 
 \bibitem{Kane2005}
 C.~L. Kane and E.~J. Mele.
@@ -45,19 +55,9 @@ E.~G. Novik, A.~Pfeuffer-Jeschke, T.~Jungwirth, V.~Latussek, C.~R. Becker,
 \newblock Band structure of semimagnetic hg 1 --- y mn y te quantum wells.
 \newblock {\em Physical Review B}, 72(3), Jul 2005.
 
-\bibitem{Thouless1982}
-D.~J. Thouless, M.~Kohmoto, M.~P. Nightingale, and M.~den Nijs.
-\newblock Quantized hall conductance in a two--dimensional periodic potential.
-\newblock {\em Physical Review Letters}, 49(6):405–408, Aug 1982.
-
 \bibitem{Li2009}
 Jian Li, Rui-Lin Chu, J.~K. Jain, and Shun-Qing Shen.
 \newblock Topological anderson insulator.
 \newblock {\em Physical Review Letters}, 102(13), Apr 2009.
-
-\bibitem{Groth2014}
-C.~W. {Groth}, M.~{Wimmer}, A.~R. {Akhmerov}, and X.~{Waintal}.
-\newblock {Kwant: a software package for quantum transport}.
-\newblock {\em New Journal of Physics}, 16(6):063065, June 2014.
 
 \end{thebibliography}
