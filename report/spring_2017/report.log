@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.7)  29 JUN 2017 17:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.12)  1 JUL 2017 19:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **report.tex
 (./report.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 10 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/extsizes/size14.clo
@@ -700,8 +700,6 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count103
 \U@D=\dimen123
 )
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -855,32 +853,36 @@ File: images/levels.png Graphic file (type png)
 <use images/levels.png>
 Package pdftex.def Info: images/levels.png used on input line 35.
 (pdftex.def)             Requested size: 196.93166pt x 147.69351pt.
- [3 <./images/quantum_well.png> <./images/levels.png>])
-(./well_tight_binding.tex
+LaTeX Font Info:    Try loading font information for U+bbm on input line 42.
+
+(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [3 <./images/quantum_well.png> <./images/levels.png>]) (./well_tight_binding.
+tex
 Overfull \hbox (26.25163pt too wide) in paragraph at lines 25--29
 []\T2A/cmr/m/n/14.4 Определим мат-рич-ные эле-мен-ты $\OML/cmm/m/it/14.4 t[]$ \
 T2A/cmr/m/n/14.4 и $\OML/cmm/m/it/14.4 t[]$ \T2A/cmr/m/n/14.4 для пе-ре-кры-тия
  со-сед-них $\OML/cmm/m/it/14.4 p$\T2A/cmr/m/n/14.4 --орбиталей,
  []
 
-
-Overfull \hbox (122.69034pt too wide) detected at line 45
-\OML/cmm/m/it/14.4 H[] \OT1/cmr/m/n/14.4 = [] []
- []
-
 [4] (./tb_large_ham.tex)
-<images/dim_quant_levels.png, id=44, 578.16pt x 433.62pt>
-File: images/dim_quant_levels.png Graphic file (type png)
+<images/dim_quant_levels_mod.png, id=45, 803.0pt x 602.25pt>
+File: images/dim_quant_levels_mod.png Graphic file (type png)
 
-<use images/dim_quant_levels.png>
-Package pdftex.def Info: images/dim_quant_levels.png used on input line 81.
-(pdftex.def)             Requested size: 389.00757pt x 291.75456pt.
-) (./chern_number.tex [5 <./images/dim_quant_levels.png>]
-Overfull \hbox (208.4783pt too wide) detected at line 12
+<use images/dim_quant_levels_mod.png>
+Package pdftex.def Info: images/dim_quant_levels_mod.png used on input line 82.
+
+(pdftex.def)             Requested size: 389.00757pt x 291.76007pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./chern_number.tex [5] [6 <./images/dim_quant_levels_mod.png>]
+Overfull \hbox (208.4783pt too wide) detected at line 19
 \OML/cmm/m/it/14.4 H[] \OT1/cmr/m/n/14.4 = []
  []
 
-[6
+[7
 
 
 ]
@@ -900,38 +902,33 @@ Overfull \hbox (4.243pt too wide) detected at line 32
  []$[]  \OML/cmm/m/it/14.4 H[] \OT1/cmr/m/n/14.4 = [] []$ 
  []
 
-) (./top_ins_chern_number.tex [7
-
-
-]
+) (./top_ins_chern_number.tex
 Overfull \hbox (1.96564pt too wide) in paragraph at lines 1--1
 []\T2A/cmr/bx/n/17.28 Почему BHZ--модель опи-сы-ва-ет то-по-ло-ги-че-ский изо-
  []
 
-) (./edge_states.tex <images/edge_states.png, id=57, 578.16pt x 433.62pt>
+[8
+
+
+]) (./edge_states.tex <images/edge_states.png, id=61, 578.16pt x 433.62pt>
 File: images/edge_states.png Graphic file (type png)
 
 <use images/edge_states.png>
-Package pdftex.def Info: images/edge_states.png used on input line 13.
+Package pdftex.def Info: images/edge_states.png used on input line 15.
 (pdftex.def)             Requested size: 291.75752pt x 218.81427pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./impurity.tex [8]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 13.
-
-(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
-File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [9 <./images/edge_states.png>] <images/impurity_levels.png, id=66, 578.16pt x
- 433.62pt>
+) (./impurity.tex [9] [10 <./images/edge_states.png>]
+<images/impurity_levels.png, id=69, 578.16pt x 433.62pt>
 File: images/impurity_levels.png Graphic file (type png)
 
 <use images/impurity_levels.png>
 Package pdftex.def Info: images/impurity_levels.png used on input line 87.
 (pdftex.def)             Requested size: 175.05222pt x 131.28459pt.
 
-<images/gf_03-1-04.png, id=67, 578.16pt x 433.62pt>
+<images/gf_03-1-04.png, id=70, 578.16pt x 433.62pt>
 File: images/gf_03-1-04.png Graphic file (type png)
 
 <use images/gf_03-1-04.png>
@@ -943,67 +940,73 @@ Overfull \hbox (3.01665pt too wide) in paragraph at lines 3--8
 ауэра--Буттикера,
  []
 
-[10 <./images/impurity_levels.png> <./images/gf_03-1-04.png>]
-<images/cond_50x100_li2009.png, id=74, 578.16pt x 433.62pt>
+[11 <./images/impurity_levels.png> <./images/gf_03-1-04.png>]
+<images/cond_50x100_li2009.png, id=77, 578.16pt x 433.62pt>
 File: images/cond_50x100_li2009.png Graphic file (type png)
 
 <use images/cond_50x100_li2009.png>
-Package pdftex.def Info: images/cond_50x100_li2009.png used on input line 39.
+Package pdftex.def Info: images/cond_50x100_li2009.png used on input line 48.
 (pdftex.def)             Requested size: 243.1288pt x 182.34412pt.
- [11 <./images/cond_50x100_li2009.png>]
-<images/cond_and_density/dis_000.png, id=79, 1300.86pt x 578.16pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/cond_and_density/dis_000.png, id=78, 1300.86pt x 578.16pt>
 File: images/cond_and_density/dis_000.png Graphic file (type png)
 
 <use images/cond_and_density/dis_000.png>
 Package pdftex.def Info: images/cond_and_density/dis_000.png used on input line
- 68.
+ 77.
 (pdftex.def)             Requested size: 437.62888pt x 194.49863pt.
-
-<images/cond_and_density/dis_240.png, id=80, 1300.86pt x 578.16pt>
+ [12]
+<images/cond_and_density/dis_240.png, id=83, 1300.86pt x 578.16pt>
 File: images/cond_and_density/dis_240.png Graphic file (type png)
 
 <use images/cond_and_density/dis_240.png>
 Package pdftex.def Info: images/cond_and_density/dis_240.png used on input line
- 77.
+ 86.
 (pdftex.def)             Requested size: 437.62888pt x 194.49863pt.
 
-<images/cond_and_density/dis_320.png, id=81, 1300.86pt x 578.16pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/cond_and_density/dis_320.png, id=84, 1300.86pt x 578.16pt>
 File: images/cond_and_density/dis_320.png Graphic file (type png)
 
 <use images/cond_and_density/dis_320.png>
 Package pdftex.def Info: images/cond_and_density/dis_320.png used on input line
- 84.
+ 93.
 (pdftex.def)             Requested size: 437.62888pt x 194.49863pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/cond_and_density/prob_1000_0-030.png, id=82, 1300.86pt x 578.16pt>
+<images/cond_and_density/prob_1000_0-030.png, id=85, 1300.86pt x 578.16pt>
 File: images/cond_and_density/prob_1000_0-030.png Graphic file (type png)
 
 <use images/cond_and_density/prob_1000_0-030.png>
 Package pdftex.def Info: images/cond_and_density/prob_1000_0-030.png used on in
-put line 92.
+put line 101.
 (pdftex.def)             Requested size: 437.62888pt x 194.49863pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/cond_and_density_2/prob_1000_0-030.png, id=83, 1300.86pt x 578.16pt>
+<images/cond_and_density_2/prob_1000_0-030.png, id=86, 1300.86pt x 578.16pt>
 File: images/cond_and_density_2/prob_1000_0-030.png Graphic file (type png)
 
 <use images/cond_and_density_2/prob_1000_0-030.png>
 Package pdftex.def Info: images/cond_and_density_2/prob_1000_0-030.png used on 
-input line 99.
+input line 108.
 (pdftex.def)             Requested size: 437.62888pt x 194.49863pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12 <./images/cond_and_density/dis_000.png> <./images/cond_and_density/dis_240.
-png>] [13 <./images/cond_and_density/dis_320.png> <./images/cond_and_density/pr
-ob_1000_0-030.png> <./images/cond_and_density_2/prob_1000_0-030.png>])
-(./conclusion.tex) [14
+[13 <./images/cond_50x100_li2009.png> <./images/cond_and_density/dis_000.png>]
+[14 <./images/cond_and_density/dis_240.png> <./images/cond_and_density/dis_320.
+png> <./images/cond_and_density/prob_1000_0-030.png>] [15 <./images/cond_and_de
+nsity_2/prob_1000_0-030.png>]) (./conclusion.tex) [16
 
 ] (./appendix_kp_well.tex
 Overfull \hbox (35.25035pt too wide) detected at line 18
@@ -1015,7 +1018,7 @@ Overfull \hbox (18.93414pt too wide) in paragraph at lines 1--1
 []\T2A/cmr/bx/n/20.74 Отсутствие рас-се-я-ния для кра-мер-сов-ско-го дуб-
  []
 
-) (./appendix_imp.tex [15]
+) (./appendix_imp.tex [17]
 Overfull \hbox (79.63249pt too wide) in paragraph at lines 42--42
 [] 
  []
@@ -1033,41 +1036,41 @@ Overfull \hbox (1.27998pt too wide) in paragraph at lines 3--9
  опи-сы-ва-е-мой га-мильтни-
  []
 
-[16]) [17] (./report.bbl) [18] (./report.aux) ) 
+[18]) [19] (./report.bbl) [20] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 4596 strings out of 494440
- 60754 string characters out of 6173199
- 130875 words of memory out of 5000000
- 7710 multiletter control sequences out of 15000+600000
+ 4595 strings out of 493029
+ 60780 string characters out of 6136234
+ 134897 words of memory out of 5000000
+ 7949 multiletter control sequences out of 15000+600000
  24597 words of font info for 60 fonts, out of 8000000 for 9000
- 430 hyphenation exceptions out of 8191
- 38i,18n,26p,3964b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ksenia/.texmf-var/fonts/
-pk/ljfour/lh/lh-t2a/lati1440.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/pu
-blic/bbm/bbm12.720pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx17
-28.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </
-home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1200.600pk> </home/ksenia/
-.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </home/ksenia/.texmf-var/f
-onts/pk/ljfour/lh/lh-t2a/labx2074.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfo
-ur/lh/lh-t2a/larm1728.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a
-/larm1440.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati2074.60
-0pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx2986.600pk> </home/
-ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lacc2074.600pk> </home/ksenia/.texm
-f-var/fonts/pk/ljfour/lh/lh-t2a/lacc1440.600pk> </home/ksenia/.texmf-var/fonts/
-pk/ljfour/lh/lh-t2a/lacc2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on report.pdf (19 pages, 1215906 bytes).
+ 1141 hyphenation exceptions out of 8191
+ 38i,18n,26p,2761b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvip
+s/cm-super/cm-super-t2a.enc} </home/evgeny/.texmf-var/fonts/pk/ljfour/public/bb
+m/bbm12.720pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+bx2986.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfcc2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
+m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfti1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti
+2074.pfb>
+Output written on report.pdf (21 pages, 1278829 bytes).
 PDF statistics:
- 643 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
+ 196 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

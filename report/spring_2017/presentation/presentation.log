@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  22 MAY 2017 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.12)  3 JUL 2017 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**presentation.tex p
+**presentation.tex
 (./presentation.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 10 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasercs.sty
 Package: beamerbasercs 2015/03/08 (rcs-revision 368aa9ba9d38)
@@ -713,8 +713,6 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 \U@D=\dimen188
 LaTeX Info: Redefining \textlatin on input line 1448.
 )
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -1442,423 +1440,423 @@ Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 26.
+(hyperref)                removing `\\' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 26.
+(hyperref)                removing `\\' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRE' on input line 26.
+(hyperref)                removing `\CYRE' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 26.
+(hyperref)                removing `\cyrv' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrg' on input line 26.
+(hyperref)                removing `\cyrg' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 26.
+(hyperref)                removing `\cyre' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 26.
+(hyperref)                removing `\cyrn' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 26.
+(hyperref)                removing `\cyri' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrishrt' on input line 26.
+(hyperref)                removing `\cyrishrt' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRA' on input line 26.
+(hyperref)                removing `\CYRA' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 26.
+(hyperref)                removing `\cyrn' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 26.
+(hyperref)                removing `\cyri' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrk' on input line 26.
+(hyperref)                removing `\cyrk' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 26.
+(hyperref)                removing `\cyri' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 26.
+(hyperref)                removing `\cyrn' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 26.
+(hyperref)                removing `\cyrn' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 26.
+(hyperref)                removing `\cyra' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyru' on input line 26.
+(hyperref)                removing `\cyru' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrch' on input line 26.
+(hyperref)                removing `\cyrch' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 26.
+(hyperref)                removing `\cyrn' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrery' on input line 26.
+(hyperref)                removing `\cyrery' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrishrt' on input line 26.
+(hyperref)                removing `\cyrishrt' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 26.
+(hyperref)                removing `\cyrr' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyru' on input line 26.
+(hyperref)                removing `\cyru' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrk' on input line 26.
+(hyperref)                removing `\cyrk' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 26.
+(hyperref)                removing `\cyro' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 26.
+(hyperref)                removing `\cyrv' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 26.
+(hyperref)                removing `\cyro' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrd' on input line 26.
+(hyperref)                removing `\cyrd' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 26.
+(hyperref)                removing `\cyri' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 26.
+(hyperref)                removing `\cyrt' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 26.
+(hyperref)                removing `\cyre' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 26.
+(hyperref)                removing `\cyrl' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrsftsn' on input line 26.
+(hyperref)                removing `\cyrsftsn' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrch' on input line 26.
+(hyperref)                removing `\cyrch' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 26.
+(hyperref)                removing `\cyrl' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrk' on input line 26.
+(hyperref)                removing `\cyrk' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRR' on input line 26.
+(hyperref)                removing `\CYRR' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRA' on input line 26.
+(hyperref)                removing `\CYRA' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRN' on input line 26.
+(hyperref)                removing `\CYRN' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrd' on input line 26.
+(hyperref)                removing `\cyrd' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrf' on input line 26.
+(hyperref)                removing `\cyrf' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrm' on input line 26.
+(hyperref)                removing `\cyrm' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 26.
+(hyperref)                removing `\cyrn' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRP' on input line 26.
+(hyperref)                removing `\CYRP' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRI' on input line 26.
+(hyperref)                removing `\CYRI' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRA' on input line 26.
+(hyperref)                removing `\CYRA' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 26.
+(hyperref)                removing `\cyrr' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 26.
+(hyperref)                removing `\cyrs' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 26.
+(hyperref)                removing `\cyre' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 26.
+(hyperref)                removing `\cyre' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 26.
+(hyperref)                removing `\cyrv' on input line 29.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRS' on input line 30.
+(hyperref)                removing `\CYRK' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 30.
+(hyperref)                removing `\cyrr' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 30.
+(hyperref)                removing `\cyra' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrb' on input line 30.
+(hyperref)                removing `\cyre' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 30.
+(hyperref)                removing `\cyrv' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 30.
+(hyperref)                removing `\cyrery' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrsftsn' on input line 30.
+(hyperref)                removing `\cyre' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 30.
+(hyperref)                removing `\cyrs' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 30.
+(hyperref)                removing `\cyro' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 30.
+(hyperref)                removing `\cyrs' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 30.
+(hyperref)                removing `\cyrt' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrsftsn' on input line 30.
+(hyperref)                removing `\cyro' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrk' on input line 30.
+(hyperref)                removing `\cyrya' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 30.
+(hyperref)                removing `\cyrn' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 30.
+(hyperref)                removing `\cyri' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 30.
+(hyperref)                removing `\cyrya' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 30.
+(hyperref)                removing `\cyrv' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrery' on input line 30.
+(hyperref)                removing `\cyrt' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrh' on input line 30.
+(hyperref)                removing `\cyro' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 30.
+(hyperref)                removing `\cyrp' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 30.
+(hyperref)                removing `\cyro' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 30.
+(hyperref)                removing `\cyrl' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 30.
+(hyperref)                removing `\cyro' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 30.
+(hyperref)                removing `\cyrg' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrya' on input line 30.
+(hyperref)                removing `\cyri' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 30.
+(hyperref)                removing `\cyrch' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 30.
+(hyperref)                removing `\cyre' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrishrt' on input line 30.
+(hyperref)                removing `\cyrs' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 30.
+(hyperref)                removing `\cyrk' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 30.
+(hyperref)                removing `\cyri' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 30.
+(hyperref)                removing `\cyrh' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 30.
+(hyperref)                removing `\cyri' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 30.
+(hyperref)                removing `\cyrz' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 30.
+(hyperref)                removing `\cyro' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 30.
+(hyperref)                removing `\cyrl' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrg' on input line 30.
+(hyperref)                removing `\cyrya' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 30.
+(hyperref)                removing `\cyrt' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrch' on input line 30.
+(hyperref)                removing `\cyro' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 30.
+(hyperref)                removing `\cyrr' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 30.
+(hyperref)                removing `\cyra' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrk' on input line 30.
+(hyperref)                removing `\cyrh' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 30.
+(hyperref)                removing `\cyrs' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrh' on input line 30.
+(hyperref)                removing `\cyrb' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 30.
+(hyperref)                removing `\cyre' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrz' on input line 30.
+(hyperref)                removing `\cyrs' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 30.
+(hyperref)                removing `\cyrp' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 30.
+(hyperref)                removing `\cyro' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrya' on input line 30.
+(hyperref)                removing `\cyrr' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 30.
+(hyperref)                removing `\cyrya' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 30.
+(hyperref)                removing `\cyrd' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 30.
+(hyperref)                removing `\cyrk' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 30.
+(hyperref)                removing `\cyro' on input line 33.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrh' on input line 30.
+(hyperref)                removing `\cyrm' on input line 33.
 
 (./presentation.aux
 LaTeX Font Info:    Try loading font information for T2A+cmss on input line 23.
@@ -1866,33 +1864,30 @@ LaTeX Font Info:    Try loading font information for T2A+cmss on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
-
-LaTeX Warning: Label `fig:magnetic_disorder' multiply defined.
-
-)
+))
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for T2A+cmr on input line 30.
- (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 33.
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 33.
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1958,7 +1953,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box80
-Package hyperref Info: Link coloring OFF on input line 30.
+Package hyperref Info: Link coloring OFF on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1968,71 +1963,71 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count170
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
 
 (./presentation.out) (./presentation.out)
 \@outlinefile=\write5
 \openout5 = `presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 30.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 30.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 33.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 30.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 30.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 30.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 30.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 30.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 30.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 30.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 30.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 30.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 30.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 30.
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 30.
+(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 30.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 30.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 30.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 30.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 33.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 30
+(Font)              `pureletters' in the math version `normal' on input line 33
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 30
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 33
 .
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 30.
+(Font)              `pureletters' in the math version `bold' on input line 33.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 3
-0.
+3.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 30.
+ut line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -2058,270 +2053,188 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 30.
+LaTeX Info: Redefining \includegraphics on input line 33.
  (./presentation.nav)
-Overfull \hbox (31.96416pt too wide) in paragraph at lines 30--30
- [][][][]  
- []
-
 
 LaTeX Font Warning: Font shape `T2A/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 34.
-
-
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
- []
+(Font)              size <5> substituted on input line 37.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<images/quantum_well.png, id=55, 734.745pt x 766.865pt>
-File: images/quantum_well.png Graphic file (type png)
-
-<use images/quantum_well.png>
-Package pdftex.def Info: images/quantum_well.png used on input line 56.
-(pdftex.def)             Requested size: 145.9622pt x 152.34056pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 56.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 56.
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 56.
+line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<images/levels.png, id=57, 578.16pt x 433.62pt>
-File: images/levels.png Graphic file (type png)
- <use images/levels.png>
-Package pdftex.def Info: images/levels.png used on input line 56.
-(pdftex.def)             Requested size: 145.9622pt x 109.46999pt.
-
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
- []
-
 [2
 
- <./images/quantum_well.png> <./images/levels.png>]
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
- []
+] <../images/quantum_well.png, id=92, 734.745pt x 766.865pt>
+File: ../images/quantum_well.png Graphic file (type png)
+
+<use ../images/quantum_well.png>
+Package pdftex.def Info: ../images/quantum_well.png used on input line 75.
+(pdftex.def)             Requested size: 145.9622pt x 152.34056pt.
+
+<../images/levels.png, id=94, 578.16pt x 433.62pt>
+File: ../images/levels.png Graphic file (type png)
+ <use ../images/levels.png>
+Package pdftex.def Info: ../images/levels.png used on input line 75.
+(pdftex.def)             Requested size: 145.9622pt x 109.46999pt.
 
 [3
 
-]
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
- []
+ <../images/quantum_well.png> <../images/levels.png>] [4
 
-[4
+] [5
 
 ]
-Overfull \hbox (23.28377pt too wide) detected at line 114
+Overfull \hbox (23.28377pt too wide) detected at line 133
  []$[] \OMS/cmsy/m/n/10.95 ^^@ []$ []  
- []
-
-
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[5
-
-] <images/edge_states.png, id=183, 578.16pt x 433.62pt>
-File: images/edge_states.png Graphic file (type png)
-
-<use images/edge_states.png>
-Package pdftex.def Info: images/edge_states.png used on input line 135.
-(pdftex.def)             Requested size: 145.9622pt x 109.46999pt.
-
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
  []
 
 [6
 
- <./images/edge_states.png>]
-<images/reconstruction_spectrum_down.png, id=211, 578.16pt x 433.62pt>
-File: images/reconstruction_spectrum_down.png Graphic file (type png)
+] <../images/edge_states.png, id=210, 578.16pt x 433.62pt>
+File: ../images/edge_states.png Graphic file (type png)
 
-<use images/reconstruction_spectrum_down.png>
-Package pdftex.def Info: images/reconstruction_spectrum_down.png used on input 
-line 153.
-(pdftex.def)             Requested size: 152.10931pt x 114.08168pt.
+<use ../images/edge_states.png>
+Package pdftex.def Info: ../images/edge_states.png used on input line 154.
+(pdftex.def)             Requested size: 145.9622pt x 109.46999pt.
+ [7
 
-<images/reconstruction_spectrum_up.png, id=212, 578.16pt x 433.62pt>
-File: images/reconstruction_spectrum_up.png Graphic file (type png)
+ <../images/edge_states.png>]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 171.
 
-<use images/reconstruction_spectrum_up.png>
-Package pdftex.def Info: images/reconstruction_spectrum_up.png used on input li
-ne 153.
-(pdftex.def)             Requested size: 152.10931pt x 114.08168pt.
-
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[7
-
- <./images/reconstruction_spectrum_down.png> <./images/reconstruction_spectrum_
-up.png>]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 170.
- (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
- []
+) [8
 
-[8
+]
+<../images/impurity_levels.png, id=269, 578.16pt x 433.62pt>
+File: ../images/impurity_levels.png Graphic file (type png)
 
-] <images/impurity_levels.png, id=272, 578.16pt x 433.62pt>
-File: images/impurity_levels.png Graphic file (type png)
-
-<use images/impurity_levels.png>
-Package pdftex.def Info: images/impurity_levels.png used on input line 189.
+<use ../images/impurity_levels.png>
+Package pdftex.def Info: ../images/impurity_levels.png used on input line 190.
 (pdftex.def)             Requested size: 136.89745pt x 102.66823pt.
 
-<images/gf_03-1-04.png, id=273, 578.16pt x 433.62pt>
-File: images/gf_03-1-04.png Graphic file (type png)
+<../images/gf_03-1-04.png, id=270, 578.16pt x 433.62pt>
+File: ../images/gf_03-1-04.png Graphic file (type png)
 
-<use images/gf_03-1-04.png>
-Package pdftex.def Info: images/gf_03-1-04.png used on input line 189.
+<use ../images/gf_03-1-04.png>
+Package pdftex.def Info: ../images/gf_03-1-04.png used on input line 190.
 (pdftex.def)             Requested size: 136.89745pt x 102.66823pt.
+ [9
 
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[9
-
- <./images/impurity_levels.png> <./images/gf_03-1-04.png>]
-Overfull \hbox (28.80342pt too wide) in paragraph at lines 209--209
+ <../images/impurity_levels.png> <../images/gf_03-1-04.png>]
+Overfull \hbox (28.80342pt too wide) in paragraph at lines 210--210
 []  
- []
-
-
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
  []
 
 [10
 
-] <images/obstacle_1.png, id=331, 200.75pt x 200.75pt>
-File: images/obstacle_1.png Graphic file (type png)
+] <../images/obstacle_1.png, id=328, 200.75pt x 200.75pt>
+File: ../images/obstacle_1.png Graphic file (type png)
 
-<use images/obstacle_1.png>
-Package pdftex.def Info: images/obstacle_1.png used on input line 229.
+<use ../images/obstacle_1.png>
+Package pdftex.def Info: ../images/obstacle_1.png used on input line 230.
 (pdftex.def)             Requested size: 110.6219pt x 110.62419pt.
 
-<images/obstacle_2.png, id=332, 200.75pt x 200.75pt>
-File: images/obstacle_2.png Graphic file (type png)
+<../images/obstacle_2.png, id=329, 200.75pt x 200.75pt>
+File: ../images/obstacle_2.png Graphic file (type png)
 
-<use images/obstacle_2.png>
-Package pdftex.def Info: images/obstacle_2.png used on input line 229.
+<use ../images/obstacle_2.png>
+Package pdftex.def Info: ../images/obstacle_2.png used on input line 230.
 (pdftex.def)             Requested size: 110.6219pt x 110.62419pt.
+ [11
 
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[11
-
- <./images/obstacle_1.png> <./images/obstacle_2.png>]
-<images/dis_edge_state_1.png, id=362, 301.125pt x 200.75pt>
-File: images/dis_edge_state_1.png Graphic file (type png)
-
-<use images/dis_edge_state_1.png>
-Package pdftex.def Info: images/dis_edge_state_1.png used on input line 251.
-(pdftex.def)             Requested size: 122.91406pt x 81.9435pt.
-
-<images/dis_bulk_state.png, id=363, 301.125pt x 200.75pt>
-File: images/dis_bulk_state.png Graphic file (type png)
-
-<use images/dis_bulk_state.png>
-Package pdftex.def Info: images/dis_bulk_state.png used on input line 251.
-(pdftex.def)             Requested size: 122.91406pt x 81.9435pt.
-
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
- []
+ <../images/obstacle_1.png> <../images/obstacle_2.png>] <scattering.png, id=359
+, 144.54pt x 70.8246pt>
+File: scattering.png Graphic file (type png)
+ <use scattering.png>
+Package pdftex.def Info: scattering.png used on input line 243.
+(pdftex.def)             Requested size: 215.10196pt x 105.40555pt.
 
 [12
 
- <./images/dis_edge_state_1.png> <./images/dis_bulk_state.png>]
-<images/mgn_edge_st_1.png, id=394, 803.0pt x 150.5625pt>
-File: images/mgn_edge_st_1.png Graphic file (type png)
+ <./scattering.png>] [13
 
-<use images/mgn_edge_st_1.png>
-Package pdftex.def Info: images/mgn_edge_st_1.png used on input line 277.
-(pdftex.def)             Requested size: 193.59045pt x 36.29654pt.
+]
+<../images/cond_and_density/dis_000.png, id=415, 1300.86pt x 578.16pt>
+File: ../images/cond_and_density/dis_000.png Graphic file (type png)
 
-<images/mgn_edge_st_2.png, id=395, 803.0pt x 150.5625pt>
-File: images/mgn_edge_st_2.png Graphic file (type png)
+<use ../images/cond_and_density/dis_000.png>
+Package pdftex.def Info: ../images/cond_and_density/dis_000.png used on input l
+ine 269.
+(pdftex.def)             Requested size: 276.559pt x 122.9081pt.
+ [14
 
-<use images/mgn_edge_st_2.png>
-Package pdftex.def Info: images/mgn_edge_st_2.png used on input line 277.
-(pdftex.def)             Requested size: 193.59045pt x 36.29654pt.
+ <../images/cond_and_density/dis_000.png>]
+<../images/cond_and_density/dis_240.png, id=447, 1300.86pt x 578.16pt>
+File: ../images/cond_and_density/dis_240.png Graphic file (type png)
 
-<images/mgn_edge_st_3.png, id=396, 803.0pt x 150.5625pt>
-File: images/mgn_edge_st_3.png Graphic file (type png)
+<use ../images/cond_and_density/dis_240.png>
+Package pdftex.def Info: ../images/cond_and_density/dis_240.png used on input l
+ine 280.
+(pdftex.def)             Requested size: 276.559pt x 122.9081pt.
+ [15
 
-<use images/mgn_edge_st_3.png>
-Package pdftex.def Info: images/mgn_edge_st_3.png used on input line 277.
-(pdftex.def)             Requested size: 193.59045pt x 36.29654pt.
+ <../images/cond_and_density/dis_240.png>]
+<../images/cond_and_density/dis_320.png, id=476, 1300.86pt x 578.16pt>
+File: ../images/cond_and_density/dis_320.png Graphic file (type png)
 
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
- []
+<use ../images/cond_and_density/dis_320.png>
+Package pdftex.def Info: ../images/cond_and_density/dis_320.png used on input l
+ine 292.
+(pdftex.def)             Requested size: 276.559pt x 122.9081pt.
+ [16
 
-[13
+ <../images/cond_and_density/dis_320.png>]
+<../images/cond_and_density/prob_1000_0-030.png, id=505, 1300.86pt x 578.16pt>
+File: ../images/cond_and_density/prob_1000_0-030.png Graphic file (type png)
 
- <./images/mgn_edge_st_1.png> <./images/mgn_edge_st_2.png> <./images/mgn_edge_s
-t_3.png>] <images/fig4.png, id=427, 602.25pt x 200.75pt>
-File: images/fig4.png Graphic file (type png)
+<use ../images/cond_and_density/prob_1000_0-030.png>
+Package pdftex.def Info: ../images/cond_and_density/prob_1000_0-030.png used on
+ input line 302.
+(pdftex.def)             Requested size: 276.559pt x 122.9081pt.
+ [17
 
-<use images/fig4.png>
-Package pdftex.def Info: images/fig4.png used on input line 302.
-(pdftex.def)             Requested size: 193.59045pt x 64.52924pt.
- <images/fig5.png, id=428, 602.25pt x 200.75pt>
-File: images/fig5.png Graphic file (type png)
+ <../images/cond_and_density/prob_1000_0-030.png>]
+<../images/cond_and_density_2/prob_1000_0-030.png, id=533, 1300.86pt x 578.16pt
+>
+File: ../images/cond_and_density_2/prob_1000_0-030.png Graphic file (type png)
+ <use ../images/cond_and_density_2/prob_1000_0-030.png>
+Package pdftex.def Info: ../images/cond_and_density_2/prob_1000_0-030.png used 
+on input line 312.
+(pdftex.def)             Requested size: 276.559pt x 122.9081pt.
+ [18
 
-<use images/fig5.png>
-Package pdftex.def Info: images/fig5.png used on input line 302.
-(pdftex.def)             Requested size: 193.59045pt x 64.52924pt.
- <images/fig6.png, id=429, 602.25pt x 200.75pt>
-File: images/fig6.png Graphic file (type png)
+ <../images/cond_and_density_2/prob_1000_0-030.png>]
+<../images/cond_and_density_2/prob_w120_1000_0-050.png, id=560, 1176.5556pt x 5
+78.16pt>
+File: ../images/cond_and_density_2/prob_w120_1000_0-050.png Graphic file (type 
+png)
+ <use ../images/cond_and_density_2/prob_w120_1000_0-050.png>
+Package pdftex.def Info: ../images/cond_and_density_2/prob_w120_1000_0-050.png 
+used on input line 322.
+(pdftex.def)             Requested size: 276.559pt x 135.9029pt.
+ [19
 
-<use images/fig6.png>
-Package pdftex.def Info: images/fig6.png used on input line 302.
-(pdftex.def)             Requested size: 193.59045pt x 64.52924pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:magnetic_
-disorder}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.302 \end{frame}
-                 
-Overfull \vbox (9.99376pt too high) detected at line 302
- []
+ <../images/cond_and_density_2/prob_w120_1000_0-050.png>] [20
 
-
-Overfull \hbox (31.96416pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[14
-
- <./images/fig4.png> <./images/fig5.png> <./images/fig6.png>]
+]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
 
@@ -2331,12 +2244,11 @@ Overfull \hbox (31.96416pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
-
-(./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
+ (./presentation.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2344,42 +2256,41 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
  ) 
 Here is how much of TeX's memory you used:
- 23672 strings out of 494440
- 479605 string characters out of 6173197
- 574682 words of memory out of 5000000
- 26331 multiletter control sequences out of 15000+600000
- 28497 words of font info for 74 fonts, out of 8000000 for 9000
- 430 hyphenation exceptions out of 8191
- 56i,19n,67p,414b,636s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ksenia/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600pk> </home/
-ksenia/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk> </home/ksenia/.texmf-
-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/ksenia/.texmf-var/fonts/
-pk/ljfour/jknappen/ec/ecss1095.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/
-jknappen/ec/ecss0800.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecss0600.600pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass1000.6
-00pk> </home/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass0600.600pk> </home
-/ksenia/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass0800.600pk> </home/ksenia/.tex
-mf-var/fonts/pk/ljfour/lh/lh-t2a/lass1095.600pk> </home/ksenia/.texmf-var/fonts
-/pk/ljfour/lh/lh-t2a/lass1440.600pk></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (14 pages, 1141019 bytes).
+ 23684 strings out of 493029
+ 479920 string characters out of 6136234
+ 578607 words of memory out of 5000000
+ 26570 multiletter control sequences out of 15000+600000
+ 30147 words of font info for 76 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 56i,19n,67p,412b,636s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/share/texmf
+/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/evgeny/.texmf-var/fonts/pk/lj
+four/public/bbm/bbm10.657pk></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb>
+Output written on presentation.pdf (20 pages, 1182131 bytes).
 PDF statistics:
- 769 PDF objects out of 1000 (max. 8388607)
- 459 compressed objects within 5 object streams
- 37 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 708 PDF objects out of 1000 (max. 8388607)
+ 616 compressed objects within 7 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

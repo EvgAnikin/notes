@@ -130,8 +130,8 @@ def plot_levels(levels, color='blue', ymin=0, ymax=0.5):
 
 
 def plot_conductance_vs_energy(fig, bar, disorder, probability, seed):
-    emin, emax = -40, 40
-    energies = np.linspace(emin, emax, 10)
+    emin, emax = -60, 60
+    energies = np.linspace(emin, emax, 80)
     conductances = []
     counter = 0
     for en in energies:
@@ -235,18 +235,18 @@ if __name__ == '__main__':
 
     E_lead, m_lead = -300, 0.4*m1
 
-    nx, ny = 120, 120
+    nx, ny = 500, 500
     bar = build_bar(nx, ny, xi, m1, m2, t, E_lead, m_lead, 
                     dis_gen=DisorderGenerator(U=0, nx=nx, ny=ny))
     nx1, ny1 = 17, 23
     bar_without_leads = build_bar(nx1, ny1, xi, m1, m2, t, E_lead, m_lead, 
                    dis_gen=DisorderGenerator(U=0, nx=nx1, ny=ny1), with_leads=False)
  
-    for p in [0.05]:
-        create_figure_for_thesis(bar, bar_without_leads, p)
+#    for p in [0.05]:
+#        create_figure_for_thesis(bar, bar_without_leads, p)
 
     
-#    plot_local_dos(bar, 0, disorder, probability, seed='')
+    plot_local_dos(bar, 0, disorder=1000, probability=0.1, seed='')
 #    plot_conductance_vs_disorder(bar, energy=0)
 
 #    imp_energies = np.array(dis_gen.get_impurities_array(probability, seed))
