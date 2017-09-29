@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.11)  11 SEP 2017 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.11)  29 SEP 2017 01:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**free_energy.tex
-(./free_energy.tex
+**lifshitz.tex
+(./lifshitz.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 10 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -651,19 +651,10 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 Language: russianb 2016/02/18 1.3h Russian support for the Babel system
 Package babel Info: Making " an active character on input line 111.
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box28
-\UL@hyphenbox=\box29
-\UL@skip=\skip46
-\UL@hook=\toks22
-\UL@height=\dimen115
-\UL@pe=\count101
-\UL@pixel=\dimen116
-\ULC@box=\box30
-Package: ulem 2012/05/18
-\ULdepth=\dimen117
-) (./free_energy.aux)
-\openout1 = `free_energy.aux'.
+\c@theorem=\count101
+
+(./lifshitz.aux)
+\openout1 = `lifshitz.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
@@ -679,20 +670,19 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count102
-\scratchdimen=\dimen118
-\scratchbox=\box31
+\scratchdimen=\dimen115
+\scratchbox=\box28
 \nofMPsegments=\count103
 \nofMParguments=\count104
-\everyMPshowfont=\toks23
+\everyMPshowfont=\toks22
 \MPscratchCnt=\count105
-\MPscratchDim=\dimen119
+\MPscratchDim=\dimen116
 \MPnumerator=\count106
 \makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks24
+\everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -743,31 +733,29 @@ e
 ))
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./free_energy.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lifshitz.aux) ) 
 Here is how much of TeX's memory you used:
- 3618 strings out of 494440
- 43758 string characters out of 6173198
- 108256 words of memory out of 5000000
- 6855 multiletter control sequences out of 15000+600000
- 12401 words of font info for 35 fonts, out of 8000000 for 9000
+ 3541 strings out of 494440
+ 42958 string characters out of 6173198
+ 105447 words of memory out of 5000000
+ 6783 multiletter control sequences out of 15000+600000
+ 12282 words of font info for 34 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 38i,6n,23p,471b,191s stack positions out of 5000i,500n,10000p,200000b,80000s
- 
-</home/evgeny/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/evgen
-y/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </home/evgeny/.texmf-var
-/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/evgeny/.texmf-var/fonts/pk/lj
-four/lh/lh-t2a/larm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on free_energy.pdf (2 pages, 108646 bytes).
+ 38i,9n,23p,247b,191s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/
+evgeny/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/evgeny/.texm
+f-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/evgeny/.texmf-var/fonts/
+pk/ljfour/lh/lh-t2a/larm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
+Output written on lifshitz.pdf (1 page, 84868 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 144 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+
+\newtheorem{theorem}{Теорема}
+
+\title{Ограниченность энергии снизу в модели Лифшица}
+\author{Anikin Evgeny, 121}
+
+\begin{document}
+\maketitle
+    Гамильтониан модели Лифшица задаётся так:
+    \begin{equation}
+        H_{ij} = \left\{\begin{matrix}
+                    t e^{\frac{|r_i - r_j|}{a}} \quad \text{при} \quad i\ne j \\
+                    0 \quad \text{при} \quad i = j
+                 \end{matrix}\right.
+    \end{equation}
+    Хочется доказать, что его спектр ограничен cнизу значением $-t$. Это равносильно положительной 
+    определённости (в нестрогом смысле) матрицы
+    \begin{equation}
+        h_{ij} = e^{\frac{|r_i - r_j|}{a}}
+    \end{equation}
+    Здесь уже диагональные элементы равны единице, а не нулю. Положительная определённость означает,
+    что для любого набора $x_i$ 
+    \begin{equation}
+        \sum e^{\frac{|r_i - r_j|}{a}} x_i x_j \ge 0
+    \end{equation}
+    Докажем это по индукции. База очевидна, так как для одного узла энергия равна $t$. Переход
+    индукции проведём...
+\end{document}
