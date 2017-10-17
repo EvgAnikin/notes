@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.11)  11 SEP 2017 15:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.11)  17 OCT 2017 03:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -718,42 +718,14 @@ LaTeX Info: Redefining \textlatin on input line 1448.
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
-Language: russianb 2016/02/18 1.3h Russian support for the Babel system
-
-
-Package babel Warning: No Cyrillic font encoding has been loaded so far.
-(babel)                A font encoding should be declared before babel.
-(babel)                Default `T2A' encoding will be loaded  on input line 69.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2aenc.def
-File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
-)
-
-Package babel Warning: No input encoding specified for Russian language on inpu
-t line 110.
-
-Package babel Info: Making " an active character on input line 111.
-)) (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/bbm.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/bbm.sty
 Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
 LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
 (Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 (Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2aenc.def
-File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
-LaTeX Font Info:    Redeclaring font encoding T2A on input line 42.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks43
@@ -1055,198 +1027,6 @@ Now handling font encoding U ...
 ... no UTF-8 mapping file for font encoding U
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-Now handling font encoding T2A ...
-... processing UTF-8 mapping file for font encoding T2A
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t2aenc.dfu
-File: t2aenc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
-   defining Unicode char U+00A4 (decimal 164)
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0400 (decimal 1024)
-   defining Unicode char U+0401 (decimal 1025)
-   defining Unicode char U+0402 (decimal 1026)
-   defining Unicode char U+0403 (decimal 1027)
-   defining Unicode char U+0404 (decimal 1028)
-   defining Unicode char U+0405 (decimal 1029)
-   defining Unicode char U+0406 (decimal 1030)
-   defining Unicode char U+0407 (decimal 1031)
-   defining Unicode char U+0408 (decimal 1032)
-   defining Unicode char U+0409 (decimal 1033)
-   defining Unicode char U+040A (decimal 1034)
-   defining Unicode char U+040B (decimal 1035)
-   defining Unicode char U+040C (decimal 1036)
-   defining Unicode char U+040D (decimal 1037)
-   defining Unicode char U+040E (decimal 1038)
-   defining Unicode char U+040F (decimal 1039)
-   defining Unicode char U+0410 (decimal 1040)
-   defining Unicode char U+0411 (decimal 1041)
-   defining Unicode char U+0412 (decimal 1042)
-   defining Unicode char U+0413 (decimal 1043)
-   defining Unicode char U+0414 (decimal 1044)
-   defining Unicode char U+0415 (decimal 1045)
-   defining Unicode char U+0416 (decimal 1046)
-   defining Unicode char U+0417 (decimal 1047)
-   defining Unicode char U+0418 (decimal 1048)
-   defining Unicode char U+0419 (decimal 1049)
-   defining Unicode char U+041A (decimal 1050)
-   defining Unicode char U+041B (decimal 1051)
-   defining Unicode char U+041C (decimal 1052)
-   defining Unicode char U+041D (decimal 1053)
-   defining Unicode char U+041E (decimal 1054)
-   defining Unicode char U+041F (decimal 1055)
-   defining Unicode char U+0420 (decimal 1056)
-   defining Unicode char U+0421 (decimal 1057)
-   defining Unicode char U+0422 (decimal 1058)
-   defining Unicode char U+0423 (decimal 1059)
-   defining Unicode char U+0424 (decimal 1060)
-   defining Unicode char U+0425 (decimal 1061)
-   defining Unicode char U+0426 (decimal 1062)
-   defining Unicode char U+0427 (decimal 1063)
-   defining Unicode char U+0428 (decimal 1064)
-   defining Unicode char U+0429 (decimal 1065)
-   defining Unicode char U+042A (decimal 1066)
-   defining Unicode char U+042B (decimal 1067)
-   defining Unicode char U+042C (decimal 1068)
-   defining Unicode char U+042D (decimal 1069)
-   defining Unicode char U+042E (decimal 1070)
-   defining Unicode char U+042F (decimal 1071)
-   defining Unicode char U+0430 (decimal 1072)
-   defining Unicode char U+0431 (decimal 1073)
-   defining Unicode char U+0432 (decimal 1074)
-   defining Unicode char U+0433 (decimal 1075)
-   defining Unicode char U+0434 (decimal 1076)
-   defining Unicode char U+0435 (decimal 1077)
-   defining Unicode char U+0436 (decimal 1078)
-   defining Unicode char U+0437 (decimal 1079)
-   defining Unicode char U+0438 (decimal 1080)
-   defining Unicode char U+0439 (decimal 1081)
-   defining Unicode char U+043A (decimal 1082)
-   defining Unicode char U+043B (decimal 1083)
-   defining Unicode char U+043C (decimal 1084)
-   defining Unicode char U+043D (decimal 1085)
-   defining Unicode char U+043E (decimal 1086)
-   defining Unicode char U+043F (decimal 1087)
-   defining Unicode char U+0440 (decimal 1088)
-   defining Unicode char U+0441 (decimal 1089)
-   defining Unicode char U+0442 (decimal 1090)
-   defining Unicode char U+0443 (decimal 1091)
-   defining Unicode char U+0444 (decimal 1092)
-   defining Unicode char U+0445 (decimal 1093)
-   defining Unicode char U+0446 (decimal 1094)
-   defining Unicode char U+0447 (decimal 1095)
-   defining Unicode char U+0448 (decimal 1096)
-   defining Unicode char U+0449 (decimal 1097)
-   defining Unicode char U+044A (decimal 1098)
-   defining Unicode char U+044B (decimal 1099)
-   defining Unicode char U+044C (decimal 1100)
-   defining Unicode char U+044D (decimal 1101)
-   defining Unicode char U+044E (decimal 1102)
-   defining Unicode char U+044F (decimal 1103)
-   defining Unicode char U+0450 (decimal 1104)
-   defining Unicode char U+0451 (decimal 1105)
-   defining Unicode char U+0452 (decimal 1106)
-   defining Unicode char U+0453 (decimal 1107)
-   defining Unicode char U+0454 (decimal 1108)
-   defining Unicode char U+0455 (decimal 1109)
-   defining Unicode char U+0456 (decimal 1110)
-   defining Unicode char U+0457 (decimal 1111)
-   defining Unicode char U+0458 (decimal 1112)
-   defining Unicode char U+0459 (decimal 1113)
-   defining Unicode char U+045A (decimal 1114)
-   defining Unicode char U+045B (decimal 1115)
-   defining Unicode char U+045C (decimal 1116)
-   defining Unicode char U+045D (decimal 1117)
-   defining Unicode char U+045E (decimal 1118)
-   defining Unicode char U+045F (decimal 1119)
-   defining Unicode char U+0490 (decimal 1168)
-   defining Unicode char U+0491 (decimal 1169)
-   defining Unicode char U+0492 (decimal 1170)
-   defining Unicode char U+0493 (decimal 1171)
-   defining Unicode char U+0496 (decimal 1174)
-   defining Unicode char U+0497 (decimal 1175)
-   defining Unicode char U+0498 (decimal 1176)
-   defining Unicode char U+0499 (decimal 1177)
-   defining Unicode char U+049A (decimal 1178)
-   defining Unicode char U+049B (decimal 1179)
-   defining Unicode char U+049C (decimal 1180)
-   defining Unicode char U+049D (decimal 1181)
-   defining Unicode char U+04A0 (decimal 1184)
-   defining Unicode char U+04A1 (decimal 1185)
-   defining Unicode char U+04A2 (decimal 1186)
-   defining Unicode char U+04A3 (decimal 1187)
-   defining Unicode char U+04A4 (decimal 1188)
-   defining Unicode char U+04A5 (decimal 1189)
-   defining Unicode char U+04AA (decimal 1194)
-   defining Unicode char U+04AB (decimal 1195)
-   defining Unicode char U+04AE (decimal 1198)
-   defining Unicode char U+04AF (decimal 1199)
-   defining Unicode char U+04B0 (decimal 1200)
-   defining Unicode char U+04B1 (decimal 1201)
-   defining Unicode char U+04B2 (decimal 1202)
-   defining Unicode char U+04B3 (decimal 1203)
-   defining Unicode char U+04B6 (decimal 1206)
-   defining Unicode char U+04B7 (decimal 1207)
-   defining Unicode char U+04B8 (decimal 1208)
-   defining Unicode char U+04B9 (decimal 1209)
-   defining Unicode char U+04BA (decimal 1210)
-   defining Unicode char U+04BB (decimal 1211)
-   defining Unicode char U+04C0 (decimal 1216)
-   defining Unicode char U+04C1 (decimal 1217)
-   defining Unicode char U+04C2 (decimal 1218)
-   defining Unicode char U+04D0 (decimal 1232)
-   defining Unicode char U+04D1 (decimal 1233)
-   defining Unicode char U+04D2 (decimal 1234)
-   defining Unicode char U+04D3 (decimal 1235)
-   defining Unicode char U+04D4 (decimal 1236)
-   defining Unicode char U+04D5 (decimal 1237)
-   defining Unicode char U+04D6 (decimal 1238)
-   defining Unicode char U+04D7 (decimal 1239)
-   defining Unicode char U+04D8 (decimal 1240)
-   defining Unicode char U+04D9 (decimal 1241)
-   defining Unicode char U+04DA (decimal 1242)
-   defining Unicode char U+04DB (decimal 1243)
-   defining Unicode char U+04DC (decimal 1244)
-   defining Unicode char U+04DD (decimal 1245)
-   defining Unicode char U+04DE (decimal 1246)
-   defining Unicode char U+04DF (decimal 1247)
-   defining Unicode char U+04E2 (decimal 1250)
-   defining Unicode char U+04E3 (decimal 1251)
-   defining Unicode char U+04E4 (decimal 1252)
-   defining Unicode char U+04E5 (decimal 1253)
-   defining Unicode char U+04E6 (decimal 1254)
-   defining Unicode char U+04E7 (decimal 1255)
-   defining Unicode char U+04E8 (decimal 1256)
-   defining Unicode char U+04E9 (decimal 1257)
-   defining Unicode char U+04EC (decimal 1260)
-   defining Unicode char U+04ED (decimal 1261)
-   defining Unicode char U+04EE (decimal 1262)
-   defining Unicode char U+04EF (decimal 1263)
-   defining Unicode char U+04F0 (decimal 1264)
-   defining Unicode char U+04F1 (decimal 1265)
-   defining Unicode char U+04F2 (decimal 1266)
-   defining Unicode char U+04F3 (decimal 1267)
-   defining Unicode char U+04F4 (decimal 1268)
-   defining Unicode char U+04F5 (decimal 1269)
-   defining Unicode char U+04F8 (decimal 1272)
-   defining Unicode char U+04F9 (decimal 1273)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+201E (decimal 8222)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+2116 (decimal 8470)
-   defining Unicode char U+2329 (decimal 9001)
-   defining Unicode char U+232A (decimal 9002)
-   defining Unicode char U+2423 (decimal 9251)
-)
    defining Unicode char U+00A9 (decimal 169)
    defining Unicode char U+00AA (decimal 170)
    defining Unicode char U+00AE (decimal 174)
@@ -1439,457 +1219,23 @@ Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemewh
 ale.sty
 Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
-))
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 29.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRE' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrg' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrishrt' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRA' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrk' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyru' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrch' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrery' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrishrt' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyru' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrk' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrd' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrsftsn' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrch' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrk' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRR' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRA' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRN' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrd' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrf' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrm' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRP' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRI' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRA' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 29.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRK' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrery' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrya' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrya' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrg' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrch' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrk' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrh' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrz' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrya' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrh' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrb' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrya' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrd' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrk' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 33.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrm' on input line 33.
-
-(./presentation.aux
-LaTeX Font Info:    Try loading font information for T2A+cmss on input line 23.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmss.fd
-File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-))
+)) (./presentation.aux)
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 33.
-LaTeX Font Info:    Try loading font information for T2A+cmr on input line 33.
-
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
-File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1955,7 +1301,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box80
-Package hyperref Info: Link coloring OFF on input line 33.
+Package hyperref Info: Link coloring OFF on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1965,71 +1311,66 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count170
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (./presentation.out) (./presentation.out)
 \@outlinefile=\write5
 \openout5 = `presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 33.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 33.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 31.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 33.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 33.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 33.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 33.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 33.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 33.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 33.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 33.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 33.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 33.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 33.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 33.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 33.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 33.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 33.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 33.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 33.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 33.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 33.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 33.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 33.
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 33
-.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 31.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 33
-.
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 33.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 3
+1.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 3
-3.
+(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
+31.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 33.
+ut line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -2055,27 +1396,27 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 33.
+LaTeX Info: Redefining \includegraphics on input line 31.
  (./presentation.nav)
 
-LaTeX Font Warning: Font shape `T2A/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 37.
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 35.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 53.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 53.
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 53.
+line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -2083,160 +1424,109 @@ thkerncmss.
 )
 [2
 
-] <../images/quantum_well.png, id=92, 734.745pt x 766.865pt>
-File: ../images/quantum_well.png Graphic file (type png)
+] <classical_phase_portrait.png, id=90, 578.16pt x 433.62pt>
+File: classical_phase_portrait.png Graphic file (type png)
 
-<use ../images/quantum_well.png>
-Package pdftex.def Info: ../images/quantum_well.png used on input line 75.
-(pdftex.def)             Requested size: 145.9622pt x 152.34056pt.
+<use classical_phase_portrait.png>
+Package pdftex.def Info: classical_phase_portrait.png used on input line 83.
+(pdftex.def)             Requested size: 138.2795pt x 103.70702pt.
+ [3
 
-<../images/levels.png, id=94, 578.16pt x 433.62pt>
-File: ../images/levels.png Graphic file (type png)
- <use ../images/levels.png>
-Package pdftex.def Info: ../images/levels.png used on input line 75.
-(pdftex.def)             Requested size: 145.9622pt x 109.46999pt.
-
-[3
-
- <../images/quantum_well.png> <../images/levels.png>] [4
-
-] [5
+ <./classical_phase_portrait.png>]
+[4
 
 ]
-Overfull \hbox (23.28377pt too wide) detected at line 133
- []$[] \OMS/cmsy/m/n/10.95 ^^@ []$ []  
- []
+LaTeX Font Info:    Try loading font information for U+bbm on input line 110.
+ (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [5
+
+]
+<phase_portrait_0.png, id=176, 578.16pt x 433.62pt>
+File: phase_portrait_0.png Graphic file (type png)
+ <use phase_portrait_0.png>
+Package pdftex.def Info: phase_portrait_0.png used on input line 126.
+(pdftex.def)             Requested size: 274.85822pt x 206.14478pt.
 
 [6
 
-] <../images/edge_states.png, id=210, 578.16pt x 433.62pt>
-File: ../images/edge_states.png Graphic file (type png)
+ <./phase_portrait_0.png>]
+<phase_portrait_1.png, id=206, 578.16pt x 433.62pt>
+File: phase_portrait_1.png Graphic file (type png)
+ <use phase_portrait_1.png>
+Package pdftex.def Info: phase_portrait_1.png used on input line 126.
+(pdftex.def)             Requested size: 274.85822pt x 206.14478pt.
 
-<use ../images/edge_states.png>
-Package pdftex.def Info: ../images/edge_states.png used on input line 154.
-(pdftex.def)             Requested size: 145.9622pt x 109.46999pt.
- [7
+[7
 
- <../images/edge_states.png>]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 171.
+ <./phase_portrait_1.png>]
+<phase_portrait_2.png, id=234, 578.16pt x 433.62pt>
+File: phase_portrait_2.png Graphic file (type png)
+ <use phase_portrait_2.png>
+Package pdftex.def Info: phase_portrait_2.png used on input line 126.
+(pdftex.def)             Requested size: 274.85822pt x 206.14478pt.
 
-(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
-File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [8
+[8
+
+ <./phase_portrait_2.png>] [9
+
+] [10
+
+] [11
+
+] [12
 
 ]
-<../images/impurity_levels.png, id=269, 578.16pt x 433.62pt>
-File: ../images/impurity_levels.png Graphic file (type png)
+<bistability_E015160.png, id=370, 578.16pt x 433.62pt>
+File: bistability_E015160.png Graphic file (type png)
 
-<use ../images/impurity_levels.png>
-Package pdftex.def Info: ../images/impurity_levels.png used on input line 190.
-(pdftex.def)             Requested size: 136.89745pt x 102.66823pt.
+<use bistability_E015160.png>
+Package pdftex.def Info: bistability_E015160.png used on input line 220.
+(pdftex.def)             Requested size: 154.60555pt x 115.9552pt.
 
-<../images/gf_03-1-04.png, id=270, 578.16pt x 433.62pt>
-File: ../images/gf_03-1-04.png Graphic file (type png)
-
-<use ../images/gf_03-1-04.png>
-Package pdftex.def Info: ../images/gf_03-1-04.png used on input line 190.
-(pdftex.def)             Requested size: 136.89745pt x 102.66823pt.
- [9
-
- <../images/impurity_levels.png> <../images/gf_03-1-04.png>]
-Overfull \hbox (28.80342pt too wide) in paragraph at lines 210--210
-[]  
+Overfull \hbox (0.96062pt too wide) in paragraph at lines 220--220
+ [] 
  []
 
-[10
+<bistability_E015165.png, id=371, 578.16pt x 433.62pt>
+File: bistability_E015165.png Graphic file (type png)
 
-] <../images/obstacle_1.png, id=328, 200.75pt x 200.75pt>
-File: ../images/obstacle_1.png Graphic file (type png)
+<use bistability_E015165.png>
+Package pdftex.def Info: bistability_E015165.png used on input line 220.
+(pdftex.def)             Requested size: 154.60555pt x 115.9552pt.
 
-<use ../images/obstacle_1.png>
-Package pdftex.def Info: ../images/obstacle_1.png used on input line 230.
-(pdftex.def)             Requested size: 110.6219pt x 110.62419pt.
+Overfull \hbox (0.96062pt too wide) in paragraph at lines 220--220
+ [] 
+ []
 
-<../images/obstacle_2.png, id=329, 200.75pt x 200.75pt>
-File: ../images/obstacle_2.png Graphic file (type png)
+[13
 
-<use ../images/obstacle_2.png>
-Package pdftex.def Info: ../images/obstacle_2.png used on input line 230.
-(pdftex.def)             Requested size: 110.6219pt x 110.62419pt.
- [11
+ <./bistability_E015160.png> <./bistability_E015165.png>]
+<bistability_E015170.png, id=400, 578.16pt x 433.62pt>
+File: bistability_E015170.png Graphic file (type png)
 
- <../images/obstacle_1.png> <../images/obstacle_2.png>] <scattering.png, id=359
-, 144.54pt x 70.8246pt>
-File: scattering.png Graphic file (type png)
- <use scattering.png>
-Package pdftex.def Info: scattering.png used on input line 243.
-(pdftex.def)             Requested size: 215.10196pt x 105.40555pt.
+<use bistability_E015170.png>
+Package pdftex.def Info: bistability_E015170.png used on input line 220.
+(pdftex.def)             Requested size: 154.60555pt x 115.9552pt.
 
-[12
+Overfull \hbox (0.96062pt too wide) in paragraph at lines 220--220
+ [] 
+ []
 
- <./scattering.png>] [13
+<bistability_E015175.png, id=401, 578.16pt x 433.62pt>
+File: bistability_E015175.png Graphic file (type png)
 
-]
-<../images/cond_and_density/dis_000.png, id=415, 1300.86pt x 578.16pt>
-File: ../images/cond_and_density/dis_000.png Graphic file (type png)
+<use bistability_E015175.png>
+Package pdftex.def Info: bistability_E015175.png used on input line 220.
+(pdftex.def)             Requested size: 154.60555pt x 115.9552pt.
 
-<use ../images/cond_and_density/dis_000.png>
-Package pdftex.def Info: ../images/cond_and_density/dis_000.png used on input l
-ine 269.
-(pdftex.def)             Requested size: 276.559pt x 122.9081pt.
- [14
+Overfull \hbox (0.96062pt too wide) in paragraph at lines 220--220
+ [] 
+ []
 
- <../images/cond_and_density/dis_000.png>]
-<../images/cond_and_density/dis_240.png, id=447, 1300.86pt x 578.16pt>
-File: ../images/cond_and_density/dis_240.png Graphic file (type png)
+[14
 
-<use ../images/cond_and_density/dis_240.png>
-Package pdftex.def Info: ../images/cond_and_density/dis_240.png used on input l
-ine 280.
-(pdftex.def)             Requested size: 276.559pt x 122.9081pt.
- [15
-
- <../images/cond_and_density/dis_240.png>]
-<../images/cond_and_density/dis_320.png, id=476, 1300.86pt x 578.16pt>
-File: ../images/cond_and_density/dis_320.png Graphic file (type png)
-
-<use ../images/cond_and_density/dis_320.png>
-Package pdftex.def Info: ../images/cond_and_density/dis_320.png used on input l
-ine 292.
-(pdftex.def)             Requested size: 276.559pt x 122.9081pt.
- [16
-
- <../images/cond_and_density/dis_320.png>]
-<../images/cond_and_density/prob_1000_0-030.png, id=505, 1300.86pt x 578.16pt>
-File: ../images/cond_and_density/prob_1000_0-030.png Graphic file (type png)
-
-<use ../images/cond_and_density/prob_1000_0-030.png>
-Package pdftex.def Info: ../images/cond_and_density/prob_1000_0-030.png used on
- input line 302.
-(pdftex.def)             Requested size: 276.559pt x 122.9081pt.
- [17
-
- <../images/cond_and_density/prob_1000_0-030.png>]
-<../images/cond_and_density_2/prob_1000_0-030.png, id=533, 1300.86pt x 578.16pt
->
-File: ../images/cond_and_density_2/prob_1000_0-030.png Graphic file (type png)
- <use ../images/cond_and_density_2/prob_1000_0-030.png>
-Package pdftex.def Info: ../images/cond_and_density_2/prob_1000_0-030.png used 
-on input line 312.
-(pdftex.def)             Requested size: 276.559pt x 122.9081pt.
- [18
-
- <../images/cond_and_density_2/prob_1000_0-030.png>]
-<../images/cond_and_density_2/prob_w120_1000_0-050.png, id=561, 1176.5556pt x 5
-78.16pt>
-File: ../images/cond_and_density_2/prob_w120_1000_0-050.png Graphic file (type 
-png)
- <use ../images/cond_and_density_2/prob_w120_1000_0-050.png>
-Package pdftex.def Info: ../images/cond_and_density_2/prob_w120_1000_0-050.png 
-used on input line 322.
-(pdftex.def)             Requested size: 276.559pt x 135.9029pt.
- [19
-
- <../images/cond_and_density_2/prob_w120_1000_0-050.png>] [20
-
-]
+ <./bistability_E015170.png> <./bistability_E015175.png>]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
 
@@ -2246,11 +1536,12 @@ used on input line 322.
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
- (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
+
+(./presentation.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2258,45 +1549,35 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 23688 strings out of 494440
- 479956 string characters out of 6173198
- 574595 words of memory out of 5000000
- 26334 multiletter control sequences out of 15000+600000
- 30147 words of font info for 76 fonts, out of 8000000 for 9000
+ 22839 strings out of 494440
+ 470073 string characters out of 6173198
+ 565437 words of memory out of 5000000
+ 25554 multiletter control sequences out of 15000+600000
+ 15275 words of font info for 59 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 56i,19n,67p,412b,636s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/evgeny/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lasx2074.600pk> </home/ev
-geny/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/evgeny/.texm
-f-var/fonts/pk/ljfour/jknappen/ec/ecss0700.600pk> </home/evgeny/.texmf-var/font
-s/pk/ljfour/jknappen/ec/ecss0500.600pk> </home/evgeny/.texmf-var/fonts/pk/ljfou
-r/jknappen/ec/ecss1000.600pk> </home/evgeny/.texmf-var/fonts/pk/ljfour/public/b
-bm/bbm10.657pk> </home/evgeny/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.6
-00pk> </home/evgeny/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600pk> </ho
-me/evgeny/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass1000.600pk> </home/evgeny/.t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk> </home/evgeny/.texmf-var/f
-onts/pk/ljfour/jknappen/ec/ecss1095.600pk> </home/evgeny/.texmf-var/fonts/pk/lj
-four/lh/lh-t2a/lass0600.600pk> </home/evgeny/.texmf-var/fonts/pk/ljfour/lh/lh-t
-2a/lass0800.600pk> </home/evgeny/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass1095.
-600pk> </home/evgeny/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass1440.600pk></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
-m7.pfb>
-Output written on presentation.pdf (20 pages, 1149296 bytes).
+ 56i,16n,67p,412b,641s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/evgeny/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on presentation.pdf (14 pages, 1180778 bytes).
 PDF statistics:
- 975 PDF objects out of 1000 (max. 8388607)
- 632 compressed objects within 7 object streams
- 48 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 489 PDF objects out of 1000 (max. 8388607)
+ 423 compressed objects within 5 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 

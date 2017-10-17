@@ -3,6 +3,7 @@ from __future__ import print_function
 import math
 import numpy as np
 from numpy.linalg import eig, eigh, lstsq
+import matplotlib
 import matplotlib.pyplot as plt
 
 
@@ -42,13 +43,12 @@ def find_transition_matrix(omega_0, Omega, beta, E, N):
     T = P - np.diag(np.sum(P, axis=0))
     return T, states
 
-
-N = 40
-T, states = find_transition_matrix(omega_0=1,
-                           Omega=1.025,
-                           beta=0.003,
-                           E=0.0138,
-                           N=N)
+omega_0=1
+Omega=1.025
+beta=0.001
+E=0.015160
+N = 300
+T, states = find_transition_matrix(omega_0, Omega, beta, E, N)
 
 eigvals, vectors = eig(T)
 numbered_eigvals = sorted(enumerate(eigvals), key = lambda tup: -tup[1])
@@ -56,13 +56,15 @@ equilibrium_vector = vectors[:, numbered_eigvals[0][0]]
 
 probabilities = [sum(np.abs(states[n,:])**2*np.abs(equilibrium_vector)) for n in xrange(N)]
 
+matplotlib.rcParams.update({'font.size': 25})
 #plt.plot(np.abs(vectors[:,numbered_eigvals[0][0]])**2)
 #plt.plot(np.abs(vectors[:,numbered_eigvals[1][0]])**2)
 ax = plt.subplot(111)
+plt.tight_layout(pad=2)
 #ax.set_yscale('log')
 plt.plot(probabilities)
-plt.xlim(0,20)
+plt.xlim(0,50)
 plt.xlabel('Occupation number')
 plt.ylabel('Probability')
-#plt.show()
-plt.savefig('bistability.png')
+plt.savefig('bistability_E'+ '{0:.5f}'.format(10*E) + '.png')
+plt.show()
