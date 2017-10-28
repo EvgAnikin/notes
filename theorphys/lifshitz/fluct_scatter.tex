@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[top=2cm, bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+
+\newtheorem{theorem}{Теорема}
+
+\title{Рассеяние на флуктуациях в модели Лифшица}
+\author{Аникин Евгений}
+
+\begin{document}
+\maketitle
+    Гамильтониан модели Лифшица задаётся так:
+    \begin{equation}
+        H_{ij} = \left\{\begin{matrix}
+                    t e^{-\frac{|r_i - r_j|}{a}} \quad \text{при} \quad i\ne j \\
+                    0 \quad \text{при} \quad i = j
+                 \end{matrix}\right.
+    \end{equation}
+    Предположим, среднее расстояние между узлами мало, то есть $na^3 \gg 1$. Тогда можно
+    использовать континуальное приближение, и уравнение Шрёдингера запишется так:
+    \begin{equation}
+        t\int e^{-\frac{|r - r'|}{a}} n(r') \Psi(r') d^3 r' = E\Psi(r)
+    \end{equation}
+    Здесь $n(r')$ 
+    можно заменить на $n_0 + \delta n$, где $n_0$ --- среднее значение плотности, а 
+    $\delta n$ --- флуктуации. В пренебрежении флуктуациями уравнение Шрёдингера тривиально
+    решается в Фурье--представлении:
+    \begin{equation}
+        \epsilon(k) = t \frac{8\pi n_0a^3}{(1 + (ka)^2)^2}
+    \end{equation}
+    Теперь изучим влияние флуктуаций. Оператор взаимодействия
+    с флуктуациями записывается в виде
+    \begin{equation}
+        V(r,r') = te^{-\frac{|r - r'|}{a}} \delta n(r')
+    \end{equation}
+    В крестовой диаграммной технике главный вклад в собственно--энергетическую часть имеет вид
+    \begin{multline}
+         \Sigma(r,r') = \left\langle \int d^3 r_1 d^3 r_2 V(r,r_1)G_0(r_1-r_2) V(r_2,r') 
+                        \right\rangle = \\
+                        = t^2\int d^3 r_1 d^3 r_2 e^{-\frac{|r - r_1| + |r_2 - r'|}{a}}
+                        \langle \delta n(r_1) \delta n(r_2) \rangle G_0(r_1-r_2) 
+    \end{multline}
+    Здесь $G_0(r)$ --- функция Грина. При усреднении можно считать, что 
+    $\langle \delta n(r_1) \delta n(r_2) \rangle = n_0 \delta(r_1 - r_2)$. Тогда 
+    \begin{equation}
+        \Sigma(r,r')= n_0t^2G_0(0)\int d^3 r'' e^{-\frac{|r - r''| + |r'' - r'|}{a}} =
+                       t^2G_0(0) \int \frac{d^3 k}{(2\pi)^3} 
+                            \left(\frac{8\pi a^3 }{(1 + (ka)^2)^2}\right)^2 e^{i\vec{k}\vec{r}}
+    \end{equation}
+    Таким образом,
+    \begin{equation}
+        \Sigma(k) = n_0t^2G_0(0) 
+                \left(\frac{8\pi a^3 }{(1 + (ka)^2)^2}\right)^2
+    \end{equation}
+    Время жизни квазичастицы определяется соотношением
+    \begin{equation}
+        \frac{1}{2\tau} = -\operatorname{Im} \Sigma(k)
+    \end{equation}
+    Найдём мнимую часть $G_0(0)$:
+    \begin{equation}
+        \operatorname{Im} G_0(0) = \operatorname{Im} \int \frac{d^3 k}{(2\pi)^3}
+                        \frac{1}{\omega - \epsilon(k) + i\delta} = 
+                        -\pi \int \frac{d^3 k}{(2\pi)^3} \delta(\omega - \epsilon(k)) = 
+                        -\frac{k^2}{2\pi v}
+    \end{equation}
+    В этом выражении $v = \frac{d\epsilon}{dk}$ --- скорость. Используя выражение для 
+    скорости
+    \begin{equation}
+        v = -\frac{32\pi n_0 a^5 t}{(1 + (ka)^2)^3} k,
+    \end{equation} 
+    можно выписать ответ для $\tau^{-1}$:
+    \begin{equation}
+        \tau^{-1} = \frac{n_0 t^2 k^2}{\pi v} \left(\frac{8\pi a^3 }{(1 + (ka)^2)^2}\right)^2 =
+         t \frac{2ka}{1 + (ka)^2}
+    \end{equation}
+    Длина свободного пробега --- 
+    \begin{equation}
+        l = v\tau = \frac{16\pi a \cdot n_0 a^3}{(1 + (ka)^2)^2}
+    \end{equation}
+    Как и следовало ожидать, длина свободного пробега  велика при большом $n_0 a^3$. Это 
+    оправдывает то, что мы ограничились первым порядком теории возмущений.
+\end{document}
