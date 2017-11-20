@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+\newcommand{\p}{\partial}
+
+\title{Anomalous Hall effect}
+\author{Anikin Evgeny}
+
+\begin{document}
+\maketitle
+The Hamiltonian of the problem is
+\begin{equation}
+    \hat{H} = \frac{\hbar^2 k^2}{2m} + 
+            \lambda (k_x \sigma_y - k_y \sigma_x) - \Delta \sigma_z
+\end{equation}
+It can be easily diagonalized, the energies are
+\begin{equation}
+    E_k^{(1,2)} = \frac{\hbar^2 k^2}{2m} \pm \sqrt{\lambda^2 k^2 + \Delta^2}
+\end{equation}
+It is convenient to introduce $\epsilon_k = \sqrt{\lambda^2 k^2 + \Delta^2}$.
+
+The eigenvectors are, as usual,
+\begin{equation}
+    \begin{gathered}
+        u_\uparrow = \begin{pmatrix}
+                        \cos{\frac{\theta}{2}} \\
+                        \sin{\frac{\theta}{2}e^{i\phi}}
+                    \end{pmatrix}\\
+        u_\downarrow = \begin{pmatrix}
+                        -\sin{\frac{\theta}{2}e^{-i\phi}}\\
+                        \cos{\frac{\theta}{2}} \\
+                    \end{pmatrix}
+    \end{gathered}
+\end{equation}
+Here
+\begin{equation}
+    \begin{gathered}
+        \cos{\theta} = -\frac{\Delta}{\epsilon_k}\\
+        e^{i\phi} = \frac{-k_y + ik_x}{k}
+    \end{gathered}
+\end{equation}
+The Berry curvature can be evaluated from the gauge--invariant formula. For the upper band,
+\begin{equation}
+    \begin{gathered}
+        \Omega_z = \Omega_{xy} = -\frac{i\lambda^2}{4\epsilon_k^2}
+                   \left[         \langle u_\uparrow | \sigma_y | u_\downarrow \rangle 
+                                  \langle u_\downarrow|\sigma_x |u_\uparrow\rangle - 
+                                  \langle u_\uparrow | \sigma_x | u_\downarrow \rangle 
+                                  \langle u_\downarrow|\sigma_y |u_\uparrow\rangle \right]\\
+        \Omega_x = \Omega_y = 0
+    \end{gathered}
+\end{equation}
+The matrix elements:
+\begin{equation}
+    \begin{gathered}
+        \langle u_\uparrow | \sigma_x | u_\downarrow \rangle = 
+            \cos{\frac{\theta}{2}}^2 - e^{-2i\phi}\sin{\frac{\theta}{2}} \\
+        \langle u_\downarrow|\sigma_y |u_\uparrow\rangle = 
+            i(\cos{\frac{\theta}{2}}^2 + e^{2i\phi}\sin{\frac{\theta}{2}})
+    \end{gathered}
+\end{equation}
+So,
+\begin{equation}
+    \Omega_z^{\mathrm{upper}} = -\frac{\lambda^2}{2\epsilon_k^2} \cos{\theta} = 
+            \frac{\lambda^2 \Delta}{2\epsilon_k^3}
+\end{equation}
+
+For lower band, we obtain similarly
+\begin{equation}
+    \Omega_z^{\mathrm{lower}} = 
+            -\frac{\lambda^2 \Delta}{2\epsilon_k^3}
+\end{equation}
+
+Now let's find the Hall conductivity. Let the electric field be $(E, 0, 0)$. Then the equations of motion for the wave packet read
+\begin{equation}
+    \begin{gathered}
+        \dot{x} = \frac{1}{\hbar}\frac{\p E_k}{\p k_x} - \dot{y}\Omega_z\\
+        \dot{y} = \frac{1}{\hbar}\frac{\p E_k}{\p k_y} + \dot{x}\Omega_z\\
+        \hbar\dot{k}_x = -eE\\
+        \hbar\dot{k}_y = 0
+    \end{gathered}
+\end{equation}
+So, 
+\begin{equation}
+    \begin{gathered}
+        \dot{x} = \frac{1}{\hbar}\frac{\p E_k}{\p k_x}\\
+        \dot{y} = \frac{1}{\hbar}\frac{\p E_k}{\p k_y} -eE\Omega_z\\
+    \end{gathered}
+\end{equation}
+In absence of impurities, the conductivity $\sigma_{xx}$ diverges at $\omega \to 0$, here
+$\omega$ is the frequency of external field. However, the Hall conductivity remains finite. 
+It can be caculated as 
+
+\end{document}

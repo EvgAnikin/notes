@@ -1,0 +1,141 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+
+\title{Degenerate levels in a rotating box}
+\author{Anikin Evgeny}
+
+\begin{document}
+\maketitle
+In this problem we are interested in the two first excited levels of a square potential
+well. Let us take the potential in the form  
+\begin{equation}
+    V(x,y) = \left\{\begin{matrix}
+                \infty && \text{if} \, |x| > \frac{a}{2} \, \text{or} |y| > \frac{a}{2}\\
+                0 && \text{otherwise}
+             \end{matrix}\right.
+\end{equation}
+
+The normalized wavefunctions of these states are
+\begin{equation}
+    \begin{gathered}
+        \psi_{1} = \frac{2}{a} \cos{\frac{\pi x}{a}} \sin{\frac{2\pi y}{a}}\\
+        \psi_{2} = \frac{2}{a} \sin{\frac{2\pi x}{a}}\cos{\frac{\pi y}{a}} \\
+    \end{gathered}
+\end{equation}
+
+Now let us apply the concept of Berry phase to degenerate levels. Assume that the potential
+well is slowly rotating around the $z$ axis. That means that the eigenfunctions also 
+become angle--dependent. 
+
+Let us search for a solution of the Schrodinger equation in the form
+\begin{equation}
+    \psi(t) = (\alpha(t)\psi_1^\theta + \beta(t) \psi_2^\theta) e^{-iEt} 
+\end{equation}
+Here $\theta$ is the rotation angle and $E$ is the energy of the states. After substituting
+this $\psi$ into Schrodinger equation, we get
+\begin{equation}
+    \dot{\alpha} \psi_1 + \dot{\beta} \psi_2 + 
+       \alpha \partial_\theta \psi_1\dot{\theta} + 
+       \beta  \partial_\theta \psi_2\dot{\theta} = 0
+\end{equation}
+Taking the scalar product with $\psi_1^\theta$, $\psi_2^\theta$ we get
+\begin{equation}
+   i\frac{d}{d\theta} 
+                          \begin{pmatrix}
+                            \alpha \\
+                            \beta
+                          \end{pmatrix}
+                          = -i\begin{pmatrix}
+                            \langle \psi_1 \partial_\theta \psi_1 \rangle&&
+                            \langle \psi_1 \partial_\theta \psi_2 \rangle\\
+                            \langle \psi_2 \partial_\theta \psi_1 \rangle&&
+                            \langle \psi_2 \partial_\theta \psi_2 \rangle\\
+                          \end{pmatrix}
+                          \begin{pmatrix}
+                            \alpha \\
+                            \beta
+                          \end{pmatrix}
+\end{equation}
+The matrix elements can be easily calculated after the following observation:
+\begin{equation}
+    \psi^\theta = e^{-i\hat{l}_z \theta}\psi^0
+\end{equation}
+and
+\begin{equation}
+    \partial_\theta \psi= -i\hat{l}_z \psi
+\end{equation}
+So, 
+\begin{equation}
+   i\frac{d}{d\theta}
+                          \begin{pmatrix}
+                            \alpha \\
+                            \beta
+                          \end{pmatrix}
+                         = - \begin{pmatrix}
+                            0 &&
+                            \langle \psi_1 \hat{l}_z \psi_2\rangle\\
+                            \langle \psi_2 \hat{l}_z \psi_1\rangle &&
+                            0
+                          \end{pmatrix}
+                          \begin{pmatrix}
+                            \alpha \\
+                            \beta
+                          \end{pmatrix}
+\end{equation}
+The diagonal elements vanish because of the mirror symmetry.
+
+The last step is to compute the matrix element of $l_z$. This is quite straightforward:
+\begin{multline}
+    \langle \psi_1 \hat{l}_z \psi_2 \rangle = 
+     -\frac{4i}{a^2} \int dx\,dy \cos{\frac{\pi x}{a}} \sin{\frac{2\pi y}{a}}
+                                 (x\partial_y - y\partial_x)
+                                 \sin{\frac{2\pi x}{a}}\cos{\frac{\pi y}{a}}\\
+    = \frac{8\pi i}{a^3} \int dx\, x \cos{\frac{\pi x}{a}}\sin{\frac{2\pi x}{a}} 
+                         \int dy \sin{\frac{\pi y}{a}} 
+                                 \sin{\frac{2\pi y}{a}} =\\
+    =  \frac{8i}{\pi^2} \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} dx\, x \cos{x}\sin{2x} 
+                        \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} dy \sin{y} 
+                                 \sin{2y} = \frac{256i}{27\pi^2}
+\end{multline}
+Finally,
+\begin{equation}
+   i\frac{d}{d\theta}
+         \begin{pmatrix}
+           \alpha \\
+           \beta
+         \end{pmatrix}
+        =\frac{256}{27\pi^2} \sigma_y
+         \begin{pmatrix}
+           \alpha \\
+           \beta
+         \end{pmatrix}
+\end{equation}
+\begin{equation}
+        \begin{pmatrix}
+          \alpha \\
+          \beta
+        \end{pmatrix} = 
+        \exp\left\{-\frac{256i}{27\pi^2} \sigma_y \theta\right\}
+        \begin{pmatrix}
+          \alpha_0 \\
+          \beta_0
+        \end{pmatrix} = 
+        \begin{pmatrix}
+            \cos{\frac{256}{27\pi^2}\theta} &&
+            -\sin{\frac{256}{27\pi^2}\theta} \\
+            \sin{\frac{256}{27\pi^2}\theta} &&
+            \cos{\frac{256}{27\pi^2}\theta}
+        \end{pmatrix}
+        \begin{pmatrix}
+          \alpha_0 \\
+          \beta_0
+        \end{pmatrix}
+\end{equation}
+\end{document}

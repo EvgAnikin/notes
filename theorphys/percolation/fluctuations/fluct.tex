@@ -1,0 +1,118 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\newcommand{\p}{\partial}
+
+\title{Флуктуации сопротивления между контактами конечного размера}
+
+\author{Аникин Евгений}
+
+\begin{document}
+\maketitle
+Сначала я рассматриваю случайную сетку из сопротивлений, задаваемых формулой
+\begin{equation}
+    R(\xi) = R_0 e^{\Lambda F(\xi)},
+\end{equation}
+где $\xi$ --- случайная величина от $0$ до $1$, $F$ --- монотонная функция, а $\Lambda \gg 1$.
+Затем повторяю рассуждения для сетки Миллера--Абрахамса.
+
+\section{Точечные контакты}
+Для начала рассмотрим флуктуации сопротивления между двумя точечными контактами. Физическая
+картина здесь такова: нефлуктуирующая часть определяется критической подсеткой, а флуктуирующая
+--- путём до критической подсетки. Чтобы оценить флуктуации, можно рассуждать следующим
+образом: сначала разорвём все сопротивления, а затем будем "включать" их по возрастанию до 
+появления перколяции. Будем называть \emph{подсеткой} $\xi$ подсетку, где включены
+все сопротивления, меньшие $R(\xi)$. 
+
+Можно считать, что флуктуации определяются тем сопротивлением, которое
+было включено последним. Оно, очевидно, находится не в критической подсетке, а где--то
+недалеко от контактов, в пути до критической подсетки.
+
+Найдём распределение для этого последнего сопротивления. 
+Пусть расстояние между контактами 
+много больше корреляционной длины. Тогда можно сказать следующее: контакты принадлежат
+бесконечному кластеру подсетки $\xi$ тогда и только тогда, когда последнее сопротивление
+$< R(\xi)$. Значит, вероятность того, что последнее сопротивление $<R(\xi)$, равна 
+\begin{equation}
+    P(R_{\mathrm{last}} < R(\xi)) = \rho(\xi)^2,
+\end{equation}
+где $\rho(\xi) \propto (\xi - \xi_{\mathrm{crit}})^\beta$ --- вероятность того, что контакт 
+принадлежит бесконечному кластеру, то есть плотность бесконечного кластера.
+Таким образом, функция распределения $\xi$ ---
+\begin{equation}
+    \frac{dP}{d\xi} \propto (\xi - \xi_{\mathrm{crit}})^{2\beta - 1}
+\end{equation}
+Для плоской решётки $\beta \approx 0.14$, поэтому функция распределения имеет узкий максимум
+при $\xi = \xi_\mathrm{crit}$. Однако из--за степенного хвоста типичные $\xi$ больше
+критического, а флуктуация $\xi$ порядка единицы.
+
+\section{Контакты конечного размера}
+Попытаемся применить ту же самую логику к случаю контактов размера $b$. Если 
+$b < l_\mathrm{corr}$, то справедлива та же самая картина: во флуктуации вносит вклад самое
+большое сопротивление. Значит,
+\begin{equation}
+    P(R_{\mathrm{last}} < R(\xi)) = \rho(\xi)^2,
+\end{equation}
+где $\rho_b(\xi)$ --- вероятность того, что контакт размера $b$ перекрывается с бесконечным 
+кластером. Эта вероятность $\propto b^{2 - d_f}$. С другой стороны, для $b \sim a$, где 
+$a$ --- расстояние между узлами, $\rho \propto (\xi - \xi_\mathrm{crit})^\beta$. Значит,
+\begin{equation}
+    \rho_b(\xi) \propto \left(\frac{b}{a}\right)^{2 - d_f} (\xi - \xi_\mathrm{crit})^\beta
+\end{equation}
+Эта формула справедлива до тех пор, пока $\rho_b(\xi) < 1$. Значит, можно окончательно написать
+\begin{equation}
+    \rho_b(\xi) \propto \left\{ 
+                 \begin{matrix}   
+                 \left(\frac{b}{a}\right)^{2 - d_f} (\xi - \xi_\mathrm{crit})^\beta, & 
+                       0 < \xi-\xi_\mathrm{crit} < \left( \frac{a}{b}\right)^{\frac{1}{\nu}}\\
+                  1, &  \xi - \xi_\mathrm{crit} > \left( \frac{a}{b}\right)^{\frac{1}{\nu}}
+                 \end{matrix} \right.
+\end{equation}
+Плотность вероятности ---
+\begin{equation}
+    \frac{dP}{d\xi} \propto \left\{ 
+                 \begin{matrix}   
+                 \left(\frac{b}{a}\right)^{4 - 2d_f} (\xi - \xi_\mathrm{crit})^{2\beta - 1}, & 
+                       0 < \xi-\xi_\mathrm{crit} < \left( \frac{a}{b}\right)^{\frac{1}{\nu}}\\
+                  0, &  \xi - \xi_\mathrm{crit} > \left( \frac{a}{b}\right)^{\frac{1}{\nu}}
+                 \end{matrix} \right.
+\end{equation}
+Было использовано, что $2 - d_f = \beta/\nu$.
+
+Таким образом, ширина распределения по $\xi$ --- 
+\begin{equation}    
+    \Delta \xi \approx \left( \frac{a}{b}\right)^{\frac{1}{\nu}}
+\end{equation}
+Флуктуация логарифма $R$ --- 
+\begin{equation}
+    \Delta \log\frac{R}{R_0} \sim \Lambda \frac{dF}{d\xi}\left( \frac{a}{b}\right)^{\frac{1}{\nu}}
+\end{equation}
+
+\subsection{Сетка Миллера--Абрахамса}
+Рассуждения переносятся на сетку Миллера--Абрахамса практически без изменений. Для сетки 
+Миллера--Абрахамса
+\begin{equation}
+    R_{ij} = R_0 e^{-\frac{r_{ij}}{a}}
+\end{equation}
+Вероятность того, что контакт размера $b$ перекрывается с бесконечным кластером подсетки,
+где разораны сопротивления $> r$ ---
+\begin{equation}
+    \rho_b(\xi) \propto \left\{ 
+                 \begin{matrix}   
+                 \left(\frac{b}{a}\right)^{2 - d_f}(n\pi r^2 - B_{\mathrm{cr}})^\beta, & 
+                       0 < n\pi r^2 - B_{\mathrm{cr}} < 
+                                    \left( \frac{a}{b}\right)^{\frac{1}{\nu}}\\
+                  1, & n\pi r^2 - B_{\mathrm{cr}} > \left( \frac{a}{b}\right)^{\frac{1}{\nu}}
+                 \end{matrix} \right.
+\end{equation}
+Отсюда аналогичными рассуждениями получаем
+\begin{equation}
+    \Delta \log{\frac{R}{R_0}} = \frac{1}{\sqrt{4\pi na^2 B_\mathrm{cr}}}
+                                    \left( \frac{a}{b}\right)^{\frac{1}{\nu}}
+\end{equation}
+
+\end{document}

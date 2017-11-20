@@ -1,0 +1,190 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+
+\title{Theory of Berry phase}
+\author{Anikin Evgeny}
+
+\begin{document}
+\maketitle
+\section{General theory}
+Let us consider a Hamiltonian $\hat{H}(r)$. Assume that the multi--component parameter $r$
+slowly depends on time. Then it is possible to search the solution of Schrodinger equation
+in the form
+\begin{equation}
+    \Psi(t) = \exp\left\{-i\int_0^t \epsilon_m(r(t)) \,dt + i\gamma(t)\right\} u_m(r(t))
+\end{equation}
+Here $u_m$ is the wavefunction of the $m$--th level state, and $\epsilon_m$ is its energy.
+
+After substituting to the Schrodinger equation $i\partial_t\Psi = \hat{H}(r(t)) \Psi$ we
+get the following equation:
+\begin{equation}
+    -\frac{\partial \gamma}{\partial t} u_m + 
+    i\frac{\partial u_m}{\partial r_i}\dot{r}_i = 0
+\end{equation}
+Multiplying it by $\langle u_m |$ we obtain
+\begin{equation}
+    \frac{\partial \gamma}{\partial t} = i\langle u_m \frac{\partial}{\partial r_i}
+                    u_m\rangle
+                    \dot{r_i}
+\end{equation}
+The solution is
+\begin{equation}
+    \gamma = \int \mathcal{A}_i \,dr_i
+\end{equation}
+where
+\begin{equation}
+    \label{connection}
+    \mathcal{A}_i = i\langle u_m \frac{\partial}{\partial r_i} u_m\rangle
+\end{equation}
+is so called Berry connection.
+It is a real quantity, because
+\begin{equation}
+    0 = \partial_i \langle u_m | u_m \rangle = \langle u_m | \partial_i u_m \rangle + 
+                                               \langle \partial_i u_m |  u_m \rangle,
+\end{equation}
+so
+\begin{equation}
+    \langle u_m | \partial_i u_m \rangle = -\langle u_m | \partial_i u_m \rangle* 
+\end{equation}
+
+Let us introduce gauge transformations $u_m' = u_m e^{i\chi_0(r)}$. Under such
+transformations, Berry connection changes:
+\begin{equation}
+    \mathcal{A'}_i = i\langle \Psi_0' \frac{\partial}{\partial r_i}\Psi_0'\rangle = 
+                    i\langle \Psi_0 \frac{\partial}{\partial r_i}\Psi_0\rangle - 
+                    \frac{\partial \chi_0}{\partial r_i} = 
+                    \mathcal{A}_i  - \frac{\partial \chi_0}{\partial r_i}
+\end{equation}
+However, all physical quantities are defined not by Berry connection but by Berry curvature:
+\begin{equation}
+    \label{curvature}
+    \Omega_{ij} \equiv \frac{\partial \mathcal{A}_j}{\partial r_i} - 
+                        \frac{\partial \mathcal{A}_i}{\partial r_j}
+\end{equation}
+Obviously, it is gauge invariant:
+\begin{equation}
+    \Omega_{ij}' = \Omega_{ij} - (\partial_i \partial_j - \partial_j \partial_i)\chi_0 = 
+                   \Omega_{ij} 
+\end{equation}
+It is possible to derive an expression for $\Omega_{ij}$ which is explicitely gauge invariant.
+First of all, from \eqref{connection} and \eqref{curvature} follows
+\begin{equation}
+    \Omega_{ij} = i(\langle \partial_i u_m | \partial_j u_m \rangle - 
+                    \langle \partial_j u_m | \partial_i u_m \rangle 
+\end{equation}
+Inserting the unity:
+\begin{equation}
+    \label{curvature_1}
+    \Omega_{ij} = i\sum_n(\langle \partial_i u_m | u_n \rangle  
+                    \langle u_n | \partial_j u_m \rangle - 
+                    \langle \partial_j u_m | u_n \rangle  
+                    \langle u_n | \partial_i u_m \rangle 
+\end{equation}
+Let us drive a nice expression for the matrix elements in the equation above. For that, 
+let us differentiate the stationary Schrodinger equation:
+\begin{equation}
+    \partial_i \hat{H} u_m + \hat{H} \partial_i u_m = \partial_iE_m u_m + E_m \partial_i u_m
+\end{equation}
+Multplying by $\langle u_n |$ ,$n\ne m$, we get
+\begin{equation}
+    \langle u_n | \partial_i u_m \rangle = -\frac{\langle u_n | \partial_i \hat{H} 
+                                            u_m \rangle}{E_n - E_m}
+\end{equation}
+The contibution of $\langle u_m \partial_i u_m \rangle$ to \eqref{curvature_1} is zero,
+therefore,
+\begin{equation}
+    \Omega_{ij} = i\sum_{n} \frac{\langle u_m | \partial_i\hat{H} | u_n \rangle 
+                                  \langle u_n | \partial_j\hat{H} | u_m \rangle - 
+                                  \langle u_m | \partial_j\hat{H} | u_n \rangle 
+                                  \langle u_n | \partial_i\hat{H} | u_m \rangle} 
+                                  {(E_n - E_m)^2}
+\end{equation}
+
+In the particular case of three--dimensional parameter space, it is possible to define
+a curvature vector:
+\begin{equation}
+    \Omega_i \equiv \frac{1}{2} \epsilon_{ijk}\Omega_{jk} = 
+                    \epsilon_{ijk} \partial_j \mathcal{A}_k 
+\end{equation}
+\begin{equation}
+    \vec{\Omega} = i\sum_{n} \frac{\langle u_m | \vec\nabla\hat{H} | u_n \rangle  \times
+                                  \langle u_n | \vec\nabla\hat{H} | u_m \rangle}
+                                  {(E_n - E_m)^2}
+\end{equation}
+\section{The case of spin in magnetic field}
+In this section, we will compute the Berry phase for the Hamiltonian
+\begin{equation}
+    \hat{H} = \mu \vec{B}\cdot \vec{\sigma} = 
+                \mu B\begin{pmatrix}
+                        \cos{\theta} && \sin{\theta}e^{-i\phi} \\
+                        \sin{\theta}e^{i\phi} && -\cos{\theta}
+                     \end{pmatrix}
+\end{equation}
+It is quite obvious that the eigenvalues are $\pm \mu B$, and the eigenvectors ---
+\begin{equation}
+    \begin{gathered}
+        u_\uparrow = \begin{pmatrix}
+                        \cos{\frac{\theta}{2}} \\
+                        \sin{\frac{\theta}{2}e^{i\phi}}
+                    \end{pmatrix}\\
+        u_\downarrow = \begin{pmatrix}
+                        -\sin{\frac{\theta}{2}e^{-i\phi}}\\
+                        \cos{\frac{\theta}{2}} \\
+                    \end{pmatrix}
+    \end{gathered}
+\end{equation}
+(as in the first problem from this assignment)
+The Berry connection for the {\bf upper state} can be easily calculated from the definition:
+\begin{equation}
+    \begin{gathered}
+        A_r = 0\\
+        A_\theta = 0\\
+        A_\phi = -\sin^2{\frac{\theta}{2}}
+    \end{gathered}
+\end{equation}
+The curvature --- 
+\begin{equation}
+    \Omega_{\theta \phi} = -\frac{\sin{\theta}}{2}
+\end{equation}
+That implies that the phase after a $2\pi$ rotation will be
+\begin{equation}
+    \gamma_\mathrm{upper} = -2\pi\sin^2{\frac{\theta}{2}}
+\end{equation}
+It is gauge invariant as an integral of $\mathcal{A}$ over closed path.
+
+For {\bf lower state}, 
+\begin{equation}
+    \begin{gathered}
+        A_r = 0\\
+        A_\theta = 0\\
+        A_\phi = \sin^2{\frac{\theta}{2}}
+    \end{gathered}
+\end{equation}
+Therefore,
+\begin{equation}
+    \gamma_\mathrm{lower} = 2\pi\sin^2{\frac{\theta}{2}}
+\end{equation}
+
+It is also interesting to compute the vector $\vec{\Omega}$. To make a transformation to 
+cartesian coordinates, let us write $\Omega$ as a form:
+\begin{equation}
+    \Omega = \mp \frac{1}{2} \sin{\theta} d\theta\wedge d\phi = 
+            \pm\frac{1}{2} d\cos{\theta}\wedge d\phi
+\end{equation}
+Here minus is for upper and plus for lower state.
+After making transrormation to Cartesian coordinates, we obtain
+\begin{equation}
+    \Omega = \mp\frac{1}{2r^3} \epsilon_{ijk}x_i dx_j\wedge dx_k
+\end{equation}
+Therefore,
+\begin{equation}
+    \vec{\Omega} = \mp \frac{\vec{r}}{2r^3}
+\end{equation}
+\end{document}

@@ -1,0 +1,128 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+
+\title{Two spins in magnetic field}
+\author{Anikin Evgeny}
+
+\begin{document}
+\maketitle
+\section{Constant magnetic field}
+Two spins in magnetic field with exchange interaction are described by a Hamiltonian
+\begin{equation}
+    \hat{H} = J\vec{S}_1\cdot\vec{S}_2 + \vec{B}\cdot(\vec{S}_1+\vec{S}_2)
+\end{equation}
+First, let us find the eigenvalues and eigenvectors at constant magnetic field. Assume that
+$\vec{B} = (0, 0, B_z)$. Then the Hamiltonian becomes
+\begin{equation}
+    \hat{H} = \frac{J}{2}( S^2 - S_1^2 - S_2^2) + 
+                B S_z,
+\end{equation}
+where $\vec{S} = \vec{S}_1 + \vec{S}_2$.
+It is a standard task to diagonalize the operator of total angular momentum. Here it's obvious
+that the total spin $s$ can be either $1$ or $0$.
+
+At $s = 1$:
+\begin{equation}
+    E_{1,m} = \frac{J}{4} + Bm, \, m \in \{1,0,-1\}
+\end{equation}
+\begin{equation}
+    \begin{gathered}
+        |1,1\rangle = |\uparrow\rangle |\uparrow \rangle\\
+        |1,0\rangle = \frac{1}{\sqrt{2}}(|\uparrow\rangle |\downarrow \rangle + 
+                                        |\downarrow\rangle |\uparrow \rangle)\\
+        |1,-1\rangle = |\downarrow\rangle |\downarrow \rangle\\
+    \end{gathered}
+\end{equation}
+At $s = 0$:
+\begin{equation}
+    E_{1,m} = -\frac{3J}{4}
+\end{equation}
+\begin{equation}
+        |0,0\rangle = \frac{1}{\sqrt{2}}(|\uparrow\rangle |\downarrow \rangle - 
+                                        |\downarrow\rangle |\uparrow \rangle)\\
+\end{equation}
+\section{Berry phase in rotating magnetic field}
+Now let us assume that the magnetic field slowly rotates around the $z$ axis: 
+$\vec{B} = (B\sin\theta \cos{\Omega t}, B\sin\theta \sin{\Omega t}, B\cos\theta)$. After
+a $2\pi$ rotation the wavefunction generally acquires a phase. To compute this phase,
+it is possible to transform the wavefunction as follows:
+\begin{equation}
+   |\psi \rangle = e^{-i\hat{s}_z \Omega t} |\psi' \rangle
+\end{equation}
+After that, the dependence on time in Schrodinger equation cancels, but the additional term
+arises:
+\begin{equation}
+    i\partial_t |\psi'\rangle = \hat{H}_\mathrm{eff}|\psi'\rangle = 
+    \hat{H}_0|\psi'\rangle - \Omega\hat{s_z}|\psi'\rangle
+\end{equation}
+Here $\hat{H}_0 = J\vec{S}_1\cdot\vec{S}_2 + \vec{B}_0\cdot(\vec{S}_1+\vec{S}_2)$, 
+$\vec{B}_0 = (B\sin\theta, 0, B\cos\theta)$.
+
+It's obvious that the phase acquired by the wavefunction is 
+\begin{equation}
+   e^{i\beta} =  e^{-2\pi i(E - E_0)/\Omega},
+\end{equation}
+where $E$ is
+the energy corresponding to $\hat{H}_\mathrm{eff}$, and $E_0$ --- to $\hat{H}_0$.
+
+As $\Omega$ is small, we should treat $\Omega \hat{s_z}$ as a perturbation. In the first order
+$E - E_0 = \Omega\langle \hat{s_z} \rangle$, where $s_z$ is averaged over the unperturbed
+eigenfunctions. The latter were found in the previous section for $B \parallel Oz$, but 
+it is easy to modify them for arbitrary $\vec{B}$.
+
+The wavefunctions of the $\frac{1}{2}$ spins corresponding to the different projections
+on a given axis can be found by diagonalizing the operator $\vec{n} \cdot \vec{s}$:
+\begin{equation}
+    \vec{n} \cdot \vec{s} = \begin{pmatrix}
+                                \cos{\theta} && \sin{\theta} e^{-i\phi} \\
+                                \sin{\theta} e^{i\phi} && \cos{\theta}
+                            \end{pmatrix}
+\end{equation}
+The answer is below:
+\begin{equation}
+    \begin{gathered}
+        u_\uparrow = \begin{pmatrix}
+                        \cos{\frac{\theta}{2}} \\
+                        \sin{\frac{\theta}{2}e^{i\phi}}
+                    \end{pmatrix}\\
+        u_\downarrow = \begin{pmatrix}
+                        -\sin{\frac{\theta}{2}e^{-i\phi}}\\
+                        \cos{\frac{\theta}{2}} \\
+                    \end{pmatrix}
+    \end{gathered}
+\end{equation}
+
+Now it is straightforward to compute the phase of any state after a rotation. The system 
+should be initially in the ground state, so let us consider the possible scenarios for
+ground states. Without loss of generality, $B > 0$ and $\Omega > 0$.
+
+If $J > B$, the ground state will be $|0,0\rangle$. As it is a scalar, 
+$\langle 0,0|s_z|0,0\rangle = 0$. Therefore, {\bf the phase is $0$}.
+
+Otherwise, the ground state will be 
+\begin{equation}
+    |1, -1\rangle = 
+        u_\downarrow\otimes u_\downarrow
+\end{equation}
+A simple calculation is below:
+\begin{equation}
+    \langle 1, -1 | s_z | 1, -1\rangle = 
+    \langle 1, -1 | (s_{1z} + s_{2z}) | 1, -1\rangle = 
+    2\langle u_\downarrow | s_z | u_\downarrow \rangle = -\cos{\theta}
+\end{equation}
+So,
+\begin{equation}
+    \beta = 2\pi \langle s_z \rangle = -2\pi \cos{\theta}
+\end{equation}
+As the phase is defined modulo $2\pi$,
+\begin{equation}
+    \beta = 4\pi \sin^2{\frac{\theta}{2}}
+\end{equation}
+\end{document}

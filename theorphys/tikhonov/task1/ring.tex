@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+
+\title{Confined particle on a ring}
+\author{Anikin Evgeny}
+
+\begin{document}
+\maketitle
+Let us consider the particle on a ring with delta potential in presence of magnetic flux:
+\begin{equation}
+    \hat{H} = \frac{1}{2m}\left(\hat{p} - \frac{eA}{c}\right)^2 
+            - \frac{\kappa_0}{m}\delta(x - x_0),
+    \, x + L = x
+\end{equation}
+We are interested in the Berry phase acquired by a ground state 
+after a slow rotation of $x_0$ around the ring.
+
+Assume that we know the wavefunction of the ground state. The Berry phase is given
+by the expression
+\begin{equation}
+    \phi = \int \mathcal{A} dx_0 = L\mathcal{A}
+\end{equation}
+The Berry connection is 
+\begin{equation}
+    \mathcal{A} = i\langle \psi | \partial_{x_0} | \psi \rangle =
+            \langle \hat{p} \rangle
+\end{equation}
+As $\hat{p} = m\hat{v} + \frac{eA}{c}$,
+\begin{equation}
+    \mathcal{A} = m\langle \psi | \hat{v} | \psi \rangle 
+             +\frac{eA}{c}
+\end{equation}
+Furthermore, we can notice that 
+\begin{equation}
+    \hat{v} = -\frac{c}{e}\frac{\partial \hat{H}}{\partial A}
+\end{equation}
+Therefore, by Ehrenfest theorem,
+\begin{equation}
+    \langle \hat{v} \rangle = -\frac{c}{e} \frac{\partial E}{\partial A},
+\end{equation}
+where $E$ is the energy of the ground state.
+Thus,
+\begin{equation}
+    \mathcal{A} = -\frac{mc}{e}\frac{\partial E}{\partial A}
+             +\frac{eA}{c}
+\end{equation}
+Before any computations it is obvious that in the limit $\kappa L \to \infty$ the mean 
+velocity is zero, or equivalently, the energy does not depend on $A$. Therefore, in this limit
+\begin{equation}
+    \phi = \frac{eLA}{c} = \frac{e\Phi}{c}
+\end{equation}
+
+Now let us perform the computation of the ground state energy. For convenience we set 
+$x_0 = 0$. Therefore, in the region 
+$0 < x < L$ the wavefunction takes the form
+\begin{equation}
+    \psi = \alpha\exp{\left(\kappa x +  \frac{ieAx}{c}\right)} + 
+           \beta\exp{\left(-\kappa x + \frac{ieAx}{c}\right)},
+\end{equation}
+where $E = -\frac{\kappa^2}{2m}$. The boundary conditions read
+\begin{equation}
+    \begin{gathered}
+        \psi(0) = \psi(L)\\
+        \left. \left( \frac{\partial}{\partial x}-\frac{ieA}{c}\right)\psi\right|_{L-0}^{+0}=
+        -2\kappa_0 \psi(0)
+    \end{gathered}
+\end{equation}
+After some calculations, we obtain the equation which determines the eigenvalues:
+\begin{equation}
+   \operatorname{det}
+        \begin{pmatrix}
+            \exp{\left( \kappa L + \frac{ieAL}{c}\right)} - 1 &&
+            \exp{\left(-\kappa L + \frac{ieAL}{c}\right)} - 1 \\
+            \exp{\left( \kappa L + \frac{ieAL}{c}\right)} - 1 - \frac{2\kappa_0}{\kappa} &&
+           -\exp{\left(-\kappa L + \frac{ieAL}{c}\right)} + 1 - \frac{2\kappa_0}{\kappa} &&
+        \end{pmatrix} = 0
+\end{equation}
+The latter can be simplified:
+\begin{equation}
+    \cosh{\kappa L} - \frac{\kappa_0}{\kappa} \sinh{\kappa L} = \cos{\frac{eAL}{c}}
+\end{equation}
+So,
+\begin{equation}
+   \frac{d\kappa}{dA} = \frac{e\kappa}{c\kappa_0} \cdot
+                        \frac{\sin\frac{eAL}{c}}
+                                        {\cosh{\kappa L} - \left(\frac{\kappa}{\kappa_0} +
+                                                 \frac{1}{\kappa L}\right)\sinh{\kappa L}}
+\end{equation}
+The Berry phase is
+\begin{equation}
+    \phi = \frac{e\Phi}{c} + \frac{\kappa^2 L}{\kappa_0} \frac{\sin\frac{e\Phi}{c}}
+                {\cosh{\kappa L} - \left(\frac{\kappa}{\kappa_0} +
+                \frac{1}{\kappa L}\right)\sinh{\kappa L}} 
+\end{equation}
+At large $\kappa_0 L$
+\begin{equation}
+    \phi \approx \frac{e\Phi}{c} - \frac{\kappa_0 L \sin\frac{e\Phi}{c}}{\sinh{\kappa_0 L}} 
+\end{equation}
+\end{document}
